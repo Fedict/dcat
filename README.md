@@ -6,7 +6,7 @@ Available as N-Triples and RDF/XML file.
 
 ## DCAT XML export for European Data Portal
 
-The XML file contains a serialization that is similar in structure to the one used by the Spanish portal, but there are nevertheless differences:
+The [datagovbe_edp.xml](all/datagovbe_edp.xml) XML file contains a serialization that is similar in structure to the one used by the Spanish portal, but there are nevertheless differences:
 
 ### Language
 ES: dc:language element with short language codes
