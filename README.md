@@ -24,7 +24,7 @@ ES: dcterms:format with file extension and MIME type
 BE: dcterms:format URIs from the [EU Publication Office File Type](http://publications.europa.eu/mdr/authority/file-type/index.html) (if available) + dcat:mediaType with file extension
 
 ## Frequency / AccrualPeriodicity
-ES: dcterms:accrualPeriodiciy with dcterms:frequency element
+ES: dcterms:accrualPeriodicity with dcterms:frequency element
 
 BE: dcterms:accrualPeriodicity with URIs from the [EU Publication Office Frequency](http://publications.europa.eu/mdr/authority/frequency/index.html), as recommended by the DCAT-AP profile
 
