@@ -18,11 +18,6 @@ ES: dcat:theme with own thesauri / categories
 
 BE: dcat:theme with URIs from the [EU Publication Office Data Theme](http://publications.europa.eu/mdr/authority/data-theme/index.html), as recommended by the DCAT-AP profile / EDP
 
-## File formats
-ES: dcterms:format with file extension and MIME type
-
-BE: dcterms:format URIs from the [EU Publication Office File Type](http://publications.europa.eu/mdr/authority/file-type/index.html) (if available) + dcat:mediaType with file extension
-
 ## Frequency / AccrualPeriodicity
 ES: dcterms:accrualPeriodicity with dcterms:frequency element
 
