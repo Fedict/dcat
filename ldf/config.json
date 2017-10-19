@@ -1,0 +1,30 @@
+{
+	"title": "Belgif Linked Data Fragments test server",
+	"baseURL": "http://server.fragments.belgif.be/",
+	"datasources": {
+		"datagovbe": {
+			"title": "Data.gov.be",
+			"homepage": "http://data.gov.be",
+			"type": "HdtDatasource",
+			"description": "Data.gov.be using HDT export file",
+			"settings": { "file": "/var/spool/datagovbe.hdt" }
+		}
+	},
+	"prefixes": {
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"owl": "http://www.w3.org/2002/07/owl#",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"dcterms": "http://purl.org/dc/terms/",
+		"dcat": "http://www.w3.org/ns/dcat#",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+   		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+		"hydra": "http://www.w3.org/ns/hydra/core#",
+		"void": "http://rdfs.org/ns/void#"
+	},
+	"logging": {
+		"enabled": true,
+		"file": "/var/spool/access.log"
+	}
+}
