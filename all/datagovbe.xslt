@@ -175,10 +175,6 @@
             "version_notes": "<xsl:value-of select="functx:replace-multi(adms:versionNotes[1], $fr, $to)" />",
         </xsl:if>
 
-        <xsl:if test="dcat:distribution/dcat:Distribution/dct:license">
-            "license_id": "<xsl:value-of select="dcat:distribution[1]/dcat:Distribution/dct:license/dct:LicenseDocument/dct:title" />",
-        </xsl:if>
-
         <!-- default should be set per harvester depending of the source language -->
         "translation_meta": { "default": "<xsl:value-of select="$repo_lang" />" },
 
@@ -463,14 +459,7 @@
     <xsl:template match="dcat:distribution[rdf:parseType='Resource']|dcat:Distribution">
         {
         <!-- dcat:accessURL 1..n -->
-        "access_url": [<xsl:for-each select="dcat:accessURL">"<xsl:choose>
-            <xsl:when test="@rdf:resource">
-                <xsl:value-of select="@rdf:resource" />
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="." />
-            </xsl:otherwise>
-        </xsl:choose>"<xsl:if test="not(position() = last())">,</xsl:if></xsl:for-each>],
+        "access_url": [<xsl:for-each select="dcat:accessURL">"<xsl:value-of select="." />"<xsl:if test="not(position() = last())">,</xsl:if></xsl:for-each>],
 
         <!-- dct:description 1..n (multilingual) -->
         <xsl:if test="dct:description[not(xml:lang)]|dct:description[xml:lang = $repo_lang]">
@@ -496,22 +485,12 @@
 
         <!-- dcat:downloadURL 0..n -->
         <xsl:if test="dcat:downloadURL">
-            "download_url": [<xsl:for-each select="dcat:downloadURL">"<xsl:choose>
-                <xsl:when test="@rdf:resource">
-                    <xsl:value-of select="@rdf:resource" />
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="." />
-                </xsl:otherwise>
-            </xsl:choose>"<xsl:if test="not(position() = last())">,</xsl:if></xsl:for-each>],
+            "download_url": [<xsl:for-each select="dcat:downloadURL">"<xsl:value-of select="." />"<xsl:if test="not(position() = last())">,</xsl:if></xsl:for-each>],
         </xsl:if>
 
         <!-- dct:language 0..n -->
         <xsl:if test="dct:language[starts-with(@rdf:resource, 'http://publications.europa.eu/resource/authority/language/')]">
-            "language": [<xsl:for-each select="dct:language[starts-with(@rdf:resource, 'http://publications.europa.eu/resource/authority/language/')]">{ "resource": "<xsl:value-of select="@rdf:resource" />" }<xsl:if test="not(position() = last())">,</xsl:if></xsl:for-each>],
-        </xsl:if>
-        <xsl:if test="dc:language">
-            "language": [ { "label": "<xsl:value-of select="dc:language" />" } ],
+            "language": [<xsl:for-each select="dct:language[starts-with(@rdf:resource, 'http://publications.europa.eu/resource/authority/language/')]">"<xsl:value-of select="@rdf:resource" />"<xsl:if test="not(position() = last())">,</xsl:if></xsl:for-each>],
         </xsl:if>
 
         <!-- dct:conformsTo 0..n -->
@@ -562,7 +541,7 @@
 
     <xsl:template match="dcat:mediaType">"mimetype": "<xsl:value-of select="." />",</xsl:template>
 
-    <xsl:template match="dct:format">"format": "<xsl:value-of select="dct:IMT/rdfs:label" />",</xsl:template>
+    <xsl:template match="dct:format">"format": "<xsl:value-of select="dct:IMT/@rdfs:label" />",</xsl:template>
 
     <xsl:template match="adms:status">"status": { "resource": "<xsl:value-of select="@rdf:resource" />" },</xsl:template>
 
