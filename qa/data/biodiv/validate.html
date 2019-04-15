@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+details {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: solid black 1px; 
+}
+
+summary {
+    background-color: lightgray;
+}
+
+summary h2 {
+    margin-top: 0;
+}
+
+table { 
+    border: solid black 1px; 
+    border-collapse: collapse;
+    width: 90%; 
+}
+
+th {
+    background-color:black;
+    color: white;
+}
+
+td {
+    padding: 1em;
+}
+
+tbody tr:nth-child(even) {
+  background-color:linen;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: lightyellow;
+}
+
+tbody tr:hover {
+    background-color: yellow !important;
+}
+</style>
+<title>DCAT Validator Report</title>
+</head>
+<body>
+<h1>RDF Validation</h1>
+<p>File to validate: data\biodiv\enhanced.nt</p>
+<p>Number of triples: 2707</p>
+<p>Current time: Mon Apr 15 09:38:43 CEST 2019</p>
+<details open>
+<summary><h2>builtin://dcatap11</h2></summary>
+<details open>
+<summary><h2> Distribution missing mandatory access URL</h2></summary>
+<pre><code># Distribution missing mandatory access URL
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcat:accessURL ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing mandatory title</h2></summary>
+<pre><code># Dataset missing mandatory title
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:title ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing mandatory description</h2></summary>
+<pre><code># Dataset missing mandatory description
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:description ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Contactpoint missing mandatory name</h2></summary>
+<pre><code># Contactpoint missing mandatory name
+
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?org
+WHERE {
+    ?org a vcard:Organization
+    FILTER NOT EXISTS { 
+        ?org vcard:fn ?name
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory title</h2></summary>
+<pre><code># Catalog missing mandatory title
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:title ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory publisher</h2></summary>
+<pre><code># Catalog missing mandatory publisher
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:publisher ?value
+    } 
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/biodiv</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory description</h2></summary>
+<pre><code># Catalog missing mandatory description
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:description ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing Datasets</h2></summary>
+<pre><code># Catalog missing Datasets
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcat:dataset ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Type of links and email addresses must be a resource (IRI), not a literal</h2></summary>
+<pre><code># Type of links and email addresses must be a resource (IRI), not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:accessURL
+        dcat:downloadURL
+        dcat:landingPage
+        foaf:homepage
+        foaf:page
+        vcard:hasEmail
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Value must be a resource (IRI, i.e. taxonomy term) not a literal</h2></summary>
+<pre><code># Value must be a resource (IRI, i.e. taxonomy term) not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:theme
+        dcterms:accrualPeriodicity
+        dcterms:format
+        dcterms:language
+        dcterms:spatial
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Not using EU Publication Office Authority</h2></summary>
+<pre><code># Not using EU Publication Office Authority
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?subject ?property
+WHERE {
+    ?subject ?property ?obj
+    FILTER NOT EXISTS {
+        ?subject ?property ?value
+        FILTER (isIRI(?value) && STRSTARTS(STR(?value), ?taxonomy))
+    }
+    VALUES (?property ?taxonomy) {
+        (dcat:theme         "http://publications.europa.eu/resource/authority/data-theme/")
+        (dcterms:format     "http://publications.europa.eu/resource/authority/file-type/")
+        (dcterms:language   "http://publications.europa.eu/resource/authority/language/")
+        (dcterms:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/")
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Value must be a resource (IRI), not a literal</h2></summary>
+<pre><code># Value must be a resource (IRI), not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:contactPoint
+        dcterms:license
+        dcterms:publisher
+        dcterms:rights
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Missing RDF class type</h2></summary>
+<pre><code># Missing RDF class type
+
+SELECT ?s
+WHERE {
+    FILTER NOT EXISTS {
+        ?s a ?class
+    }
+}
+</code></pre>
+<p>OK</p>
+</details>
+</details>
+<details open>
+<summary><h2>builtin://dcatap11be</h2></summary>
+<details open>
+<summary><h2> Distribution missing license</h2></summary>
+<pre><code># Distribution missing license
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:license ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>dist</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dist/biodiv/00268305-5daf-4426-996f-c71f27a6cdca</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/0cbb9702-8e20-444a-8661-17cb7f99dadf</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/0fa84973-fa13-45cf-bcd8-de05e85d63ef</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/127c3529-7f9e-4f5e-b4ca-9c6b6d9b59df</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/14932b20-cc99-4e02-b34f-b5561edd6b54</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/16fed32f-fc9c-4874-89f4-e6154c3d68df</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/17cf7b5b-2bb2-453c-a8e1-46ebe39fb0b6</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/1c0c4f0d-5072-488e-a2e4-212cac946359</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/1c955ce7-7082-4479-8685-0957583757c2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/1e5b6861-c22a-4e16-af2b-8dab97395d93</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/219c3a6c-c952-496c-83cb-6e170f912260</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/230363a1-8221-4f53-b1fc-e8475ac247aa</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/24f4d6ed-f176-48ac-9386-9c8ba77ba5ff</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/2809d78f-90d2-4380-987c-ab498e0d67ab</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/2e817362-0b5e-4fd0-b4ac-33e0cfaca9be</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/2fc3cce0-0b5e-446c-ab94-864027d0cc49</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/31bc93ed-2f03-4695-8032-9a24f382924e</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/32f972b0-2739-48d7-812f-94fab5f51457</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/359e2157-c9e8-4768-836a-f5ada00e35ef</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/3c1beb67-10ae-4328-bf41-2c9632cf4da1</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/3ca0cc40-aa17-4300-bdcf-a4b5d45e519b</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/3de5bba5-45ed-4bc7-a177-cb957a4bed90</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/3f23a380-4875-4114-8958-e2502d183819</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/410772d7-6e1f-4eec-a50a-0eace2a057e9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/45421b1c-107b-46d9-90ce-67467ed11fb5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/45b46ebf-2f9f-48a1-8863-a4c79461f21b</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/467a5e17-ef9d-4dcf-aafe-df83551b022a</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/4785f30b-bbb2-4c35-9d28-171fb6378bba</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/47fb7d88-a6ad-4657-b3f7-03950e2fa940</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/4d412c31-12b9-47c9-a8ce-ab77a3eb2f26</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/4fa4b4b8-4b9b-4500-8e5b-e9f349b5e74e</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5065d0ed-e022-476e-a3e4-9b175514b877</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/50d961b1-aba6-4ab5-8cd9-6e873ff2d175</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5100a820-296e-43c9-bc19-eae4c1328fe8</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5253803f-442b-4ac7-bf58-c53e1940b1d3</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/55560fac-e9e4-48b3-b476-0eaecf467bbb</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/55a9e420-8ba0-4f43-9ade-9e7d3a143e1b</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/59e239ae-88a9-4f80-a446-595781227a09</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5d437349-fc28-4346-87bb-bce9de2ebb72</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5d654e73-4968-4faf-8175-b95a887b3931</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5d72fcb0-a37e-4054-86cf-f32075fc45a0</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/60019b6c-810b-4154-8455-77af1976af93</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/601c722d-c830-42ad-8ec3-a5c8b769f7fa</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/64ca7fd2-393f-49cc-93ad-35bf413b1987</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/668bbbff-b79e-446d-a805-7622862605e8</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/67775913-8c74-4055-85f7-8775c5ea3125</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/6967083e-ee45-41bc-9255-42ccfb33aa20</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/6ad1c373-8aa6-4a72-bb20-286eda3fb4db</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/6e534730-660b-45bf-9867-805de745c5e5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/6fea8d14-38cb-4a0d-8d4b-8535bb7ab63e</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/71828483-70a7-4ab0-a68d-ca45c19dff9b</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/726b6e73-9bdf-45f2-9cb9-9ed599cda57c</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/73bd3990-bc24-4596-b408-8035e1508df4</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/75c78923-af85-4930-914b-660303a30818</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/76f67d12-75d1-4c0a-af1a-470eef16a1c5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/77c1acd0-d107-4a62-a439-74b27af4f665</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/7896c261-042d-4a8e-93ed-f8e14d942a88</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/7c0bef1b-f867-4d96-b6ec-0ff6dd5d3dc4</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/7e4422d3-5162-40d1-bd43-fd8e4f66e4a7</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/7f950943-29f9-4dd2-9e60-bfeb60d84d79</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/81aac591-24cb-40ea-8ea9-1fac78158db9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/81db4bf7-2ec2-471b-8793-fa7f109c94b2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/837233bb-4f69-4552-bc1c-df2f4b288966</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/86150cbf-2d59-4df9-8232-2c8a43e36500</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/87acae05-96e9-4e90-afe7-10d2a2dd29e8</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/8e805679-eee7-472d-bf7e-06347e51c7e2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/9020eaf6-6932-466b-bca4-e616238e391a</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/991c7bf0-67aa-4335-ac03-69d823388006</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/9bd5d791-3908-46d3-80ed-9be5e5ced9ac</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a1558d9f-d94d-4186-b1a1-caf7d91fb8b9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a47623b3-444b-4add-bd63-f8a73b41f936</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a78d7187-b7b0-4a11-9ddc-930a41b17fb6</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a8f2c489-28b3-424b-8dc4-5a80c06ab7ff</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a98fe584-638b-4193-a275-1343969abb62</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a9b3d747-6c96-442d-850c-7d9727063be3</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/addf3ad6-2992-4f62-a793-b59ca5fa6eff</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/ae5f20a8-6793-462b-9e80-6fc123dc2820</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b0e910e5-50a6-4c16-a6ae-3d1e298de395</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b2763111-b148-4662-8366-65829cbfe535</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b8d1ebf5-d8bf-44f5-bd60-66612b4ccf99</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b959c26d-ac34-4f57-8e9c-d70735080330</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b968aa6c-0253-4fda-8294-f7abde415e7f</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/bb6a7c8a-df88-4cb2-87d0-b682af7b63c2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/bb76e406-9f62-4afa-8fae-a7e5b9b5297c</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/be7d38cc-953c-4ebc-ac45-2d9436949aba</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/bfcf7a7c-8d44-4008-81aa-cd92fd583eb4</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/c507c96e-5148-45d6-8f8b-d637f5026e56</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/c6d12aec-782d-45f1-a2b5-322904431125</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/c729825f-f6ff-44ed-845b-94ae6d99f71f</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/c749d3c2-77c7-40a8-9d90-edcf60deafed</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/ca77a181-58b4-48f4-a926-09746e8b10bf</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/cb8bde2c-3b55-446a-94e1-fa09dd8b9605</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/ce7b98af-7a85-4e8f-83bc-6c9614584c71</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/d63b48c4-186c-42ce-89bf-b9a9f4dc7cd9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/da74cf7a-553b-4414-b58f-dcf773328c95</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/dd31a93b-0ffe-42a6-b95e-fed34759dbce</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/df5ce30d-99ed-46c2-94f2-66e62aed3f0e</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e1be084f-67bb-4be3-9b92-752c08e6ec63</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e20a8161-b7c2-4b0b-80ba-d1e6771f9388</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e2a3e9a9-0736-4518-99ae-db833c4b4f52</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e451565b-541b-44a2-a660-9c930672f8bf</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e45381be-a4c6-4ffa-b713-6222f4ee15ed</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e66e2392-caab-4fac-a91a-f6ca93aaa4c0</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e850c98a-edbe-414f-855b-780bed7f74c9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e92f21e9-3c40-4bc4-a337-15658e012238</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/ecd4c8de-6b92-46ee-897a-15c15abb04e5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/f065512a-57fd-458d-b35c-869137d7d888</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/f482ec2b-0c70-4975-a6b2-90417704bd7f</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/f9ceb9ea-b19c-4d59-b11a-eccc39d26e07</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fa3eed66-d3c4-4233-b479-e12e177657ed</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/faa5b963-4c50-4844-95e2-2a424e79d5f2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fcb34db4-7681-4a9a-9cc0-b80147e95e81</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fcec08ef-71a0-448d-9cb9-edda580d1f16</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fd364169-d63b-4f1d-8d32-710a70ed3171</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fd589394-0066-446c-a279-a279b1371306</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fdfbdf4d-39be-4e60-ad17-2bf5d1b42dfc</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fe393eb5-9e5b-4480-a4d3-dabd380c23d5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fead57ea-bf80-41c2-b86a-d33bd8fb5502</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Distribution missing language</h2></summary>
+<pre><code># Distribution missing language
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:language ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Distribution missing format</h2></summary>
+<pre><code># Distribution missing format
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:format ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Distribution missing access URL</h2></summary>
+<pre><code># Distribution missing access URL
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcat:downloadURL ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>dist</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dist/biodiv/00268305-5daf-4426-996f-c71f27a6cdca</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/0cbb9702-8e20-444a-8661-17cb7f99dadf</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/0fa84973-fa13-45cf-bcd8-de05e85d63ef</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/127c3529-7f9e-4f5e-b4ca-9c6b6d9b59df</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/14932b20-cc99-4e02-b34f-b5561edd6b54</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/16fed32f-fc9c-4874-89f4-e6154c3d68df</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/17cf7b5b-2bb2-453c-a8e1-46ebe39fb0b6</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/1c0c4f0d-5072-488e-a2e4-212cac946359</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/1c955ce7-7082-4479-8685-0957583757c2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/1e5b6861-c22a-4e16-af2b-8dab97395d93</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/219c3a6c-c952-496c-83cb-6e170f912260</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/230363a1-8221-4f53-b1fc-e8475ac247aa</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/24f4d6ed-f176-48ac-9386-9c8ba77ba5ff</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/2809d78f-90d2-4380-987c-ab498e0d67ab</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/2e817362-0b5e-4fd0-b4ac-33e0cfaca9be</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/2fc3cce0-0b5e-446c-ab94-864027d0cc49</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/31bc93ed-2f03-4695-8032-9a24f382924e</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/32f972b0-2739-48d7-812f-94fab5f51457</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/359e2157-c9e8-4768-836a-f5ada00e35ef</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/3c1beb67-10ae-4328-bf41-2c9632cf4da1</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/3ca0cc40-aa17-4300-bdcf-a4b5d45e519b</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/3de5bba5-45ed-4bc7-a177-cb957a4bed90</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/3f23a380-4875-4114-8958-e2502d183819</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/410772d7-6e1f-4eec-a50a-0eace2a057e9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/45421b1c-107b-46d9-90ce-67467ed11fb5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/45b46ebf-2f9f-48a1-8863-a4c79461f21b</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/467a5e17-ef9d-4dcf-aafe-df83551b022a</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/4785f30b-bbb2-4c35-9d28-171fb6378bba</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/47fb7d88-a6ad-4657-b3f7-03950e2fa940</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/4d412c31-12b9-47c9-a8ce-ab77a3eb2f26</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/4fa4b4b8-4b9b-4500-8e5b-e9f349b5e74e</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5065d0ed-e022-476e-a3e4-9b175514b877</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/50d961b1-aba6-4ab5-8cd9-6e873ff2d175</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5100a820-296e-43c9-bc19-eae4c1328fe8</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5253803f-442b-4ac7-bf58-c53e1940b1d3</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/55560fac-e9e4-48b3-b476-0eaecf467bbb</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/55a9e420-8ba0-4f43-9ade-9e7d3a143e1b</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/59e239ae-88a9-4f80-a446-595781227a09</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5d437349-fc28-4346-87bb-bce9de2ebb72</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5d654e73-4968-4faf-8175-b95a887b3931</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/5d72fcb0-a37e-4054-86cf-f32075fc45a0</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/60019b6c-810b-4154-8455-77af1976af93</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/601c722d-c830-42ad-8ec3-a5c8b769f7fa</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/64ca7fd2-393f-49cc-93ad-35bf413b1987</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/668bbbff-b79e-446d-a805-7622862605e8</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/67775913-8c74-4055-85f7-8775c5ea3125</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/6967083e-ee45-41bc-9255-42ccfb33aa20</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/6ad1c373-8aa6-4a72-bb20-286eda3fb4db</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/6e534730-660b-45bf-9867-805de745c5e5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/6fea8d14-38cb-4a0d-8d4b-8535bb7ab63e</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/71828483-70a7-4ab0-a68d-ca45c19dff9b</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/726b6e73-9bdf-45f2-9cb9-9ed599cda57c</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/73bd3990-bc24-4596-b408-8035e1508df4</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/75c78923-af85-4930-914b-660303a30818</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/76f67d12-75d1-4c0a-af1a-470eef16a1c5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/77c1acd0-d107-4a62-a439-74b27af4f665</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/7896c261-042d-4a8e-93ed-f8e14d942a88</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/7c0bef1b-f867-4d96-b6ec-0ff6dd5d3dc4</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/7e4422d3-5162-40d1-bd43-fd8e4f66e4a7</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/7f950943-29f9-4dd2-9e60-bfeb60d84d79</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/81aac591-24cb-40ea-8ea9-1fac78158db9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/81db4bf7-2ec2-471b-8793-fa7f109c94b2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/837233bb-4f69-4552-bc1c-df2f4b288966</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/86150cbf-2d59-4df9-8232-2c8a43e36500</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/87acae05-96e9-4e90-afe7-10d2a2dd29e8</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/8e805679-eee7-472d-bf7e-06347e51c7e2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/9020eaf6-6932-466b-bca4-e616238e391a</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/991c7bf0-67aa-4335-ac03-69d823388006</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/9bd5d791-3908-46d3-80ed-9be5e5ced9ac</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a1558d9f-d94d-4186-b1a1-caf7d91fb8b9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a47623b3-444b-4add-bd63-f8a73b41f936</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a78d7187-b7b0-4a11-9ddc-930a41b17fb6</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a8f2c489-28b3-424b-8dc4-5a80c06ab7ff</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a98fe584-638b-4193-a275-1343969abb62</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/a9b3d747-6c96-442d-850c-7d9727063be3</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/addf3ad6-2992-4f62-a793-b59ca5fa6eff</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/ae5f20a8-6793-462b-9e80-6fc123dc2820</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b0e910e5-50a6-4c16-a6ae-3d1e298de395</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b2763111-b148-4662-8366-65829cbfe535</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b8d1ebf5-d8bf-44f5-bd60-66612b4ccf99</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b959c26d-ac34-4f57-8e9c-d70735080330</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/b968aa6c-0253-4fda-8294-f7abde415e7f</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/bb6a7c8a-df88-4cb2-87d0-b682af7b63c2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/bb76e406-9f62-4afa-8fae-a7e5b9b5297c</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/be7d38cc-953c-4ebc-ac45-2d9436949aba</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/bfcf7a7c-8d44-4008-81aa-cd92fd583eb4</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/c507c96e-5148-45d6-8f8b-d637f5026e56</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/c6d12aec-782d-45f1-a2b5-322904431125</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/c729825f-f6ff-44ed-845b-94ae6d99f71f</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/c749d3c2-77c7-40a8-9d90-edcf60deafed</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/ca77a181-58b4-48f4-a926-09746e8b10bf</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/cb8bde2c-3b55-446a-94e1-fa09dd8b9605</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/ce7b98af-7a85-4e8f-83bc-6c9614584c71</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/d63b48c4-186c-42ce-89bf-b9a9f4dc7cd9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/da74cf7a-553b-4414-b58f-dcf773328c95</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/dd31a93b-0ffe-42a6-b95e-fed34759dbce</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/df5ce30d-99ed-46c2-94f2-66e62aed3f0e</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e1be084f-67bb-4be3-9b92-752c08e6ec63</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e20a8161-b7c2-4b0b-80ba-d1e6771f9388</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e2a3e9a9-0736-4518-99ae-db833c4b4f52</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e451565b-541b-44a2-a660-9c930672f8bf</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e45381be-a4c6-4ffa-b713-6222f4ee15ed</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e66e2392-caab-4fac-a91a-f6ca93aaa4c0</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e850c98a-edbe-414f-855b-780bed7f74c9</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/e92f21e9-3c40-4bc4-a337-15658e012238</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/ecd4c8de-6b92-46ee-897a-15c15abb04e5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/f065512a-57fd-458d-b35c-869137d7d888</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/f482ec2b-0c70-4975-a6b2-90417704bd7f</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/f9ceb9ea-b19c-4d59-b11a-eccc39d26e07</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fa3eed66-d3c4-4233-b479-e12e177657ed</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/faa5b963-4c50-4844-95e2-2a424e79d5f2</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fcb34db4-7681-4a9a-9cc0-b80147e95e81</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fcec08ef-71a0-448d-9cb9-edda580d1f16</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fd364169-d63b-4f1d-8d32-710a70ed3171</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fd589394-0066-446c-a279-a279b1371306</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fdfbdf4d-39be-4e60-ad17-2bf5d1b42dfc</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fe393eb5-9e5b-4480-a4d3-dabd380c23d5</td></tr>
+<tr><td>http://data.gov.be/dist/biodiv/fead57ea-bf80-41c2-b86a-d33bd8fb5502</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Dataset missing theme</h2></summary>
+<pre><code># Dataset missing theme
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:theme ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing publisher</h2></summary>
+<pre><code># Dataset missing publisher
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:publisher ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Duplicate identifier</h2></summary>
+<pre><code># Duplicate identifier
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset dcterms:identifier ?value .
+    ?dataset2 dcterms:identifier ?value
+    FILTER (?dataset != ?dataset2)
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing identifier</h2></summary>
+<pre><code># Dataset missing identifier
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:identifier ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing Distribution</h2></summary>
+<pre><code># Dataset missing Distribution
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:distribution ?dist 
+    } 
+}
+</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing contact point</h2></summary>
+<pre><code># Dataset missing contact point
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:contactPoint ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Contactpoint missing email</h2></summary>
+<pre><code># Contactpoint missing email
+
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?org
+WHERE {
+    ?org a vcard:Organization
+    FILTER NOT EXISTS { 
+        ?org vcard:hasEmail ?email
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Subject with reference to itself / circular</h2></summary>
+<pre><code># Subject with reference to itself / circular
+
+SELECT ?subject ?property
+WHERE {
+    ?subject ?property ?subject
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing spatial</h2></summary>
+<pre><code># Catalog missing spatial
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:spatial ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/biodiv</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing modification date</h2></summary>
+<pre><code># Catalog missing modification date
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:modified ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/biodiv</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing license</h2></summary>
+<pre><code># Catalog missing license
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:license ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing language</h2></summary>
+<pre><code># Catalog missing language
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:language ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing home page</h2></summary>
+<pre><code># Catalog missing home page
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog foaf:homepage ?page
+    }
+}
+</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Missing language tag</h2></summary>
+<pre><code># Missing language tag
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (isLiteral(?value) && lang(?value) = "" )
+    VALUES ?property {
+        dcterms:title
+        dcterms:description
+        dcterms:keyword
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+</details>
+<p>Number of violations: 239</p>
+</body>
+</html>

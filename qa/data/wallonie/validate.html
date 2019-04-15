@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+details {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: solid black 1px; 
+}
+
+summary {
+    background-color: lightgray;
+}
+
+summary h2 {
+    margin-top: 0;
+}
+
+table { 
+    border: solid black 1px; 
+    border-collapse: collapse;
+    width: 90%; 
+}
+
+th {
+    background-color:black;
+    color: white;
+}
+
+td {
+    padding: 1em;
+}
+
+tbody tr:nth-child(even) {
+  background-color:linen;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: lightyellow;
+}
+
+tbody tr:hover {
+    background-color: yellow !important;
+}
+</style>
+<title>DCAT Validator Report</title>
+</head>
+<body>
+<h1>RDF Validation</h1>
+<p>File to validate: data\wallonie\enhanced.nt</p>
+<p>Number of triples: 16945</p>
+<p>Current time: Mon Apr 15 08:59:27 CEST 2019</p>
+<details open>
+<summary><h2>builtin://dcatap11</h2></summary>
+<details open>
+<summary><h2> Distribution missing mandatory access URL</h2></summary>
+<pre><code># Distribution missing mandatory access URL
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcat:accessURL ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing mandatory title</h2></summary>
+<pre><code># Dataset missing mandatory title
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:title ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing mandatory description</h2></summary>
+<pre><code># Dataset missing mandatory description
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:description ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Contactpoint missing mandatory name</h2></summary>
+<pre><code># Contactpoint missing mandatory name
+
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?org
+WHERE {
+    ?org a vcard:Organization
+    FILTER NOT EXISTS { 
+        ?org vcard:fn ?name
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>org</th></tr>
+</thead>
+<tr><td>http://data.gov.be/org/wallonie/76e63a1b50b6b82eb2a352f021e4faf479b8e435</td></tr>
+<tr><td>http://data.gov.be/org/wallonie/c37034f27026587e6bc79190ac864a1990e65414</td></tr>
+<tr><td>http://data.gov.be/org/wallonie/c9dc14061b0d0ed1d8d3a38fb3d482c5de20e2c0</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory title</h2></summary>
+<pre><code># Catalog missing mandatory title
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:title ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory publisher</h2></summary>
+<pre><code># Catalog missing mandatory publisher
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:publisher ?value
+    } 
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/wallonie</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory description</h2></summary>
+<pre><code># Catalog missing mandatory description
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:description ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing Datasets</h2></summary>
+<pre><code># Catalog missing Datasets
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcat:dataset ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Type of links and email addresses must be a resource (IRI), not a literal</h2></summary>
+<pre><code># Type of links and email addresses must be a resource (IRI), not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:accessURL
+        dcat:downloadURL
+        dcat:landingPage
+        foaf:homepage
+        foaf:page
+        vcard:hasEmail
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Value must be a resource (IRI, i.e. taxonomy term) not a literal</h2></summary>
+<pre><code># Value must be a resource (IRI, i.e. taxonomy term) not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:theme
+        dcterms:accrualPeriodicity
+        dcterms:format
+        dcterms:language
+        dcterms:spatial
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Not using EU Publication Office Authority</h2></summary>
+<pre><code># Not using EU Publication Office Authority
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?subject ?property
+WHERE {
+    ?subject ?property ?obj
+    FILTER NOT EXISTS {
+        ?subject ?property ?value
+        FILTER (isIRI(?value) && STRSTARTS(STR(?value), ?taxonomy))
+    }
+    VALUES (?property ?taxonomy) {
+        (dcat:theme         "http://publications.europa.eu/resource/authority/data-theme/")
+        (dcterms:format     "http://publications.europa.eu/resource/authority/file-type/")
+        (dcterms:language   "http://publications.europa.eu/resource/authority/language/")
+        (dcterms:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/")
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Value must be a resource (IRI), not a literal</h2></summary>
+<pre><code># Value must be a resource (IRI), not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:contactPoint
+        dcterms:license
+        dcterms:publisher
+        dcterms:rights
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>subject</th><th>property</th><th>value</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dist/wallonie/d3eed65e-e513-4b3e-8086-970b4c0bccb9</td><td>http://purl.org/dc/terms/license</td><td>notrecognized</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Missing RDF class type</h2></summary>
+<pre><code># Missing RDF class type
+
+SELECT ?s
+WHERE {
+    FILTER NOT EXISTS {
+        ?s a ?class
+    }
+}
+</code></pre>
+<p>OK</p>
+</details>
+</details>
+<details open>
+<summary><h2>builtin://dcatap11be</h2></summary>
+<details open>
+<summary><h2> Distribution missing license</h2></summary>
+<pre><code># Distribution missing license
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:license ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>dist</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dist/wallonie/003017a3-eeec-4625-be59-60e12e449681</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/008c8a5e-2982-40a4-ba99-5da26f119f48</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/009de8ad-787b-4d46-813a-ac9394cb6940</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/010cf6ab-8d52-4fb9-ad88-a5a9f35ec272</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0123def4-8c23-42c4-abe9-39b3ac1932be</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/01833990-c3de-4e08-9ce7-c2e0121ad5d9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/018cfad9-9622-4b2e-a524-777f3fc4ad4d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/024a0e6d-5fdb-4ffa-be2d-0075703b6b39</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0386296e-70e5-4d25-871b-9470ca4e955b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/038b88ee-f3d5-4396-a6f7-1abbf367daec</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/03d1425f-c222-4f39-944a-74ac0202054a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/03e8bd86-8c57-44b8-b7a2-f66f2c5f6efa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/05abd9d1-461b-4c20-89b5-84bf8e7a8591</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/05ccc367-de23-457c-9460-12f224a32250</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/05d81fa2-b9b1-4f1e-91f3-f700e26e6cc6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/069ffc76-7c73-4018-8d16-5599681d4d00</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/06a86647-7675-42cc-b186-9e5cd1d0a45b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/06ac2fd1-297b-4057-8678-87b237584651</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/06bf20d6-b6d6-4429-bc0d-97621862cba0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/072f2ac8-0772-4fab-8d31-70bcbc827fbb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/075e80f3-0909-4e69-ad4b-7b1b5dcf636c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/07f79d3d-7789-4a29-962a-54fd22f6108c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0826d729-065e-4a8c-8a1b-f0999188cb76</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/087b6121-5bd0-4f2c-80f5-4a0d00d58487</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0896949f-131b-4500-98af-64e8a08c14ff</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/08b831e6-ae16-485c-8e3b-6bb3bb9d2f47</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/08c0745a-5ec8-4259-af8a-246bbd384996</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/094dcf94-8999-4bee-8b6f-279afaed5499</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/097a86c3-e06d-4e14-9270-b3bea2e03d75</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0a2ae590-60ea-4520-ac4a-31377a28191e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0a8d99a4-de5c-4b7d-af2f-7575983d0248</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0aa7f702-8215-4315-802e-ec797f43fd70</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0abf8c03-d1f2-44fa-9a2a-3b7fdce7a847</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0b65a59f-23d8-4c4c-94e7-c88e109fcdc9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0bc11b0d-643d-4133-a2a2-3274e74aea60</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0c336757-c392-48ea-89c9-d801bceb269e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0cdcc09f-eed8-473f-871b-19bc4828de15</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0d1f7261-6992-4dc5-a1aa-8a5f29ef66cd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0deedc45-ef95-4e68-b86e-ab9e26e73f8d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0df08ca3-0c9a-44f8-8d7e-285850cbae3e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0df9fed8-8cca-4b68-a314-a7a93d5a639c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0e4132db-3b59-4ae9-85ce-78a503de4ca3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0e42eb0b-0945-4669-b62c-d88c99f9ccb3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0e96ba01-c84b-4c13-8527-7949fc7c9f32</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0ed1fba1-a32e-4c85-b2fe-5302e35c5126</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0f5ad438-a124-47e2-acec-8c72a0ab1b56</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0f6c5aa7-d420-4857-bf0c-812b4d490b58</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/0fd10f83-35fd-45e9-b398-8cb188aed26d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/10796a9c-eee3-4332-9354-4bc6cacb4675</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1120f2f0-851b-412a-901f-925d87d95fc5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/120fafcb-26fe-48d5-bc5f-abc70dbb8a31</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1289cb04-0189-495e-b10a-4d5cff907655</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/12910c45-af77-4674-9baa-e92b5e1c9ee0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/12d37b17-8b31-4396-8cd4-c34e088a6048</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/135b7962-108a-493d-a82a-1d9fded2f850</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/137124f9-b866-4ad6-9523-277035291095</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/13dda358-6bf5-4755-9e42-8e6613b7621c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/13fc4d1a-9a07-410f-bd9f-7e9968db68af</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/14662e49-dadf-4396-8238-a3f08697086b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/14acd597-1aee-468f-afe3-a76fa0a55608</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/14e22370-6714-49fc-8e04-d093b71b3ae3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1510611b-586f-4a5c-a9c8-25232e7d9487</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1561b4ec-9755-4bbb-a051-4ebe55a1abd1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/156c212a-1fbf-4b1f-a38a-8bc32cd54d70</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/15921fc7-fbaf-4476-8494-fa1ccf017425</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1611783a-0347-4b83-8a1a-bfe1da680209</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/16198fc7-462c-4f24-9765-665524c0fd65</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/16d756ec-782b-4799-b69c-4f55842ca934</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/16e40bc0-3496-4312-87a0-c359b7de617a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/17c20da7-26aa-4f80-92cb-68b14f4050f6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/17dcf0b4-5645-4a8e-a5f1-d846137c598e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/180878b2-9c19-46d9-8799-decd0a86781d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/19548f13-c7d5-4753-8cd6-14c0b370beae</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/195e21c4-4777-455a-a6a5-9cfd5a56b6a4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/19890440-57e0-40b5-a2f5-cc783601cf17</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1a8cde26-f783-4c32-8782-ca5bd371bfc6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1b2b8631-3f79-4c1d-a7fb-85b4d96f0ed0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1b464f72-ad00-4bd3-8506-29054915b472</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1b47d55b-254e-450f-9bf4-1198f52898c7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1bd0ad72-3d22-4d48-81be-a9e5f72a7146</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1c7c6b89-1536-4292-8a63-f095df26b103</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1d20bd7c-ae2f-4660-88e9-9713a69db2c9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1e150d09-7c00-4dcd-be1f-bdfd1a3e1336</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1e3671e6-54bd-4380-a7eb-482b27af171b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1e98e534-8ab9-48bb-ba81-87475081bdb9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1ea56cec-8012-4458-ad42-1c90ebfb5495</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1f013750-39d4-4b19-96c5-5a1bb182d3a4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1f1cd874-8cdb-4893-99a9-ee5cac5da527</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1f9badf8-869e-4830-8e1e-a49c9d8e907c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/1ff6b3a0-40f5-4997-b7a8-10d2c16facd6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/201372f1-8ab9-4e4f-b9c9-f61ad09b473f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/20d3e4c5-e104-44f5-a3e8-193fe3e88561</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/211e35a5-d788-4922-a4d2-aee94eb812f8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/21b20d72-b0fe-4fb4-b9ab-3a87b43fe932</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/222a7226-517e-44d9-94b8-4691fa544d95</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/22697521-2e6a-44cf-8ff5-7a4ea3f1ccec</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2295cf16-9394-4d53-8c4a-e882fc319a80</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/22e4bdf3-1598-4c9d-8e6b-7c554a3df3d1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/23610f76-937e-461c-929c-3056e5105474</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2398b6c6-1fbf-4af8-b66f-927f695c3497</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/23bd8452-65a3-464e-8d67-d933e2c43b70</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2410bf23-fcb8-487c-9440-fe0277f8bddb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/243edb1f-4d0c-4c54-976b-51bf53cedc49</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/246dabda-7da7-4585-bc28-1e83018c0cee</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/24957df7-ef46-4db7-b826-c94ad2c47f27</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/24ce18f0-6083-45af-9297-abe9d02b3303</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/250a5c6c-a520-4681-a289-d375a318efae</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2569ebe8-dc71-4475-ac30-535e109c3351</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/25bccf50-8c5b-45af-b379-b3a8169a099c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/25c0f9f5-80ef-4f2e-b32c-ee467b19a7ee</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/25ca7e53-2a33-410f-bbcc-8ff8be27d504</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/25e768ab-c0a4-4d50-a1d0-15df0f6b5a9d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/25ee8fc8-fb71-4ae2-b65c-546837e3c759</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/25ef3eb6-395d-4066-a679-84cf59273bd2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/271b953a-a5b1-4d4c-a445-16f59502f846</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/271ed6a5-bf19-446a-96f1-db7a72ac7fa7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/273297b2-3bff-4cb5-9704-59a839c406ce</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2780af1c-4370-4b8d-8a35-890f05282b99</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/289e3d44-5741-4fbe-b8c4-3e810cf85977</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2911058a-f7ee-4f50-8af3-34155627957f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/292ea527-f087-421b-843e-f43395641fc5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2944a40a-78e9-4b6a-8637-5cc707ee0ec8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/294a3320-b7b7-4abe-9442-1c90f0fd7a38</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2965015f-8b55-44c5-ab5c-a88ac8e65b96</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/296f7855-2694-42ee-aa9c-cb6e54a2c997</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/298e4844-9a0a-4ce4-8957-dedaa75c73b6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2a072e3e-f90d-44db-befc-9436b2c65947</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2a57d3b2-2641-4133-bfb8-92aad477e75d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2a5a9b45-c5dc-401a-ae85-91715a8c516b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2a6a2caa-ebf4-4215-af2b-bbef88aed9b0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2ae70ff3-357f-41f9-854b-74d6b74d18ec</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2b450536-dd45-487e-9a55-4fe3c7a1b605</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2b65d4ea-4a1f-4677-a2fc-84174dc034f8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2b6df68c-f4ce-48a3-93d1-1603ee9efd5f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2bc66e18-1584-4991-9d71-75fb6ddfe402</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2cc93032-f9f5-4642-a6aa-ae11d7a97cd9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2d6b797a-20ee-48e3-be01-af26499d8462</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2e409a9f-6e5a-4c65-8cf5-4e81007090ec</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2e5bca3d-5392-4f58-b783-01f15cb2b65b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2eaa05cb-9f12-4375-8390-6d19c2825c87</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2eea3fdc-966b-4118-82a1-d2e7647d7832</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2f417800-358f-4a71-8623-9bcb27dd68f2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2f51c327-64f6-4e1b-a77d-295f2365c9b0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2f5803d9-835e-452f-a9ad-11b1b4a4a064</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/2facd965-84fe-4b85-8f45-261f5060d8d8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/30cd520f-05b4-461d-b897-1240d9a5fa6c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/30f98afa-0911-4a5a-925d-fffa72e8221e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/310ddf69-f8c9-41a3-940a-09b9e64ebab2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/319fe6c8-c551-43c8-bda7-4c1eda4e18fd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/31d01734-9fb0-4a50-b719-a2de84d9738d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/32c8bf3c-2736-499f-8f9c-9f25d91d1acd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3338b509-70c8-435d-8987-2b8ab6b5d97c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/337e3191-8d0f-4927-894c-a15676032985</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/33b6a4a6-e581-43d0-8b0c-7f059957cb29</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/343bb9b1-88b7-46f5-baa9-31d0483ea31e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/343ec7a2-f3d4-4b27-b873-a0c92593339e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/34babbba-2d21-4782-ad16-acd423791013</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/35050b90-349c-49fe-9de7-3588cf7f4197</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3509fce3-91a8-49ec-87f8-4b8ffbcaf7b1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/35dc4aab-014e-4bcd-ade2-14f84fca9d9a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/361aa160-07fc-4dc4-8723-36fc8326e4a0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/367fdbd6-a4d0-43fe-99c3-604756fa50d3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/36abe708-aef3-411f-b5e0-293528f51a37</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/36aff2c5-c921-4921-b170-b61a0fb694dc</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/36ee217a-e4c2-4c14-b3d7-d065611eb816</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/36f91c21-b0a7-4e26-8cc7-4e88ae5e82b9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3811eeec-0439-4241-bbab-0472396f7921</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3886675a-f468-48a5-90da-6bce1d10d364</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/38addf6f-1767-4b9b-b1d8-272570b1df1d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/38e8965f-4bd7-40ac-9ecb-dc6f8c98c5c3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/39555633-7613-41b3-be7b-7652f5f0752d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/395a9ae9-5309-484e-bd03-9d4c33c14cfe</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/39dea268-da33-4a93-9403-1df0f79a01ae</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3a39db8f-1063-466f-80e1-eb8f6f23b2b1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3aac3a42-bfaa-4f88-a34c-80f9f7da1893</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3aeacf34-8cd3-49bd-a66e-bef24486525f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3b82ee99-06aa-42b9-b6db-5a9a9d307d40</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3ba979fd-ad6e-4c69-ae69-fbd90acf10f9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3bffe0da-01cd-4d2f-bf91-e704191f99fd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3c14c51c-58bb-41fb-b3ef-10d657a83a34</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3c8cd92d-742d-4f6c-ad6c-770accb7ae03</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3d350c58-e866-47ac-9463-08a9a8830854</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3d785e77-8c4f-4b84-8d89-d38f8b24a091</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3eb926b9-8115-4723-9b75-6bafb73c446b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3ec9c399-f048-4ef2-9de0-f233baf8aaee</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3f1e11f3-c954-4680-aadb-e8715fa15667</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3f947695-30ef-448b-aed1-b197ff9720ff</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3fa4faf5-0c39-46f2-a3bf-addbb794c1fb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/403a93ac-bdbb-4c82-8654-4d51359c89f9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/40a13e7e-e341-4488-8c66-a566566db088</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4182990a-d12b-4713-8ff2-f2e12348fe27</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/41c62e59-aa3c-428b-b973-f3b74f3c083b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/42630e16-55ee-42a3-96cb-5bc056d6ad9c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/42944595-22bb-4b00-823e-90732c439767</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/42a49ef4-b5fc-4666-a9b3-9937a857a84d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/42b51a4a-2ef7-4f25-8f5b-b08a6e99b821</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/43807585-2b5e-4142-833c-bb601da8a351</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/43d0d5dc-5891-445b-b04e-e3e94943a51d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/44ab767b-3932-4b1a-92b8-f2f44067e45a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/45164371-b613-45a4-a7b0-d12ec3999883</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4586aecd-f891-421c-a0f4-7582ea07b1ea</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/45a81083-0a16-4894-8505-680697647994</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4719f384-7f15-4f40-84cd-b51166fa8f74</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/475d23ba-8b09-4f77-b528-2ef814cc817a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4792144a-f122-49fe-82b6-03a1f8a1ce36</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/47e53544-1479-45f5-850c-98f179852bbb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/47ed98b2-f019-475a-bf27-9516c99a311d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/47ff249c-df17-44ed-b40e-364af6c0590a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/485ca75a-bb93-4fa1-8da4-be03f36a2a6c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/48b1333b-da60-42ac-b057-72299443bc57</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/48fc51e2-f77d-4c1c-8589-2a4fca0391e6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/49494364-6f4d-4d06-8229-1501b48b8386</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/495608ef-9a7d-4382-a8aa-6a7b65ce5840</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4965499c-f1bc-4fd7-8130-0e514575eaab</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/49e3e869-aaf1-4d90-bc27-c43e02013331</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4a028987-d465-4d90-aea5-a7b947d99e63</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4ab08a93-0ec0-4a1e-8ae5-3dbc103e2443</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4abb9099-8ad7-44ba-9940-daeaccaab104</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4ae8200f-fef1-44e2-b3f1-effb1abecc32</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4b0e1734-b4a3-4a30-b600-cc30af86cac7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4b100247-fa82-4ffe-9048-2b1a8c24884e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4b8a9f53-d37a-4e8b-a7b0-f073d61c0adf</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4c82d4b9-62fc-4c15-a3ac-39e3138cd66f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4d9b42e3-0485-4e49-a6a4-fe95abe09e0f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4e4f8b28-ff09-4635-9693-ed4675c5e6c8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4e9aaa97-d687-4b44-b1a2-7df9b2aa7351</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4f541f19-ab1a-4442-a077-6b5ce8c9f73d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4f87d98d-5c3f-4785-b5b4-5494003a152b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4fb80d51-f71b-49bd-a9a3-82f748a3b561</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/504715e1-3afa-4076-8865-4f4a220d0393</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5089f1d6-02ef-461b-8567-00f378697fe8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/50c77c00-cd3a-4029-8860-2be36f12a9ea</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/50e2d41c-d111-45d4-8121-cefe829ce22c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5142a494-97e4-43cb-a6f3-ac4cf3b37115</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/51531d1c-856e-4c2b-b2d5-41c9b1aa6e38</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/516dc0ef-07e6-4f19-a7dd-3201c6bacb5d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/51a3b2ab-bebf-4dfe-8e83-f7434b7d59b9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/520a9adb-7edc-481a-aeb4-8609ba3734f1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5262614d-5946-4d30-aed3-b7e7a287db2f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5262cf2f-5c50-4124-8eab-449a7bda9cfb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/52bcad0e-ca47-4781-a03a-0ad5fc112f1b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/52faeafc-efb4-408b-bfa4-f3bd2cc4b9dc</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5311da83-2499-4636-a5f7-e8acfc653cbb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/536ffb70-8fad-44d7-bca9-34fae90cf022</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/545dbb1d-3f67-479d-b6d0-a2cc22d2a297</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/54df7c5b-75ff-47a7-a74d-a04c88a95ac0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/557710de-f67f-4102-bd94-2547e71043d4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/55e5b418-b78d-4045-a41c-430585ed4ded</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/56047004-7586-46e1-b22f-aaf0df37def8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/56179486-675f-4390-b7d2-093ddde211ce</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/56bb8236-7f81-4d28-845d-78f3c4ee0a95</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/573dca81-12c2-4892-99ac-318698133abb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/576bfeeb-23af-458c-9fbf-fec44606fdf3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/588dee32-6e30-400f-83b4-ad26a499307e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/58abb88f-fd49-4c65-9bb8-2ca2b94ef5b6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/58d7ad68-b69b-4a83-b9c4-6ae23dcd343a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/59063f00-da85-467b-8026-f42ada0a7218</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/59280ed1-dc4b-4f71-a2f9-a21afe814403</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/59605041-008c-4f7f-af6f-c7ca56a01058</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5978b393-6735-470b-9cb6-ebb8a83895fd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5a93cd84-98ab-4d8f-94f2-fc7084a72e09</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5aaf6b8a-30e2-48b4-86b4-ab302fb47e63</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5ad19dd0-27a1-454d-82f7-fa9f970fc93f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5b09b9d9-3fce-4fe0-a644-f758ca2a1de6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5b2deff5-8198-491e-b68c-6cdbea49e950</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5b34e384-0195-4406-9da6-a54ace129a2c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5bba1019-94e1-41e7-90f2-cc9ebdf5fc82</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5df5f0ef-cb21-482b-8547-8820bb83ce29</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5e69690c-1415-4cf8-b31d-ff8c871d44a4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5f8e6ddb-dbae-476f-88c1-85ae8e93282a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/601e1cf4-86ac-4315-86b9-d865fc237a51</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/602aa680-0930-4720-9876-8fa4ded6b179</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/61240536-f8fe-440a-b5be-7ff56efc4872</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/614fcde5-c1bd-4c4d-9639-3a6fc4379f4a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/61b1cb1f-c587-4aed-a948-d4c2b0076043</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/623af79c-c805-4013-bdbf-8437e40a43c1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6259929f-0e4b-4dba-95dd-ae4a68e0c219</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/625c8041-7762-4eb2-b88e-8703812b9429</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/63c4f50f-8831-4e80-b367-c7e548df8dfb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/647cc406-5ab3-4a70-ab2a-844db3400f85</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/649a47a8-31aa-4ff8-a21b-0bbe6f913b74</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6523118c-5ff7-4cb7-a3c2-b309a3ee84e0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/657e7664-0c3f-48d6-9481-6ab8085f3b1d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/65e9e353-8ab6-42da-887b-82c6476cb96f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/66270716-271d-4a97-93af-61ffa5f962b3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6660846f-2a51-4552-be82-bdac4be4a908</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/66b4e816-a9a9-48a6-baf9-bf2db264b62d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/673f5201-75f8-4ae4-8521-3ba870ea3a2f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/675b3775-c8e5-49ff-bb47-a81ea9d5b7bd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6919ce43-6298-4fba-949f-d03d197a5d05</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/692beae4-9264-486a-bc4d-6c4c6c40cfcc</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/692c0dcb-8367-4a4c-adee-9baa73eb4f9b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/69742724-af66-41bb-bc74-6ebc6afda16b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/69880de5-423e-4c87-b679-456e67f6b23a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/69b4ff2c-e51d-42f1-beb9-a540d33aea4b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6abb843b-0c3b-471f-8294-1a0262196f20</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6abddec4-1cb4-446b-83c7-ae21dc720c5e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6b2b9c06-96a8-4dd6-a4f5-d671e962b54e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6b2e8a55-4093-49d1-bb0e-3e9635166948</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6bdb850d-cce9-45ba-8f9f-f81e734714ae</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6bdc12b2-9aba-43b0-a87d-9d1ef07a2d74</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6c0f2a4c-05ae-4f33-9ca4-2fa84ac8f3cc</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6c296e10-12af-4e2d-ac44-65e7f7a3235b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6c9b94a9-47c8-4fde-b17f-1dc8531c2ea7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6ca200d2-b3a4-4852-8eb3-546158993d4c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6d25f1e4-de64-4854-b49a-b2808da5d81e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6d2acfc9-8eac-4598-b28f-466c7828d921</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6d7317e9-bb26-4850-91c9-511f963cd189</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6db75beb-b641-48ea-bf3a-c0eb9f73addf</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6ecf6df7-4166-4b30-bf6b-6692f7ea0a84</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6efabc5e-7dd2-4cec-84c2-632a792af279</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/6f82d6a9-3880-4b36-8b26-919732187b06</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/703a8cd6-fb02-40fa-9e53-67c3ea9d5a37</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7073b9fd-b581-49d3-a571-4a1e1dcd8715</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/709b0042-0e24-4b7d-a792-eb6a14d67683</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/70e89bd7-e3f2-47bb-9143-2fcff0d497b0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/70f42794-14a4-4dd4-892e-4dd11c3cb2d7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/711a0ab3-7ae8-4a3f-b682-af766b23c13f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/71483c02-43b5-4cb4-9088-38e684fb126f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7217d649-eb67-4b16-bf13-7c0af11e0401</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/72fffc10-b683-4694-850f-42cbc4c4700e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7419c85a-d19f-4a92-8d96-e072db2e62ad</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7553a0a5-bbcd-4690-8f3b-a26ac181db35</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7576be13-dfd1-400b-b2cb-f41a4534812a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/75b3325e-c0e1-4aa7-8c6e-67d29bb69bd2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/762972d9-fe86-42a8-bf57-820b343cf7cb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/76533293-06f9-4b86-aa7d-52f533a98086</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/76cc9136-e902-4527-86fc-2a70d7dced0a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7752525b-ab75-480c-9e7f-19253f2372a5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/77c5ade4-796c-4996-b921-8b02fa8986e6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/78126547-63a3-4c7a-9305-a9dfd89eb6f7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/784fd5cb-98a8-4529-a28b-90fb5ca0ae93</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/785d57c8-b624-49d5-a219-5ecb828e6c32</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/786911c0-e9d4-41b6-b3b3-debb28419e51</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/78ff86da-7eed-4bab-a094-851fd3520274</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/799c7b4b-3beb-4c1d-b766-315b93f380ba</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7a0270b6-1f06-4bda-aa08-9e6db3683e4e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7a15e553-49a0-48ea-807c-c2a0b3897945</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7acb17c0-a2c3-417b-85e9-53ddbb740b18</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7ad17225-3a94-4c8a-b218-02e22ae76231</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7aee990f-6766-4d6a-92b6-de47918b3751</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7b0f6503-ece2-4562-ba14-d37cad14a660</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7b130c67-2998-456b-9ed1-eb96ccd416d1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7b9280bc-f7e4-423a-a6a8-4f50e61693c6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7c565d43-6357-4101-b1c5-b0b7875bbc0d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7c73e212-0260-4fab-a9cf-808713abc541</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7cc581ec-9b6c-4d82-8005-7b1cbeaec45f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7cddc858-b43d-4e8a-8134-28c9dcf5991e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7ce15db4-fd7e-4790-a916-acf98ea30a04</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7d8d2a27-19f0-4a88-b396-3d9a75654f34</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7e10fd9a-0ffb-4fbd-a276-f89cd5267999</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7e554350-6358-48c0-b180-0c5b7d20d905</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7eab52fe-7394-42ed-9c4b-6e5b71c8092c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7edd3680-d56b-4a86-83cd-966e2c451021</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7f010117-cc8e-478c-8501-642131f31633</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7f83ad2a-3883-47e1-90f6-8a0cb238df40</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/7fbc4251-2a6b-4dca-8e16-ed0c408b67f4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/80c147c0-26cd-48cd-b9a5-321bae33f046</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/80dff204-f2e3-47fa-92ad-6df5528f89a8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/813e2819-29a8-4c2e-ae34-aef37109312b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/830f15d5-b353-4e64-9b67-141a809788ce</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/837b310a-e14b-4128-a415-90ad9f6859da</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/844cf331-33ca-4fbe-b41f-18b3cf0e0c08</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/844f680e-f750-43d6-b6a6-17cd74f6c1b4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/84764d13-01b1-463a-b482-27e136e23397</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/847c1cf1-97ed-451a-b304-17893995ea6a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8480377b-9b91-4ec7-b2e0-dff169c16eed</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/84adee18-c548-4043-bac8-990f36bac5ba</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/84e1d658-636c-4cc5-aa1d-d02200f33ca8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/84e9720f-5031-4ff9-9fb9-3b0cf89f8fd0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/850dcc98-1a0a-4876-84df-ad55d522baf4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/855c5a3e-a74c-49b4-a425-c1353f2491a8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/855d71a6-315c-4abf-b621-0aeedabde8d1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/864e1354-c9b7-49c0-8585-ef961c354b3a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/86b4af54-f66f-4a9d-84bb-b7c2c074b549</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/875204e4-05c6-4f31-abae-405212401b3d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/87b150bb-9661-4924-8965-5c3bdd802e5a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/87ca8d65-6c45-4937-a0f7-73c88372e422</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/88a2ced1-3968-48e3-abeb-5ac6dcf41754</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/88c54851-d9f2-4889-b4fd-7164b36b365d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/890c69cf-7b9c-4ca4-bc53-7582cb5e7c21</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/89400e49-aead-4e27-a3d2-b08f5a13a046</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/89b688ad-badc-4863-9b08-0c295c4d7370</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8a24a283-5fb3-4401-ba6d-57d243859759</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8a2a62b9-2594-4b9b-8735-a1dcbdfc2b3f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8a2cef97-f3e3-46d6-8a24-58a7222f11b9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8a3128d9-fffa-4bac-a0bf-e0b51c879c5f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8a3b3533-f6f6-4c27-a11c-d8e42fa9059a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8aa22d7b-ece2-4ad6-b5d0-bd8a353492ee</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8b1d4361-b506-49d7-bba9-0eeba681af46</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8c21169e-5592-452f-9684-e18e80bbe5fd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8c363d0c-3d1e-4ca4-823a-0dfe1c4acca2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8c4e5dfd-6b71-494e-9363-8760006cc399</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8c54da39-da09-4703-8074-74783030b341</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8cc6ba1e-0a9b-4150-943d-ef2e0626c5da</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8cd51934-9968-406f-948b-34f24e562f9c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8d5d9602-842a-4bcf-b2fa-dc80a1912d4b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8d7aa896-2618-42e5-b530-9bb3b90da6f8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8db60977-d082-42c4-b1af-e5c3a7306c83</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8de32031-b370-4505-bb0d-69c98f171294</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8efcf366-7dcf-444b-a516-436a8abb13f1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8f5b56d6-2140-448a-93ef-922536ef87bc</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8f8ce07f-b18d-4ee4-aa57-d03545659036</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9018211b-1f4a-4cb3-bbd9-7e303334cd04</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/901b7d15-3c88-4ef6-9b28-6ea243468369</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/901d4362-a856-4a10-a67a-d621cc0e3514</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/91780083-3930-496e-8da5-180c1514fcfa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/924ef07a-9617-4864-82db-3d5431dd5c24</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/92e02c82-c12e-459f-bb66-10083b206221</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/93a08fdb-a9b1-4aa4-b9c9-3dc490df6601</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/93e9cd39-7030-43c4-97ae-10c4fef18fa9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9441351c-035a-4976-87ac-6478c7d04e84</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9457de73-0fdd-4b7d-86a8-9ef86970ea94</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/945f95cc-8326-49f5-bb0c-8b804349f330</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9480e7c9-17ef-4663-b64e-531123792401</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/952ef0ca-e89b-4e98-abb7-3b6ad9e78ec7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/95be6007-a734-4977-8a2c-8e66c939f7b6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/95dcd8f4-9baa-447f-9ec6-bda5e182a31b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/96558231-f01d-49ac-994e-c618bc7362ba</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9675bfc8-df0a-4b35-86ae-330b9d0957e9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9701d7f4-85e0-477a-8e4a-278078a60306</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9742659f-ea12-4393-a1ec-ee0f4b19994b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/97d059df-0d1f-491c-ac62-5924deab12f9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/985c3d72-e42a-4696-94d3-4bae96d89190</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9a5378b0-f5f3-4510-a6fa-f0f824cbeb8d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9a54ff21-ef4b-438b-bc89-316744869d7c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9a568a1e-4e8c-4fa3-8121-e749a0478114</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9a821edd-5c98-4cfb-8fe3-3d7f7510818b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9a946517-f6f3-4c15-989d-2e858abb4fbe</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9ac90b07-fc6f-43f7-858b-5b91ff6d345c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9af3b500-787c-46f4-ae09-c9473818dc9f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9c280cb6-f5ac-462e-9e14-bc26e5630076</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9ce9fc2f-e41a-4693-b1c4-ef39580785c3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9d39609c-d27a-4d36-a28a-a4c3d2088be0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9d43e9bd-b113-4064-ac52-1d0f96540991</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9d563ae8-3af9-4527-95af-fab3a84001a4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9d94e05f-b136-4056-8b79-363cb9dc71a8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9dba3b15-18b1-4f04-ab3d-a7875982930a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9e26186b-e8a6-4538-9114-3c0321d80262</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9e6858cb-8223-4145-99ef-d2e85042d2e8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9eaa8764-f045-470e-864f-612f6ba8a3aa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9ef837cc-874c-4133-9062-3cdc7305453f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9febdce8-096c-4b4b-aa29-5994157099d4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/9ff6e2a5-4657-4317-9fde-3ad5064d8f60</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a0c036a6-1cc9-4168-aa67-9fd30dcf4bf5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a0d1b9df-54d9-4477-a8fe-ba1e77935c99</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a0daf2af-f920-4a08-84a1-f55a78474f51</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a1371e8a-f0b8-4c45-9ca9-d6faa8e0b44d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a16e17f6-37e5-42e1-bba6-3774c7b7eed3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a23d761e-4e7b-4888-8458-04e2cfe11a69</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a25b87ff-8233-4d83-b724-ffbd5ef06b7b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a29fb0fb-ddc1-4b2d-8d68-d53467fb3616</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a2ef79bc-dbfd-42e5-9a7b-01ebab96b743</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a2f492c5-5d51-4a2d-8f2b-0c086f8702a6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a31e4706-8ab5-4ab7-ac22-5f4e1e79e75e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a3d61ecf-7947-406e-a938-2c705ca683f2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a4012127-7f28-4efc-9207-df031bb76f13</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a45efab5-4bf5-44e3-a714-803a315543cb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a4b73c37-5aa0-4aeb-94ff-29c2c2afc6f0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a4ed615e-0f5f-4b05-a7bc-00e007684e32</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a51c372a-6b3d-493a-a7ba-7c4a8635f424</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a54ee1f8-c9ec-4204-81dc-4f8dbd645a97</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a58384e3-9da3-469d-8479-95599595fe85</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a5912f8f-837c-408a-a3ce-ac79cacc9f25</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a6449ead-e58a-4222-80a3-940e14921b5d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a661d18a-b640-4660-8760-9f9b1692ee98</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a6decd60-aff9-417e-a160-6545c2245050</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a78d21b9-5c35-4ab6-9901-9ba32815ba32</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a7d5f6b3-0698-43a8-8228-2761effec381</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a843ced4-2acb-41bf-8edd-7afa7bf9123e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a89d5925-c72d-4582-9cb3-c2736bd12d79</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a8c30424-5012-4d53-9538-1c1daf62e983</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a8dd806c-c969-4079-b391-a34d405b97ec</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a9061849-2669-4ff0-8081-b0e030bca30e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a93e5f83-cffb-4aa8-9084-5341b2a9af1c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a949ccd9-87e3-4482-9554-43e710c9e976</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a973f789-8fdf-47e5-b462-af21fe0b130c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a9b61e8b-75e2-4d53-a471-0360c42aec98</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a9d83674-4de6-4875-8977-3f3347723ea9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/aa84c62f-0c35-4e06-90fb-de1ced969845</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/aa893814-6ead-4694-9e58-12c96a6419ed</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/aa89ed3e-c7c4-470d-a91c-cf66211bf60e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ab6e090e-573b-4f86-b55e-4a0fb17be8ce</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ab8353b4-cb0f-45be-8dc6-88df67e3fb5e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ac557a79-ce67-480a-b353-c986ff2db8ad</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ac91514a-9574-4b48-9d38-ce78333b2a97</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ad6efe4d-8fef-4b3b-a30a-762c09ff3f8f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ae35f6ee-bb3b-4cfa-bab2-8872ab24fc9f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ae765789-6cbc-4722-819e-a6d10a9efe47</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/aea38c12-46e1-4553-a398-cdb98a47f24f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/aed822e7-eab1-45b4-bc48-28d9504b7500</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/af8f283d-bc0d-46f9-9db1-51f09d312844</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b0cd1a84-1b53-4331-9e19-b06da9367624</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b12afee1-1399-4d2a-b362-759e1891dcd8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b1438b22-ce4a-4987-ade5-3a342bd7aede</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b1738b61-b523-475a-b7ad-bfc623a16cea</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b1e44fa9-7fee-4ce7-a512-b91e455056d3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b24daaa4-aac6-426b-8ba5-d1586aace87b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b25f7848-018e-4b9f-8cb7-11b9b3e037de</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b29a1036-0e90-495f-9a0d-ab3f9924ef81</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b307bd51-2b79-47a1-972a-e00cec5ed74a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b341a048-c361-471b-9173-7eeb29622220</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b364d0d3-a09b-4dee-a3fd-7e8fc887d86e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b45e07ba-51e0-48a8-b8cb-9ffef523853f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b4c120d8-fd20-4815-9321-a72b900f45a3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b4e825ad-64a3-4c44-bea0-dfd31491759d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b59198c7-b6f1-46ab-b703-e8d934ede496</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b5b11ce3-f9db-42a7-9eea-a76575d81944</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b5f0d037-f0cd-477d-884f-f76b13fefb80</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b5f6d44a-9a87-4cbd-8dfa-dab23666cd5d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b663a266-db0e-469e-9ea4-8845ad5b9c62</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b6976467-c116-4c45-bbf5-0a83ee9f4c69</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b756c898-1591-4f45-9a62-b2d61e7ae137</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b7925ae2-35ac-4b3f-aad5-9fbc968d9910</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/b8538aca-236b-467d-953b-00f160afdb11</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ba6a6bb2-2a82-42b6-a251-b5c16653cb82</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ba8a75d7-0aa2-47e7-9c73-fe27a8ccecc3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ba984929-522e-48ac-88b8-a0d7b3987b28</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ba9c9049-4aab-4eed-b547-4863c0bc79a3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/baa71cbb-1c15-4862-be13-7dfd8a31b343</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bb0f2b3b-e279-475c-ad16-39750fedeff0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bb373bb8-07a8-4878-89a7-33c8702048ca</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bb54fc2f-9b7c-4326-89ed-474a9eddbc5c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bcba58e7-70b7-47c6-a8a9-e5dac6707f18</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bd0f8d11-f519-4adf-afe0-0a925fc1295c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bd57c639-588d-4fed-974d-6a2bc4893246</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bd6e4344-c3cc-4169-bf85-849b27e6edd0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bda3815c-3b10-4be5-854d-74b3d1c1b11d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bdc12492-fbbe-4b5e-b666-940c1640bfe9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/be1905e9-7990-4e26-a06f-ed47e2ba18a2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/be2a70c7-e39b-4676-a4cd-5a112b408bbc</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bee17955-d684-44aa-9f5f-72a26f3868aa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bf5e786d-3993-4a7e-9bd7-45929d3ee50b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bf955722-0b82-4ca7-820e-ff10a4b61590</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bfe22249-bd76-4862-9bb3-29bb97c5c1b9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bff388bb-c824-4a10-86a2-d181068f2fb4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/bffcf4e9-8d8a-480a-a625-72e39d7a7a3a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c0812510-7d82-4586-8668-474b3529461c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c1810938-2155-45ff-8f61-491a2828fcfb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c1af4616-52d0-4cff-808e-502789eb3f34</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c1c3aecc-a812-4ba2-8d71-12978b35c7be</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c1fe9d6a-c46e-4547-a314-215bef6594cc</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c2e5245e-1ab2-4503-bf5a-26261e77583a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c43e0bd6-3e84-4ca3-b2be-de928c9b7ffa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c4467b2d-af9d-44a5-a7f3-9460ade92536</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c45e04e1-4305-4407-905e-35915423eb71</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c475c3dd-f892-45cd-ae05-e780364053fa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c4f8d178-264f-442e-b6fd-1da49f67486a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c54e164c-5830-43c3-9146-b0c59c99614c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c5a3a947-c5d5-4c67-8697-f5f5326f893c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c5d82cb7-672c-4f7e-943b-0851e1555de4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c774aa54-e6df-45b4-9ea2-c5b70b274c22</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c7b3459e-e88a-46e5-a676-ad97f5e61882</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c8256c3e-1b6a-4148-a105-c4235e38af08</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c8a8444b-d225-4dd6-b0a8-854c805f20f5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c8b358a2-5593-4d44-af9c-6ac85f914ee9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c96bc041-1884-4449-a97f-2473b6ab892d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c9bf94bd-c519-4a19-9436-2cc765b1b6c5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c9d32a69-4624-4640-923c-923b2da855d5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c9ee8c01-a68e-4c8d-8815-1f00b0a57150</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ca35ed22-385f-402b-9931-918276b4bfb5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ca60efcc-5822-4acd-982b-773ed3202cc9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ca66fe68-d662-432d-9e28-780163cd8747</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ca6fc584-e7f5-4222-9dcf-06ebf9ee42e9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ca71c005-3ccb-43e0-83fb-9437e4533d6b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ca8187e4-7612-487d-b343-c3f657e8093a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ca9c40fc-af09-467d-b4c2-883103f675d4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cb25a564-f288-42f3-87cd-b286ef3331cf</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cba00a93-f39b-4c36-95cc-29de73fceff1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cba05e1c-5432-4a89-8df8-0a577858d05c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cbd4879b-bd1f-4ceb-8436-80adcc3e132c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cc22037c-6ac4-40e2-ad76-4fea851653d7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cc3fd6ed-2ebd-4e83-b717-88d310846021</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cc6fc87c-43b4-4936-a254-cd167b860ff8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cc78c645-3bba-4a51-8069-d3ad0aadccb2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ccde1824-4141-4352-b51b-54e9ac3d81c8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ccff4330-7ed4-4fe9-9fac-05af673d5a8f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cd043286-2a3f-4635-98d7-992a81b302b4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cd7e4ea8-8e5b-4c0b-87bf-0caaa553093f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cd870b28-7757-48f9-adff-587c7a380f31</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ce2c169c-dd3c-4cbc-83e9-2f044a8f7e0d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ce8d65b0-6229-44cb-84f6-36d2b17f92b8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ceb28e81-ccae-4589-acae-55a587180b14</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cf22233c-4e0d-42fd-ab41-8dbba99bf79b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cfe15c3c-76f9-491f-888e-e9e5e8a7d37c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d035a2de-f198-42d6-9037-c1d95c0f8baf</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d03ff566-9516-45f1-a24b-8420cc3d43a3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d05e9bd1-f7be-4cff-9e92-acde3b46f329</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d0acb9d4-bd91-49de-b179-89d9f2ced6e3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d0b76f44-f592-462d-83d3-c4645f302e2f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d10c4c5e-46cb-4de1-9b60-3df26e46dd5e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d1d091fc-4535-497a-95c4-9a1b34db2beb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d1d1716f-f2d7-4828-ae36-15dc026c873b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d1e2b098-7215-4ad1-903b-bd9d1cef4570</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d2ad5933-44b6-4b73-b5c2-7a25b0568213</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d2e0fb32-5d6f-4523-b894-3ee3de9abb13</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d318ef3d-8305-4979-842a-b5963fbe49c1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d325c21d-979e-487a-9077-0445b52d9e56</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d36878bc-d6a1-4c5e-89ed-523bc68818b7</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d3c0936a-5402-4c8a-8dc5-691da993de0f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d3de7629-26ca-4767-97a4-29ea1a77f9bf</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d464921b-af25-47cd-8d3a-730f3997a189</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d4b7575c-b5c8-4752-9895-b6d9eea412cb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d4bca2e6-c8f5-4aca-bd35-618b24a4c009</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d4db83c5-e2bd-4008-92d1-8b15a1fa8a34</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d5d09073-3601-436c-961c-f3f6fbaa8179</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d5f836f7-4667-4680-b7bc-3d9820b6ac0f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d65cc685-9fb8-4718-bbf3-417199039e1e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d67be872-bcb7-4812-a9c5-c74e67736332</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d6ef27f9-8f68-4260-bfdd-ab1306133da8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d70be8ef-414c-4527-ad12-85d9230a8962</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d738d857-9c8e-4290-bdb7-1f513db92722</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d765d865-57c4-4c3b-b29e-7344d8eb660c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d7fa017a-c9d5-49af-86c6-12e4ba2808a1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d817dc8c-d0ef-45e1-b965-62df4dfd8ca2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d86a5606-5c55-4806-a97e-00c962d8732e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d8a55504-60a6-4954-838e-3fdf12408870</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d8bd5c5f-f54e-485c-a629-c3b652d1abc8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d8c1543c-15fc-42e8-bfa3-170be3bcafd6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d8d7c468-251d-4707-abf6-16c3060c889d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d9baffb8-4d26-43d6-bf56-c2486c3bd747</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d9c21ba1-03af-4fe0-8348-cc3f5b9d557c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/d9d1dc5d-566d-4fe6-966a-53c59015e149</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/da7767e9-a043-4c56-8a85-14150a4da35b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/da940a67-4985-4a9d-8a5a-f92541a6d3e2</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/db45eed1-a70a-4a24-8954-d7845b03eb8b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/db58ebac-8918-4c1f-847f-8a56292b5e71</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dbb9f259-969d-49ef-b0ec-c35c32c985c0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dbd37c22-a333-4e3b-8f91-25dd3c648fb9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dc2973d3-6d81-45d9-9f94-428f64279731</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dc960880-2538-4569-85eb-991df753c4e8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dcb33101-1176-4e44-b438-004ed5fc0149</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dd35618a-f643-44f9-bb84-e45211cf82e9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dd52b436-ca98-4dc0-95b6-3b7806eb3808</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dd54a249-8a11-4901-b2ba-0a8f9b6eb8b5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dd9bd491-059f-49de-89ad-2d9dd7c38245</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/de9b0e2a-8d74-421e-a7b5-8356107b931e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/def55868-b07b-447f-b208-879e3f755dbc</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/df80d9cb-7f88-4629-b2e8-2afa9e418d31</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dfa98fb7-347e-494d-9c61-ec6d0667a726</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/dfbdd95b-4658-4e19-85f2-4d486e5d2b97</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e05c72cd-2f73-49c6-8dc8-c0817bf6aa23</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e078cae5-8b51-4524-8280-87bcf09b3fbd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e07a5947-0af7-4b28-85f0-e631a4264054</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e08dccd3-abc7-4679-a470-8a100edd7acb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e11ace34-ff39-441b-95f6-ee6a29226906</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e1a87e63-4a4d-475c-b47b-b4fefff85007</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e1b0cdff-7764-41d5-a879-545a8b488f79</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e1b11cbb-4b27-4c9d-9b5d-e2a932f357d0</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e1dce723-9d92-4751-ad53-4ce45d921205</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e22775cf-e572-4618-b114-a1f856746a66</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e2e31440-7414-40d4-b672-f63791506c56</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e329dbc9-a820-4e1a-af7f-116c210f6e6d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e32cc6d8-27ec-44da-95f0-5e1bb379c8a1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e3367fbd-1526-41f9-8428-caa7ff19e66c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e3383ca7-c680-4c4e-b951-4dae42e2b3c1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e35a1ae0-8cd7-4970-ad24-d87095bcbfda</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e3c0ce50-a787-45ef-a08b-6619d9bcfffa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e3d8070f-be73-408b-863d-2b4c0077837f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e3dc1546-5eed-4010-bafe-9851425fde58</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e4ea313e-0109-4d78-8796-0edb8123fe9a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e57c1526-afd3-4b18-a465-3979f48ee92e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e5c87a24-1bcf-4001-a069-522a9ba6cefa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e602ad69-386d-4793-b0c8-c6394b238a73</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e65bd745-0932-4981-b868-46eb0c92adb6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e6a9bf82-9f5d-4276-a14b-43ddbf2b8b83</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e6c70859-3559-46c8-8ac8-cab13104f9b1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e6eb91c0-014d-4f8f-a6f5-13749184b0c1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e71ad314-60e5-4602-9432-c47f2e13350d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e7afb81a-10fb-45cc-9ee7-eef625f5cf60</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e82d02ab-158d-47c0-a2dd-0597f74a969f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e86294a1-ef26-4f8d-8f6f-29b51a412631</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e87b7e52-78dc-4616-b939-87da376af932</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/e9e63915-55d8-4565-8487-b3bf27bd15ef</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ea13a9fb-75b6-4755-a037-e7f44661fda9</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/eb66090d-9150-4aa9-b0ef-57c5c9a57f6b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/eb9abeae-a69e-4a93-a06e-eedcd4677fc6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/eba03a6f-ec51-48d9-9915-d82ca8a25693</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ec08eafe-ab6c-4c71-a73c-9401c95fb85c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/eca7484c-c1d6-460b-a5ad-9feb07d8f8bf</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ecd74ac7-2579-41ae-acd7-e137a5465b79</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ed127a01-5b70-46bd-b1b5-06ecef292f62</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ed218250-f657-4746-b756-ba96d2000703</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/edcfbab6-f28a-4c86-95ae-96a4ace96690</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/eddacdf0-5f65-446d-a272-af59d57529e4</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ede51271-da1c-465c-9649-8fb05d3b8d9a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/eeaa3a1d-052a-4b38-b032-88598b5a1811</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/eec6b710-050e-48a0-80bc-bd9691d5c756</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/efd3e881-9364-4668-840d-c561538618bf</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/efec7c6a-fc02-4102-871c-18336c6cd577</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f00f1925-bd37-4ccb-ab5a-34f0b0433296</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f037dddd-e22a-4223-a7f1-423bc12ed95e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f065f74a-4b7e-4023-a2b5-3fff0f4709fa</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f0abad8a-8ab5-4889-b138-c47594f3e9f8</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f168cefb-3f9c-4725-9c70-a49d72a41f1f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f177eb00-4b2e-4710-b4b7-0d24cd0fd28e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f1be23ad-b6aa-469e-87ee-328dae9d9c83</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f20c3d11-b360-4ee2-98b7-04a3b63f7af6</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f247150d-08b6-46ba-8164-59bf37c3fa33</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f275b9f4-c9b6-460d-94cd-06159fab7488</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f2946f9c-0288-47d2-b76e-0697f45d6906</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f2adb2e5-c8c8-4717-b58f-7492fad4a5df</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f3f5041d-d722-4b95-99e2-1f26c349f762</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f437828e-85d5-4878-9a60-f432fc9f0155</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f51eddb0-b68b-4368-9dfa-da9bb78ace89</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f52f073c-a0c1-44fc-ad8c-33ba7d1100dd</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f5b8ec45-4fd9-464d-b92d-1efc23647038</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f601b04d-62f4-46cf-ad49-fbe2f13b113e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f6de131a-73db-4020-90a8-151f331a0f4e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f72a31c1-298f-43da-ba0a-83e9e69145fb</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f779590c-d23e-460c-bd82-db233f7d3f07</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f8131316-6f6c-4bed-9042-c3d398715cb1</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f815d7ea-65d3-47df-9bcb-d02e1362aa1e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f8e488c3-f1e8-4d88-a6c2-fb44b1a1430e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f990aa3e-8003-4398-811a-818a9b9a7101</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f9a1727c-f061-4976-833b-164facf70826</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/f9ef6d61-f717-41ad-8a51-a539c55b932f</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fa921ff1-6131-437f-b4aa-84aa91c3abac</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fa9a014c-8d8b-447f-ab24-d63928004891</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fb4d39da-2a64-41c1-9678-d751df7d6a43</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fb9dcb12-1f25-440d-a875-c8b5a3fabf24</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fc1d3151-63cd-4870-b379-55a17909b3f5</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fcc046cf-2d45-465a-9e63-c47a1099c740</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fcd53642-6bef-4083-ae5e-1cd358f8ee70</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fcddea5d-2561-4cf4-a56b-14c641b2fd99</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fd1bd48e-a1c4-4957-a95f-d6de0e90e15a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fd31b7dc-a9f4-46f3-b3b7-7dda128c2917</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fd3b1a3c-2a8b-446f-bf8d-36feb6b38007</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fd86399b-dd23-4ef6-8520-12a23b273d3d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fdd4194c-8323-48df-be77-3430aa613a64</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fe067c72-ed57-4f71-bb99-f4a531b7e14b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fe142259-279d-4358-a1a8-f9db392e0c79</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fe1d6cb7-1340-4915-ad21-6440174a40ca</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ff2572cf-8496-42ae-a14e-924d43d999df</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ff3870b4-e621-46d3-bda1-4596f3df045c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ff44b516-7210-4330-856e-f19c861c750c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ff501c24-9198-4cff-823b-8f8d31a3b48e</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ffda3436-44c0-4751-a502-237a9eb85fe3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/fff62d21-d363-4bfb-bb5b-18af0ff99d15</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Distribution missing language</h2></summary>
+<pre><code># Distribution missing language
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:language ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Distribution missing format</h2></summary>
+<pre><code># Distribution missing format
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:format ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>dist</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dist/wallonie/0386296e-70e5-4d25-871b-9470ca4e955b</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/3620d24f-0d60-42dc-ab03-f53a8accf041</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/4abb9099-8ad7-44ba-9940-daeaccaab104</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/536ffb70-8fad-44d7-bca9-34fae90cf022</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/58d7ad68-b69b-4a83-b9c4-6ae23dcd343a</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/5b34e384-0195-4406-9da6-a54ace129a2c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/8d56488b-1507-4614-87d8-1b0f402d9f00</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a89d5925-c72d-4582-9cb3-c2736bd12d79</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a93e5f83-cffb-4aa8-9084-5341b2a9af1c</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/a9ea5113-b195-4ad2-b956-2a975e77f552</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/c96bc041-1884-4449-a97f-2473b6ab892d</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/cadd9308-269b-4cee-909f-d480fe4e2be3</td></tr>
+<tr><td>http://data.gov.be/dist/wallonie/ccff4330-7ed4-4fe9-9fac-05af673d5a8f</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Distribution missing access URL</h2></summary>
+<pre><code># Distribution missing access URL
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcat:downloadURL ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing theme</h2></summary>
+<pre><code># Dataset missing theme
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:theme ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>dataset</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dataset/wallonie/03a310fa-e4bd-417b-801b-13280b97b15a</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/04218470-145f-4ee1-8f7b-84559f137be0</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/061e7ae5-1ffd-4899-9e36-235c1e38c016</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/073c9009-2d43-48f4-abaa-4ddcdcb8ba56</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/08c98c17-144e-4b08-87ee-5ae726d1749e</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/09429a58-78a8-43f7-a61b-3906c05738e3</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/0bbd0016-52e7-44c8-b89f-eee0693fac19</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/0ef50b72-bf92-4de4-9a4a-7e8f91424b5b</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/176c6724-bf6d-4fc1-b656-050132088cee</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/17815e9d-316b-44c1-b463-a68e8ce6a5ef</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/1819fd65-abd4-445d-873e-790d65660d37</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/188e4a8b-42fa-4d19-901f-93532256c0d3</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/1a39a1af-71a7-4a3c-9a74-6ac1f9e87ec8</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/1c96f292-1bbf-4df3-99df-fffa2c9b1a49</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/20da53e1-4884-4746-b74e-467edeca867e</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/22e2df9d-c305-48be-8fa8-a7f8d7edfb38</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/27788bd5-5770-4de2-86d5-1fad2d7c6310</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/2cc9abac-7e5b-4b42-b105-24998c9fe125</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/2d33ada2-6d60-4e24-93af-4bda19368332</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/2fcb3429-a185-4927-9ef8-d42d7b369080</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/30871cf3-2731-4212-a112-1d2a92a219f8</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/3281cbcb-2c32-4aa8-91c3-232ee0df5269</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/32ce5340-4d15-4425-be8f-40f27fb346e7</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/394be895-7f8f-4568-82f0-2b86db2c3624</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/3b07ea66-9b90-4217-84b2-dded255bef5b</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/3bae081b-40a5-439e-b244-0afa21ecde42</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/3c207102-6d18-4089-9775-d6857faca717</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/3e83cda3-829e-422f-9405-d47bf99373cd</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/424bb49b-1f68-4f6c-876b-85b177b2be2f</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/427df214-2591-499d-a0dd-b2c62556263b</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/47072a0b-55c9-4550-a098-623b1560d256</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/48b0a450-eeba-4e78-9799-3d18302d5337</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/48c6a945-e305-46a4-a3bd-7050e9e3b8d6</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/518ecd73-e316-476b-8795-1d1fea3266de</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/52bee0a5-f45c-44af-a519-743a6cbf8ae9</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/555e22e2-4cdd-45c1-b509-d3b104810d8e</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/58e283ed-c108-4b56-9940-30adeb35c6ed</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/5b913625-e21f-49c3-b905-3a1b6ef4f5ca</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/5d41f825-fd15-4560-8354-b8798a458cb0</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/60324166-90ee-4be2-a8e2-f20b724dbee2</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/60a50a03-9ce0-4f7a-b0b1-f7ef824cbc0c</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/6490be74-b1c5-4e51-9832-1db9ec2e7f6d</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/66073012-b80c-40cc-82ca-5e0116d75db3</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/6747dd1c-c2ba-445f-a95e-92289fbc1491</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/6a737503-4e56-4967-a3ad-9f350b77c54d</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/6b163f29-6920-42bd-a4f2-32b4f3b30284</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/6d06f5e2-4893-41f6-940d-d7e9e9292ca8</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/6e256f19-3ebe-4c1d-bc8e-b76ce7133850</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/6f5e1afc-b425-4a30-a793-64494b012c78</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/70548e8e-3487-4960-b03b-8f83cd83d46a</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/7356ceb8-2e0f-49df-9429-eff497188c31</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/769edea4-bf1e-49e1-9653-bbca5c203663</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/77ad09cf-5aec-4ccf-a5ea-57662b60f3b6</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/781c3955-3201-447b-9556-17d2f2841a2e</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/78d6f611-aff8-4354-a5ce-849e614d9e98</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/7bb9b3ca-dbcd-4d03-9cd8-b83ea0ced385</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/7f412b2e-95a4-45c5-9bae-67c1551dd415</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/807138ed-1299-4821-bfa0-86b82ce90ec3</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/80e2f45d-d2a4-48bf-81c4-557918577686</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/80f26827-296d-41dc-bdf9-d30027d17dcd</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/822799a8-afd7-4e9f-98c7-7a1707a7287f</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/87a9448c-8e56-408f-9ed1-a84c0ef814f7</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/8924d627-0913-4dfd-bd97-ec3924b4a773</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/8de6be93-451b-4f04-887b-cbcf22470df2</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/907b83eb-24cd-4d57-8a49-a8db7729dcab</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/9142d1c9-5ae3-4ae5-ab2d-831b6592439e</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/96209607-7238-43d9-9a46-b8e3a5d5ea5d</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/9719212e-8779-4ebf-8972-2b33e407e3d3</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/971fa02d-2a96-49b2-95f6-ab32992a6b89</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/9b51f11e-f619-43ba-b0c4-6dd1cc2c8913</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/9ffa0290-3459-41ee-8f4f-104baf883a03</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/a08bec5a-c333-4666-8b3f-9f3e8315fd7b</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/a105b7a0-08b3-4038-a2e3-2d8b453fc232</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/a1dfbed4-fd8c-4376-9fd3-ddc8d3156ae9</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/a2bd1db1-48b0-4e41-af65-d01c1e80a099</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/a3e69b59-7fbc-4f0c-b8c4-9af6048d5068</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/a4f5ac28-3975-4089-a55a-59ab93d01c5e</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/a6ad08bb-0186-48fb-99ad-8c0872c4814e</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/a9bb3e79-fca6-47d0-9024-e01dd0b06e6d</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/abd71c46-b9ac-4702-8542-6e88a942a26c</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/ac161724-88ad-410b-8bb3-d922f14b1ce8</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/ad2dc419-15b5-4583-b8d9-0a86b5b5784c</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/ad3c9850-c400-45c5-9a11-cc6e332f8ae4</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/af63c9c3-7d62-4ee7-bdf5-1f95072139b6</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/af85508d-48e0-4a4c-8649-ac6aece31c83</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/b6a96bea-bad4-49d2-90a2-3f6a91ceebb0</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/b83c02f8-da1d-4e64-a197-89b6a0178c43</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/bb004376-c9f1-4b19-a789-8a11079f11cd</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/bb74ba10-ecd5-4abd-ad35-0a9f19502edb</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/bf25de23-cc09-4fb7-9e69-b9f8b63b6e12</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/bfd3ab08-58f0-40ef-8a0d-173c4c299225</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/c06ba132-bcd4-43e6-aff4-f4d686aafb42</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/c138c9af-dd5b-4179-80b7-678e28d34a57</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/c441e167-2e43-4ac5-9568-6696472d5369</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/c654eaac-a64c-4dd6-a2c8-b29ae410ad5e</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/c6ddde7e-aae0-4ed2-929d-ff14ef9fd8dd</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/c82d66fb-414c-4b1a-9afb-f44a23594019</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/cdda5087-acc6-4aab-81cb-a16bf119f032</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/cef5df33-d86a-4136-87e0-efd4e041ba52</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/d0158345-e502-4a65-91b4-4fb927e0c58d</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/d0531192-12e9-441c-94fd-2ed5bf63ccca</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/d667c9dd-5c3a-4acb-8908-e36307dfae82</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/d9088ab0-4ea7-42cf-8616-3e8a44c214cf</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/dd773f11-7576-4f6c-92f9-4b0f0e2e33a0</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/de376fa8-f0e7-420f-98ac-f68b00778f37</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/de61cca4-1ca2-48e7-86d0-5a3eabc0246b</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/e350077c-673d-4512-b5c2-d7ff4ccc2268</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/e4c8d4ed-d89e-43f2-8ca8-fbe9c0b71b80</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/e59d9ba4-3f8a-46ab-af63-3b5307edd061</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/e5cb8dd4-2f0f-4c1a-9ce5-f69c2fd45de2</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/e66da3e3-3800-47e2-89f8-9dcd6be4e285</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/e8098d3b-0299-45fd-8c4d-d7c157166064</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/e92e6573-86a4-41a0-b309-ae38434c35f2</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/ea38ad06-a9b6-4f9f-b694-deaba055435f</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/eb46b5d1-3c88-4c19-acab-627a909f9ae9</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/f548ae02-43f1-4951-919f-2ec2b6f2eacb</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/fa0fdaf2-7112-4b14-baad-da00dca1b8fb</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/fa19b701-05d0-4d1c-b6a8-a82c0f2fb47b</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/fb6881e2-8677-49da-a7e3-7b8706b2af80</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/fea2f147-1c14-41df-8dc0-dbb1d1c6c218</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/ffaa7976-a86e-4977-b3e9-6bbc305ab447</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Dataset missing publisher</h2></summary>
+<pre><code># Dataset missing publisher
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:publisher ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>dataset</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dataset/wallonie/77ad09cf-5aec-4ccf-a5ea-57662b60f3b6</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/ad3c9850-c400-45c5-9a11-cc6e332f8ae4</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/e3d0eb47-926c-4ecc-a7f3-6bcfcff2fb61</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/ffaa7976-a86e-4977-b3e9-6bbc305ab447</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Duplicate identifier</h2></summary>
+<pre><code># Duplicate identifier
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset dcterms:identifier ?value .
+    ?dataset2 dcterms:identifier ?value
+    FILTER (?dataset != ?dataset2)
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing identifier</h2></summary>
+<pre><code># Dataset missing identifier
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:identifier ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing Distribution</h2></summary>
+<pre><code># Dataset missing Distribution
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:distribution ?dist 
+    } 
+}
+</code></pre>
+<table>
+<thead>
+<tr><th>dataset</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dataset/wallonie/04218470-145f-4ee1-8f7b-84559f137be0</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/17815e9d-316b-44c1-b463-a68e8ce6a5ef</td></tr>
+<tr><td>http://data.gov.be/dataset/wallonie/dd773f11-7576-4f6c-92f9-4b0f0e2e33a0</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Dataset missing contact point</h2></summary>
+<pre><code># Dataset missing contact point
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:contactPoint ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Contactpoint missing email</h2></summary>
+<pre><code># Contactpoint missing email
+
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?org
+WHERE {
+    ?org a vcard:Organization
+    FILTER NOT EXISTS { 
+        ?org vcard:hasEmail ?email
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>org</th></tr>
+</thead>
+<tr><td>http://data.gov.be/org/wallonie/74b84da77fbac4114690bec70d9eb86b064b42e1</td></tr>
+<tr><td>http://data.gov.be/org/wallonie/a119e53d5e4c64d3f991579c9fae5c10e6b15dc3</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Subject with reference to itself / circular</h2></summary>
+<pre><code># Subject with reference to itself / circular
+
+SELECT ?subject ?property
+WHERE {
+    ?subject ?property ?subject
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing spatial</h2></summary>
+<pre><code># Catalog missing spatial
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:spatial ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/wallonie</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing modification date</h2></summary>
+<pre><code># Catalog missing modification date
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:modified ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/wallonie</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing license</h2></summary>
+<pre><code># Catalog missing license
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:license ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing language</h2></summary>
+<pre><code># Catalog missing language
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:language ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing home page</h2></summary>
+<pre><code># Catalog missing home page
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog foaf:homepage ?page
+    }
+}
+</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Missing language tag</h2></summary>
+<pre><code># Missing language tag
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (isLiteral(?value) && lang(?value) = "" )
+    VALUES ?property {
+        dcterms:title
+        dcterms:description
+        dcterms:keyword
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+</details>
+<p>Number of violations: 889</p>
+</body>
+</html>

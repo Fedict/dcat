@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+details {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: solid black 1px; 
+}
+
+summary {
+    background-color: lightgray;
+}
+
+summary h2 {
+    margin-top: 0;
+}
+
+table { 
+    border: solid black 1px; 
+    border-collapse: collapse;
+    width: 90%; 
+}
+
+th {
+    background-color:black;
+    color: white;
+}
+
+td {
+    padding: 1em;
+}
+
+tbody tr:nth-child(even) {
+  background-color:linen;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: lightyellow;
+}
+
+tbody tr:hover {
+    background-color: yellow !important;
+}
+</style>
+<title>DCAT Validator Report</title>
+</head>
+<body>
+<h1>RDF Validation</h1>
+<p>File to validate: data\infocenter\enhanced.nt</p>
+<p>Number of triples: 2754</p>
+<p>Current time: Mon Apr 15 09:13:21 CEST 2019</p>
+<details open>
+<summary><h2>builtin://dcatap11</h2></summary>
+<details open>
+<summary><h2> Distribution missing mandatory access URL</h2></summary>
+<pre><code># Distribution missing mandatory access URL
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcat:accessURL ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing mandatory title</h2></summary>
+<pre><code># Dataset missing mandatory title
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:title ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing mandatory description</h2></summary>
+<pre><code># Dataset missing mandatory description
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:description ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Contactpoint missing mandatory name</h2></summary>
+<pre><code># Contactpoint missing mandatory name
+
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?org
+WHERE {
+    ?org a vcard:Organization
+    FILTER NOT EXISTS { 
+        ?org vcard:fn ?name
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory title</h2></summary>
+<pre><code># Catalog missing mandatory title
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:title ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory publisher</h2></summary>
+<pre><code># Catalog missing mandatory publisher
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:publisher ?value
+    } 
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/infocenter</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory description</h2></summary>
+<pre><code># Catalog missing mandatory description
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:description ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing Datasets</h2></summary>
+<pre><code># Catalog missing Datasets
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcat:dataset ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Type of links and email addresses must be a resource (IRI), not a literal</h2></summary>
+<pre><code># Type of links and email addresses must be a resource (IRI), not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:accessURL
+        dcat:downloadURL
+        dcat:landingPage
+        foaf:homepage
+        foaf:page
+        vcard:hasEmail
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Value must be a resource (IRI, i.e. taxonomy term) not a literal</h2></summary>
+<pre><code># Value must be a resource (IRI, i.e. taxonomy term) not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:theme
+        dcterms:accrualPeriodicity
+        dcterms:format
+        dcterms:language
+        dcterms:spatial
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Not using EU Publication Office Authority</h2></summary>
+<pre><code># Not using EU Publication Office Authority
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?subject ?property
+WHERE {
+    ?subject ?property ?obj
+    FILTER NOT EXISTS {
+        ?subject ?property ?value
+        FILTER (isIRI(?value) && STRSTARTS(STR(?value), ?taxonomy))
+    }
+    VALUES (?property ?taxonomy) {
+        (dcat:theme         "http://publications.europa.eu/resource/authority/data-theme/")
+        (dcterms:format     "http://publications.europa.eu/resource/authority/file-type/")
+        (dcterms:language   "http://publications.europa.eu/resource/authority/language/")
+        (dcterms:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/")
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Value must be a resource (IRI), not a literal</h2></summary>
+<pre><code># Value must be a resource (IRI), not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:contactPoint
+        dcterms:license
+        dcterms:publisher
+        dcterms:rights
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Missing RDF class type</h2></summary>
+<pre><code># Missing RDF class type
+
+SELECT ?s
+WHERE {
+    FILTER NOT EXISTS {
+        ?s a ?class
+    }
+}
+</code></pre>
+<p>OK</p>
+</details>
+</details>
+<details open>
+<summary><h2>builtin://dcatap11be</h2></summary>
+<details open>
+<summary><h2> Distribution missing license</h2></summary>
+<pre><code># Distribution missing license
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:license ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Distribution missing language</h2></summary>
+<pre><code># Distribution missing language
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:language ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Distribution missing format</h2></summary>
+<pre><code># Distribution missing format
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:format ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Distribution missing access URL</h2></summary>
+<pre><code># Distribution missing access URL
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcat:downloadURL ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>dist</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/XLS</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/CSV</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/PDF</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/PNG</td></tr>
+<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/XLS</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Dataset missing theme</h2></summary>
+<pre><code># Dataset missing theme
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:theme ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing publisher</h2></summary>
+<pre><code># Dataset missing publisher
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:publisher ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Duplicate identifier</h2></summary>
+<pre><code># Duplicate identifier
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset dcterms:identifier ?value .
+    ?dataset2 dcterms:identifier ?value
+    FILTER (?dataset != ?dataset2)
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing identifier</h2></summary>
+<pre><code># Dataset missing identifier
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:identifier ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing Distribution</h2></summary>
+<pre><code># Dataset missing Distribution
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:distribution ?dist 
+    } 
+}
+</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing contact point</h2></summary>
+<pre><code># Dataset missing contact point
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:contactPoint ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Contactpoint missing email</h2></summary>
+<pre><code># Contactpoint missing email
+
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?org
+WHERE {
+    ?org a vcard:Organization
+    FILTER NOT EXISTS { 
+        ?org vcard:hasEmail ?email
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Subject with reference to itself / circular</h2></summary>
+<pre><code># Subject with reference to itself / circular
+
+SELECT ?subject ?property
+WHERE {
+    ?subject ?property ?subject
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing spatial</h2></summary>
+<pre><code># Catalog missing spatial
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:spatial ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/infocenter</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing modification date</h2></summary>
+<pre><code># Catalog missing modification date
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:modified ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing license</h2></summary>
+<pre><code># Catalog missing license
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:license ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing language</h2></summary>
+<pre><code># Catalog missing language
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:language ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing home page</h2></summary>
+<pre><code># Catalog missing home page
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog foaf:homepage ?page
+    }
+}
+</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Missing language tag</h2></summary>
+<pre><code># Missing language tag
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (isLiteral(?value) && lang(?value) = "" )
+    VALUES ?property {
+        dcterms:title
+        dcterms:description
+        dcterms:keyword
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+</details>
+<p>Number of violations: 218</p>
+</body>
+</html>

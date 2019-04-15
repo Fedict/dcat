@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+details {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: solid black 1px; 
+}
+
+summary {
+    background-color: lightgray;
+}
+
+summary h2 {
+    margin-top: 0;
+}
+
+table { 
+    border: solid black 1px; 
+    border-collapse: collapse;
+    width: 90%; 
+}
+
+th {
+    background-color:black;
+    color: white;
+}
+
+td {
+    padding: 1em;
+}
+
+tbody tr:nth-child(even) {
+  background-color:linen;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: lightyellow;
+}
+
+tbody tr:hover {
+    background-color: yellow !important;
+}
+</style>
+<title>DCAT Validator Report</title>
+</head>
+<body>
+<h1>RDF Validation</h1>
+<p>File to validate: data\innovation\enhanced.nt</p>
+<p>Number of triples: 4511</p>
+<p>Current time: Mon Apr 15 09:15:29 CEST 2019</p>
+<details open>
+<summary><h2>builtin://dcatap11</h2></summary>
+<details open>
+<summary><h2> Distribution missing mandatory access URL</h2></summary>
+<pre><code># Distribution missing mandatory access URL
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcat:accessURL ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing mandatory title</h2></summary>
+<pre><code># Dataset missing mandatory title
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:title ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing mandatory description</h2></summary>
+<pre><code># Dataset missing mandatory description
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:description ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Contactpoint missing mandatory name</h2></summary>
+<pre><code># Contactpoint missing mandatory name
+
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?org
+WHERE {
+    ?org a vcard:Organization
+    FILTER NOT EXISTS { 
+        ?org vcard:fn ?name
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory title</h2></summary>
+<pre><code># Catalog missing mandatory title
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:title ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory publisher</h2></summary>
+<pre><code># Catalog missing mandatory publisher
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:publisher ?value
+    } 
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/innovation</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing mandatory description</h2></summary>
+<pre><code># Catalog missing mandatory description
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:description ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing Datasets</h2></summary>
+<pre><code># Catalog missing Datasets
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcat:dataset ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Type of links and email addresses must be a resource (IRI), not a literal</h2></summary>
+<pre><code># Type of links and email addresses must be a resource (IRI), not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:accessURL
+        dcat:downloadURL
+        dcat:landingPage
+        foaf:homepage
+        foaf:page
+        vcard:hasEmail
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Value must be a resource (IRI, i.e. taxonomy term) not a literal</h2></summary>
+<pre><code># Value must be a resource (IRI, i.e. taxonomy term) not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:theme
+        dcterms:accrualPeriodicity
+        dcterms:format
+        dcterms:language
+        dcterms:spatial
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Not using EU Publication Office Authority</h2></summary>
+<pre><code># Not using EU Publication Office Authority
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?subject ?property
+WHERE {
+    ?subject ?property ?obj
+    FILTER NOT EXISTS {
+        ?subject ?property ?value
+        FILTER (isIRI(?value) && STRSTARTS(STR(?value), ?taxonomy))
+    }
+    VALUES (?property ?taxonomy) {
+        (dcat:theme         "http://publications.europa.eu/resource/authority/data-theme/")
+        (dcterms:format     "http://publications.europa.eu/resource/authority/file-type/")
+        (dcterms:language   "http://publications.europa.eu/resource/authority/language/")
+        (dcterms:accrualPeriodicity "http://publications.europa.eu/resource/authority/frequency/")
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Value must be a resource (IRI), not a literal</h2></summary>
+<pre><code># Value must be a resource (IRI), not a literal
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (!isIRI(?value))
+    VALUES ?property {
+        dcat:contactPoint
+        dcterms:license
+        dcterms:publisher
+        dcterms:rights
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Missing RDF class type</h2></summary>
+<pre><code># Missing RDF class type
+
+SELECT ?s
+WHERE {
+    FILTER NOT EXISTS {
+        ?s a ?class
+    }
+}
+</code></pre>
+<p>OK</p>
+</details>
+</details>
+<details open>
+<summary><h2>builtin://dcatap11be</h2></summary>
+<details open>
+<summary><h2> Distribution missing license</h2></summary>
+<pre><code># Distribution missing license
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:license ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>dist</th></tr>
+</thead>
+<tr><td>http://data.gov.be/dist/innovation/BIBLI_02</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BIBLI_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BIBLI_04</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BIBLI_05</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BIBLI_06</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BIBLI_07</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BIBLI_08</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BIBLI_09</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BOP_EXT_INTPOS</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BOP_WORLD</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BR_ICT</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_02</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_04</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_05</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_06</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_ENT_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_ENT_2</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_ENT_3</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_ENT_4</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_ENT_5</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_ENT_6</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_ENT_7</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/BUS_ENT_8</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_02</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_07</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_08</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_11</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_12</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_13</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_14</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/CIS_15</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/DEMO_GIND</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/DEMO_R_D3DENS</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/ECO_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/ECO_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EDA6_T_2564_PC_</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EDA7_T_2564_PC_</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EDUC_01_</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EDUC_GRAD4</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EDUC_GRAD5</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EDUC_T_ED_MS_</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/ENT_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/ENT_BROAD</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EXP_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EXP_02</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/EXP_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/FIN_06</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/FIN_07</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/FIN_08</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/FIN_09</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/FIN_10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/FIN_11</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/GOVDD_EDP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/GOVDD_GD</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/HH_BROAD</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/HRST</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/HTEC_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/HTEC_2</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/ICT_EMP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/ICT_VA</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/INF_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/INF_02</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/INF_05</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/INF_06</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/INF_07</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/INTEL_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/INTEL_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/INTEL_04</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_GBA_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_GBA_2</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDBE_R</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDBE_T</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDBI</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDBI_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDBI_MAN</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDBI_SERV</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDBS</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDBS_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDGA</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDGC_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDGF_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDGF_2</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDGF_3</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDGF_4</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDGT_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDGT_2</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDPO_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDPO_2</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDPO_3</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDPO_4</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDPO_5</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDPQ_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/KNO_RDPQ_2</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/LFSI_EMP_A</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/LFSI_UNEMP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/LINK_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/LINK_02</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/LINK_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/LINK_04</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/LINK_07</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NA10C_MAN</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NA10C_SERV</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NA10E_MAN</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NA10E_SERV</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NAAUX_L_EMP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NAAUX_L_HRS</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NAGDPC</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NAGDPC_EXP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NAGDPK</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NAGDPK_EMP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NAGDPK_HRS</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NAGDPK_VA</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/NBPG_ICT</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_EGAN_MAN</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_EGAN_SER</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_HTEC_GRP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_HTEC_GRP_NAT</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_HTNIS</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_IDPOP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_ITPOP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_NAMA_1</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_NAMA_2</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_NAMA_3</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PEPNB</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PEPNIC</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PEPNIP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PEPNN</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PEPNT</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PTDNT</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PUSNB</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PUSNIC</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PUSNIP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/OUT_PUSNT</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PEPND</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PEPNF</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PEPNP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PRCHICP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PUB_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PUB_02</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PUSND</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PUSNF</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/PUSNP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/RD_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/RD_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/RD_04</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/RD_05</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/RD_06</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/RD_07</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/RD_08</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/SECT_01</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/SECT_02</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/SECT_03</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/SHGE_EMP</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/SME_BROAD</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TEC</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSBP10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSER10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSEX10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSFS10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSGO10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSHO10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSII10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSLM10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSPC20</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSPD20</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TIPSUN10</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TPS</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/TRNG_T_2564_PC_</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/tipslm60</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/tipslm70</td></tr>
+<tr><td>http://data.gov.be/dist/innovation/tipslm80</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Distribution missing language</h2></summary>
+<pre><code># Distribution missing language
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:language ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Distribution missing format</h2></summary>
+<pre><code># Distribution missing format
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcterms:format ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Distribution missing access URL</h2></summary>
+<pre><code># Distribution missing access URL
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dist
+WHERE {
+    ?dist a dcat:Distribution
+    FILTER NOT EXISTS { 
+        ?dist dcat:downloadURL ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing theme</h2></summary>
+<pre><code># Dataset missing theme
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:theme ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing publisher</h2></summary>
+<pre><code># Dataset missing publisher
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:publisher ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Duplicate identifier</h2></summary>
+<pre><code># Duplicate identifier
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset dcterms:identifier ?value .
+    ?dataset2 dcterms:identifier ?value
+    FILTER (?dataset != ?dataset2)
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing identifier</h2></summary>
+<pre><code># Dataset missing identifier
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcterms:identifier ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing Distribution</h2></summary>
+<pre><code># Dataset missing Distribution
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:distribution ?dist 
+    } 
+}
+</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Dataset missing contact point</h2></summary>
+<pre><code># Dataset missing contact point
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?dataset
+WHERE {
+    ?dataset a dcat:Dataset
+    FILTER NOT EXISTS { 
+        ?dataset dcat:contactPoint ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Contactpoint missing email</h2></summary>
+<pre><code># Contactpoint missing email
+
+PREFIX vcard:   &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+SELECT ?org
+WHERE {
+    ?org a vcard:Organization
+    FILTER NOT EXISTS { 
+        ?org vcard:hasEmail ?email
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Subject with reference to itself / circular</h2></summary>
+<pre><code># Subject with reference to itself / circular
+
+SELECT ?subject ?property
+WHERE {
+    ?subject ?property ?subject
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing spatial</h2></summary>
+<pre><code># Catalog missing spatial
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:spatial ?value
+    }
+}</code></pre>
+<table>
+<thead>
+<tr><th>catalog</th></tr>
+</thead>
+<tr><td>http://data.gov.be/catalog/innovation</td></tr>
+</table>
+</details>
+<details open>
+<summary><h2> Catalog missing modification date</h2></summary>
+<pre><code># Catalog missing modification date
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:modified ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing license</h2></summary>
+<pre><code># Catalog missing license
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:license ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing language</h2></summary>
+<pre><code># Catalog missing language
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog dcterms:language ?value
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Catalog missing home page</h2></summary>
+<pre><code># Catalog missing home page
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+
+SELECT ?catalog
+WHERE {
+    ?catalog a dcat:Catalog
+    FILTER NOT EXISTS { 
+        ?catalog foaf:homepage ?page
+    }
+}
+</code></pre>
+<p>OK</p>
+</details>
+<details open>
+<summary><h2> Missing language tag</h2></summary>
+<pre><code># Missing language tag
+
+PREFIX dcat:    &lt;http://www.w3.org/ns/dcat#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?subject ?property ?value
+WHERE {
+    ?subject ?property ?value
+    FILTER (isLiteral(?value) && lang(?value) = "" )
+    VALUES ?property {
+        dcterms:title
+        dcterms:description
+        dcterms:keyword
+    }
+}</code></pre>
+<p>OK</p>
+</details>
+</details>
+<p>Number of violations: 177</p>
+</body>
+</html>
