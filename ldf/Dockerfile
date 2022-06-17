@@ -8,8 +8,8 @@ RUN mkdir -p /opt/ldf && chown 1001:0 /opt/ldf
 COPY --from=builder /tmp/dcat/ldf/config.json /opt/ldf/config.json
 COPY --from=builder /tmp/dcat/all/datagovbe.hdt /opt/ldf/datagovbe.hdt
 
-USER 1001:0
 WORKDIR /opt/ldf
-RUN npm install @ldf/server 
+RUN microdnf install make gcc-c++ python && npm install hdt @ldf/server && microdnf remove make gcc-c++ python && microdnf clean all
+USER 1001:0
 EXPOSE 5000
 CMD ["/opt/ldf/node_modules/@ldf/server/bin/ldf-server", "/opt/ldf/config.json", "5000", "4" ]
