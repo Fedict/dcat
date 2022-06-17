@@ -9,7 +9,7 @@ COPY --from=builder /tmp/dcat/ldf/config.json /opt/ldf/config.json
 COPY --from=builder /tmp/dcat/all/datagovbe.hdt /opt/ldf/datagovbe.hdt
 
 WORKDIR /opt/ldf
-RUN microdnf install make gcc-c++ python && npm install hdt @ldf/server && microdnf remove make gcc-c++ python && microdnf clean all
+RUN microdnf install make gcc-c++ python3 && npm install hdt @ldf/server && microdnf remove make gcc-c++ python3 && microdnf clean all
 USER 1001:0
-EXPOSE 5000
-CMD ["/opt/ldf/node_modules/@ldf/server/bin/ldf-server", "/opt/ldf/config.json", "5000", "4" ]
+EXPOSE 3000
+CMD ["/opt/ldf/node_modules/@ldf/server/bin/ldf-server", "/opt/ldf/config.json" ]
