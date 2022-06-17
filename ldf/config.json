@@ -1,13 +1,14 @@
 {
+	"@context": "https://linkedsoftwaredependencies.org/bundles/npm/@ldf/server/^3.0.0/components/context.jsonld",
+	"@id": "urn:ldf-server:datagovbe",
 	"title": "Belgif Linked Data Fragments test server",
 	"baseURL": "http://ldf.belgif.be/",
 	"datasources": {
-		"datagovbe": {
-			"title": "Data.gov.be",
-			"homepage": "http://data.gov.be",
-			"type": "HdtDatasource",
-			"description": "Data.gov.be using HDT export file",
-			"settings": { "file": "/var/spool/datagovbe.hdt" }
+		"@id": "urn:ldf-server:datagovbeHdtSource",
+		"@type": "HdtDatasource",
+		"datasourceTitle": "Data.gov.be",
+		"description": "Data.gov.be using HDT export file",
+		"hdtFile": "/opt/ldf/datagovbe.hdt" 
 		}
 	},
 	"prefixes": {
@@ -19,12 +20,14 @@
 		"dcterms": "http://purl.org/dc/terms/",
 		"dcat": "http://www.w3.org/ns/dcat#",
 		"foaf": "http://xmlns.com/foaf/0.1/",
+		"locn": "http://www.w3.org/ns/locn#",
+		"vcard": "http://www.w3.org/2006/vcard/ns#",
    		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
 		"hydra": "http://www.w3.org/ns/hydra/core#",
 		"void": "http://rdfs.org/ns/void#"
 	},
 	"logging": {
-		"enabled": true,
-		"file": "/var/spool/access.log"
+		"enabled": false,
+		"file": "/var/log/access.log"
 	}
 }
