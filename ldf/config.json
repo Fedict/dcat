@@ -1,30 +1,36 @@
 {
+	"@context": "https://linkedsoftwaredependencies.org/bundles/npm/@ldf/server/^3.0.0/components/context.jsonld",
+	"@id": "urn:ldf-server:my",
+	"import": "preset-qpf:config-defaults.json",
 	"title": "Belgif Linked Data Fragments test server",
 	"baseURL": "http://ldf.belgif.be/",
-	"datasources": {
-		"datagovbe": {
-			"title": "Data.gov.be",
-			"homepage": "http://data.gov.be",
-			"type": "HdtDatasource",
-			"description": "Data.gov.be using HDT export file",
-			"settings": { "file": "/var/spool/datagovbe.hdt" }
-		}
-	},
-	"prefixes": {
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"owl": "http://www.w3.org/2002/07/owl#",
-		"skos": "http://www.w3.org/2004/02/skos/core#",
-		"xsd": "http://www.w3.org/2001/XMLSchema#",
-		"dcterms": "http://purl.org/dc/terms/",
-		"dcat": "http://www.w3.org/ns/dcat#",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-   		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-		"hydra": "http://www.w3.org/ns/hydra/core#",
-		"void": "http://rdfs.org/ns/void#"
-	},
-	"logging": {
-		"enabled": true,
-		"file": "/var/spool/access.log"
-	}
+	"port": 3000,
+	"workers": 4,
+	"datasources": [
+	       	{
+		"@id": "urn:ldf-server:datagovbeHdtSource",
+		"@type": "HdtDatasource",
+		"datasourceTitle": "Data.gov.be",
+		"datasourcePath": "datagovbe",
+		"description": "Data.gov.be using HDT export file",
+		"hdtFile": "/opt/ldf/datagovbe.hdt" 
+		}	
+	],
+	"prefixes": [ 
+		{ "prefix": "rdf",	"uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#" },
+		{ "prefix": "rdfs",	"uri": "http://www.w3.org/2000/01/rdf-schema#" },
+		{ "prefix": "owl",	"uri": "http://www.w3.org/2002/07/owl#" },
+		{ "prefix": "skos",	"uri": "http://www.w3.org/2004/02/skos/core#" },
+		{ "prefix": "xsd",	"uri": "http://www.w3.org/2001/XMLSchema#" },
+		{ "prefix": "dcterms",	"uri": "http://purl.org/dc/terms/" },
+		{ "prefix": "dcat",	"uri": "http://www.w3.org/ns/dcat#" },
+		{ "prefix": "foaf",	"uri": "http://xmlns.com/foaf/0.1/" },
+		{ "prefix": "locn",	"uri": "http://www.w3.org/ns/locn#" },
+		{ "prefix": "vcard",	"uri": "http://www.w3.org/2006/vcard/ns#" },
+   		{ "prefix": "geo",	"uri": "http://www.w3.org/2003/01/geo/wgs84_pos#" },
+		{ "prefix": "hydra",	"uri": "http://www.w3.org/ns/hydra/core#" },
+		{ "prefix": "void",	"uri": "http://rdfs.org/ns/void#" }
+	],
+	"logging": false, 
+	"loggingFile": "/var/log/ldf.log"
 }
