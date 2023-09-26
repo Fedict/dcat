@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:39:21</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/globe/globe.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 2 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:description MinCountConstraintComponent : 4 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/dataset/globe/6418a27a-ba7a-4125-83ab-9e3c3c6e7c40</td><td>n/a</td></tr>
+								<tr><td>http://data.gov.be/dataset/globe/90a3c5c6-4db4-4418-8741-1cbf5b9b929b</td><td>n/a</td></tr>
+								<tr><td>http://data.gov.be/dataset/globe/23262c1a-a4ee-4bd9-8b49-43a2807221e2</td><td>n/a</td></tr>
+								<tr><td>http://data.gov.be/dataset/globe/9c32c4f1-cf22-4264-ad99-d824a64421e0</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/globe</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 11 shapes</h2>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/globe</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/globe</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/globe</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:keyword MinCountConstraintComponent : 5 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#keyword&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/globe/6418a27a-ba7a-4125-83ab-9e3c3c6e7c40</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/90a3c5c6-4db4-4418-8741-1cbf5b9b929b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/23262c1a-a4ee-4bd9-8b49-43a2807221e2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/da20afea-c182-4eeb-9cb2-1e18129bdeb3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/9c32c4f1-cf22-4264-ad99-d824a64421e0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 5 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/globe/6418a27a-ba7a-4125-83ab-9e3c3c6e7c40</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/90a3c5c6-4db4-4418-8741-1cbf5b9b929b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/23262c1a-a4ee-4bd9-8b49-43a2807221e2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/da20afea-c182-4eeb-9cb2-1e18129bdeb3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/9c32c4f1-cf22-4264-ad99-d824a64421e0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 5 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/globe/6418a27a-ba7a-4125-83ab-9e3c3c6e7c40</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/90a3c5c6-4db4-4418-8741-1cbf5b9b929b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/23262c1a-a4ee-4bd9-8b49-43a2807221e2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/da20afea-c182-4eeb-9cb2-1e18129bdeb3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/9c32c4f1-cf22-4264-ad99-d824a64421e0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:description MinCountConstraintComponent : 5 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/globe/bfd11569-f74a-4394-bdb5-0dacb66bc767</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/globe/2ba91cb1-2870-48b4-9f09-917348720f9e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/globe/07cf7379-de77-4ee3-9e71-4e2a36606bce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/globe/63250452-e8a1-477c-ab9d-f636b68974ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/globe/3a690d8e-d623-4b6d-b1f0-1f1cbb004fc5</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 5 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/globe/bfd11569-f74a-4394-bdb5-0dacb66bc767</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/globe/2ba91cb1-2870-48b4-9f09-917348720f9e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/globe/07cf7379-de77-4ee3-9e71-4e2a36606bce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/globe/63250452-e8a1-477c-ab9d-f636b68974ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/globe/3a690d8e-d623-4b6d-b1f0-1f1cbb004fc5</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC0</td><td>n/a</td></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/ODC_PDDL</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/globe</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 10 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/globe/6418a27a-ba7a-4125-83ab-9e3c3c6e7c40</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/90a3c5c6-4db4-4418-8741-1cbf5b9b929b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/23262c1a-a4ee-4bd9-8b49-43a2807221e2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/da20afea-c182-4eeb-9cb2-1e18129bdeb3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/9c32c4f1-cf22-4264-ad99-d824a64421e0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/6418a27a-ba7a-4125-83ab-9e3c3c6e7c40</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/90a3c5c6-4db4-4418-8741-1cbf5b9b929b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/23262c1a-a4ee-4bd9-8b49-43a2807221e2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/da20afea-c182-4eeb-9cb2-1e18129bdeb3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/globe/9c32c4f1-cf22-4264-ad99-d824a64421e0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>skos:Concept</th><td>11</td></tr>
+						<tr><th>dcat:Dataset</th><td>5</td></tr>
+						<tr><th>dcat:Distribution</th><td>5</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>2</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcterms:MediaType</th><td>1</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>foaf:Agent</th><td>1</td></tr>
+						<tr><th>foaf:Document</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Kind</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>skos:prefLabel</th><td>96</td></tr>
+						<tr><th>rdf:type</th><td>35</td></tr>
+						<tr><th>dcterms:language</th><td>11</td></tr>
+						<tr><th>dcat:theme</th><td>10</td></tr>
+						<tr><th>dcterms:identifier</th><td>10</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>10</td></tr>
+						<tr><th>dcterms:license</th><td>6</td></tr>
+						<tr><th>dcterms:modified</th><td>6</td></tr>
+						<tr><th>dcterms:title</th><td>6</td></tr>
+						<tr><th>dcat:accessURL</th><td>5</td></tr>
+						<tr><th>dcat:contactPoint</th><td>5</td></tr>
+						<tr><th>dcat:dataset</th><td>5</td></tr>
+						<tr><th>dcat:distribution</th><td>5</td></tr>
+						<tr><th>dcat:downloadURL</th><td>5</td></tr>
+						<tr><th>dcat:mediaType</th><td>5</td></tr>
+						<tr><th>dcterms:accessRights</th><td>5</td></tr>
+						<tr><th>dcterms:created</th><td>5</td></tr>
+						<tr><th>dcterms:format</th><td>5</td></tr>
+						<tr><th>dcterms:issued</th><td>5</td></tr>
+						<tr><th>dcterms:publisher</th><td>5</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>5</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>5</td></tr>
+						<tr><th>skos:inScheme</th><td>5</td></tr>
+						<tr><th>foaf:name</th><td>3</td></tr>
+						<tr><th>dcterms:description</th><td>2</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>foaf:homepage</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>rdfs:label</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/xml</th><td>5</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/ODC_PDDL</th><td>5</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC0</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XML</th><td>5</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</th><td>5</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/GOVE</th><td>5</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/INTR</th><td>5</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

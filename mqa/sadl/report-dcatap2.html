@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:47:26</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/sadl/sadl.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 4 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:description MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:title MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/title&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>skos:prefLabel MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://publications.europa.eu/resource/authority/file-type/GPKG</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 16 shapes</h2>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/api/records/dab4a30e-b59d-4367-9419-04457ee188e6</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://www.w3.org/ns/adms#status MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/adms#status&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/api/records/dab4a30e-b59d-4367-9419-04457ee188e6</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:language MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/language&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:license MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/license&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:modified MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/modified&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>foaf:homepage MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://xmlns.com/foaf/0.1/homepage&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/doc/dataset/36dee1c1-6255-459b-baa3-c4beb45044b7</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 12 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/84035dba-31e2-410f-9b45-044dcc66b136</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/4d335a03-2cbb-44e8-9e36-8452e4c565c3</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/4fea575a-d267-4e08-8a20-93f65c92eb70</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/f4264940-6b47-4655-8c27-f6e6ce01f516</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/af0130e8-f7ee-4814-8177-0adc2e2a4d41</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/809d24d8-816c-4637-b6ac-156982e2100b</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/fe091076-7dde-4d39-8619-4194f03966f7</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/12971998-e58d-4012-ac51-0e2f8e4a12af</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/37cdfee0-c53c-47dc-a72b-31d52241740f</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/c42cea4d-a22d-4857-80d8-d79e6b4529d2</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/47724b35-96a9-4d03-af76-df390bd6dea6</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/cf4c662f-ef5a-4985-9deb-ab4470131776</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:license MinCountConstraintComponent : 12 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/license&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/84035dba-31e2-410f-9b45-044dcc66b136</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/4d335a03-2cbb-44e8-9e36-8452e4c565c3</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/4fea575a-d267-4e08-8a20-93f65c92eb70</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/f4264940-6b47-4655-8c27-f6e6ce01f516</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/af0130e8-f7ee-4814-8177-0adc2e2a4d41</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/809d24d8-816c-4637-b6ac-156982e2100b</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/fe091076-7dde-4d39-8619-4194f03966f7</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/12971998-e58d-4012-ac51-0e2f8e4a12af</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/37cdfee0-c53c-47dc-a72b-31d52241740f</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/c42cea4d-a22d-4857-80d8-d79e6b4529d2</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/47724b35-96a9-4d03-af76-df390bd6dea6</td><td>n/a</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/resources/distributions/cf4c662f-ef5a-4985-9deb-ab4470131776</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://purl.org/adms/licencetype/Attribution</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/63e514a586d9411c83d2168c0cc368182-3fc78298b28d1aa4</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/sadl</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/doc/dataset/36dee1c1-6255-459b-baa3-c4beb45044b7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0419052173</td></tr>
+						<tr><td>https://projects.sadl.kuleuven.be:8443/geonetwork/srv/doc/dataset/36dee1c1-6255-459b-baa3-c4beb45044b7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0419052173</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>12</td></tr>
+						<tr><th>skos:Concept</th><td>9</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcterms:MediaType</th><td>2</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcat:CatalogRecord</th><td>1</td></tr>
+						<tr><th>dcat:Dataset</th><td>1</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>dcterms:Standard</th><td>1</td></tr>
+						<tr><th>foaf:Agent</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Address</th><td>1</td></tr>
+						<tr><th>vcard:Kind</th><td>1</td></tr>
+						<tr><th>vcard:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>rdf:type</th><td>40</td></tr>
+						<tr><th>skos:prefLabel</th><td>27</td></tr>
+						<tr><th>dcterms:description</th><td>14</td></tr>
+						<tr><th>dcterms:identifier</th><td>14</td></tr>
+						<tr><th>dcterms:title</th><td>14</td></tr>
+						<tr><th>dcat:accessURL</th><td>12</td></tr>
+						<tr><th>dcat:distribution</th><td>12</td></tr>
+						<tr><th>dcat:downloadURL</th><td>12</td></tr>
+						<tr><th>dcat:mediaType</th><td>12</td></tr>
+						<tr><th>dcterms:format</th><td>12</td></tr>
+						<tr><th>dcat:keyword</th><td>6</td></tr>
+						<tr><th>dcterms:issued</th><td>4</td></tr>
+						<tr><th>skos:inScheme</th><td>3</td></tr>
+						<tr><th>dcterms:modified</th><td>2</td></tr>
+						<tr><th>foaf:name</th><td>2</td></tr>
+						<tr><th>dcat:bbox</th><td>1</td></tr>
+						<tr><th>dcat:contactPoint</th><td>1</td></tr>
+						<tr><th>dcat:dataset</th><td>1</td></tr>
+						<tr><th>dcat:theme</th><td>1</td></tr>
+						<tr><th>dcterms:accessRights</th><td>1</td></tr>
+						<tr><th>dcterms:conformsTo</th><td>1</td></tr>
+						<tr><th>dcterms:created</th><td>1</td></tr>
+						<tr><th>dcterms:license</th><td>1</td></tr>
+						<tr><th>dcterms:publisher</th><td>1</td></tr>
+						<tr><th>dcterms:spatial</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>foaf:primaryTopic</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>http://www.w3.org/2002/07/owl#versionInfo</th><td>1</td></tr>
+						<tr><th>skos:altLabel</th><td>1</td></tr>
+						<tr><th>skos:exactMatch</th><td>1</td></tr>
+						<tr><th>vcard:country-name</th><td>1</td></tr>
+						<tr><th>vcard:fn</th><td>1</td></tr>
+						<tr><th>vcard:hasAddress</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+						<tr><th>vcard:hasURL</th><td>1</td></tr>
+						<tr><th>vcard:locality</th><td>1</td></tr>
+						<tr><th>vcard:organization-name</th><td>1</td></tr>
+						<tr><th>vcard:postal-code</th><td>1</td></tr>
+						<tr><th>vcard:street-address</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/geopackage+sqlite3</th><td>12</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://purl.org/adms/licencetype/Attribution</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://data.gov.be/.well-known/genid/63e514a586d9411c83d2168c0cc368182-3fc78298b28d1aa4</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/GPKG</th><td>12</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0419052173</th><td>1</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ENVI</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

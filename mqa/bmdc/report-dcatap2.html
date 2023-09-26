@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:31:38</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/bmdc/bmdc.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 1 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/bmdc</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 12 shapes</h2>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/bmdc</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/bmdc</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/bmdc</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:distribution MinCountConstraintComponent : 92 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#distribution&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/5d4519d7-bfaf-420e-8af9-0a999cb4de37</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/20bc52ec-cb85-4fbd-8941-316b946531e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1001</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1901</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1920</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1933</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1924</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1912</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1078</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1911</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-801</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1915</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1918</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1907</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1921</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1909</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1952</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1939</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-598</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1914</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1902</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1937</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7e8bbd05-ea96-4b65-ad34-295d6fc05e7d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1123</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1925</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1080</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1904</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1938</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1926</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-899</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1908</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1919</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1906</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-520</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1910</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1247</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1243</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-641</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1900</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-560</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1251</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1022</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2683</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2620</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1917</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1923</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1246</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/69a40ea3-868e-4f56-a6b2-b313e625ee22</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/29f40b0d-2a3e-49a8-870a-e9b4acd4d1e3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2500</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2681</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-958</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-944</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2685</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2521</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1930</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-945</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1079</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-501</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1963</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2686</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-600</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1913</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/ee056fd6-995e-40a7-8ebf-b145ea0a30e0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2682</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-939</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1249</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-940</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2684</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1916</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-521</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1931</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-942</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1903</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1922</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1932</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1934</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1961</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7b53a7db-eedb-4220-923a-94304c854e75</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7eca7c5e-f1da-4abb-aad3-acc5038bf5ba</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/4df0c9b9-61d9-4895-8872-4776ff2c9af2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/d409cd5d-3a54-4722-b255-2b4d4374d8ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/4146e6c2-3745-46d5-93e6-8d88518f6708</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/8b317fed-fd7e-4374-a378-4831ff458c09</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f0d44b8c-6d2f-4431-8727-616b119c9ed6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/30db2158-cc31-4fee-8895-d586ba59f164</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1905</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2700</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-561</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-943</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/83bdcd87-e4ea-4a76-ab98-ff9f45e529f5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2762</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:keyword MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#keyword&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2500</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2521</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 190 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/fre0_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/5d4519d7-bfaf-420e-8af9-0a999cb4de37</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bcur_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/tide_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/gtz_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/WAM_ECMWF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/e10_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tmsw_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sss_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--rbins_ants</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/scurdir_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/avrcur_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/frez_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tide_CSM6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/BCZ_HydroState_V1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017ref3D</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_windsea_direction_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/hs_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/NOS_HydroState_V1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/avrcurdir_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017ref2D</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sst_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tmws_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sealev_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_swell_direction_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/scur_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/hs_swell_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017mills3D</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sbt_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--rbinscollections</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Harmonic_CSM0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/20bc52ec-cb85-4fbd-8941-316b946531e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1001</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1901</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1920</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1933</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1642</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1928</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1924</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1912</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1078</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1911</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-801</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2034</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2030</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1915</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-926</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1918</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1907</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1921</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1909</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1952</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/54d2f666-7aee-4463-b60e-3583f84ffce2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9146c015-4edc-4d2c-8e2b-56b90ca30167</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1939</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-598</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1914</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1902</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1937</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7e8bbd05-ea96-4b65-ad34-295d6fc05e7d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/a76c83e8-e09b-4b80-a264-b060ef4b36aa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1927</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1123</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1925</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1080</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1904</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/30896e82-9347-4f82-8871-f3a58ce2be58</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2011</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2320</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1938</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1926</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-899</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1908</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1919</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/a2780436-e65b-47a8-8f93-212e600717be</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f5606457-7084-41e3-b095-7730bc6adf10</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2026</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2480</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1906</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-520</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1910</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1247</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2340</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2039</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/aed06813-f5f4-4469-a1fe-1ebf461c3999</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1929</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2780</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1243</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-641</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1900</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2600</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1250</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2032</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2260</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1102</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-560</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1251</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1022</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2022</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9d7b365a-faa8-4179-a385-fa7540c2b8a1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2683</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2620</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1762</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1917</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1923</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1246</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/69a40ea3-868e-4f56-a6b2-b313e625ee22</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/29f40b0d-2a3e-49a8-870a-e9b4acd4d1e3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2722</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2500</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2681</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-958</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-944</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2031</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2033</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2685</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2521</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1930</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-945</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1079</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-501</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1963</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2023</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2686</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-600</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1913</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2102</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2100</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2044</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/ee056fd6-995e-40a7-8ebf-b145ea0a30e0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2420</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2682</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-939</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1249</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-940</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2029</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2680</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2400</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2684</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-978</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1916</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9c445e18-005e-478b-987c-39326b4a0d88</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-941</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-521</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1931</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-942</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1903</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1922</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2015</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/894c754b-29fd-477b-827f-0be505143c2a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2046</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1765</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1932</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1934</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1961</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7b53a7db-eedb-4220-923a-94304c854e75</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7eca7c5e-f1da-4abb-aad3-acc5038bf5ba</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/c5f1f8a0-3626-4396-9795-ad07d98e8bdb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2687</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9f4131b6-7895-403a-a17e-6bb33befaf16</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_wave_direction_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2014</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2036</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2720</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rlf_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sbs_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2035</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2101</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tm02_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017mills2D</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/4df0c9b9-61d9-4895-8872-4776ff2c9af2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/d409cd5d-3a54-4722-b255-2b4d4374d8ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bcurdir_TS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/4146e6c2-3745-46d5-93e6-8d88518f6708</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/8b317fed-fd7e-4374-a378-4831ff458c09</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2027</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/e2aaecaf-b555-405e-ae77-dfe1b07e0f17</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f0d44b8c-6d2f-4431-8727-616b119c9ed6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/30db2158-cc31-4fee-8895-d586ba59f164</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1905</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f432b696-ac1a-4971-acc8-184bc79e9b7f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/WAM_UKMO</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2700</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-561</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-943</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f98d0d0f-cb75-4055-b8e4-d3c31cb96d34</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/83bdcd87-e4ea-4a76-ab98-ff9f45e529f5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2721</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2762</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2161</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 335 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/cb1dc1030dac732a03cddc8e9d6ab13ffe6ac79c/1e490917c4e2f84a100eeb8f5535c1c6bf25528f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/cb1dc1030dac732a03cddc8e9d6ab13ffe6ac79c/8eea3132368c7d8c9b24195a95c413bc647bbf20</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/af826fad79c668db1bcd7ce24ed23b4d1f13d7f4/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/af826fad79c668db1bcd7ce24ed23b4d1f13d7f4/702276c85c1f32d5f46896c0e179dfca6caaacb5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fecf9cf2229839dad7bf43d2b23cd6424f25a59b/201832171bfa330c85a4eff1d725d575db90aab7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fecf9cf2229839dad7bf43d2b23cd6424f25a59b/b48d4cdbd9323393b5aae0405d2d9b4281197009</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/395f8cfe14555131ff74d4800ac0ebc4e6f9869b/a4691347d76d6cfd8914b1c66512dac97c53a741</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/395f8cfe14555131ff74d4800ac0ebc4e6f9869b/dc526abfc3f0aae2e6f14c39a252c670d3e12359</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6ea785ab1359608a6c00b0799715a1f7b9a8b171/874fe75a1c78066cea4df43f503ad69a2b93d877</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6ea785ab1359608a6c00b0799715a1f7b9a8b171/f106cf1e956271fb8a8ac181c85e98ebacb0c8ec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3d8495829fd669ee9268e2b9693f8516940abb5b/d7a07d4df49b1b0679380c622e0557cd3ded8ac4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3d8495829fd669ee9268e2b9693f8516940abb5b/1ff6b29633bbb3467b835fb35778e8b59d0b4452</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/47b7dc1f96fecc2bfb5163d48fdd56358e85e380/1b4ab58391dc796825f85686cb57874537ac4d0c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/47b7dc1f96fecc2bfb5163d48fdd56358e85e380/488846fd16cdfa5b47792eba7c3b104aafc416bb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b39cea961138090beb893eee1da697cb86ea4195/0c9d2d4064de7dfcef6b80440ae3568d2c49aaf8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b39cea961138090beb893eee1da697cb86ea4195/0183bf304e935e7b8f220aa5977c035bcdff001a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/82b1f3d94bcead4964c62c6ff6a356c9ce97cd3a/e7a147a6c143b49d317525daebc7ab7c0be7561d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/82b1f3d94bcead4964c62c6ff6a356c9ce97cd3a/f95887de1d846998cd44c10ac59ad5de63d81973</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9f4b7fc91c09b295a2b9b875d88c12de9ec2c774/c7cf45716f01b22de27b8e31e882529aee586a40</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9f4b7fc91c09b295a2b9b875d88c12de9ec2c774/c07b65b273d7e45d065e8a963148ebeee2e2f59f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/04ca1a634e7876d4eaf8a8e2f9dac705efdafb44/cb002c157f151de21d35ff013d9808eba470f4e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/04ca1a634e7876d4eaf8a8e2f9dac705efdafb44/bc77af6e8f3cc3d9d53fee9f3ee21478313bdb56</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f2cd6140a6f4d794c1db2c74bfa122f4d0bddd38/89ab2b50928e960c396d255759bef3ef1dbdc48b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f2cd6140a6f4d794c1db2c74bfa122f4d0bddd38/d1e87e8db2fb5b8c1958cef01f22733683c082d1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/57f7eedff944d0ad43f8a16e391823563c5dc2f9/2d7b088ad371e18ef31045e8b0eab211d9f279f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/57f7eedff944d0ad43f8a16e391823563c5dc2f9/4e8ebf339fdacbf53af2dfc6f9e5d457a094412e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/539bdd9e1ed86e67f184bedc7ef9ad6be749f243/0e0e8ae59d90b00e77471770995af9ff0a1b96c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/539bdd9e1ed86e67f184bedc7ef9ad6be749f243/1188cc9f5e4635c7d2763df79fa3a7a975940d8d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/924dd7d859fd08bb266399b5c24909c9b8919427/cb43c0e9a772b4153e128b51b695ae4a5d03bf8e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/924dd7d859fd08bb266399b5c24909c9b8919427/8ab1bdae0dea0b26219c32146eb310f9a5b3f7b9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e407b8ae006a8d08a9c8094947c362136e62e314/a640d579528da89049d788f4a6a6d6f6d86b1969</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e407b8ae006a8d08a9c8094947c362136e62e314/66d1d07ed8efa38a451a27ca43a7b86f723f4c00</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/1ff29a4fdb3c06fc2fa6796c3ddd91bb7bcea206/a8474abd1ea1167242eafc726dfa5ac3c0ce4395</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/1ff29a4fdb3c06fc2fa6796c3ddd91bb7bcea206/5445d563cf8499be35e161bc7a8ebde3daf93024</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/544a54e65c4f10598756543391bd6dc0a141c523/afea45026448aada97ef0ead88abcfadf367db67</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/544a54e65c4f10598756543391bd6dc0a141c523/186424683c5597abdaaa1db1cb4b79904f8a3f5e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b8f39ed186834d0c4be78eafb8722b2ae1f6fcc0/e76de5eceaabf83a10603c3200bae8f1010b107a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b8f39ed186834d0c4be78eafb8722b2ae1f6fcc0/9c0379a4ddf9c4b75870778c788f1c4e5fb88a1c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3b1a6b5a34fe4d1c96b724eb2e9bdc5454e6e464/93c548bc752672e3de8741562ed07de3818a0860</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3b1a6b5a34fe4d1c96b724eb2e9bdc5454e6e464/374b8b425a043a46ca6d28bd26e3fc8bc7e82127</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/42222118c9dadc5311caf0c20f54ebe74b7bb027/7bd542fc731d6ea527e266be968625767bd84f2c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/42222118c9dadc5311caf0c20f54ebe74b7bb027/5c1ced118268b8bc6bf0a16288748f9418a8b509</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/04619e1b08fc31c055b78ea02cde0239b8ebbea8/64efb7428cbe94ea61da90fe234daf78fb971c96</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/04619e1b08fc31c055b78ea02cde0239b8ebbea8/240bc4b86ff33d3adf48e407daa78c50712df8c7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/80710711497275c83d0dafda74f526c403fea0c2/3e052dee5b305735383b640b24976f0320fecf1f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/80710711497275c83d0dafda74f526c403fea0c2/f60fb1021b70ade2a599e965ad5594316dfdb11f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b8da29b40dda8af37b210a04eef3e959e5a3f10a/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b8da29b40dda8af37b210a04eef3e959e5a3f10a/ae74e5043c4ae6bf590eaabda961e49dc8401a8a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f609ea2228c46e67095d7453f92c9617b47580b0/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f609ea2228c46e67095d7453f92c9617b47580b0/a59054ca69c9f1e0a748be4d324706c4e0c5a71e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/0eb9063dfd63cd14807afc5de08d6c474f850169/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/0eb9063dfd63cd14807afc5de08d6c474f850169/137c25d7a1cafc56d214ecdfc4df5d992ee6f14f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fe4335b0eeef803743155c3e9ff0b05f9e650a03/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fe4335b0eeef803743155c3e9ff0b05f9e650a03/eb2bd8800d47dcb653bc8a89aa4b5e2df5e57501</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/0ae5df83980db0fb5ceb0ca59ab6351eabbb137e/fe095d4995fe84d31ac5464b6833b14e77b5c0ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/0ae5df83980db0fb5ceb0ca59ab6351eabbb137e/cf34e87a49e7b0e67a0c9191bd93bb88213e9741</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/2ba91da02676be3a9f05298ba3d35c5732e0010a/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/2ba91da02676be3a9f05298ba3d35c5732e0010a/21403d1e54660a13d7e3cb5dd4a7280672f1718a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d20464f023079d22d1554112242a9f8893ab4cf3/767e4dd30c2b40b006a1a76f7bc0dbc73883818a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d20464f023079d22d1554112242a9f8893ab4cf3/9316f23699095e1b7499ba4e4ee3bb0e07512466</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/30dd409b90fe35ce350e477f2b1cfd1e4c831e04/2ac935730eec663a1b1b144a7797a3f1d15c8140</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/30dd409b90fe35ce350e477f2b1cfd1e4c831e04/aeb0145be7caf2e37b0e5543425bcfa25c192a11</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/98175e5bd5084f133ab3ca9283f38a4b5166f0bf/b48ffbb43b5e8608d57be8116af2d6f375951a51</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/98175e5bd5084f133ab3ca9283f38a4b5166f0bf/b32d11a5fb9da08b54db12fe8f3dc0d54163e9f9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/867576e3b5e882bc394155975c92ecc3f14b2212/96678489a785135845dd25845857aed052ddd1b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/867576e3b5e882bc394155975c92ecc3f14b2212/c76db4769f618ba4df77a4541333588d7b0a15a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6b2ea7691435737d3054cfee6c1e546da927786c/e23208443a4395b0959e3cd8db60a914e0e92284</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6b2ea7691435737d3054cfee6c1e546da927786c/e16619a516d8307246f37d3b58926d0ecf3cf94b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9e79189b456b708464fee0bf7262d1c1c81d9d35/5b81198c31dfd38e63a9db44f2a8aef12e807295</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9e79189b456b708464fee0bf7262d1c1c81d9d35/17e557137e185cd4fa54dde1dc67ae3d6c927d2b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e72e3ad0f75e7b1674fc7bd8b25c02c841209594/2621cfd3a2e45eaffefc0c08865daf3bc3ea1f1e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e72e3ad0f75e7b1674fc7bd8b25c02c841209594/80d135410719790ea05c457ac604446bdf703b63</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/50e518fbfad8a2aee845c19e16bb162cf2dc51e6/767e4dd30c2b40b006a1a76f7bc0dbc73883818a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/50e518fbfad8a2aee845c19e16bb162cf2dc51e6/d4d4cb59e655b0b49bf282a097d17314e6b58004</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fcb4406208120f20b41e6ddeb236601801460ac8/ddd02564bd1b4ce8d493e1a6aebfc13afdd3bfc8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fcb4406208120f20b41e6ddeb236601801460ac8/6d3f8423eaf2399f07226bcfaebd3f6c71df1d90</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/17a52622b5edb1d96abad64d01f79eabc09dab62/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/17a52622b5edb1d96abad64d01f79eabc09dab62/9575ec1fe2ca8f136dc5657e00a134e21815818d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3c4872c34b8bd1b5f66341205dd6e6fd088b3aed/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3c4872c34b8bd1b5f66341205dd6e6fd088b3aed/1bc3064e672fa38f1bf6707a1867eca2bd34d986</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/8f4dc8183da12091131c659d23f7a093685622c3/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/8f4dc8183da12091131c659d23f7a093685622c3/e5e0a6dce703e4d9f6726fe3dc79d19585f240ee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/124ded33ebb8cb506babd3f060a508e63bb26ba4/a3ba1a1c4d3d1c0e07bc01f9037e81ded774b27b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/124ded33ebb8cb506babd3f060a508e63bb26ba4/271f56da47daa300f08c9c4dbbe6c5d1f00051f2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a127e6cdb14f8c69261b1f3d5e2f0097121d44b3/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a127e6cdb14f8c69261b1f3d5e2f0097121d44b3/cb639249da313d49dec1480528004029f4a6444c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/280012155c21ce4eb5538511d654521f3126c863/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/280012155c21ce4eb5538511d654521f3126c863/de00c6519c56f4f72ae1c28ffb45b114702ce672</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6c95ca206224282b2c19524775a39811041fa64a/407d2db6a485d9731ca85c9365e2fea7f647d317</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/b19cb7c318b997e0938f8e0429e503d8c2ce6295</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/1a47e85da355886ceebc24a241009fc33e90656a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/948ea866c5d4be0cce92c9604566663ed8c2d799</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/b90018a8d29a274469c24e16664f9b391e974642</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/511f1d6dc09edbd8eca5ba879705e6d8faab296f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/3f21bd01ca2ef4b2780822530a65ee2d8569b94d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/5939ae750378aad752b0b6b409d87176540e302f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/97bbcc2c3d3153080215f00b6a0733f179bb3db0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/aa9f5107c425a285338a57f57fc7e71ee99cdd11</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/c340cc72a8226fdfd0bd3fe9de9eeb6c5dc3ea46</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/14c4ecf23d370dd4d8d2b33274ddf34dcb3a41f9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/456d59ab730c36aaa971c5eb26ba990946143c23</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/69948189fb645857c5616f9f220256b564d5604b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/f352cd4efa0f5e167c65eca5df27f65e2b5a34e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/7af23428bf2caba16cc0883fcc8cd585b5bcbfea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/702a32cab89170e9c7a8dabe81983833511c5139</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/ddcdd3bdd3cc327f74ee4d975b0273de1e3c0937</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/fb3a0649d5731a7c6ef7bcd459679efc062dc443</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/18fdf0cbb0e4409e8f438a64e076a3f29d7ac79a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/e0a9f2d722fea602c17c4195a71baca9b98cda32</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/834229e50c2360cc851d11f6820f20d8e91d1a8d/d3a5a3f1199b952edb175fbc9ab8d69f19b8e185</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e6e121855c0499312ebba47ab790bcc6e2b7c3d7/4a84b289adc3dd0d072d9ab21f1c669fe0e19012</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e6e121855c0499312ebba47ab790bcc6e2b7c3d7/41eece87a8691bad1f15e6021cf9b68c037dc6cf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/85e0aba3a19dbb7f5a075738ff2428520791464f/7f5e755255b4322f89ccdf66669e53cb08ff2018</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/85e0aba3a19dbb7f5a075738ff2428520791464f/a3d84fa0f900f06dcf5de52c633d6a0fce587ebf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/85e0aba3a19dbb7f5a075738ff2428520791464f/983e14d4281804d8339d03cdcf4e05a34f935348</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/85e0aba3a19dbb7f5a075738ff2428520791464f/5c5515b1abf3251776c6c194c67d229fcd1e697c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/bf82d7b5994449fe45d417a430a609ac25c6a820/18fdf0cbb0e4409e8f438a64e076a3f29d7ac79a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/11a5981c18ffcebc3016394eedcbc437ea8103ea/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4b917df9ba41c0447571db32e45944f2ebe991ef/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/61321de1d59ce4b7669f21f56992f32686543f70/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/bd85ae3c4b7f1705b5c3630515253674686d9de0/ee40ffaba09488d3b73f7421726185316b66f5c9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/11f5294e958c9f73b47a9df8ce3f651dec34b4e6/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4c88f0cc4254a08b91da9813a0298a81346cad4c/dd159a1c2d7d1051dbf14f8a39c851e16ab6fbe1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4c88f0cc4254a08b91da9813a0298a81346cad4c/2803f1619a973e3cdff567087b99263219d8ba74</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4c88f0cc4254a08b91da9813a0298a81346cad4c/3d8f194f9050c82ad80a2f08fced1bd368dbfc12</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4c88f0cc4254a08b91da9813a0298a81346cad4c/97a132af78f5fcb26fa4d8e5705b23ef39919780</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/db63966ac95d5d3ff12d4c341625ed0d46fca555</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/72723c4a9ddadc098a291d3b03588d74d711f5ff</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/66e9b59192910499a8a1310e43f8928d7ca66d0a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/3af62e0cdcd993bbe8a10e0e63990bff6b00b413</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/91f89c7c81ce6cdff3fa70f6bece1404594304b1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/d8e286a45a8d0041c7147f05391d6d0fa370b754</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/7869d049060e6cfc31297053153f3479b1f2d5a9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/0e511795cdaa68fb4015b65460ac57a7f7babe7b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/0dc8919a30603526481929b0547d66fb53b2100a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/21fccc10cc0fa98e9da31ac86b403c12af1cbfb4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/924839660ec2d4c31730f17e09d2dd368f5b33a5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/0d80986cb58adbe93bd4a5fd7ac787bea5c2103b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/e5a6ca328d9421b5c204032cbcd330172905afed</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/686a127464c17030094587ca5eda6a6b38b28dbf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/1d04f7fc4573064b57ea74fa8ceafea2bd799eda</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/676da8c763e727f8b74296d032796cb6d1f227e3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/d8da29de3a96fedaa2c6b37a974b33a3fa2ac101</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/6b89deb624aa662d75a7bf02a94e4e369ffe000a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/5ce45fee65ac52c247e52be126177f684a8482d3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/559a0481c47289f20a64699d144fa217fc1b8080</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/3ee95b238a08715b6e80dccf816ffeeb1ba581f3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/9fe248955fceb8ef9d7b54eea63136654aceb320</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ea59243a4365fc484faf56698b8f50f43bb200cc/29da7318e6517f04f62517fe7d9f8a8ffa36c955</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/2a40710e0c978d22e5e627110a2537764fb7c083/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d33e3b1b483b785cc661519b7fd8bd567a571a31/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/2987e965b3968d468b18ed4ef8c5290c2a7021c3/344d69885fce71f415774b84982cc7506a1f7e4c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/2987e965b3968d468b18ed4ef8c5290c2a7021c3/97a132af78f5fcb26fa4d8e5705b23ef39919780</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/2987e965b3968d468b18ed4ef8c5290c2a7021c3/64ed3a54531a74b79604152be8bd22eab760d34c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/245e875955669d9a6837fde1f204748ebc12b852/85e8c6b53efd57bd32a70b7059af819234bb3953</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b4feaa52225969b98f7447522a45c13a1dd7a781/deac73156e1c4987c844b86f5a6847ac2a05f89f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9c69eb26402845d6ebcb40364aeda7a1da60e5ec/6061ef2a92e3957ec51f83055be8d775b0a2f619</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9c69eb26402845d6ebcb40364aeda7a1da60e5ec/1e7e60aa4e0ac14665ced1956bf0cdabc96e551b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/195fba9fde77c2a149c4605202f3ac0395ff2a0b/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/14af10ee1449cb7b29dbdd6163f3f4143585f6fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/70b26027217430b72a030e3089a2ca27fe651fbb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/36c28de3a7a1694087b769b266e5d602ae5149ef</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/aed01cac5d184cfd67319216655b427a1e1d6fe2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/284f7c92d8b681f094ae8b2a64eb3ada6e0a5e65</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/875b5ca8a40934043bd8190c13b1b81d861e4952</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/7f87564f3e13026c4c3aa12951441dfa03676052</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/e786f8922ee9ebb4bc964bfb11cbb7d3665b920f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/8154dcd86c2ecaf82dccd49adcd5af817b03a170</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/5ad319feaae347d6039f6253e5ac81e1d58b6f30</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/55c33e527001cb00d3eb816939610c8717e9cc7e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/41c27475ec53d3f691725a92891e42b4b9f15e15</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/0fe268203e1f8a6928283ee6fe9ae703547a788f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/a252afc379bd1475ee741e2116666e89cc8cda91</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/c371016f208472bfc8dc3543863b46c9049ab6bd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/9aa656799b9bf9e11ce20aa475d6dd5aec5a3889</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/d0284d389bbe410c17db009f82b9f51a81cfdb69</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/49803f4d5f1aeacaf3b51d7b6fba02784a82a24c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/384e3201f2b9d465991bfc26be3459f4f472aa69</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/2bc11c2410f9bb0e2d37b3987d41342e0f4403fe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/407d2db6a485d9731ca85c9365e2fea7f647d317</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/e7f11a49625838c2756923a7185231eabe99f3b1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/a7380d28fec83d2fcaa73f861a01003113d0d5ca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/d443c571c909f440afda1289516e25f6561c9581/65db8796e5a383e978582eebf52996890a823e63</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4687bc904394927ef316979c22df1d1ac39cd78f/7ef48cabd60094c46e144cf224996c7c8846a57d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4687bc904394927ef316979c22df1d1ac39cd78f/99b1cea72e0ee3fed2b08f256ee41ed34f3d6b92</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4687bc904394927ef316979c22df1d1ac39cd78f/e8efd9ae019257dba5d94d1a5d09ba8382e60483</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/cb3fe60d63adb72f8e577620cb2b798fe5fc78c9/b653586d06817dea4540a4a7459322f890a168b3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/7f553981db70f550faa78d6eba509811c80552b7/48f764fefd198eca344e7e42048a5d055e6aaaa0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ec59fcd7fb04086221bcc8e80a800e9132226eba/7f5e755255b4322f89ccdf66669e53cb08ff2018</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ec59fcd7fb04086221bcc8e80a800e9132226eba/a3d84fa0f900f06dcf5de52c633d6a0fce587ebf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ec59fcd7fb04086221bcc8e80a800e9132226eba/edfc8615f414cea3672f6fcd3f2e9fc99e4f2bc5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ec59fcd7fb04086221bcc8e80a800e9132226eba/4f3c8ad9a8bbebfa1a1ce3579a2df04d1a6f8d1f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b081011995f48fdfe276329d0bcc978202e0379f/fcb925498bed47d062a6752a77b8e5ff1d1f707b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b081011995f48fdfe276329d0bcc978202e0379f/b90bf3657a78f1024902120043112ece032a22e1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9420e320aeed7d4ad4af1dccc302fc91f5fb4447/faf63b2df6ec677b079f997d40494e19b13a9f94</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9420e320aeed7d4ad4af1dccc302fc91f5fb4447/4e49c63a0a6ac3fe0be3cf8038733f6d8380fcde</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9420e320aeed7d4ad4af1dccc302fc91f5fb4447/3b941e123ebe2b68f4422ca05d7cb9b1a513da57</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9420e320aeed7d4ad4af1dccc302fc91f5fb4447/53fce8ddd348267cb936d48340a316535be595a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9420e320aeed7d4ad4af1dccc302fc91f5fb4447/9c505f67465e9db8123be26b153e5feef1e76d5c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9420e320aeed7d4ad4af1dccc302fc91f5fb4447/f355ffacf9dff0b6483b1e24b2b5a2bf7df52d62</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/374e4c4834289ed794428f9d20e4b8b027fe6b9e/b181944354e2745d6cff20a6429605f54d9e7559</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/99d54985de2e7b16c4dbdc7a73dc70366467be22/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/6343921cf097b8a9e4a973ea80fd8f32ffba1882</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/2a86132b953b395659e07cdeb176b6ee7290036a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/f344b8212dbce70a1a5578e72203f03d59e669c4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/0cb905250e9a4e111f5f4113907a574ae30d98f8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/3f9a8784049e45fac6c2300d6b6515afb2dd59d6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/bd98087acc8a9520257d093f8d19729e9403fced</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/86dbc9fa480586b32f44ab1f54d185321995c2f5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/7645c53ac3b575cad1a59e537bb103b49a65aea4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/ee900ccd667c0977b4e86d82a58c0b774116bec0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/1a97be917377f8740ddf405874c253453577d8a9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/b8cb9ac4bf31ad1e7873eacaa8f5a36bd5bfc87e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/f293f938127010f6f35417d28a5bf23199d9ee93</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/9ce2be5a17bf90076ed3800c0cc76775fc1509d7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/263a342835001196e99a3a63e824c03c9c47ba46</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/fefcb75fb55aa1e076ea6cbda1b6d1e5f4e23ec9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/c340cc72a8226fdfd0bd3fe9de9eeb6c5dc3ea46</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/ce63ddebdcaf560daf627690b07ecf087ab75e06</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/528db9db3869ed8031b3108710427efcc6560b96</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/28d41b642522e53eb1a642d231d76291fa8121f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a29bc4f78d05232e060cc8990ce400d2f617e0f2/d87cef406ff9d27928836be1aa79c1fd25bb565b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/8af181f06cc6d90b4c65b40871d42707f1a8bea2/d1162a162f7d5ead58ed0d083757352502fa1219</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fb6fe98fe4040d5eff0edd59e9a88e0f7e4ce8d5/1e30920b5c60a6a27aa9e24092a6b6e200f09eee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fb6fe98fe4040d5eff0edd59e9a88e0f7e4ce8d5/3dceb55770ca6e45646c8a83942314b04b8bb94f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/424a9212cb31f1a22e8be4bdd0142aedfcd40a96/de88effa0829fa7d5925dfd0c50f40e8a341be2f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/39a9d60f3a8c911088e8caffc2286bcacd367b2c/740ae890b2c5121a92ddbe9336c1a100b7948267</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ed5c6b667bea5b8cbc63a895cb43acfa047cdae0/5954dd76ae78c714b1d8bf1c0f5beaa6fc195a2f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ed5c6b667bea5b8cbc63a895cb43acfa047cdae0/e15f83878bc3bf308edd7bd7af5bf2ef1ae200ed</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ed5c6b667bea5b8cbc63a895cb43acfa047cdae0/8bcaee306824f705aea3fcbb57333ae51265dc2e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/364f022b9753cb070a283e880d81fdb7e6c67b51/af8f7316ba796c19d71e74efa0b4699958591b99</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/364f022b9753cb070a283e880d81fdb7e6c67b51/28fe1d8e67b56199b2a9b098a7d716d04a39a3d4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e59a5c14261ec5f827009bfc9b74356abe5deefb/f9bb0b8895dea64c0cb3c32e6b46f893811ce7fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/0d7108c927246990a9ba9076d4a8cd1f612e408f/b852da3c7a78b493d5f182d2b791af3a043f44ea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/779aec62801b8aa77d2700573f6cd5d9fe910e62/33ea87a20b96e7b69849c61947712c672ea8c660</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/779aec62801b8aa77d2700573f6cd5d9fe910e62/ea61d0ccfe5d235609121360aeeaf69b9bb4b2c3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/65c5395a681724cbeee830959c7d5d127f323321/7733d0167da0fd32131dda1ee5c907ba3819e159</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f6b7268a092332d43dd46f3eb8067b379bc0d259/0d779837e958b958d73d6bba3c89cfb04fc29b1e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fd3c57681e42aae27d24085a0f923c32704d04de/9808b1ce8855a7982ca2c82ce0417c13d6d76f27</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f1b595faebc0698ca60aeeef3bb3458dc355e421/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/42155d444ef75660c992664e0ce521a0c1467be7/4e49c63a0a6ac3fe0be3cf8038733f6d8380fcde</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/166f700cec155bba5e0d9fdb9c03f065ec4ed2b4/6061ef2a92e3957ec51f83055be8d775b0a2f619</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/166f700cec155bba5e0d9fdb9c03f065ec4ed2b4/1e7e60aa4e0ac14665ced1956bf0cdabc96e551b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/4f276beac281451ae3578a334b2f7783aee8e796/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/cd56b2679a3ca5325fb723170318ec29d0fb1bfa/f4629e79975804732b1aa2dba29d244b9d7fa48c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/14af10ee1449cb7b29dbdd6163f3f4143585f6fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/70b26027217430b72a030e3089a2ca27fe651fbb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/36c28de3a7a1694087b769b266e5d602ae5149ef</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/aed01cac5d184cfd67319216655b427a1e1d6fe2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/284f7c92d8b681f094ae8b2a64eb3ada6e0a5e65</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/875b5ca8a40934043bd8190c13b1b81d861e4952</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/7f87564f3e13026c4c3aa12951441dfa03676052</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/e786f8922ee9ebb4bc964bfb11cbb7d3665b920f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/8154dcd86c2ecaf82dccd49adcd5af817b03a170</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/5ad319feaae347d6039f6253e5ac81e1d58b6f30</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/55c33e527001cb00d3eb816939610c8717e9cc7e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/41c27475ec53d3f691725a92891e42b4b9f15e15</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/0fe268203e1f8a6928283ee6fe9ae703547a788f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/a252afc379bd1475ee741e2116666e89cc8cda91</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/c371016f208472bfc8dc3543863b46c9049ab6bd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/b19cb7c318b997e0938f8e0429e503d8c2ce6295</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/1a47e85da355886ceebc24a241009fc33e90656a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/948ea866c5d4be0cce92c9604566663ed8c2d799</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/b90018a8d29a274469c24e16664f9b391e974642</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/6343921cf097b8a9e4a973ea80fd8f32ffba1882</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/511f1d6dc09edbd8eca5ba879705e6d8faab296f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/3f21bd01ca2ef4b2780822530a65ee2d8569b94d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/9aa656799b9bf9e11ce20aa475d6dd5aec5a3889</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/d0284d389bbe410c17db009f82b9f51a81cfdb69</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/49803f4d5f1aeacaf3b51d7b6fba02784a82a24c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/384e3201f2b9d465991bfc26be3459f4f472aa69</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/2bc11c2410f9bb0e2d37b3987d41342e0f4403fe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/5939ae750378aad752b0b6b409d87176540e302f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/97bbcc2c3d3153080215f00b6a0733f179bb3db0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/aa9f5107c425a285338a57f57fc7e71ee99cdd11</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/b8cb9ac4bf31ad1e7873eacaa8f5a36bd5bfc87e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/f293f938127010f6f35417d28a5bf23199d9ee93</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/9ce2be5a17bf90076ed3800c0cc76775fc1509d7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/263a342835001196e99a3a63e824c03c9c47ba46</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/fefcb75fb55aa1e076ea6cbda1b6d1e5f4e23ec9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/c340cc72a8226fdfd0bd3fe9de9eeb6c5dc3ea46</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/14c4ecf23d370dd4d8d2b33274ddf34dcb3a41f9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/456d59ab730c36aaa971c5eb26ba990946143c23</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/69948189fb645857c5616f9f220256b564d5604b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/f352cd4efa0f5e167c65eca5df27f65e2b5a34e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/7af23428bf2caba16cc0883fcc8cd585b5bcbfea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/702a32cab89170e9c7a8dabe81983833511c5139</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/ddcdd3bdd3cc327f74ee4d975b0273de1e3c0937</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/fb3a0649d5731a7c6ef7bcd459679efc062dc443</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/18fdf0cbb0e4409e8f438a64e076a3f29d7ac79a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/363d6a47d6a27d2d4d5509663a4430c1fce9c633/9ab68369a2fea910174be28eaa8ecd491cf50926</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/67a6c4f8d5a14f114925615c298bd8d0c5c8a723/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/5fab2d7eee3c508a80936d7dd46e7eb52a197606/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/5fab2d7eee3c508a80936d7dd46e7eb52a197606/87fd8d39a58bb0cb75399793ad6f597bfdc2476d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/450142d4ce25c02fc2f4463aef3909d8ff99c48d/602d372ec7124ab618e3ccc21929be0d5d1ac023</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/5882113865aa30c95e8066b1d14dda04064f056d/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/12cc0dd75090eebe1e3ff06f5a9c0ec9cf699620/c41514cef6c13200d19f79c588cbdda38a6b0e89</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/12cc0dd75090eebe1e3ff06f5a9c0ec9cf699620/a8b9a93eba8a2b0d27b39f732b0c477ebf565ba5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/41d620d340cf875026ec56568bfcb5e2aa5b09b5/5f6a48e0d1922f25e0ae5f53231ef1bb0f687d9f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/244a94e12fcbf595dd322496128cd58c81022164/dd159a1c2d7d1051dbf14f8a39c851e16ab6fbe1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ec0a492b31fc22d0678bcaf18426c2bd1a5c9446/c98062a7e8b32b86907acce3bd5c826138da7864</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ac32fead90b4222dea3e3c87896ec94c35dba8b5/a245ff3597b8b2b8cd3a86b3ba768ef0f7c1dcf8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ac32fead90b4222dea3e3c87896ec94c35dba8b5/13266685bef8e4e7781120c5b8021283b2b6552f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9bf57d778028303d2d8c2554bdc1eb8ae6bce582/e87bbbb6cdb6f4748d3163d0094e517f421f34a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9bf57d778028303d2d8c2554bdc1eb8ae6bce582/6eee25e77837fb2da1fcf5163f394e42413bd2ed</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ace30fb6b2a4fbd94589faa85b5ca60d18bb5ba6/2803f1619a973e3cdff567087b99263219d8ba74</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ace30fb6b2a4fbd94589faa85b5ca60d18bb5ba6/3d8f194f9050c82ad80a2f08fced1bd368dbfc12</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6a253100a643e4b5dc0275d77c8cf0b834ec84c2/83fd673ed622842e3d3346da2a7dfe37c761eb1d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6420a0bbf1dd499b89984acd579ced3f4c94b684/3682baca6183de05579e80d7cd7ef82045188e8d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6420a0bbf1dd499b89984acd579ced3f4c94b684/48ccf5200dd0b6a09c56ea832572532d20532da1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3c3a0bfcca86a47b37fe11fea8fc9fd5de6f5a45/1a7850adc99752c8b6260f7b3d60671cc4c07231</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3c3a0bfcca86a47b37fe11fea8fc9fd5de6f5a45/f86ac0562ba61c3818a8877197b7685cba7d8ef9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/8c13d59977aa10ba608607c17285b579da572e60/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/8c13d59977aa10ba608607c17285b579da572e60/1cfecd166a3a281c66c0eece499f24a4fb095229</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a1f9dc6c46cc2f73287c94a83b14f827e0ce6d28/bbde4c89db37b3e8556f802e014d7a19d77ead7f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a1f9dc6c46cc2f73287c94a83b14f827e0ce6d28/5830ee67b58360e154a7c40e46444b85c0421247</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/775827a46f038da39d0dbcfd24bcc918a5454ef6/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/775827a46f038da39d0dbcfd24bcc918a5454ef6/5b5ab04f0ae655f6ae1f5a290761b3c3f3469922</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/98eef90c2759a379ac44d34a6a9b3f741d790059/c6b6e3b3d3ba40e0d3f1e515d13f4712560fc6fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/98eef90c2759a379ac44d34a6a9b3f741d790059/3c2af74c208c9d818d95610ee05c3437687600c2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/12520ff2fa0983d64f4fd679b5b5e78035ee0eda/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/5127995d9cc1cda7f2e1d6900a8d723a0044d3c4/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f455414b865105fb41db311b9cce649cafb9f56d/371c9f60e838c7b07897b6486080a8fccc484913</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f455414b865105fb41db311b9cce649cafb9f56d/1567e9c6185dcdab76ff836a12af8a6dca845b96</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/8a3b1cbd01cf3e00856c597b93037fa8690cdd6d/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/8a3b1cbd01cf3e00856c597b93037fa8690cdd6d/137dd74e9a4deed351f7eca9813ae196f8f4fd07</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/76065cb7edc4038e84b4e43a688edd0b3466bcb4/8ad9a3202317eef1c04be0329746bb985ffbc083</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a2dc545ed0a1899c0af74bde51a4a06a97c7068a/5b26c11be1b3e4a9f9e9cc705438ff48904dc341</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a2dc545ed0a1899c0af74bde51a4a06a97c7068a/8c800243f51ac2c97ebc42222c1607e815d0fdfb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/03620ad90819fba6d880df3ce5367afa95c9b727/1bb3f68baa54df65ba4cde35bef9c07aa8d36e54</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/03620ad90819fba6d880df3ce5367afa95c9b727/c98c5199debf6b9dfe78148d13a0c5b5b173910e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/7fd41b843d26b746d7c2b1708fa2f7cee9c8994a/df5a3549905866af45d2bf244b3238a77ccc3c48</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/7fd41b843d26b746d7c2b1708fa2f7cee9c8994a/e20f46195ccc5b16f49b41374c3a80f9a37ff240</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e4368deb6f34e2fe31f81740a028ae85f0be8455/9853bf5f1a7347db733ea7e8baaf13075315f7d2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e4368deb6f34e2fe31f81740a028ae85f0be8455/bbb1184012c9ceeafd8a9675c3d8e22614d4bc0d</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:format MinCountConstraintComponent : 70 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/format&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/cb1dc1030dac732a03cddc8e9d6ab13ffe6ac79c/1e490917c4e2f84a100eeb8f5535c1c6bf25528f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/cb1dc1030dac732a03cddc8e9d6ab13ffe6ac79c/8eea3132368c7d8c9b24195a95c413bc647bbf20</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fecf9cf2229839dad7bf43d2b23cd6424f25a59b/201832171bfa330c85a4eff1d725d575db90aab7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fecf9cf2229839dad7bf43d2b23cd6424f25a59b/b48d4cdbd9323393b5aae0405d2d9b4281197009</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/395f8cfe14555131ff74d4800ac0ebc4e6f9869b/a4691347d76d6cfd8914b1c66512dac97c53a741</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/395f8cfe14555131ff74d4800ac0ebc4e6f9869b/dc526abfc3f0aae2e6f14c39a252c670d3e12359</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6ea785ab1359608a6c00b0799715a1f7b9a8b171/874fe75a1c78066cea4df43f503ad69a2b93d877</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6ea785ab1359608a6c00b0799715a1f7b9a8b171/f106cf1e956271fb8a8ac181c85e98ebacb0c8ec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3d8495829fd669ee9268e2b9693f8516940abb5b/d7a07d4df49b1b0679380c622e0557cd3ded8ac4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3d8495829fd669ee9268e2b9693f8516940abb5b/1ff6b29633bbb3467b835fb35778e8b59d0b4452</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/47b7dc1f96fecc2bfb5163d48fdd56358e85e380/1b4ab58391dc796825f85686cb57874537ac4d0c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/47b7dc1f96fecc2bfb5163d48fdd56358e85e380/488846fd16cdfa5b47792eba7c3b104aafc416bb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b39cea961138090beb893eee1da697cb86ea4195/0c9d2d4064de7dfcef6b80440ae3568d2c49aaf8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b39cea961138090beb893eee1da697cb86ea4195/0183bf304e935e7b8f220aa5977c035bcdff001a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/82b1f3d94bcead4964c62c6ff6a356c9ce97cd3a/e7a147a6c143b49d317525daebc7ab7c0be7561d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/82b1f3d94bcead4964c62c6ff6a356c9ce97cd3a/f95887de1d846998cd44c10ac59ad5de63d81973</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/04ca1a634e7876d4eaf8a8e2f9dac705efdafb44/cb002c157f151de21d35ff013d9808eba470f4e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/04ca1a634e7876d4eaf8a8e2f9dac705efdafb44/bc77af6e8f3cc3d9d53fee9f3ee21478313bdb56</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f2cd6140a6f4d794c1db2c74bfa122f4d0bddd38/89ab2b50928e960c396d255759bef3ef1dbdc48b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f2cd6140a6f4d794c1db2c74bfa122f4d0bddd38/d1e87e8db2fb5b8c1958cef01f22733683c082d1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/57f7eedff944d0ad43f8a16e391823563c5dc2f9/2d7b088ad371e18ef31045e8b0eab211d9f279f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/57f7eedff944d0ad43f8a16e391823563c5dc2f9/4e8ebf339fdacbf53af2dfc6f9e5d457a094412e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/539bdd9e1ed86e67f184bedc7ef9ad6be749f243/0e0e8ae59d90b00e77471770995af9ff0a1b96c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/539bdd9e1ed86e67f184bedc7ef9ad6be749f243/1188cc9f5e4635c7d2763df79fa3a7a975940d8d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/924dd7d859fd08bb266399b5c24909c9b8919427/cb43c0e9a772b4153e128b51b695ae4a5d03bf8e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/924dd7d859fd08bb266399b5c24909c9b8919427/8ab1bdae0dea0b26219c32146eb310f9a5b3f7b9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e407b8ae006a8d08a9c8094947c362136e62e314/a640d579528da89049d788f4a6a6d6f6d86b1969</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e407b8ae006a8d08a9c8094947c362136e62e314/66d1d07ed8efa38a451a27ca43a7b86f723f4c00</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/1ff29a4fdb3c06fc2fa6796c3ddd91bb7bcea206/a8474abd1ea1167242eafc726dfa5ac3c0ce4395</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/1ff29a4fdb3c06fc2fa6796c3ddd91bb7bcea206/5445d563cf8499be35e161bc7a8ebde3daf93024</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/544a54e65c4f10598756543391bd6dc0a141c523/afea45026448aada97ef0ead88abcfadf367db67</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/544a54e65c4f10598756543391bd6dc0a141c523/186424683c5597abdaaa1db1cb4b79904f8a3f5e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b8f39ed186834d0c4be78eafb8722b2ae1f6fcc0/e76de5eceaabf83a10603c3200bae8f1010b107a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/b8f39ed186834d0c4be78eafb8722b2ae1f6fcc0/9c0379a4ddf9c4b75870778c788f1c4e5fb88a1c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3b1a6b5a34fe4d1c96b724eb2e9bdc5454e6e464/93c548bc752672e3de8741562ed07de3818a0860</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3b1a6b5a34fe4d1c96b724eb2e9bdc5454e6e464/374b8b425a043a46ca6d28bd26e3fc8bc7e82127</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/42222118c9dadc5311caf0c20f54ebe74b7bb027/7bd542fc731d6ea527e266be968625767bd84f2c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/42222118c9dadc5311caf0c20f54ebe74b7bb027/5c1ced118268b8bc6bf0a16288748f9418a8b509</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/04619e1b08fc31c055b78ea02cde0239b8ebbea8/64efb7428cbe94ea61da90fe234daf78fb971c96</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/04619e1b08fc31c055b78ea02cde0239b8ebbea8/240bc4b86ff33d3adf48e407daa78c50712df8c7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/80710711497275c83d0dafda74f526c403fea0c2/3e052dee5b305735383b640b24976f0320fecf1f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/80710711497275c83d0dafda74f526c403fea0c2/f60fb1021b70ade2a599e965ad5594316dfdb11f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/30dd409b90fe35ce350e477f2b1cfd1e4c831e04/2ac935730eec663a1b1b144a7797a3f1d15c8140</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/30dd409b90fe35ce350e477f2b1cfd1e4c831e04/aeb0145be7caf2e37b0e5543425bcfa25c192a11</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/98175e5bd5084f133ab3ca9283f38a4b5166f0bf/b48ffbb43b5e8608d57be8116af2d6f375951a51</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/98175e5bd5084f133ab3ca9283f38a4b5166f0bf/b32d11a5fb9da08b54db12fe8f3dc0d54163e9f9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/867576e3b5e882bc394155975c92ecc3f14b2212/96678489a785135845dd25845857aed052ddd1b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/867576e3b5e882bc394155975c92ecc3f14b2212/c76db4769f618ba4df77a4541333588d7b0a15a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6b2ea7691435737d3054cfee6c1e546da927786c/e23208443a4395b0959e3cd8db60a914e0e92284</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6b2ea7691435737d3054cfee6c1e546da927786c/e16619a516d8307246f37d3b58926d0ecf3cf94b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9e79189b456b708464fee0bf7262d1c1c81d9d35/5b81198c31dfd38e63a9db44f2a8aef12e807295</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9e79189b456b708464fee0bf7262d1c1c81d9d35/17e557137e185cd4fa54dde1dc67ae3d6c927d2b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e72e3ad0f75e7b1674fc7bd8b25c02c841209594/2621cfd3a2e45eaffefc0c08865daf3bc3ea1f1e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/e72e3ad0f75e7b1674fc7bd8b25c02c841209594/80d135410719790ea05c457ac604446bdf703b63</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fcb4406208120f20b41e6ddeb236601801460ac8/ddd02564bd1b4ce8d493e1a6aebfc13afdd3bfc8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/fcb4406208120f20b41e6ddeb236601801460ac8/6d3f8423eaf2399f07226bcfaebd3f6c71df1d90</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/12cc0dd75090eebe1e3ff06f5a9c0ec9cf699620/c41514cef6c13200d19f79c588cbdda38a6b0e89</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/12cc0dd75090eebe1e3ff06f5a9c0ec9cf699620/a8b9a93eba8a2b0d27b39f732b0c477ebf565ba5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ac32fead90b4222dea3e3c87896ec94c35dba8b5/a245ff3597b8b2b8cd3a86b3ba768ef0f7c1dcf8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/ac32fead90b4222dea3e3c87896ec94c35dba8b5/13266685bef8e4e7781120c5b8021283b2b6552f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9bf57d778028303d2d8c2554bdc1eb8ae6bce582/e87bbbb6cdb6f4748d3163d0094e517f421f34a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/9bf57d778028303d2d8c2554bdc1eb8ae6bce582/6eee25e77837fb2da1fcf5163f394e42413bd2ed</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6420a0bbf1dd499b89984acd579ced3f4c94b684/3682baca6183de05579e80d7cd7ef82045188e8d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/6420a0bbf1dd499b89984acd579ced3f4c94b684/48ccf5200dd0b6a09c56ea832572532d20532da1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3c3a0bfcca86a47b37fe11fea8fc9fd5de6f5a45/1a7850adc99752c8b6260f7b3d60671cc4c07231</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/3c3a0bfcca86a47b37fe11fea8fc9fd5de6f5a45/f86ac0562ba61c3818a8877197b7685cba7d8ef9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a1f9dc6c46cc2f73287c94a83b14f827e0ce6d28/bbde4c89db37b3e8556f802e014d7a19d77ead7f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/a1f9dc6c46cc2f73287c94a83b14f827e0ce6d28/5830ee67b58360e154a7c40e46444b85c0421247</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f455414b865105fb41db311b9cce649cafb9f56d/371c9f60e838c7b07897b6486080a8fccc484913</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/bmdc/f455414b865105fb41db311b9cce649cafb9f56d/1567e9c6185dcdab76ff836a12af8a6dca845b96</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 5 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC0</td><td>n/a</td></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC_BY_4_0</td><td>n/a</td></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC_BY_2_0</td><td>n/a</td></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC_BYNC_4_0</td><td>n/a</td></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC_BYNCND_4_0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/2802361/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/bmdc</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 420 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/fre0_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/5d4519d7-bfaf-420e-8af9-0a999cb4de37</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--idod_wfd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bcur_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/tide_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/gtz_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/WAM_ECMWF</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/e10_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tmsw_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sss_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--rbins_ants</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/scurdir_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/avrcur_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/frez_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tide_CSM6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/BCZ_HydroState_V1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017ref3D</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_windsea_direction_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/hs_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/NOS_HydroState_V1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/avrcurdir_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017ref2D</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sst_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tmws_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--idod_winmon</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--idod_ipms_phaeo</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_bryozoa</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--modirisk-rbins-culidae-collection</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_vertebrates_pisces</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_darwin</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sealev_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_swell_direction_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/scur_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/hs_swell_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017mills3D</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sbt_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--rbinscollections</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Harmonic_CSM0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_cheliceratamarine</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_crustacea</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_mollusca</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/20bc52ec-cb85-4fbd-8941-316b946531e6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_belgianmarineinvertebrates</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_vertebrates_reptilia</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_vertebrates_mammalia</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1001</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1901</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1920</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1933</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1642</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1928</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1924</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1912</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1078</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1911</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-801</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2034</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2030</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1915</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-926</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1918</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1907</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1921</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1909</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1952</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/54d2f666-7aee-4463-b60e-3583f84ffce2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9146c015-4edc-4d2c-8e2b-56b90ca30167</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1939</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-598</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1914</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1902</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1937</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7e8bbd05-ea96-4b65-ad34-295d6fc05e7d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/a76c83e8-e09b-4b80-a264-b060ef4b36aa</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1927</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1123</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1925</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1080</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1904</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/30896e82-9347-4f82-8871-f3a58ce2be58</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2011</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2320</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1938</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1926</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-899</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1908</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1919</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/a2780436-e65b-47a8-8f93-212e600717be</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f5606457-7084-41e3-b095-7730bc6adf10</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2026</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2480</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1906</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-520</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1910</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1247</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2340</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2039</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/aed06813-f5f4-4469-a1fe-1ebf461c3999</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1929</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2780</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1243</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-641</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1900</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2600</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1250</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2032</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2260</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1102</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-560</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1251</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1022</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2022</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9d7b365a-faa8-4179-a385-fa7540c2b8a1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2683</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2620</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1762</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1917</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1923</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1246</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/69a40ea3-868e-4f56-a6b2-b313e625ee22</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/29f40b0d-2a3e-49a8-870a-e9b4acd4d1e3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2722</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2500</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2681</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-958</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-944</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2031</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2033</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2685</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2521</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1930</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-945</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1079</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-501</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1963</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2023</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2686</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-600</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1913</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2102</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2100</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2044</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/ee056fd6-995e-40a7-8ebf-b145ea0a30e0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2420</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2682</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-939</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1249</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-940</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2029</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2680</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2400</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2684</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-978</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1916</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9c445e18-005e-478b-987c-39326b4a0d88</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-941</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-521</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1931</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-942</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1903</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1922</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2015</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/894c754b-29fd-477b-827f-0be505143c2a</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2046</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1765</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1932</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1934</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1961</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7b53a7db-eedb-4220-923a-94304c854e75</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7eca7c5e-f1da-4abb-aad3-acc5038bf5ba</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/c5f1f8a0-3626-4396-9795-ad07d98e8bdb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_cnidaria</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2687</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9f4131b6-7895-403a-a17e-6bb33befaf16</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_wave_direction_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2014</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2036</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2720</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rlf_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sbs_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2035</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2101</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tm02_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017mills2D</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/4df0c9b9-61d9-4895-8872-4776ff2c9af2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_echinodermata</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/d409cd5d-3a54-4722-b255-2b4d4374d8ae</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bcurdir_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/4146e6c2-3745-46d5-93e6-8d88518f6708</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_rotifera</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/8b317fed-fd7e-4374-a378-4831ff458c09</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2027</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/e2aaecaf-b555-405e-ae77-dfe1b07e0f17</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f0d44b8c-6d2f-4431-8727-616b119c9ed6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/30db2158-cc31-4fee-8895-d586ba59f164</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1905</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f432b696-ac1a-4971-acc8-184bc79e9b7f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/WAM_UKMO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2700</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_vertebrates_aves</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-561</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-943</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f98d0d0f-cb75-4055-b8e4-d3c31cb96d34</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/83bdcd87-e4ea-4a76-ab98-ff9f45e529f5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2721</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_brachiopoda</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--modirisk-longitudinal-culicidae-study</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2762</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2161</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/fre0_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/5d4519d7-bfaf-420e-8af9-0a999cb4de37</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--idod_wfd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bcur_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/tide_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/gtz_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/WAM_ECMWF</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/e10_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tmsw_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sss_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--rbins_ants</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/scurdir_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/avrcur_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/frez_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tide_CSM6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/BCZ_HydroState_V1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017ref3D</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_windsea_direction_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/hs_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/NOS_HydroState_V1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/avrcurdir_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017ref2D</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sst_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tmws_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--idod_winmon</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--idod_ipms_phaeo</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_bryozoa</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--modirisk-rbins-culidae-collection</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_vertebrates_pisces</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_darwin</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sealev_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_swell_direction_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/scur_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/hs_swell_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017mills3D</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sbt_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--rbinscollections</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Harmonic_CSM0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_cheliceratamarine</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_crustacea</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_mollusca</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/20bc52ec-cb85-4fbd-8941-316b946531e6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_belgianmarineinvertebrates</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_vertebrates_reptilia</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_vertebrates_mammalia</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1001</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1901</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1920</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1933</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1642</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1928</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1924</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1912</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1078</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1911</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-801</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2034</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2030</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1915</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-926</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1918</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1907</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1921</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1909</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1952</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/54d2f666-7aee-4463-b60e-3583f84ffce2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9146c015-4edc-4d2c-8e2b-56b90ca30167</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1939</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-598</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1914</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1902</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1937</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7e8bbd05-ea96-4b65-ad34-295d6fc05e7d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/a76c83e8-e09b-4b80-a264-b060ef4b36aa</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1927</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1123</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1925</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1080</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1904</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/30896e82-9347-4f82-8871-f3a58ce2be58</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2011</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2320</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1938</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1926</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-899</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1908</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1919</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/a2780436-e65b-47a8-8f93-212e600717be</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f5606457-7084-41e3-b095-7730bc6adf10</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2026</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2480</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1906</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-520</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1910</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1247</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2340</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2039</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/aed06813-f5f4-4469-a1fe-1ebf461c3999</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1929</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2780</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1243</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-641</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1900</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2600</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1250</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2032</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2260</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1102</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-560</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1251</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1022</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2022</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9d7b365a-faa8-4179-a385-fa7540c2b8a1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2683</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2620</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1762</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1917</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1923</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1246</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/69a40ea3-868e-4f56-a6b2-b313e625ee22</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/29f40b0d-2a3e-49a8-870a-e9b4acd4d1e3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2722</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2500</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2681</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-958</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-944</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2031</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2033</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2685</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2521</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1930</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-945</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1079</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-501</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1963</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2023</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2686</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-600</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1913</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2102</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2100</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2044</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/ee056fd6-995e-40a7-8ebf-b145ea0a30e0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2420</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2682</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-939</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1249</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-940</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2029</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2680</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2400</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2684</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-978</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1916</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9c445e18-005e-478b-987c-39326b4a0d88</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-941</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-521</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1931</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-942</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1903</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1922</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2015</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/894c754b-29fd-477b-827f-0be505143c2a</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2046</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1765</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1932</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1934</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1961</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7b53a7db-eedb-4220-923a-94304c854e75</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/7eca7c5e-f1da-4abb-aad3-acc5038bf5ba</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/c5f1f8a0-3626-4396-9795-ad07d98e8bdb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_cnidaria</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2687</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/9f4131b6-7895-403a-a17e-6bb33befaf16</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/mean_wave_direction_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2014</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2036</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2720</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rlf_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/sbs_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2035</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2101</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/Tm02_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/MSFD2017mills2D</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/4df0c9b9-61d9-4895-8872-4776ff2c9af2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_echinodermata</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/d409cd5d-3a54-4722-b255-2b4d4374d8ae</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bcurdir_TS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/4146e6c2-3745-46d5-93e6-8d88518f6708</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_rotifera</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/8b317fed-fd7e-4374-a378-4831ff458c09</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2027</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/e2aaecaf-b555-405e-ae77-dfe1b07e0f17</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f0d44b8c-6d2f-4431-8727-616b119c9ed6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/30db2158-cc31-4fee-8895-d586ba59f164</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-1905</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f432b696-ac1a-4971-acc8-184bc79e9b7f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/WAM_UKMO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2700</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_vertebrates_aves</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-561</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-943</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/f98d0d0f-cb75-4055-b8e4-d3c31cb96d34</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/83bdcd87-e4ea-4a76-ab98-ff9f45e529f5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2721</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--be_rbins_invertebrates_brachiopoda</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/rbins-dataset--modirisk-longitudinal-culicidae-study</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2762</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+						<tr><td>http://data.gov.be/dataset/bmdc/bmdc-be-dataset-2161</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>335</td></tr>
+						<tr><th>foaf:Document</th><td>233</td></tr>
+						<tr><th>vcard:Kind</th><td>216</td></tr>
+						<tr><th>dcat:Dataset</th><td>210</td></tr>
+						<tr><th>vcard:Organization</th><td>210</td></tr>
+						<tr><th>skos:Concept</th><td>26</td></tr>
+						<tr><th>dcterms:PeriodOfTime</th><td>19</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>10</td></tr>
+						<tr><th>dcterms:MediaType</th><td>9</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>5</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>foaf:Agent</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:keyword</th><td>2484</td></tr>
+						<tr><th>dcterms:language</th><td>2184</td></tr>
+						<tr><th>rdf:type</th><td>1282</td></tr>
+						<tr><th>dcterms:description</th><td>696</td></tr>
+						<tr><th>vcard:fn</th><td>678</td></tr>
+						<tr><th>dcterms:title</th><td>443</td></tr>
+						<tr><th>dcterms:license</th><td>336</td></tr>
+						<tr><th>dcat:accessURL</th><td>335</td></tr>
+						<tr><th>dcat:distribution</th><td>335</td></tr>
+						<tr><th>dcat:downloadURL</th><td>335</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>335</td></tr>
+						<tr><th>dcat:mediaType</th><td>265</td></tr>
+						<tr><th>dcterms:format</th><td>265</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>265</td></tr>
+						<tr><th>dcat:theme</th><td>239</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>239</td></tr>
+						<tr><th>dcat:landingPage</th><td>232</td></tr>
+						<tr><th>vcard:hasEmail</th><td>212</td></tr>
+						<tr><th>dcat:contactPoint</th><td>210</td></tr>
+						<tr><th>dcat:dataset</th><td>210</td></tr>
+						<tr><th>dcterms:identifier</th><td>210</td></tr>
+						<tr><th>dcterms:publisher</th><td>210</td></tr>
+						<tr><th>dcterms:spatial</th><td>210</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>210</td></tr>
+						<tr><th>dcterms:modified</th><td>154</td></tr>
+						<tr><th>skos:prefLabel</th><td>107</td></tr>
+						<tr><th>dcterms:temporal</th><td>20</td></tr>
+						<tr><th>skos:inScheme</th><td>20</td></tr>
+						<tr><th>dcat:endDate</th><td>19</td></tr>
+						<tr><th>dcat:startDate</th><td>19</td></tr>
+						<tr><th>rdfs:label</th><td>10</td></tr>
+						<tr><th>foaf:name</th><td>4</td></tr>
+						<tr><th>dcat:bbox</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>foaf:homepage</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.ms-excel</th><td>148</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/dwca</th><td>44</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/html</th><td>22</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/gml+xml</th><td>17</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/csv</th><td>14</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/xml</th><td>8</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/json</th><td>7</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/x-netcdf</th><td>3</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/xml</th><td>2</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC_BY_2_0</th><td>192</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC_BY_4_0</th><td>76</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC_BYNC_4_0</th><td>35</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC0</th><td>32</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC_BYNCND_4_0</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2802361/</th><td>210</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XLS</th><td>148</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/DWCA</th><td>44</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/HTML</th><td>22</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/GML</th><td>17</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/CSV</th><td>14</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XML</th><td>8</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/JSON</th><td>7</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/NETCDF</th><td>3</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/WFS_SRVC</th><td>1</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/WMS_SRVC</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0353070496</th><td>210</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ENVI</th><td>171</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/TECH</th><td>48</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ECON</th><td>15</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/GOVE</th><td>2</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/INTR</th><td>2</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/SOCI</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

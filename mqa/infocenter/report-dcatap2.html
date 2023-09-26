@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:43:29</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/infocenter/infocenter.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 1 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/infocenter</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 11 shapes</h2>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/infocenter</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/infocenter</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/infocenter</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:keyword MinCountConstraintComponent : 7 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#keyword&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/c62fe446dae1961e675a917635bb9dac5f66ffd0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/ab7c6fd5c8ed17fb806c4fd2e4bce85db320b388</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/6c67dec8922d2b88280e551a0515c42affaf41e3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/8de4e050f572d103dc87f8b6b2710af63003fe65</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/8f597faade41f577cecb6c9f6ef91da41fdcd517</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/60747ea1f0917b7662554a8e53d07542bf5f4c3a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/9fe54bc07d9701d5b5a188bfe29f53326459ebc4</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 7 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/c62fe446dae1961e675a917635bb9dac5f66ffd0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/ab7c6fd5c8ed17fb806c4fd2e4bce85db320b388</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/6c67dec8922d2b88280e551a0515c42affaf41e3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/8de4e050f572d103dc87f8b6b2710af63003fe65</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/8f597faade41f577cecb6c9f6ef91da41fdcd517</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/60747ea1f0917b7662554a8e53d07542bf5f4c3a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/9fe54bc07d9701d5b5a188bfe29f53326459ebc4</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:description MinCountConstraintComponent : 216 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/XLS</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 216 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/PDF</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/PNG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0669b8d64c9d8f2ba7dc2bfea27e96e780c50482/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d8ec01e8ad867b7407e1f9d1ab418ba3afb90d05/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/33d1499f8b3fc6f706e3f1740a9c55858d9e72bf/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d80c61ff7953af40671aba0bb693d61ed1efeebc/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/75db9724bd3e4892d0d48ce84b64c46187dd5538/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/45008bb47603e0059b530be6f795f64b111a8097/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3b18deb446c4a49dd7fb0714a9b55141221b0760/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/5c08fa4c5cb4c27a4b77e64df810bdb2ee17302c/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/264c86f944f17439be6d71e8492474be354f497b/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/abb19f83bd4e6d555c61d932aa03c3bfc0c354f4/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed0dc92572345e22c290ed7f0e4269c9fccb6948/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d969aacc868f847e652649f00a0052df33ea729f/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ff4e0adc87d7b1b2603d082cb0954b8e637c0f5/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/8ddb41b94e1cddc149a152151571c5d7817df8e7/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/247d4eaaae3396c472cd2b5c7fff5082d3547d6c/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/3634337ebd97a7ed6484cd29e7b6eff17621265f/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a7708cbc614539856087964d061857161bb85800/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e0d410321d4fd426c10d894b24f6eb367b90b0a/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/46a15f4fdeda0829cf98456698d71456946b2adb/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1a7e899cdfa88ef3829a445b47165b47cb034d3e/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/4fdf116f5041817c9ad1e2055a302cd67461dffb/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1c15e727b77f4200ef7f38d66e8ca341cf39590c/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/bf912287a191a7ac3f559069379d0f7b822a07b7/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49f37af519553b98bc54339bdf38446b49cee980/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/26af80c7d220dbfaa83f448c04f05b8bbba60735/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c763dd55cb83ce42d8ac8045e8d7276f729ff8c2/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/83094ca144e90a02046d9b1cef4939be9c4659a5/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/05667bbd7bfc4f4a9029d3cc3dcf21601a2eb821/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/6e406cfc97074c6087f9f9c8747deb7a604d5b22/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b184a442b363cc30a8560d966f3f9daec32ae6f4/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/798b81ff7d3905ca29318b88f5473baafb4134a8/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/549063acd4087c0e3eef5816cd0363bbf7af3a8d/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/0d7ae283e17ef2e1ebb7a8150ea233f615eb1e1d/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a92a8856e6587dfa2bd7032d2fdac7ebc3fd520d/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f3efe26969ba6799848594ece5b3b7b6acdf7de6/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/a11eebb9d5fb1986ccc6f494ef0bb7414a181720/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/1ec364d4c5f7068bc595564db3057bd5540a6ea5/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/fb3fe2e4d5b34308fced8bfc55aabb1c97abd1f2/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/72db852c751fc4d5cd698b70b0b409ff5e331c82/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/60aed3bc59bd7b2846d5a456d9ec29f1de404d8b/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b41c321f3fb916a030821fdd5b32ef524765f232/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/81236c01ec798e403d233d2f2a7c96358abc5ab9/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d77f294df9c8718620333005ba52c688708ade24/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/d9cc743119b5985bf03c309a2771603b56fd1184/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/c7f6062e2b41771eae051f110d0a77debe961220/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9f5c8ba07c0c297434715450d1464f2e5e8e1661/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/63877391997817b1823a53668ba864d9e05e9a2d/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ab34d944b4674724811f6f4bc70417f40457d4b4/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/f02fa2ba6569d1618ca3b140fe619c1f134af23a/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/9fc743f6b39e7518c52615eb84c29e75b61531a3/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/ed7b88caa12b6a341a1635d1b538d950c313613b/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/49a7d19ad2cf99f0bed3bb22d6d08cb5e631d10b/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/b17ee1f2fc3c134b6a1764c0c4060b5638a08836/XLS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/infocenter/87d8f2ca6b326bec84ba2a273a41e7f368baf1b0/XLS</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC0</td><td>n/a</td></tr>
+						<tr><td>https://infocenter.belgium.be/nl/copyright#license</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/2802361/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/infocenter</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 14 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/c62fe446dae1961e675a917635bb9dac5f66ffd0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/ab7c6fd5c8ed17fb806c4fd2e4bce85db320b388</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/6c67dec8922d2b88280e551a0515c42affaf41e3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/8de4e050f572d103dc87f8b6b2710af63003fe65</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/8f597faade41f577cecb6c9f6ef91da41fdcd517</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/60747ea1f0917b7662554a8e53d07542bf5f4c3a</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/9fe54bc07d9701d5b5a188bfe29f53326459ebc4</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/c62fe446dae1961e675a917635bb9dac5f66ffd0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/ab7c6fd5c8ed17fb806c4fd2e4bce85db320b388</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/6c67dec8922d2b88280e551a0515c42affaf41e3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/8de4e050f572d103dc87f8b6b2710af63003fe65</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/8f597faade41f577cecb6c9f6ef91da41fdcd517</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/60747ea1f0917b7662554a8e53d07542bf5f4c3a</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/dataset/infocenter/9fe54bc07d9701d5b5a188bfe29f53326459ebc4</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>216</td></tr>
+						<tr><th>skos:Concept</th><td>14</td></tr>
+						<tr><th>dcat:Dataset</th><td>7</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcterms:MediaType</th><td>4</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>4</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>2</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>2</td></tr>
+						<tr><th>foaf:Document</th><td>2</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>foaf:Agent</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Kind</th><td>1</td></tr>
+						<tr><th>vcard:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>rdf:type</th><td>261</td></tr>
+						<tr><th>dcterms:language</th><td>232</td></tr>
+						<tr><th>dcterms:title</th><td>231</td></tr>
+						<tr><th>dcterms:license</th><td>217</td></tr>
+						<tr><th>dcat:accessURL</th><td>216</td></tr>
+						<tr><th>dcat:distribution</th><td>216</td></tr>
+						<tr><th>dcat:mediaType</th><td>216</td></tr>
+						<tr><th>dcterms:format</th><td>216</td></tr>
+						<tr><th>dcterms:rights</th><td>216</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>216</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>216</td></tr>
+						<tr><th>skos:prefLabel</th><td>76</td></tr>
+						<tr><th>dcterms:description</th><td>15</td></tr>
+						<tr><th>skos:inScheme</th><td>8</td></tr>
+						<tr><th>dcat:contactPoint</th><td>7</td></tr>
+						<tr><th>dcat:dataset</th><td>7</td></tr>
+						<tr><th>dcat:theme</th><td>7</td></tr>
+						<tr><th>dcterms:accessRights</th><td>7</td></tr>
+						<tr><th>dcterms:identifier</th><td>7</td></tr>
+						<tr><th>dcterms:publisher</th><td>7</td></tr>
+						<tr><th>dcterms:spatial</th><td>7</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>7</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>7</td></tr>
+						<tr><th>foaf:name</th><td>4</td></tr>
+						<tr><th>rdfs:label</th><td>4</td></tr>
+						<tr><th>vcard:fn</th><td>4</td></tr>
+						<tr><th>foaf:homepage</th><td>2</td></tr>
+						<tr><th>dcat:bbox</th><td>1</td></tr>
+						<tr><th>dcterms:modified</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+						<tr><th>vcard:hasUrl</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/pdf</th><td>54</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.ms-excel</th><td>54</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/image/png</th><td>54</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/csv</th><td>54</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://infocenter.belgium.be/nl/copyright#license</th><td>216</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC0</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2802361/</th><td>7</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/CSV</th><td>54</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/PDF</th><td>54</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/PNG</th><td>54</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XLS</th><td>54</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</th><td>7</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/GOVE</th><td>7</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

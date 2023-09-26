@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:45:09</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/pensionstat/pensionstat.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 1 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/pensionstat</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 9 shapes</h2>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/pensionstat</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/pensionstat</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/pensionstat</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:description MinCountConstraintComponent : 130 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a7336d782ec593ba7c83cea1f5c9f0a3ba9a1a06</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/0c7f92a5933b00a705d572bac9c228cfcfd624ef</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/38faff72f6820ca5d37b8ccfa8665c1a659c44ee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/db0193caf1dfe42d83de1b1fb106f214963c6a3a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/e89c3c920c86d78b11ea9bffa7772f4879b5b6a7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/e855a60513d20cdcb6c64c0d793d03da847cb2ff</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/4794a05d193da1ae5e5a32b28ecb90f858c2313b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/bbc755e1fe057d725fcc0dd8ae4b653b26cbda4b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/b0a9550a8bf0e704822296a40bcfbee672e11012</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9d9b842e301e20eba740271cd55eb312575af107</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/23dcb4fd06018923bff536e60ef4474a3746b317</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/1dc07a71ba0232c719da92a0e09e77d7da6f869b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a0acc63482c67eec83b46e41c7ad4ab51799cfde</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ea4d0ec4838f37256f32dd6bcfa92a7f5589b47b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/f638287a61c6af05b8332fa4716c78b86d3161c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ec2eba31e3909c083f5e13408707149f0ec5eb2e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9cca4405127645266feceafa3863a00afbe555e9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/906a32623e2c0cad2dc841af4bd573752c8825e9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/21b427fa605e85e3964b24c86c6d718681da1a53</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/fc351442cae1683980c188d4fed178c8f26f6cf9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5f307b2aebdd628de79b82ecbfe6e38ef751d6be</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ba67db24360d78afad0777e24608c60b02c67fc1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5a35007a38e74beec3395ded6b5f71d8b2ddc7f7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/be791c0f042b6378db6c55f14bdf8c934885bc7c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/f3791845f93195a9b51986ef92869e20536d9049</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3a03579b12a40096344470af7878236ff1293efa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/109d079abbb79ad64f787c8f90f082d937358d14</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5a1914b45b2c0f8e0cf4577e049d4c57084c5685</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/081f6dcdc8a9ed69a476a7579e082d16788f1395</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/48421af823e05863b4fb079abeb363d2e5385b47</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/4055bda70affdad3ef3fa6b8a2045078462df9a9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/21058a638d732c4d452f582a5f945d6301cecbbf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/7725e9d56ecc0b78a8a004467e64bc92d64b3aa4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/c474b874e1c2b4173314e66c0b4607e64eb407cd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/894a0660a6eff28422c9803019c522c268a71048</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cf5fae57602d01b935be34ca6a2d54562b1e6481</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/056a1ab8bac64d61f198bd2c024f902151ab7c8f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/238fd2ed45bccc5cbc3c9b2fca1bc39119cdf8ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/0061767fef8d8914d85cc076f53aadfae52194ef</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9d7b08cfcb17e35a9e17ac5eced5379c37ac3f9f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/c647ef4eafceac6c1ce52c6822d82e87e571214b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2d3092d560510b287da9e0240b599d52145917d2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/396151173b63fb4041a853a967d5dffff37642ca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9d347b986da39c4ca04bfd6e7ef2a1fc17e98726</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/29ea812a245ff18eb47bb11a779db852b9615e05</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/82aa2db9c77369801f69dd988ba06c35489cb3b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/da5a8300903aeec8e18567a4154e20f24250e6d0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a46946aa4e1d7fb52512f31fe6fe691d9b34e21d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ff840014b40fa0369ec37ae440f3bcb6180b075c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/1067a17679b4f05456749bd0e3470a2cb6b536a5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/45906b8541db4d51e836160c1a94be81d3093b77</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/faaf2f0913e327b65b50e41ff1912cc1f85d424e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/706256fcf649e9164b7d5ecde256c53d57a670af</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8269ae9075986a9f56c6052841afc312f5bf447f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/4405a5c00a32ae22b6c77e1596e788ab489be039</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2f9ec14bbf3b7a158d548dd306bc3d4194d9a153</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cc7954fc7342510e23a5c23077f48cade4fb477f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/80050cc576d9cbdb4f1363672eefb44c74061459</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a949d37a46236f96179c3b3e4d9dc5489850a6ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/34646f1b08d168fef42c3f4e22f2339aebebae0a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/b0dea1fcbdb0e68233a03cb2c16f9b4220c82ac3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/aad41615f21bbcaf336eb4d246439082e278633f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3b1bc55688c1ed7cd80e3c56424b86351f3dbfb5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ab1f39ac5d6c8aca5a969dcc8692cf788c571195</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/6659e602541382f44a364c2e24d9e0d544783f42</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/50fd8c5c1d5aa377a18db42804730696f0901d84</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/b7a839bd97d186d3e394597797b8eac336baf942</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cabb70f7e97b020c2d9dd20d92217aab89248ca3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cca280816d46d22d6ad6841cbb7b74799244a5f5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/f355e795b064d81b537a0aa167ea6d913f71c70c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/76dc823d146bdb48859103a3a0ba4ff118ba0712</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/c170a704ef92e95e6b462dc6caeb179c82d24c86</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/be1882de9d9e584fb2631708e27d89f098d11827</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/4eb8736e49fa82583deba62d4e390b1b8e121afa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/614a63917813e37910d0c783f1443765ea61fe4c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/6ed31c42152a539825ac8dedfb9cbaf3c6d8ca00</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/adc6b344f53e4c639125a28874d77bcfeab2fb15</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5bfeb904ed33725e291e74818baa44f0bd33dd96</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/64ffc7425aa36839af501d85ddaaae1f081dd7a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/bdac861834c9859caa57b37dcec0e42c9a5ef5d7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a9f71cf21ee56e2c26b3de1d110e5e2d7a591022</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/d7330e8c5b28ee25584f405996c4e85fa2ec04d3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/daf1365c729175856cd40d7224e025d39622b6dd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5c7874bd3cb4b8f7df423b45939603321936d823</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2b2f40965bd00ab78e5aadb826b3135185bbac28</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/42ed24ba19828210d84ea5cbaca9ee390b591e35</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/12755a7e8728fdc0bdd3324a75795c6d483de707</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/0d197835565bbd727849990c30cb36b354f4d59b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5f0d267cd7d15f1753305ff42f15a5d58c016364</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ec361806340c58cb907108e6b2b0f76833145891</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/803b93528cd913d867c201332a2bb9069247b702</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/6f8a7ebb4ca93b538de40c22e761a371ba3cf91a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/987f344c05e9e3700c2eb3ed0b251d981ff84418</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cb2a28a67ae35ba83fb19aff8497fe9d63a6c27a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/c63d706e4cdfc6aa0d9bfc613041e463bdc83688</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/7498180bba338275e7ad389df30154e007a8b459</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a693f3fb77bf441f614bf3c7e9dba8a46e1fa205</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/91ebfcf712b5792b1084843ef4ac80e88f49d3ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/10579e881a5429f42c62ba91fb9ab9264cec07a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/47ddb050c71298f9185d9a5db0d9238305d5edfd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2fce0ef64316231f1d59d38206878eec4cdca8cb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a89410ad7439e56a86ecbc32f060e7212f094a56</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3b9d5007999aa07b2d055e18143ef2bbcfe782c7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3947a804db2346b58b79a959a6e58f692de92dfb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/d60b3b6b896975ad03c8a4d8124e7b29ba7dd9b9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8b04584e8bffcac3cedead069c84def6ebc9838e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8aef1f78e437c3dee889b2dad6954674a7c6eab7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3b28c120e45f1d0b19bca379e4efc26d05045d27</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2ad4118f4175176b5aeeae6b70cc8176d9fd3f42</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/e5006aa1829412744fbac6506cbdfe6c9cf8fb01</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/7ff8abe9dd28c771ccc3ffbb1bd02d3688ef9d23</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8193d85b73d8163893ed688e32b6b58f1c10f471</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5306fb18e75dddcdec6b7eba0e1bd287fabbff91</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2349969b92fd86872fd5a9ddc4851a32e7117a51</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/983d35b70a327532d2c69e57e71731cb23b10510</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/69eb1427ef5d2d3ebec5fc5828e846869dc8e5b9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cc8113eddce02229c2b4b64763a09eaaa13d11bd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3e427d40ae7a9c37fa0e22a3f25ec9af29f2f89e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/348d886e3356329891b53c9ecde578bd915db096</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/26ddf775af4eab6ecca8f19f4acaa67b51e79f01</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/6c909d62dba5ce04cc85a311c4c3842a42dda802</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3f0c83eb580ab312684a3cfbc2260f3db4d1f756</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/da6e18a8ce33c972d56c396ee83cbcc1bab1d1ff</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/d89e7c798f67ed0ac460b441bc1c162b9357d028</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/285b9e141babb28976d82fb081429619e2b18e3c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/483546d91abce260db5e422c173492d9f53b26d5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9565d9de476ffe68bc08c45b48a49ea2d17833cd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/edcbf90e1cc4a20d61f0327ec0f20e96b757bee8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/b1130a5eeb641a7f4e8b3cdd1298b71e54170c2d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8cdb965b60263b3a8acdf369fab72dc104135333</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 130 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a7336d782ec593ba7c83cea1f5c9f0a3ba9a1a06</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/0c7f92a5933b00a705d572bac9c228cfcfd624ef</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/38faff72f6820ca5d37b8ccfa8665c1a659c44ee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/db0193caf1dfe42d83de1b1fb106f214963c6a3a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/e89c3c920c86d78b11ea9bffa7772f4879b5b6a7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/e855a60513d20cdcb6c64c0d793d03da847cb2ff</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/4794a05d193da1ae5e5a32b28ecb90f858c2313b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/bbc755e1fe057d725fcc0dd8ae4b653b26cbda4b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/b0a9550a8bf0e704822296a40bcfbee672e11012</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9d9b842e301e20eba740271cd55eb312575af107</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/23dcb4fd06018923bff536e60ef4474a3746b317</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/1dc07a71ba0232c719da92a0e09e77d7da6f869b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a0acc63482c67eec83b46e41c7ad4ab51799cfde</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ea4d0ec4838f37256f32dd6bcfa92a7f5589b47b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/f638287a61c6af05b8332fa4716c78b86d3161c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ec2eba31e3909c083f5e13408707149f0ec5eb2e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9cca4405127645266feceafa3863a00afbe555e9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/906a32623e2c0cad2dc841af4bd573752c8825e9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/21b427fa605e85e3964b24c86c6d718681da1a53</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/fc351442cae1683980c188d4fed178c8f26f6cf9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5f307b2aebdd628de79b82ecbfe6e38ef751d6be</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ba67db24360d78afad0777e24608c60b02c67fc1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5a35007a38e74beec3395ded6b5f71d8b2ddc7f7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/be791c0f042b6378db6c55f14bdf8c934885bc7c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/f3791845f93195a9b51986ef92869e20536d9049</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3a03579b12a40096344470af7878236ff1293efa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/109d079abbb79ad64f787c8f90f082d937358d14</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5a1914b45b2c0f8e0cf4577e049d4c57084c5685</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/081f6dcdc8a9ed69a476a7579e082d16788f1395</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/48421af823e05863b4fb079abeb363d2e5385b47</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/4055bda70affdad3ef3fa6b8a2045078462df9a9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/21058a638d732c4d452f582a5f945d6301cecbbf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/7725e9d56ecc0b78a8a004467e64bc92d64b3aa4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/c474b874e1c2b4173314e66c0b4607e64eb407cd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/894a0660a6eff28422c9803019c522c268a71048</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cf5fae57602d01b935be34ca6a2d54562b1e6481</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/056a1ab8bac64d61f198bd2c024f902151ab7c8f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/238fd2ed45bccc5cbc3c9b2fca1bc39119cdf8ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/0061767fef8d8914d85cc076f53aadfae52194ef</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9d7b08cfcb17e35a9e17ac5eced5379c37ac3f9f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/c647ef4eafceac6c1ce52c6822d82e87e571214b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2d3092d560510b287da9e0240b599d52145917d2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/396151173b63fb4041a853a967d5dffff37642ca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9d347b986da39c4ca04bfd6e7ef2a1fc17e98726</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/29ea812a245ff18eb47bb11a779db852b9615e05</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/82aa2db9c77369801f69dd988ba06c35489cb3b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/da5a8300903aeec8e18567a4154e20f24250e6d0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a46946aa4e1d7fb52512f31fe6fe691d9b34e21d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ff840014b40fa0369ec37ae440f3bcb6180b075c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/1067a17679b4f05456749bd0e3470a2cb6b536a5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/45906b8541db4d51e836160c1a94be81d3093b77</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/faaf2f0913e327b65b50e41ff1912cc1f85d424e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/706256fcf649e9164b7d5ecde256c53d57a670af</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8269ae9075986a9f56c6052841afc312f5bf447f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/4405a5c00a32ae22b6c77e1596e788ab489be039</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2f9ec14bbf3b7a158d548dd306bc3d4194d9a153</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cc7954fc7342510e23a5c23077f48cade4fb477f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/80050cc576d9cbdb4f1363672eefb44c74061459</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a949d37a46236f96179c3b3e4d9dc5489850a6ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/34646f1b08d168fef42c3f4e22f2339aebebae0a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/b0dea1fcbdb0e68233a03cb2c16f9b4220c82ac3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/aad41615f21bbcaf336eb4d246439082e278633f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3b1bc55688c1ed7cd80e3c56424b86351f3dbfb5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ab1f39ac5d6c8aca5a969dcc8692cf788c571195</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/6659e602541382f44a364c2e24d9e0d544783f42</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/50fd8c5c1d5aa377a18db42804730696f0901d84</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/b7a839bd97d186d3e394597797b8eac336baf942</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cabb70f7e97b020c2d9dd20d92217aab89248ca3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cca280816d46d22d6ad6841cbb7b74799244a5f5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/f355e795b064d81b537a0aa167ea6d913f71c70c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/76dc823d146bdb48859103a3a0ba4ff118ba0712</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/c170a704ef92e95e6b462dc6caeb179c82d24c86</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/be1882de9d9e584fb2631708e27d89f098d11827</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/4eb8736e49fa82583deba62d4e390b1b8e121afa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/614a63917813e37910d0c783f1443765ea61fe4c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/6ed31c42152a539825ac8dedfb9cbaf3c6d8ca00</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/adc6b344f53e4c639125a28874d77bcfeab2fb15</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5bfeb904ed33725e291e74818baa44f0bd33dd96</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/64ffc7425aa36839af501d85ddaaae1f081dd7a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/bdac861834c9859caa57b37dcec0e42c9a5ef5d7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a9f71cf21ee56e2c26b3de1d110e5e2d7a591022</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/d7330e8c5b28ee25584f405996c4e85fa2ec04d3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/daf1365c729175856cd40d7224e025d39622b6dd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5c7874bd3cb4b8f7df423b45939603321936d823</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2b2f40965bd00ab78e5aadb826b3135185bbac28</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/42ed24ba19828210d84ea5cbaca9ee390b591e35</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/12755a7e8728fdc0bdd3324a75795c6d483de707</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/0d197835565bbd727849990c30cb36b354f4d59b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5f0d267cd7d15f1753305ff42f15a5d58c016364</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/ec361806340c58cb907108e6b2b0f76833145891</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/803b93528cd913d867c201332a2bb9069247b702</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/6f8a7ebb4ca93b538de40c22e761a371ba3cf91a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/987f344c05e9e3700c2eb3ed0b251d981ff84418</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cb2a28a67ae35ba83fb19aff8497fe9d63a6c27a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/c63d706e4cdfc6aa0d9bfc613041e463bdc83688</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/7498180bba338275e7ad389df30154e007a8b459</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a693f3fb77bf441f614bf3c7e9dba8a46e1fa205</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/91ebfcf712b5792b1084843ef4ac80e88f49d3ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/10579e881a5429f42c62ba91fb9ab9264cec07a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/47ddb050c71298f9185d9a5db0d9238305d5edfd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2fce0ef64316231f1d59d38206878eec4cdca8cb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/a89410ad7439e56a86ecbc32f060e7212f094a56</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3b9d5007999aa07b2d055e18143ef2bbcfe782c7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3947a804db2346b58b79a959a6e58f692de92dfb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/d60b3b6b896975ad03c8a4d8124e7b29ba7dd9b9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8b04584e8bffcac3cedead069c84def6ebc9838e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8aef1f78e437c3dee889b2dad6954674a7c6eab7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3b28c120e45f1d0b19bca379e4efc26d05045d27</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2ad4118f4175176b5aeeae6b70cc8176d9fd3f42</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/e5006aa1829412744fbac6506cbdfe6c9cf8fb01</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/7ff8abe9dd28c771ccc3ffbb1bd02d3688ef9d23</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8193d85b73d8163893ed688e32b6b58f1c10f471</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/5306fb18e75dddcdec6b7eba0e1bd287fabbff91</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/2349969b92fd86872fd5a9ddc4851a32e7117a51</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/983d35b70a327532d2c69e57e71731cb23b10510</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/69eb1427ef5d2d3ebec5fc5828e846869dc8e5b9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/cc8113eddce02229c2b4b64763a09eaaa13d11bd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3e427d40ae7a9c37fa0e22a3f25ec9af29f2f89e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/348d886e3356329891b53c9ecde578bd915db096</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/26ddf775af4eab6ecca8f19f4acaa67b51e79f01</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/6c909d62dba5ce04cc85a311c4c3842a42dda802</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/3f0c83eb580ab312684a3cfbc2260f3db4d1f756</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/da6e18a8ce33c972d56c396ee83cbcc1bab1d1ff</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/d89e7c798f67ed0ac460b441bc1c162b9357d028</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/285b9e141babb28976d82fb081429619e2b18e3c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/483546d91abce260db5e422c173492d9f53b26d5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/9565d9de476ffe68bc08c45b48a49ea2d17833cd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/edcbf90e1cc4a20d61f0327ec0f20e96b757bee8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/b1130a5eeb641a7f4e8b3cdd1298b71e54170c2d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/pensionstat/8cdb965b60263b3a8acdf369fab72dc104135333</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/2802361/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/pensionstat</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 28 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/4d7a6296d680f562edad0dd9b6bd8f0bfec23a46</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/fafa80273b86ba69ee729bddf7de322f3991f3a6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/2d7d9a1214269a5ca4a2abdacb93e16086c2938c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/edc1e63e2b1cd8866ec7dd4bdf6c77915bc166fb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/ec850aa71388240e7ad1f30bda63dd0182542c73</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/643f48cb5f63baadea935e3bede1ec78eb0455b1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/e277a0bfd52987f408c3319136dab45176cf98ba</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/9cf0a1631763bcddc72c80439944f0d2997c38bb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/52ac8c8d304a43725e613ce773c92e297663d93f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/6db15f7df56fa53feb3a7465e4c37df7e6eb47af</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/dd6d76f7f1db24bd7c1b1b494350705971954c40</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/baa975582ebf62094f45aed090f12471d52f783a</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/0db61432d4f1bdfb7f431bfa7640d2cea579790a</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/c4944501b559e3bf93e15a3feb9e67d6b052564d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/4d7a6296d680f562edad0dd9b6bd8f0bfec23a46</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/fafa80273b86ba69ee729bddf7de322f3991f3a6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/2d7d9a1214269a5ca4a2abdacb93e16086c2938c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/edc1e63e2b1cd8866ec7dd4bdf6c77915bc166fb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/ec850aa71388240e7ad1f30bda63dd0182542c73</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/643f48cb5f63baadea935e3bede1ec78eb0455b1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/e277a0bfd52987f408c3319136dab45176cf98ba</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/9cf0a1631763bcddc72c80439944f0d2997c38bb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/52ac8c8d304a43725e613ce773c92e297663d93f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/6db15f7df56fa53feb3a7465e4c37df7e6eb47af</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/dd6d76f7f1db24bd7c1b1b494350705971954c40</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/baa975582ebf62094f45aed090f12471d52f783a</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/0db61432d4f1bdfb7f431bfa7640d2cea579790a</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+						<tr><td>http://data.gov.be/dataset/pensionstat/c4944501b559e3bf93e15a3feb9e67d6b052564d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>130</td></tr>
+						<tr><th>dcat:Dataset</th><td>14</td></tr>
+						<tr><th>skos:Concept</th><td>12</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcterms:MediaType</th><td>2</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>2</td></tr>
+						<tr><th>dcterms:PeriodOfTime</th><td>2</td></tr>
+						<tr><th>foaf:Document</th><td>2</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>foaf:Agent</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Kind</th><td>1</td></tr>
+						<tr><th>vcard:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcterms:title</th><td>639</td></tr>
+						<tr><th>rdf:type</th><td>176</td></tr>
+						<tr><th>dcterms:language</th><td>160</td></tr>
+						<tr><th>dcat:accessURL</th><td>136</td></tr>
+						<tr><th>dcat:distribution</th><td>136</td></tr>
+						<tr><th>dcterms:license</th><td>131</td></tr>
+						<tr><th>dcat:downloadURL</th><td>130</td></tr>
+						<tr><th>dcat:mediaType</th><td>130</td></tr>
+						<tr><th>dcterms:format</th><td>130</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>130</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>130</td></tr>
+						<tr><th>skos:prefLabel</th><td>76</td></tr>
+						<tr><th>dcat:keyword</th><td>42</td></tr>
+						<tr><th>dcterms:description</th><td>29</td></tr>
+						<tr><th>dcat:contactPoint</th><td>14</td></tr>
+						<tr><th>dcat:dataset</th><td>14</td></tr>
+						<tr><th>dcat:theme</th><td>14</td></tr>
+						<tr><th>dcterms:accessRights</th><td>14</td></tr>
+						<tr><th>dcterms:identifier</th><td>14</td></tr>
+						<tr><th>dcterms:publisher</th><td>14</td></tr>
+						<tr><th>dcterms:spatial</th><td>14</td></tr>
+						<tr><th>dcterms:temporal</th><td>14</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>14</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>14</td></tr>
+						<tr><th>skos:inScheme</th><td>6</td></tr>
+						<tr><th>foaf:name</th><td>3</td></tr>
+						<tr><th>vcard:fn</th><td>3</td></tr>
+						<tr><th>dcat:endDate</th><td>2</td></tr>
+						<tr><th>dcat:startDate</th><td>2</td></tr>
+						<tr><th>foaf:homepage</th><td>2</td></tr>
+						<tr><th>rdfs:label</th><td>2</td></tr>
+						<tr><th>dcat:bbox</th><td>1</td></tr>
+						<tr><th>dcterms:modified</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+						<tr><th>vcard:hasUrl</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</th><td>68</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/pdf</th><td>62</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC0</th><td>131</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2802361/</th><td>14</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XLSX</th><td>68</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/PDF</th><td>62</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0880820673</th><td>14</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/SOCI</th><td>14</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

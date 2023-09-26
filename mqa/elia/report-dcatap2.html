@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:35:14</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/elia/elia.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 4 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:description MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:format NodeConstraintComponent : 284 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/format&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#FileTypeRestriction&gt; .
+
+&lt;http://data.europa.eu/r5r#FileTypeRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/file-type&gt;
+    ] .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/gpx</td><td>https://www.iana.org/assignments/media-types/application/gpx+xml</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/kml</td><td>https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/ov2</td><td>https://www.iana.org/assignments/media-types/text/plain</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/shp</td><td>https://www.iana.org/assignments/media-types/application/zip</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 2 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>https://opendata.elia.be/explore/</td><td>n/a</td></tr>
+								<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:title MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/title&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 15 shapes</h2>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/?refine.publisher=Elia+Transmission+SA</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/?refine.publisher=Customers%2C+Market+and+System</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:language MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/language&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:license MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/license&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:modified MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/modified&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>foaf:homepage MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://xmlns.com/foaf/0.1/homepage&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:keyword MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#keyword&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/open-data-news/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 70 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/release-notes/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods008/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods005/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods006/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods007/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods069/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods014/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods019/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods029/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods036/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods039/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods038/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods073/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods056/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods040/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods022/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods037/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods062/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods030/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods015/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods072/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods013/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods071/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods074/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods031/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods061/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods021/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods047/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods035/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods068/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods001/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods016/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods009/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods032/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods090/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods046/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods033/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods026/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods027/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods057/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods076/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods125/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods124/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods147/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods023/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods034/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods003/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods045/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods136/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods012/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods084/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods140/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods085/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods011/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods083/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods139/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods081/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods086/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods002/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods082/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods087/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods020/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods078/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/open-data-news/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods091/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods080/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods055/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods088/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods077/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods079/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 635 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/release-notes/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods008/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods005/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods006/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods007/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods069/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods014/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods019/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods029/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods036/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods039/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods038/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods073/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods056/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods040/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods022/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods037/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods062/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods030/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods015/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods072/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods013/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods071/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods074/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods031/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods061/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods021/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods047/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods035/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods068/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods001/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods016/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods009/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods090/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods046/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods033/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods026/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods027/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods057/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods076/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods125/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/geojson</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/gpx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/kml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/ov2</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/shp</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods124/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods147/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods023/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods034/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods003/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods045/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods136/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods012/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods084/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods140/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods085/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods011/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods083/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods139/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods081/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods086/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods002/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods082/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods087/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods020/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods078/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/open-data-news/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods091/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods080/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods055/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods088/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods077/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods079/exports/xlsx</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/pages/licence</td><td>n/a</td></tr>
+						<tr><td>https://www.elia.be/en/grid-data/elia-open-data-license</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/2802361/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/elia</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 140 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/release-notes/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods008/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods005/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods006/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods007/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods069/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods014/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods019/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods029/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods036/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods039/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods038/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods073/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods056/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods040/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods022/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods037/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods062/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods030/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods015/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods072/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods013/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods071/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods074/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods031/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods061/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods021/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods047/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods035/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods068/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods001/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods016/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods009/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods032/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods090/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods046/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods033/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods026/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods027/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods057/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods076/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods125/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods124/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods147/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods023/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods034/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods003/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods045/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods136/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods012/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods084/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods140/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods085/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods011/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods083/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods139/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods081/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods086/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods002/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods082/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods087/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods020/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods078/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/open-data-news/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods091/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods080/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods055/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods088/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods077/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods079/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/release-notes/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods008/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods005/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods006/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods007/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods069/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods014/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods019/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods029/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods036/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods039/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods038/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods073/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods056/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods040/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods022/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods037/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods062/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods030/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods015/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods072/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods013/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods071/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods074/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods031/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods061/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods021/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods047/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods035/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods068/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods001/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods016/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods009/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods032/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods090/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods046/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods033/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods026/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods027/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods057/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods076/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods125/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods124/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods147/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods023/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods034/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods003/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods045/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods136/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods012/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods084/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods140/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods085/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods011/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods083/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods139/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods081/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods086/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods002/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods082/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods087/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods020/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods078/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/open-data-news/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods091/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods080/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods055/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods088/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods077/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+						<tr><td>https://opendata.elia.be/explore/dataset/ods079/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>635</td></tr>
+						<tr><th>foaf:Document</th><td>73</td></tr>
+						<tr><th>dcat:Dataset</th><td>70</td></tr>
+						<tr><th>dctype:Dataset</th><td>70</td></tr>
+						<tr><th>skos:Concept</th><td>28</td></tr>
+						<tr><th>dcterms:Frequency</th><td>19</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>16</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>5</td></tr>
+						<tr><th>dcterms:MediaType</th><td>4</td></tr>
+						<tr><th>foaf:Agent</th><td>3</td></tr>
+						<tr><th>dcat:Catalog</th><td>2</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>2</td></tr>
+						<tr><th>dcat:DataService</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Kind</th><td>1</td></tr>
+						<tr><th>vcard:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>rdf:type</th><td>933</td></tr>
+						<tr><th>dcterms:title</th><td>707</td></tr>
+						<tr><th>dcterms:description</th><td>706</td></tr>
+						<tr><th>dcterms:date</th><td>705</td></tr>
+						<tr><th>dcterms:issued</th><td>705</td></tr>
+						<tr><th>dcterms:modified</th><td>705</td></tr>
+						<tr><th>dcat:accessURL</th><td>635</td></tr>
+						<tr><th>dcat:distribution</th><td>635</td></tr>
+						<tr><th>dcat:downloadURL</th><td>635</td></tr>
+						<tr><th>dcterms:format</th><td>635</td></tr>
+						<tr><th>dcterms:license</th><td>635</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>635</td></tr>
+						<tr><th>dcat:mediaType</th><td>351</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>351</td></tr>
+						<tr><th>dcat:keyword</th><td>159</td></tr>
+						<tr><th>dcat:dataset</th><td>140</td></tr>
+						<tr><th>skos:prefLabel</th><td>97</td></tr>
+						<tr><th>dcat:landingPage</th><td>71</td></tr>
+						<tr><th>dcterms:accessRights</th><td>71</td></tr>
+						<tr><th>dcterms:identifier</th><td>71</td></tr>
+						<tr><th>dcterms:spatial</th><td>71</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>71</td></tr>
+						<tr><th>dcat:contactPoint</th><td>70</td></tr>
+						<tr><th>dcat:servesDataset</th><td>70</td></tr>
+						<tr><th>dcat:theme</th><td>70</td></tr>
+						<tr><th>dcterms:publisher</th><td>70</td></tr>
+						<tr><th>dcterms:subject</th><td>70</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>70</td></tr>
+						<tr><th>dcterms:accrualPeriodicity</th><td>68</td></tr>
+						<tr><th>http://data.gov.be#freq</th><td>68</td></tr>
+						<tr><th>skos:inScheme</th><td>15</td></tr>
+						<tr><th>foaf:name</th><td>5</td></tr>
+						<tr><th>rdfs:label</th><td>4</td></tr>
+						<tr><th>vcard:fn</th><td>3</td></tr>
+						<tr><th>foaf:homepage</th><td>2</td></tr>
+						<tr><th>dcat:bbox</th><td>1</td></tr>
+						<tr><th>dcat:endpointDescription</th><td>1</td></tr>
+						<tr><th>dcat:endpointURL</th><td>1</td></tr>
+						<tr><th>dcat:service</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+						<tr><th>vcard:hasUrl</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/json</th><td>141</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/rdf+xml</th><td>70</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</th><td>70</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/csv</th><td>70</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.elia.be/en/grid-data/elia-open-data-license</th><td>635</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2802361/</th><td>71</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/JSON</th><td>141</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/CSV</th><td>70</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/RDF_XML</th><td>70</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XLSX</th><td>70</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/ld+json</th><td>70</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/octet-stream</th><td>70</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/n3</th><td>70</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/turtle</th><td>70</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/gpx+xml</th><td>1</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml</th><td>1</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/zip</th><td>1</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/plain</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0731852231</th><td>70</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ENER</th><td>70</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

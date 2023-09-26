@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:36:10</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/fpsfinance/fpsfinance.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 4 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:description MinCountConstraintComponent : 2 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>n/a</td></tr>
+								<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:title MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/title&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>foaf:homepage MaxCountConstraintComponent : 2 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://xmlns.com/foaf/0.1/homepage&gt;;
+  sh:maxCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79c</td><td>n/a</td></tr>
+								<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 17 shapes</h2>
+				<details>
+			<summary>dcterms:language MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/language&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:license MinCountConstraintComponent : 3 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/license&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:modified MinCountConstraintComponent : 3 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/modified&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 3 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>foaf:homepage MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://xmlns.com/foaf/0.1/homepage&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:description MinCountConstraintComponent : 147 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ac</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7be</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7dc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e800</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e806</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e80c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e812</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e818</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e81e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e824</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e82a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e830</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e836</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e83c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e842</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e848</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e84e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e854</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e85a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e860</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e866</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e86c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e872</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e878</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e87e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e884</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e88a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e890</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e896</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e89c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ba</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8cc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8fc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e902</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e908</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e90e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e914</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e91a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e920</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e926</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e92c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e932</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e938</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e93e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e944</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e94a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e950</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e956</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e95c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e962</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e968</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e96e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e974</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e97a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e980</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e986</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e98c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e992</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e998</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e99e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9aa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9bc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9da</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9fe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea04</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea0a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea10</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea16</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea1c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea22</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea28</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea2e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea34</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea3a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea40</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea46</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea4c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea52</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea58</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea5e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea64</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea6a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea70</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea76</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea7c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea82</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea88</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea8e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea94</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea9a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaac</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eabe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eadc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eafa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb00</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb06</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb0c</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 147 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ac</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7be</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7dc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e800</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e806</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e80c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e812</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e818</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e81e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e824</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e82a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e830</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e836</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e83c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e842</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e848</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e84e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e854</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e85a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e860</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e866</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e86c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e872</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e878</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e87e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e884</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e88a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e890</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e896</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e89c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ba</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8cc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8fc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e902</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e908</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e90e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e914</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e91a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e920</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e926</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e92c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e932</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e938</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e93e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e944</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e94a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e950</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e956</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e95c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e962</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e968</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e96e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e974</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e97a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e980</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e986</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e98c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e992</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e998</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e99e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9aa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9bc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9da</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9fe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea04</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea0a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea10</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea16</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea1c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea22</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea28</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea2e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea34</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea3a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea40</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea46</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea4c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea52</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea58</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea5e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea64</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea6a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea70</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea76</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea7c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea82</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea88</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea8e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea94</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea9a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaac</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eabe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eadc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eafa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb00</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb06</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb0c</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:license MinCountConstraintComponent : 147 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/license&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ac</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7be</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7dc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e800</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e806</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e80c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e812</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e818</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e81e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e824</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e82a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e830</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e836</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e83c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e842</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e848</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e84e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e854</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e85a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e860</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e866</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e86c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e872</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e878</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e87e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e884</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e88a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e890</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e896</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e89c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ba</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8cc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8fc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e902</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e908</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e90e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e914</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e91a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e920</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e926</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e92c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e932</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e938</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e93e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e944</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e94a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e950</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e956</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e95c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e962</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e968</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e96e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e974</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e97a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e980</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e986</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e98c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e992</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e998</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e99e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9aa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9bc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9da</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9fe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea04</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea0a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea10</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea16</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea1c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea22</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea28</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea2e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea34</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea3a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea40</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea46</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea4c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea52</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea58</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea5e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea64</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea6a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea70</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea76</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea7c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea82</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea88</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea8e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea94</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea9a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaac</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eabe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eadc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eafa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb00</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb06</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb0c</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC0</td><td>n/a</td></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC_BYNCSA_3_0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 149 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7af</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7bb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7cd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7df</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7eb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7fd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e803</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e809</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e80f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e815</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e81b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e821</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e827</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e82d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e833</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e839</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e83f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e845</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e84b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e851</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e857</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e85d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e863</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e869</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e86f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e875</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e87b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e881</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e887</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e88d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e893</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e899</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e89f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ab</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8bd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8cf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8db</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ed</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ff</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e905</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e90b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e911</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e917</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e91d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e923</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e929</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e92f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e935</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e93b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e941</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e947</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e94d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e953</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e959</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e95f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e965</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e96b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e971</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e977</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e97d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e983</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e989</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e98f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e995</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e99b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ad</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9bf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9cb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9dd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ef</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9fb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea01</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea07</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea0d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea13</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea19</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea1f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea25</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea2b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea31</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea37</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea3d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea43</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea49</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea4f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea55</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea5b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea61</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea67</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea6d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea73</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea79</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea7f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea85</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea8b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea91</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea97</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea9d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaaf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eabb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eacd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead9</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eadf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae5</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaeb</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf7</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eafd</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb03</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb09</td><td>n/a</td></tr>
+						<tr><td>https://sws.geonames.org/2802361/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:endDate MinCountConstraintComponent : 146 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#endDate&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7aa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7bc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7da</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7fe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e804</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e80a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e810</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e816</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e81c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e822</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e828</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e82e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e834</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e83a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e840</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e846</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e84c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e852</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e858</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e85e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e864</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e86a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e870</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e876</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e87c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e882</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e888</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e88e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e894</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e89a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ac</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8be</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8dc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e900</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e906</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e90c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e912</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e918</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e91e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e924</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e92a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e930</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e936</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e93c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e942</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e948</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e94e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e954</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e95a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e960</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e966</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e96c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e972</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e978</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e97e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e984</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e98a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e990</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e996</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e99c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ba</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9cc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9fc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea02</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea08</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea0e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea14</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea1a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea20</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea26</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea2c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea32</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea38</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea3e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea44</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea4a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea50</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea56</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea5c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea62</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea68</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea6e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea74</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea7a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea80</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea86</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea8c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea92</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea98</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea9e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaaa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eabc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eace</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eada</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eafe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb04</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb0a</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:startDate MinCountConstraintComponent : 146 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#startDate&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7aa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7bc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7da</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7fe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e804</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e80a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e810</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e816</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e81c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e822</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e828</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e82e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e834</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e83a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e840</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e846</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e84c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e852</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e858</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e85e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e864</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e86a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e870</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e876</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e87c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e882</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e888</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e88e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e894</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e89a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ac</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8be</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8dc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8ee</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8fa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e900</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e906</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e90c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e912</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e918</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e91e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e924</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e92a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e930</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e936</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e93c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e942</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e948</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e94e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e954</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e95a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e960</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e966</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e96c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e972</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e978</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e97e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e984</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e98a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e990</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e996</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e99c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ae</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ba</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9cc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9fc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea02</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea08</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea0e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea14</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea1a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea20</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea26</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea2c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea32</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea38</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea3e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea44</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea4a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea50</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea56</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea5c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea62</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea68</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea6e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea74</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea7a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea80</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea86</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea8c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea92</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea98</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea9e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaaa</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eabc</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eace</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eada</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaec</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf8</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eafe</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb04</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb0a</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 4 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 3 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fpsfinance</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 292 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ad</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7bf</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7cb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7dd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ef</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7fb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e801</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e807</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e80d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e813</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e819</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e81f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e825</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e82b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e831</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e837</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e83d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e843</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e849</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e84f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e855</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e85b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e861</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e867</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e86d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e873</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e879</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e87f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e885</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e88b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e891</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e897</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e89d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8af</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8bb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8cd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8df</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8eb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8fd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e903</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e909</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e90f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e915</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e91b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e921</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e927</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e92d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e933</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e939</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e93f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e945</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e94b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e951</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e957</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e95d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e963</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e969</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e96f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e975</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e97b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e981</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e987</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e98d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e993</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e999</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e99f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ab</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9bd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9cf</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9db</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ed</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ff</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea05</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea0b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea11</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea17</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea1d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea23</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea29</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea2f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea35</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea3b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea41</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea47</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea4d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea53</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea59</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea5f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea65</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea6b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea71</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea77</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea7d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea83</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea89</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea8f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea95</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea9b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaad</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eabf</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eacb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eadd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaef</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eafb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb01</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb07</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7a7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ad</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7b9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7bf</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7c5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7cb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7d7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7dd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7e9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7ef</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7f5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e7fb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e801</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e807</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e80d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e813</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e819</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e81f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e825</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e82b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e831</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e837</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e83d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e843</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e849</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e84f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e855</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e85b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e861</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e867</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e86d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e873</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e879</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e87f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e885</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e88b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e891</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e897</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e89d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8a9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8af</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8b5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8bb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8c7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8cd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8d9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8df</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8e5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8eb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8f7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e8fd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e903</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e909</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e90f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e915</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e91b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e921</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e927</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e92d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e933</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e939</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e93f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e945</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e94b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e951</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e957</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e95d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e963</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e969</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e96f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e975</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e97b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e981</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e987</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e98d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e993</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e999</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e99f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9a5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ab</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9b7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9bd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9c9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9cf</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9d5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9db</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9e7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ed</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9f9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e9ff</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea05</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea0b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea11</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea17</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea1d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea23</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea29</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea2f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea35</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea3b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea41</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea47</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea4d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea53</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea59</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea5f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea65</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea6b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea71</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea77</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea7d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea83</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea89</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea8f</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea95</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ea9b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaa7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaad</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eab9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eabf</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eac5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eacb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0ead7</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eadd</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eae9</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaef</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eaf5</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eafb</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb01</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+						<tr><td>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0eb07</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>foaf:Document</th><td>202</td></tr>
+						<tr><th>dcterms:Location</th><td>149</td></tr>
+						<tr><th>foaf:Organization</th><td>148</td></tr>
+						<tr><th>dcat:Distribution</th><td>147</td></tr>
+						<tr><th>dcat:Dataset</th><td>146</td></tr>
+						<tr><th>dcterms:PeriodOfTime</th><td>146</td></tr>
+						<tr><th>skos:Concept</th><td>23</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcat:Catalog</th><td>3</td></tr>
+						<tr><th>dcterms:Frequency</th><td>3</td></tr>
+						<tr><th>vcard:Kind</th><td>3</td></tr>
+						<tr><th>vcard:Organization</th><td>3</td></tr>
+						<tr><th>dct:LinguisticSystem</th><td>2</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>2</td></tr>
+						<tr><th>dcterms:MediaType</th><td>2</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>2</td></tr>
+						<tr><th>foaf:Agent</th><td>2</td></tr>
+						<tr><th>http://www.w3.org/ns/locn#Address</th><td>2</td></tr>
+						<tr><th>vcard:Address</th><td>2</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:keyword</th><td>1052</td></tr>
+						<tr><th>rdf:type</th><td>992</td></tr>
+						<tr><th>dcterms:language</th><td>654</td></tr>
+						<tr><th>dcat:bbox</th><td>593</td></tr>
+						<tr><th>http://www.w3.org/ns/locn#geometry</th><td>592</td></tr>
+						<tr><th>http://www.w3.org/2001/XMLSchema-instanceschemaLocation</th><td>591</td></tr>
+						<tr><th>dcat:landingPage</th><td>438</td></tr>
+						<tr><th>dcat:theme</th><td>300</td></tr>
+						<tr><th>foaf:name</th><td>298</td></tr>
+						<tr><th>dcterms:title</th><td>296</td></tr>
+						<tr><th>dcterms:description</th><td>294</td></tr>
+						<tr><th>dcat:dataset</th><td>292</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>292</td></tr>
+						<tr><th>foaf:workplaceHomepage</th><td>154</td></tr>
+						<tr><th>dcat:contactPoint</th><td>148</td></tr>
+						<tr><th>dcterms:identifier</th><td>148</td></tr>
+						<tr><th>dcterms:publisher</th><td>148</td></tr>
+						<tr><th>dcterms:spatial</th><td>148</td></tr>
+						<tr><th>dcterms:type</th><td>148</td></tr>
+						<tr><th>http://www.w3.org/ns/locn#address</th><td>148</td></tr>
+						<tr><th>dcat:accessURL</th><td>147</td></tr>
+						<tr><th>dcat:distribution</th><td>147</td></tr>
+						<tr><th>dcat:downloadURL</th><td>147</td></tr>
+						<tr><th>dcat:mediaType</th><td>147</td></tr>
+						<tr><th>dcterms:format</th><td>147</td></tr>
+						<tr><th>dcterms:issued</th><td>147</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>147</td></tr>
+						<tr><th>dcterms:accessRights</th><td>146</td></tr>
+						<tr><th>dcterms:accrualPeriodicity</th><td>146</td></tr>
+						<tr><th>dcterms:license</th><td>146</td></tr>
+						<tr><th>dcterms:modified</th><td>146</td></tr>
+						<tr><th>dcterms:temporal</th><td>146</td></tr>
+						<tr><th>http://data.gov.be#freq</th><td>146</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>146</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>146</td></tr>
+						<tr><th>http://schema.org/endDate</th><td>146</td></tr>
+						<tr><th>http://schema.org/startDate</th><td>146</td></tr>
+						<tr><th>skos:prefLabel</th><td>131</td></tr>
+						<tr><th>skos:inScheme</th><td>17</td></tr>
+						<tr><th>vcard:hasURL</th><td>9</td></tr>
+						<tr><th>foaf:homepage</th><td>8</td></tr>
+						<tr><th>http://www.w3.org/ns/locn#adminUnitL1</th><td>4</td></tr>
+						<tr><th>http://www.w3.org/ns/locn#postName</th><td>4</td></tr>
+						<tr><th>http://www.w3.org/ns/locn#thoroughfare</th><td>4</td></tr>
+						<tr><th>vcard:country-name</th><td>4</td></tr>
+						<tr><th>vcard:locality</th><td>4</td></tr>
+						<tr><th>vcard:organization-name</th><td>4</td></tr>
+						<tr><th>vcard:street-address</th><td>4</td></tr>
+						<tr><th>vcard:fn</th><td>3</td></tr>
+						<tr><th>http://www.w3.org/ns/locn#postCode</th><td>2</td></tr>
+						<tr><th>rdfs:label</th><td>2</td></tr>
+						<tr><th>vcard:hasAddress</th><td>2</td></tr>
+						<tr><th>vcard:postal-code</th><td>2</td></tr>
+						<tr><th>dcterms:isPartOf</th><td>1</td></tr>
+						<tr><th>foaf:mbox</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</th><td>146</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/rdf+xml</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC0</th><td>132</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC_BYNCSA_3_0</th><td>14</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2802361/</th><td>146</td></tr>
+						<tr><th>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79d</th><td>1</td></tr>
+						<tr><th>http://data.gov.be/.well-known/genid/be24c45ee9a644dd98ee8edc08f8a7a42-7d4b29d1e6d0e79f</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XLSX</th><td>146</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/RDF_XML</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0308357159</th><td>147</td></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0671516647</th><td>1</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ECON</th><td>147</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/GOVE</th><td>147</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/HEAL</th><td>3</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ENVI</th><td>1</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/TECH</th><td>1</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/TRAN</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

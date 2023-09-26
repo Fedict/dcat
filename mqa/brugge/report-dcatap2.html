@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:31:49</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/brugge/brugge.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 1 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/brugge</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 12 shapes</h2>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/brugge</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/brugge</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/brugge</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:distribution MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#distribution&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/luchtkwaliteit</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustellingen2018</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 98 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afkomstperstatistischesector</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/geslachtperstatistischesector</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hogescholen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/leeftijdperstatistischesector</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/scholenbrugge2016</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lagerescholenbrugge</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bedrijventerreinen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bibliotheken</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/deelgemeentenbrugge</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/energieverbuik</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/gemeentegrensbrugge</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/grbgebouwen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/grbpercelen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/groeninventarisbrugge</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hectopunten</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/jeugdlokalen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/kaainummers</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/kinderopvang</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/mbzdata</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/meetpunten</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/musea</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/overdektejeugdruimte</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/openbaretoiletten</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/speelbossen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/speelruimte</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/sportinfrastructuur</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/statistischesectoren</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/studentenverblijven</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/waterlopen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/wegverbindingen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/woonzorgcentra</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zitbanken</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zwembaden</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afvalmanden</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afval-ivbo-sectoren</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bodemkaart</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/buurtgroen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/containerparken</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/glasbollen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/luchtkwaliteit</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/strooirondesfietsen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/strooirondeswegen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/waterkwaliteit</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/windturbines</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bovenlokaalfunctioneelfietsroutenetwerk</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/duostaanders</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietskaartbrugge</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietskluizenrandparkings</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen13-15</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen14-16</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen17-18</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsoversteken</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietstrommels</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustellingen2018</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling18/02/2018</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling14/05/2018</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling07/09/2018</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling29/11/2018</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/octopuspalen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/ongevallentotaal</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/overzichtelektrischelaadpalen(auto)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeerautomaten</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingen2013-2014</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstad2016</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstadaug2013(perwijk)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstadaug2013(totaal)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenrand2016</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeerzones</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/randparkings</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingbaronruzettelaan(15min)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingbaronruzettelaan(peruur)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellinggistelsesteenwegafgaand</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellinggistelsesteenwegopgaand</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmaalsesteenwegrichtingring</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingoostendsesteenwegafgaand</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingoostendsesteenwegopgaand</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingtorhoutsesteenweg</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatrichtingbrug(15min)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatrichtingbrug(peruur)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatwegvanbrug(15min)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatwegvanbrug(peruur)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/spoorwegen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/straatparkeren</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen13-15</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen14-16</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen17-18</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeerstellingeninkomendverkeer</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/voorbehoudenparkeerplaatsen</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone30</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone50</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone70</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone90</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/horeca</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hotelaanwijsborden</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/leegstaandebedrijfspanden</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:description MinCountConstraintComponent : 345 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afkomstperstatistischesector/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afkomstperstatistischesector/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afkomstperstatistischesector/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/geslachtperstatistischesector/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/geslachtperstatistischesector/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/geslachtperstatistischesector/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hogescholen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hogescholen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hogescholen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leeftijdperstatistischesector/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leeftijdperstatistischesector/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leeftijdperstatistischesector/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/scholenbrugge2016/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/scholenbrugge2016/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/scholenbrugge2016/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/scholenbrugge2016/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lagerescholenbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lagerescholenbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lagerescholenbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lagerescholenbrugge/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bedrijventerreinen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bedrijventerreinen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bedrijventerreinen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bedrijventerreinen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bibliotheken/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bibliotheken/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bibliotheken/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bibliotheken/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/deelgemeentenbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/deelgemeentenbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/deelgemeentenbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/energieverbuik/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/energieverbuik/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/energieverbuik/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/gemeentegrensbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/gemeentegrensbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/gemeentegrensbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbgebouwen/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbgebouwen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbgebouwen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbpercelen/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbpercelen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbpercelen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/groeninventarisbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/groeninventarisbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/groeninventarisbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hectopunten/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hectopunten/JSON(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hectopunten/KML(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/jeugdlokalen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/jeugdlokalen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/jeugdlokalen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/jeugdlokalen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kaainummers/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kaainummers/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kaainummers/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kinderopvang/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kinderopvang/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kinderopvang/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kinderopvang/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/mbzdata/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/mbzdata/JSON(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/mbzdata/KML(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/meetpunten/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/meetpunten/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/meetpunten/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/meetpunten/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/musea/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/musea/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/musea/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/musea/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overdektejeugdruimte/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overdektejeugdruimte/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overdektejeugdruimte/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overdektejeugdruimte/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/openbaretoiletten/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/openbaretoiletten/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/openbaretoiletten/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/openbaretoiletten/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelbossen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelbossen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelbossen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelbossen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelruimte/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelruimte/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelruimte/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelruimte/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/sportinfrastructuur/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/sportinfrastructuur/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/sportinfrastructuur/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/sportinfrastructuur/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/statistischesectoren/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/statistischesectoren/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/statistischesectoren/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/studentenverblijven/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/studentenverblijven/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/studentenverblijven/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/studentenverblijven/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterlopen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterlopen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterlopen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/wegverbindingen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/wegverbindingen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/wegverbindingen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/woonzorgcentra/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/woonzorgcentra/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/woonzorgcentra/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/woonzorgcentra/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zitbanken/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zitbanken/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zitbanken/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zwembaden/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zwembaden/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zwembaden/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zwembaden/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afvalmanden/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afvalmanden/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afvalmanden/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afvalmanden/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afval-ivbo-sectoren/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afval-ivbo-sectoren/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afval-ivbo-sectoren/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afval-ivbo-sectoren/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bodemkaart/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bodemkaart/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bodemkaart/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bodemkaart/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/buurtgroen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/buurtgroen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/buurtgroen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/buurtgroen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/containerparken/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/containerparken/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/containerparken/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/containerparken/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/glasbollen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/glasbollen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/glasbollen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/glasbollen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondesfietsen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondesfietsen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondesfietsen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondeswegen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondeswegen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondeswegen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondeswegen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterkwaliteit/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterkwaliteit/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterkwaliteit/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterkwaliteit/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/windturbines/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/windturbines/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/windturbines/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/windturbines/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bovenlokaalfunctioneelfietsroutenetwerk/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bovenlokaalfunctioneelfietsroutenetwerk/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bovenlokaalfunctioneelfietsroutenetwerk/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bovenlokaalfunctioneelfietsroutenetwerk/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/duostaanders/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/duostaanders/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/duostaanders/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskaartbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskaartbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskaartbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskaartbrugge/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskluizenrandparkings/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskluizenrandparkings/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskluizenrandparkings/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskluizenrandparkings/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen13-15/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen13-15/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen13-15/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen13-15/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen14-16/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen14-16/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen14-16/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen14-16/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen17-18/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen17-18/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen17-18/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen17-18/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsoversteken/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsoversteken/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsoversteken/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsoversteken/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietstrommels/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietstrommels/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietstrommels/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietstrommels/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling18/02/2018/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling18/02/2018/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling18/02/2018/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling14/05/2018/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling14/05/2018/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling14/05/2018/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling07/09/2018/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling07/09/2018/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling07/09/2018/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling29/11/2018/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling29/11/2018/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling29/11/2018/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/octopuspalen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/octopuspalen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/octopuspalen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/octopuspalen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/ongevallentotaal/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/ongevallentotaal/JSON(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/ongevallentotaal/KML(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/ongevallentotaal/XMLXSD(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overzichtelektrischelaadpalen(auto)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overzichtelektrischelaadpalen(auto)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overzichtelektrischelaadpalen(auto)/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overzichtelektrischelaadpalen(auto)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerautomaten/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerautomaten/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerautomaten/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerautomaten/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingen2013-2014/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingen2013-2014/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingen2013-2014/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstad2016/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstad2016/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstad2016/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstad2016/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(perwijk)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(perwijk)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(perwijk)/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(perwijk)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(totaal)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(totaal)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(totaal)/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(totaal)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenrand2016/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenrand2016/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenrand2016/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerzones/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerzones/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerzones/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerzones/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/randparkings/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/randparkings/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/randparkings/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/randparkings/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(peruur)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(peruur)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(peruur)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegafgaand/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegafgaand/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegafgaand/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegopgaand/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegopgaand/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegopgaand/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmaalsesteenwegrichtingring/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmaalsesteenwegrichtingring/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmaalsesteenwegrichtingring/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegafgaand/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegafgaand/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegafgaand/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegopgaand/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegopgaand/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegopgaand/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingtorhoutsesteenweg/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingtorhoutsesteenweg/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingtorhoutsesteenweg/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(peruur)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(peruur)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(peruur)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(peruur)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(peruur)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(peruur)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/spoorwegen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/spoorwegen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/spoorwegen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/spoorwegen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/straatparkeren/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/straatparkeren/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/straatparkeren/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/straatparkeren/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen13-15/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen13-15/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen13-15/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen13-15/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen14-16/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen14-16/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen14-16/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen14-16/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen17-18/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen17-18/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen17-18/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen17-18/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeerstellingeninkomendverkeer/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeerstellingeninkomendverkeer/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeerstellingeninkomendverkeer/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/voorbehoudenparkeerplaatsen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/voorbehoudenparkeerplaatsen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/voorbehoudenparkeerplaatsen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/voorbehoudenparkeerplaatsen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/wegverbindingen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone30/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone30/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone30/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone30/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone50/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone50/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone50/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone50/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone70/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone70/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone70/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone70/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone90/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone90/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone90/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone90/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/horeca/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/horeca/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/horeca/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/horeca/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hotelaanwijsborden/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hotelaanwijsborden/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hotelaanwijsborden/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hotelaanwijsborden/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leegstaandebedrijfspanden/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leegstaandebedrijfspanden/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leegstaandebedrijfspanden/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leegstaandebedrijfspanden/XMLXSD</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 345 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afkomstperstatistischesector/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afkomstperstatistischesector/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afkomstperstatistischesector/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/geslachtperstatistischesector/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/geslachtperstatistischesector/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/geslachtperstatistischesector/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hogescholen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hogescholen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hogescholen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leeftijdperstatistischesector/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leeftijdperstatistischesector/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leeftijdperstatistischesector/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/scholenbrugge2016/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/scholenbrugge2016/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/scholenbrugge2016/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/scholenbrugge2016/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lagerescholenbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lagerescholenbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lagerescholenbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lagerescholenbrugge/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bedrijventerreinen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bedrijventerreinen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bedrijventerreinen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bedrijventerreinen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bibliotheken/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bibliotheken/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bibliotheken/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bibliotheken/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/deelgemeentenbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/deelgemeentenbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/deelgemeentenbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/energieverbuik/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/energieverbuik/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/energieverbuik/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/gemeentegrensbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/gemeentegrensbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/gemeentegrensbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbgebouwen/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbgebouwen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbgebouwen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbpercelen/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbpercelen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/grbpercelen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/groeninventarisbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/groeninventarisbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/groeninventarisbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hectopunten/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hectopunten/JSON(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hectopunten/KML(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/jeugdlokalen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/jeugdlokalen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/jeugdlokalen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/jeugdlokalen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kaainummers/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kaainummers/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kaainummers/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kinderopvang/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kinderopvang/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kinderopvang/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/kinderopvang/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/mbzdata/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/mbzdata/JSON(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/mbzdata/KML(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/meetpunten/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/meetpunten/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/meetpunten/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/meetpunten/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/musea/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/musea/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/musea/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/musea/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overdektejeugdruimte/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overdektejeugdruimte/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overdektejeugdruimte/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overdektejeugdruimte/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/openbaretoiletten/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/openbaretoiletten/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/openbaretoiletten/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/openbaretoiletten/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelbossen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelbossen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelbossen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelbossen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelruimte/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelruimte/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelruimte/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/speelruimte/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/sportinfrastructuur/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/sportinfrastructuur/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/sportinfrastructuur/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/sportinfrastructuur/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/statistischesectoren/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/statistischesectoren/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/statistischesectoren/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/studentenverblijven/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/studentenverblijven/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/studentenverblijven/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/studentenverblijven/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterlopen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterlopen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterlopen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/wegverbindingen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/wegverbindingen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/wegverbindingen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/woonzorgcentra/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/woonzorgcentra/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/woonzorgcentra/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/woonzorgcentra/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zitbanken/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zitbanken/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zitbanken/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zwembaden/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zwembaden/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zwembaden/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zwembaden/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afvalmanden/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afvalmanden/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afvalmanden/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afvalmanden/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afval-ivbo-sectoren/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afval-ivbo-sectoren/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afval-ivbo-sectoren/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/afval-ivbo-sectoren/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bodemkaart/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bodemkaart/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bodemkaart/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bodemkaart/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/buurtgroen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/buurtgroen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/buurtgroen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/buurtgroen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/containerparken/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/containerparken/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/containerparken/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/containerparken/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/glasbollen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/glasbollen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/glasbollen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/glasbollen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondesfietsen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondesfietsen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondesfietsen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondeswegen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondeswegen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondeswegen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/strooirondeswegen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterkwaliteit/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterkwaliteit/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterkwaliteit/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/waterkwaliteit/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/windturbines/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/windturbines/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/windturbines/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/windturbines/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bovenlokaalfunctioneelfietsroutenetwerk/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bovenlokaalfunctioneelfietsroutenetwerk/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bovenlokaalfunctioneelfietsroutenetwerk/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/bovenlokaalfunctioneelfietsroutenetwerk/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/duostaanders/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/duostaanders/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/duostaanders/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskaartbrugge/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskaartbrugge/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskaartbrugge/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskaartbrugge/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskluizenrandparkings/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskluizenrandparkings/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskluizenrandparkings/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietskluizenrandparkings/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen13-15/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen13-15/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen13-15/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen13-15/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen14-16/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen14-16/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen14-16/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen14-16/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen17-18/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen17-18/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen17-18/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsongevallen17-18/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsoversteken/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsoversteken/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsoversteken/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietsoversteken/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietstrommels/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietstrommels/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietstrommels/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/fietstrommels/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling18/02/2018/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling18/02/2018/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling18/02/2018/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling14/05/2018/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling14/05/2018/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling14/05/2018/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling07/09/2018/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling07/09/2018/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling07/09/2018/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling29/11/2018/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling29/11/2018/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/lustelling29/11/2018/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/octopuspalen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/octopuspalen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/octopuspalen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/octopuspalen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/ongevallentotaal/CSV(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/ongevallentotaal/JSON(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/ongevallentotaal/KML(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/ongevallentotaal/XMLXSD(zip)</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overzichtelektrischelaadpalen(auto)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overzichtelektrischelaadpalen(auto)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overzichtelektrischelaadpalen(auto)/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/overzichtelektrischelaadpalen(auto)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerautomaten/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerautomaten/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerautomaten/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerautomaten/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingen2013-2014/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingen2013-2014/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingen2013-2014/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstad2016/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstad2016/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstad2016/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstad2016/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(perwijk)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(perwijk)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(perwijk)/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(perwijk)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(totaal)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(totaal)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(totaal)/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenbinnenstadaug2013(totaal)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenrand2016/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenrand2016/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeertellingenrand2016/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerzones/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerzones/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerzones/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/parkeerzones/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/randparkings/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/randparkings/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/randparkings/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/randparkings/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(peruur)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(peruur)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingbaronruzettelaan(peruur)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegafgaand/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegafgaand/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegafgaand/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegopgaand/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegopgaand/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellinggistelsesteenwegopgaand/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmaalsesteenwegrichtingring/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmaalsesteenwegrichtingring/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmaalsesteenwegrichtingring/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegafgaand/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegafgaand/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegafgaand/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegopgaand/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegopgaand/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingoostendsesteenwegopgaand/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingtorhoutsesteenweg/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingtorhoutsesteenweg/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingtorhoutsesteenweg/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(peruur)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(peruur)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatrichtingbrug(peruur)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(15min)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(15min)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(15min)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(peruur)/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(peruur)/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/slangtellingvestingstraatwegvanbrug(peruur)/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/spoorwegen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/spoorwegen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/spoorwegen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/spoorwegen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/straatparkeren/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/straatparkeren/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/straatparkeren/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/straatparkeren/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen13-15/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen13-15/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen13-15/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen13-15/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen14-16/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen14-16/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen14-16/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen14-16/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen17-18/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen17-18/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen17-18/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeersongevallen17-18/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeerstellingeninkomendverkeer/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeerstellingeninkomendverkeer/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/verkeerstellingeninkomendverkeer/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/voorbehoudenparkeerplaatsen/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/voorbehoudenparkeerplaatsen/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/voorbehoudenparkeerplaatsen/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/voorbehoudenparkeerplaatsen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/wegverbindingen/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone30/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone30/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone30/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone30/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone50/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone50/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone50/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone50/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone70/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone70/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone70/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone70/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone90/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone90/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone90/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/zone90/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/horeca/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/horeca/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/horeca/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/horeca/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hotelaanwijsborden/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hotelaanwijsborden/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hotelaanwijsborden/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/hotelaanwijsborden/XMLXSD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leegstaandebedrijfspanden/CSV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leegstaandebedrijfspanden/JSON</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leegstaandebedrijfspanden/KML</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/brugge/leegstaandebedrijfspanden/XMLXSD</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0</td><td>n/a</td></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:bbox MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#bbox&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/2800931/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/2800931/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/brugge</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 196 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afkomstperstatistischesector</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/geslachtperstatistischesector</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hogescholen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/leeftijdperstatistischesector</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/scholenbrugge2016</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lagerescholenbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bedrijventerreinen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bibliotheken</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/deelgemeentenbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/energieverbuik</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/gemeentegrensbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/grbgebouwen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/grbpercelen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/groeninventarisbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hectopunten</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/jeugdlokalen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/kaainummers</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/kinderopvang</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/mbzdata</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/meetpunten</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/musea</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/overdektejeugdruimte</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/openbaretoiletten</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/speelbossen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/speelruimte</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/sportinfrastructuur</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/statistischesectoren</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/studentenverblijven</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/waterlopen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/wegverbindingen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/woonzorgcentra</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zitbanken</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zwembaden</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afvalmanden</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afval-ivbo-sectoren</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bodemkaart</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/buurtgroen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/containerparken</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/glasbollen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/luchtkwaliteit</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/strooirondesfietsen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/strooirondeswegen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/waterkwaliteit</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/windturbines</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bovenlokaalfunctioneelfietsroutenetwerk</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/duostaanders</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietskaartbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietskluizenrandparkings</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen13-15</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen14-16</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen17-18</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsoversteken</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietstrommels</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustellingen2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling18/02/2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling14/05/2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling07/09/2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling29/11/2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/octopuspalen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/ongevallentotaal</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/overzichtelektrischelaadpalen(auto)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeerautomaten</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingen2013-2014</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstad2016</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstadaug2013(perwijk)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstadaug2013(totaal)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenrand2016</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeerzones</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/randparkings</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingbaronruzettelaan(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingbaronruzettelaan(peruur)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellinggistelsesteenwegafgaand</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellinggistelsesteenwegopgaand</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmaalsesteenwegrichtingring</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingoostendsesteenwegafgaand</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingoostendsesteenwegopgaand</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingtorhoutsesteenweg</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatrichtingbrug(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatrichtingbrug(peruur)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatwegvanbrug(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatwegvanbrug(peruur)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/spoorwegen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/straatparkeren</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen13-15</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen14-16</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen17-18</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeerstellingeninkomendverkeer</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/voorbehoudenparkeerplaatsen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone30</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone50</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone70</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone90</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/horeca</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hotelaanwijsborden</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/leegstaandebedrijfspanden</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afkomstperstatistischesector</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/crabbrugge(centraalreferentieadressenbestandbrugge)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/geslachtperstatistischesector</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hogescholen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/leeftijdperstatistischesector</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/scholenbrugge2016</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lagerescholenbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bedrijventerreinen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bibliotheken</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/deelgemeentenbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/energieverbuik</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/gemeentegrensbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/grbgebouwen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/grbpercelen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/groeninventarisbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hectopunten</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/jeugdlokalen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/kaainummers</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/kinderopvang</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/mbzdata</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/meetpunten</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/musea</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/overdektejeugdruimte</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/openbaretoiletten</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/speelbossen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/speelruimte</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/sportinfrastructuur</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/statistischesectoren</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/studentenverblijven</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/waterlopen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/wegverbindingen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/woonzorgcentra</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zitbanken</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zwembaden</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afvalmanden</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/afval-ivbo-sectoren</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bodemkaart</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/buurtgroen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/containerparken</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/glasbollen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/luchtkwaliteit</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/strooirondesfietsen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/strooirondeswegen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/waterkwaliteit</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/windturbines</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/bovenlokaalfunctioneelfietsroutenetwerk</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/duostaanders</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietskaartbrugge</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietskluizenrandparkings</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen13-15</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen14-16</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsongevallen17-18</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietsoversteken</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/fietstrommels</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustellingen2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling18/02/2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling14/05/2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling07/09/2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/lustelling29/11/2018</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/octopuspalen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/ongevallentotaal</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/overzichtelektrischelaadpalen(auto)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeerautomaten</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingen2013-2014</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstad2016</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstadaug2013(perwijk)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenbinnenstadaug2013(totaal)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeertellingenrand2016</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/parkeerzones</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/randparkings</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingbaronruzettelaan(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingbaronruzettelaan(peruur)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellinggistelsesteenwegafgaand</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellinggistelsesteenwegopgaand</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmaalsesteenwegrichtingring</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmoerkerksesteenwegrichtingdamme(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingmoerkerksesteenwegrichtingring(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingoostendsesteenwegafgaand</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingoostendsesteenwegopgaand</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingtorhoutsesteenweg</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatrichtingbrug(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatrichtingbrug(peruur)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatwegvanbrug(15min)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/slangtellingvestingstraatwegvanbrug(peruur)</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/spoorwegen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/straatparkeren</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen13-15</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen14-16</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeersongevallen17-18</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/verkeerstellingeninkomendverkeer</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/voorbehoudenparkeerplaatsen</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone30</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone50</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone70</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/zone90</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/horeca</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/hotelaanwijsborden</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+						<tr><td>http://data.gov.be/dataset/brugge/leegstaandebedrijfspanden</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>345</td></tr>
+						<tr><th>dcat:Dataset</th><td>98</td></tr>
+						<tr><th>foaf:Document</th><td>97</td></tr>
+						<tr><th>skos:Concept</th><td>17</td></tr>
+						<tr><th>dcterms:MediaType</th><td>5</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>4</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>2</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>foaf:Agent</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Kind</th><td>1</td></tr>
+						<tr><th>vcard:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>rdf:type</th><td>579</td></tr>
+						<tr><th>dcterms:language</th><td>444</td></tr>
+						<tr><th>dcterms:title</th><td>444</td></tr>
+						<tr><th>dcat:accessURL</th><td>348</td></tr>
+						<tr><th>dcterms:license</th><td>346</td></tr>
+						<tr><th>dcat:distribution</th><td>345</td></tr>
+						<tr><th>dcat:downloadURL</th><td>345</td></tr>
+						<tr><th>dcat:mediaType</th><td>345</td></tr>
+						<tr><th>dcterms:format</th><td>345</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>345</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>345</td></tr>
+						<tr><th>dcat:keyword</th><td>99</td></tr>
+						<tr><th>dcat:landingPage</th><td>99</td></tr>
+						<tr><th>dcat:theme</th><td>99</td></tr>
+						<tr><th>dcterms:description</th><td>99</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>99</td></tr>
+						<tr><th>dcat:contactPoint</th><td>98</td></tr>
+						<tr><th>dcat:dataset</th><td>98</td></tr>
+						<tr><th>dcterms:accessRights</th><td>98</td></tr>
+						<tr><th>dcterms:identifier</th><td>98</td></tr>
+						<tr><th>dcterms:publisher</th><td>98</td></tr>
+						<tr><th>dcterms:spatial</th><td>98</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>98</td></tr>
+						<tr><th>skos:prefLabel</th><td>76</td></tr>
+						<tr><th>dcat:compressFormat</th><td>13</td></tr>
+						<tr><th>skos:inScheme</th><td>11</td></tr>
+						<tr><th>rdfs:label</th><td>4</td></tr>
+						<tr><th>vcard:fn</th><td>4</td></tr>
+						<tr><th>foaf:name</th><td>3</td></tr>
+						<tr><th>foaf:homepage</th><td>2</td></tr>
+						<tr><th>dcterms:modified</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+						<tr><th>vcard:hasUrl</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/json</th><td>96</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/csv</th><td>96</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/xml</th><td>83</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml</th><td>70</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0</th><td>345</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC0</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2800931/</th><td>98</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/CSV</th><td>96</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/JSON</th><td>96</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XML</th><td>83</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/KML</th><td>70</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0207528035</th><td>98</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/TRAN</th><td>51</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/GOVE</th><td>27</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ENVI</th><td>11</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/SOCI</th><td>7</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ECON</th><td>3</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:47:12</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/podmiis/podmiis.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 1 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/podmiis</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 11 shapes</h2>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/podmiis</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/podmiis</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/podmiis</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:distribution MinCountConstraintComponent : 16 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#distribution&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/acba1c55775449ec12ea3ea9bde519b8059102a2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1567e72863cdba4a5cb64b77c903d1347622005c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1d1fb345097733e686b70c31f2b8c60044c25048</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/48552f88b91095ff25dc9e05d22033893f1ca27e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/55da717e8edbb54bfbfcb0b91604aea96b06783c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/b428eb498ece77673c0ac114611fb635fd40095e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/086b77ffd9e148820167f07239832510d7aac2da</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a65e956d3d8b9de3bbca331a3dd0673170fd09f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0602ac7c09cfa2365da34dcedbdd2720e5207519</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/2913ebf0b8290cfe11003ec20cfbb3d533e44544</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/29f3a56b870a56d0597e9b600c85bbf93a8a017b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ba7212cc5472396b0e0d45a8aea3b97de1af846e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1f96fc3a6b77cee57f3ba522f21c66c6b60058d4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ec261996e9f98af12e9e8c798b4d03ab0f0ce7ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/497996b03354966e4a03e2a52e832175dca8a521</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/d1bb14fa63869da0c1593e3e74dc273051af86b6</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 16 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/acba1c55775449ec12ea3ea9bde519b8059102a2</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1567e72863cdba4a5cb64b77c903d1347622005c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1d1fb345097733e686b70c31f2b8c60044c25048</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/48552f88b91095ff25dc9e05d22033893f1ca27e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/55da717e8edbb54bfbfcb0b91604aea96b06783c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/b428eb498ece77673c0ac114611fb635fd40095e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/086b77ffd9e148820167f07239832510d7aac2da</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a65e956d3d8b9de3bbca331a3dd0673170fd09f0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0602ac7c09cfa2365da34dcedbdd2720e5207519</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/2913ebf0b8290cfe11003ec20cfbb3d533e44544</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/29f3a56b870a56d0597e9b600c85bbf93a8a017b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ba7212cc5472396b0e0d45a8aea3b97de1af846e</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1f96fc3a6b77cee57f3ba522f21c66c6b60058d4</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ec261996e9f98af12e9e8c798b4d03ab0f0ce7ce</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/497996b03354966e4a03e2a52e832175dca8a521</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/d1bb14fa63869da0c1593e3e74dc273051af86b6</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:description MinCountConstraintComponent : 42 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/615af5b11f4892fa1f89df5c0fb6c9c3c60f4d53/3225ced43c3fda7ba4cefc16490bdb27a0ed2208</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/615af5b11f4892fa1f89df5c0fb6c9c3c60f4d53/c54eb7fbe76a923684986d785577dd58b6fecc26</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/71bcae41dfc014e9f99ebf08318bf68605be61dd/6de3fa3907dd5f138d97eaaea1b8fba0faa27965</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/71bcae41dfc014e9f99ebf08318bf68605be61dd/090b8ebfa6bbf9838f60b7c8c4837aaa36b27381</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/47ccfec1caad04e62a5b65f1f7704cef3a8bb5c1/4f266063bab1421a67cc74225c68579643ab0947</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/47ccfec1caad04e62a5b65f1f7704cef3a8bb5c1/53d418d959639ed3c71bf745943162ebadfb44d1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/76f0736a4989f8f27dd96d4df8951da8668b0696/ae50ac59611d0ae026940f815b4a2437f681998a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/76f0736a4989f8f27dd96d4df8951da8668b0696/7087214967e20253493d640336c9c05ce48c5364</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/b6b108e686b639b049724468b33dda68302d5dd1/45eda56b757e3d96a5d130a79571acf88d30a82b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/b6b108e686b639b049724468b33dda68302d5dd1/0161fb6fabf55b6b8d00735b79ef0e92ce4fa379</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/0c2ad16ee70e0da5a33e4a959c843f2df69523e4/6b82fb1782f008373e9af281f23a0e6369ab0960</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/0c2ad16ee70e0da5a33e4a959c843f2df69523e4/343b8e23a3388de0d274eaaa48ea9f2813efad49</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/f84ced9253bf71a44854e3805b435f375e6305b3/0639d844341f6141c6e9f1dbe3f2e896e81a2fb0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/f84ced9253bf71a44854e3805b435f375e6305b3/664574871008eda2aa336d95034070eae2acb888</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/4ecaeacd3a918e201aaa2d904bd3dc2d96a8a24e/82b28a7f1ed86cec3d2520a434aa2c36ea6280e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/4ecaeacd3a918e201aaa2d904bd3dc2d96a8a24e/42d33174e5105119e60eaae09084b34025e602db</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/671dcd678dc95548d59f11dd24f30b5557260335/8f1f29fb327048be8911866fd0cf29caac5bf4d1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/671dcd678dc95548d59f11dd24f30b5557260335/83628171af9b2ca4d58f0a8601e8b723a496221b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/9c9bab4252eefdc1f0d986f6a18a1981ff21f644/33cee0c5ccbc6cc72fee8fe601cb613518558fcf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/9c9bab4252eefdc1f0d986f6a18a1981ff21f644/53a3e57e208abaf9f9bca38f2cc53b293c771a51</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/339f049ab4c49e106ec3a46424957c24d6f5892b/b408743592d091252b87ab4507bef23603fd4222</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/339f049ab4c49e106ec3a46424957c24d6f5892b/482369f8f87ff70f2864f5eda5b906f31e6b8f3f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/4e0c9d12f3e999baa38e98aa7c2dfa36f1851539/6e645d17b32cbe0e76afc285ab0ec686fb599495</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/4e0c9d12f3e999baa38e98aa7c2dfa36f1851539/ba22d4cf57f9b925d626161b2853c3c6a6fb424c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/915d3b40435c96a61ac655d42b448a49d892530f/5630f3f8236cf3da46e39e71da8a09db6aa2c253</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/915d3b40435c96a61ac655d42b448a49d892530f/9b771cdcfd3db3f242c935327902404032048db3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/bab9d5afbe96f36a4feb0dc7665b0c9db2b1748a/f8abc56dd6c5e28e798e7fdec45af9cd45be855d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/bab9d5afbe96f36a4feb0dc7665b0c9db2b1748a/8a6868dd22d254561c0ca97dfe207335715b7471</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/e5fc90e25e75884749afd47ca3d515162f28f5e3/160b8f9625117fcc221c404aae7aafefe23d932d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/e5fc90e25e75884749afd47ca3d515162f28f5e3/62fcec4e1c122fb614c017dc1c60e44b94fff129</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/54a97c50b6e3d915f7ebc59f50109f8c35f07f39/ceec940924380ddcf2cf1ec378746c13cd4eb83f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/54a97c50b6e3d915f7ebc59f50109f8c35f07f39/26d7cc7219caee7a4117cf9d19afc767b5e07b63</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/6624a1e83155b2d272505f46145f34b6740668e6/f690180dd3ebb8ef42c4851a1b63a65840402c88</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/6624a1e83155b2d272505f46145f34b6740668e6/98ca8cac078fd2260babfda026c8586900570832</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/837add84e0f488e2c5473d518c4a9e873b332794/a630ee097592645b533347012baef3b93ae70608</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/837add84e0f488e2c5473d518c4a9e873b332794/70e345bf8c3947ec8c9dc73983bfa219ad4a6336</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/da02ef07958af278620463c8f77338b27536d83f/4868f8d363ca97854decc67a8dd363c558551a4f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/da02ef07958af278620463c8f77338b27536d83f/0ed7877f7e1abf5bc9f80c1474c6ccc716fc392c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/82a5f3bc51fd0eb232a487208230ccf141e95592/4a66dbe765f1016c6a68eac69cad7399b83d9973</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/82a5f3bc51fd0eb232a487208230ccf141e95592/4b78c0badb1b10bb7ca02734e43853e906f5b48f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/2599b11f823876c433a96f56fd7e886868c8b1a1/01f54daf893804c7abb9aae41bdfdccc7a5f0fc0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/2599b11f823876c433a96f56fd7e886868c8b1a1/5465248298b4fd04cb9bb5c760580ebe48fce80a</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 42 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/615af5b11f4892fa1f89df5c0fb6c9c3c60f4d53/3225ced43c3fda7ba4cefc16490bdb27a0ed2208</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/615af5b11f4892fa1f89df5c0fb6c9c3c60f4d53/c54eb7fbe76a923684986d785577dd58b6fecc26</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/71bcae41dfc014e9f99ebf08318bf68605be61dd/6de3fa3907dd5f138d97eaaea1b8fba0faa27965</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/71bcae41dfc014e9f99ebf08318bf68605be61dd/090b8ebfa6bbf9838f60b7c8c4837aaa36b27381</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/47ccfec1caad04e62a5b65f1f7704cef3a8bb5c1/4f266063bab1421a67cc74225c68579643ab0947</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/47ccfec1caad04e62a5b65f1f7704cef3a8bb5c1/53d418d959639ed3c71bf745943162ebadfb44d1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/76f0736a4989f8f27dd96d4df8951da8668b0696/ae50ac59611d0ae026940f815b4a2437f681998a</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/76f0736a4989f8f27dd96d4df8951da8668b0696/7087214967e20253493d640336c9c05ce48c5364</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/b6b108e686b639b049724468b33dda68302d5dd1/45eda56b757e3d96a5d130a79571acf88d30a82b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/b6b108e686b639b049724468b33dda68302d5dd1/0161fb6fabf55b6b8d00735b79ef0e92ce4fa379</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/0c2ad16ee70e0da5a33e4a959c843f2df69523e4/6b82fb1782f008373e9af281f23a0e6369ab0960</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/0c2ad16ee70e0da5a33e4a959c843f2df69523e4/343b8e23a3388de0d274eaaa48ea9f2813efad49</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/f84ced9253bf71a44854e3805b435f375e6305b3/0639d844341f6141c6e9f1dbe3f2e896e81a2fb0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/f84ced9253bf71a44854e3805b435f375e6305b3/664574871008eda2aa336d95034070eae2acb888</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/4ecaeacd3a918e201aaa2d904bd3dc2d96a8a24e/82b28a7f1ed86cec3d2520a434aa2c36ea6280e6</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/4ecaeacd3a918e201aaa2d904bd3dc2d96a8a24e/42d33174e5105119e60eaae09084b34025e602db</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/671dcd678dc95548d59f11dd24f30b5557260335/8f1f29fb327048be8911866fd0cf29caac5bf4d1</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/671dcd678dc95548d59f11dd24f30b5557260335/83628171af9b2ca4d58f0a8601e8b723a496221b</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/9c9bab4252eefdc1f0d986f6a18a1981ff21f644/33cee0c5ccbc6cc72fee8fe601cb613518558fcf</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/9c9bab4252eefdc1f0d986f6a18a1981ff21f644/53a3e57e208abaf9f9bca38f2cc53b293c771a51</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/339f049ab4c49e106ec3a46424957c24d6f5892b/b408743592d091252b87ab4507bef23603fd4222</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/339f049ab4c49e106ec3a46424957c24d6f5892b/482369f8f87ff70f2864f5eda5b906f31e6b8f3f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/4e0c9d12f3e999baa38e98aa7c2dfa36f1851539/6e645d17b32cbe0e76afc285ab0ec686fb599495</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/4e0c9d12f3e999baa38e98aa7c2dfa36f1851539/ba22d4cf57f9b925d626161b2853c3c6a6fb424c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/915d3b40435c96a61ac655d42b448a49d892530f/5630f3f8236cf3da46e39e71da8a09db6aa2c253</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/915d3b40435c96a61ac655d42b448a49d892530f/9b771cdcfd3db3f242c935327902404032048db3</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/bab9d5afbe96f36a4feb0dc7665b0c9db2b1748a/f8abc56dd6c5e28e798e7fdec45af9cd45be855d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/bab9d5afbe96f36a4feb0dc7665b0c9db2b1748a/8a6868dd22d254561c0ca97dfe207335715b7471</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/e5fc90e25e75884749afd47ca3d515162f28f5e3/160b8f9625117fcc221c404aae7aafefe23d932d</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/e5fc90e25e75884749afd47ca3d515162f28f5e3/62fcec4e1c122fb614c017dc1c60e44b94fff129</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/54a97c50b6e3d915f7ebc59f50109f8c35f07f39/ceec940924380ddcf2cf1ec378746c13cd4eb83f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/54a97c50b6e3d915f7ebc59f50109f8c35f07f39/26d7cc7219caee7a4117cf9d19afc767b5e07b63</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/6624a1e83155b2d272505f46145f34b6740668e6/f690180dd3ebb8ef42c4851a1b63a65840402c88</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/6624a1e83155b2d272505f46145f34b6740668e6/98ca8cac078fd2260babfda026c8586900570832</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/837add84e0f488e2c5473d518c4a9e873b332794/a630ee097592645b533347012baef3b93ae70608</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/837add84e0f488e2c5473d518c4a9e873b332794/70e345bf8c3947ec8c9dc73983bfa219ad4a6336</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/da02ef07958af278620463c8f77338b27536d83f/4868f8d363ca97854decc67a8dd363c558551a4f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/da02ef07958af278620463c8f77338b27536d83f/0ed7877f7e1abf5bc9f80c1474c6ccc716fc392c</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/82a5f3bc51fd0eb232a487208230ccf141e95592/4a66dbe765f1016c6a68eac69cad7399b83d9973</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/82a5f3bc51fd0eb232a487208230ccf141e95592/4b78c0badb1b10bb7ca02734e43853e906f5b48f</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/2599b11f823876c433a96f56fd7e886868c8b1a1/01f54daf893804c7abb9aae41bdfdccc7a5f0fc0</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/podmiis/2599b11f823876c433a96f56fd7e886868c8b1a1/5465248298b4fd04cb9bb5c760580ebe48fce80a</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/2802361/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/podmiis</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 74 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a3e0815097275ed3d2ae0a5d1f5a7baef2cef4d6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/63c321534dd6caac1bc25e97bd06849ae0fde897</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/9ecc2883747d53bc1f2b5c658010cd6bc31df9fc</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/8d6418ac562da3691ce10bed894b3053ea0548a3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a971dc5270d24d445e536b537abf7f70de97044c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1e17e1a8dfb6fa4d08b11400617f187833d637c4</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/51cbbc0d81f7b7f4fee1241e1003a126603fa56b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/6c76eae0b5a5b0e8257a04704c4acecf3d95adad</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/4d44579fc522f7e3f70d3b5976b847bc182375c6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/6b9641c6f54da470272a4cad3ba7fa3f8856c157</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a117a3a82fc1ba871209b10089fc371179dca3e2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/758e8cb8ba1b5d71e7d8ac45706b1eae16ecae6d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a4cae77816cdc8b5695130b6a4e26a6ac7932cf2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ff8e0d0fe6e2772532af5fa8ff7967cc2030c7b2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/7b6c9c4e5eef8790b15a21519aae8e0bbdd0b1e1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0c4694e3f32aada43257bc5ddd353a5fd6336252</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/15cba0a4b465753e2cc503f6c00fea0a96d404d0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0263b0c2479ad27dac6b6d3b880cb17f3bd7f040</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/94bafbdef0b925c03fe277f1edbf0e6c2a67a7ef</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/d440c717226ad81ea28d8bbe833bd08f396ba644</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0b2999c9daa1a7aa3228a2c74923da8aa5274d09</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/acba1c55775449ec12ea3ea9bde519b8059102a2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1567e72863cdba4a5cb64b77c903d1347622005c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1d1fb345097733e686b70c31f2b8c60044c25048</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/48552f88b91095ff25dc9e05d22033893f1ca27e</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/55da717e8edbb54bfbfcb0b91604aea96b06783c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/b428eb498ece77673c0ac114611fb635fd40095e</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/086b77ffd9e148820167f07239832510d7aac2da</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a65e956d3d8b9de3bbca331a3dd0673170fd09f0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0602ac7c09cfa2365da34dcedbdd2720e5207519</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/2913ebf0b8290cfe11003ec20cfbb3d533e44544</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/29f3a56b870a56d0597e9b600c85bbf93a8a017b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ba7212cc5472396b0e0d45a8aea3b97de1af846e</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1f96fc3a6b77cee57f3ba522f21c66c6b60058d4</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ec261996e9f98af12e9e8c798b4d03ab0f0ce7ce</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/497996b03354966e4a03e2a52e832175dca8a521</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/d1bb14fa63869da0c1593e3e74dc273051af86b6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a3e0815097275ed3d2ae0a5d1f5a7baef2cef4d6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/63c321534dd6caac1bc25e97bd06849ae0fde897</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/9ecc2883747d53bc1f2b5c658010cd6bc31df9fc</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/8d6418ac562da3691ce10bed894b3053ea0548a3</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a971dc5270d24d445e536b537abf7f70de97044c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1e17e1a8dfb6fa4d08b11400617f187833d637c4</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/51cbbc0d81f7b7f4fee1241e1003a126603fa56b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/6c76eae0b5a5b0e8257a04704c4acecf3d95adad</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/4d44579fc522f7e3f70d3b5976b847bc182375c6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/6b9641c6f54da470272a4cad3ba7fa3f8856c157</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a117a3a82fc1ba871209b10089fc371179dca3e2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/758e8cb8ba1b5d71e7d8ac45706b1eae16ecae6d</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a4cae77816cdc8b5695130b6a4e26a6ac7932cf2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ff8e0d0fe6e2772532af5fa8ff7967cc2030c7b2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/7b6c9c4e5eef8790b15a21519aae8e0bbdd0b1e1</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0c4694e3f32aada43257bc5ddd353a5fd6336252</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/15cba0a4b465753e2cc503f6c00fea0a96d404d0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0263b0c2479ad27dac6b6d3b880cb17f3bd7f040</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/94bafbdef0b925c03fe277f1edbf0e6c2a67a7ef</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/d440c717226ad81ea28d8bbe833bd08f396ba644</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0b2999c9daa1a7aa3228a2c74923da8aa5274d09</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/acba1c55775449ec12ea3ea9bde519b8059102a2</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1567e72863cdba4a5cb64b77c903d1347622005c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1d1fb345097733e686b70c31f2b8c60044c25048</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/48552f88b91095ff25dc9e05d22033893f1ca27e</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/55da717e8edbb54bfbfcb0b91604aea96b06783c</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/b428eb498ece77673c0ac114611fb635fd40095e</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/086b77ffd9e148820167f07239832510d7aac2da</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/a65e956d3d8b9de3bbca331a3dd0673170fd09f0</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/0602ac7c09cfa2365da34dcedbdd2720e5207519</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/2913ebf0b8290cfe11003ec20cfbb3d533e44544</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/29f3a56b870a56d0597e9b600c85bbf93a8a017b</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ba7212cc5472396b0e0d45a8aea3b97de1af846e</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/1f96fc3a6b77cee57f3ba522f21c66c6b60058d4</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/ec261996e9f98af12e9e8c798b4d03ab0f0ce7ce</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/497996b03354966e4a03e2a52e832175dca8a521</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+						<tr><td>http://data.gov.be/dataset/podmiis/d1bb14fa63869da0c1593e3e74dc273051af86b6</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>42</td></tr>
+						<tr><th>dcat:Dataset</th><td>37</td></tr>
+						<tr><th>skos:Concept</th><td>12</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcterms:PeriodOfTime</th><td>2</td></tr>
+						<tr><th>foaf:Document</th><td>2</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcterms:Frequency</th><td>1</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>dcterms:MediaType</th><td>1</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>foaf:Agent</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Kind</th><td>1</td></tr>
+						<tr><th>vcard:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcterms:language</th><td>118</td></tr>
+						<tr><th>dcterms:title</th><td>117</td></tr>
+						<tr><th>dcat:keyword</th><td>111</td></tr>
+						<tr><th>rdf:type</th><td>110</td></tr>
+						<tr><th>skos:prefLabel</th><td>90</td></tr>
+						<tr><th>dcterms:description</th><td>75</td></tr>
+						<tr><th>dcterms:license</th><td>43</td></tr>
+						<tr><th>dcat:accessURL</th><td>42</td></tr>
+						<tr><th>dcat:distribution</th><td>42</td></tr>
+						<tr><th>dcat:downloadURL</th><td>42</td></tr>
+						<tr><th>dcat:mediaType</th><td>42</td></tr>
+						<tr><th>dcterms:format</th><td>42</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>42</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>42</td></tr>
+						<tr><th>dcat:contactPoint</th><td>37</td></tr>
+						<tr><th>dcat:dataset</th><td>37</td></tr>
+						<tr><th>dcat:theme</th><td>37</td></tr>
+						<tr><th>dcterms:accessRights</th><td>37</td></tr>
+						<tr><th>dcterms:identifier</th><td>37</td></tr>
+						<tr><th>dcterms:publisher</th><td>37</td></tr>
+						<tr><th>dcterms:spatial</th><td>37</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>37</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>37</td></tr>
+						<tr><th>dcterms:accrualPeriodicity</th><td>21</td></tr>
+						<tr><th>dcterms:temporal</th><td>21</td></tr>
+						<tr><th>http://data.gov.be#freq</th><td>21</td></tr>
+						<tr><th>skos:inScheme</th><td>6</td></tr>
+						<tr><th>foaf:name</th><td>3</td></tr>
+						<tr><th>vcard:fn</th><td>3</td></tr>
+						<tr><th>dcat:endDate</th><td>2</td></tr>
+						<tr><th>dcat:startDate</th><td>2</td></tr>
+						<tr><th>foaf:homepage</th><td>2</td></tr>
+						<tr><th>dcat:bbox</th><td>1</td></tr>
+						<tr><th>dcterms:modified</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>rdfs:label</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+						<tr><th>vcard:hasUrl</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/json</th><td>42</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC0</th><td>43</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2802361/</th><td>37</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/JSON</th><td>42</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0864484487</th><td>37</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/SOCI</th><td>37</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

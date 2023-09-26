@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:35:36</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/fluvius/fluvius.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 5 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:accrualPeriodicity NodeConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/accrualPeriodicity&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#FrequencyRestriction&gt; .
+
+&lt;http://data.europa.eu/r5r#FrequencyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/frequency&gt;
+    ] .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>https://opendata.fluvius.be/explore/dataset/1_21-aangemelde-oplaadpunten-voor-ev/</td><td>http://data.gov.be/YEARLY</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:description MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:format NodeConstraintComponent : 100 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/format&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#FileTypeRestriction&gt; .
+
+&lt;http://data.europa.eu/r5r#FileTypeRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/file-type&gt;
+    ] .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/gpx</td><td>https://www.iana.org/assignments/media-types/application/gpx+xml</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/kml</td><td>https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/ov2</td><td>https://www.iana.org/assignments/media-types/text/plain</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/shp</td><td>https://www.iana.org/assignments/media-types/application/zip</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/fgb</td><td>https://www.iana.org/assignments/media-types/application/octet-stream</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/jsonld</td><td>https://www.iana.org/assignments/media-types/application/ld+json</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/turtle</td><td>https://www.iana.org/assignments/media-types/text/turtle</td></tr>
+								<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/n3</td><td>https://www.iana.org/assignments/media-types/text/n3</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 2 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>https://opendata.fluvius.be/explore/</td><td>n/a</td></tr>
+								<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:title MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/title&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 15 shapes</h2>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/?refine.publisher=Dataroom+Fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:language MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/language&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:license MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/license&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:modified MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/modified&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>foaf:homepage MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://xmlns.com/foaf/0.1/homepage&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 24 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/premies-per-gemeente/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_01-verbruiksgegevens-op-nace-sectorniveau000/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_50-aanlevering-dmk-e-kwartierwaarden/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_22-energieopslagsystemen-gekoppeld-op-distributienet/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_02-verbruiksgegevens-per-maand/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_17-aantal-actieve-toegangspunten/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_33-lp-open-data-fluvius/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_34-totaal-aantal-actieve-allocatiepunten/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_21-aangemelde-oplaadpunten-voor-ev/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_23-dnb-per-gemeente-en-per-sector/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_16-aantal-afsluitingen-na-lac-beslissing/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_08-aantal-actieve-budgetmeters/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_03-verbruiksgegevens-op-straatniveau/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_35-aantal-klachten-fluvius/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1-19-totaal-gealloceerd-volume/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 221 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/geojson</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/gpx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/kml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/ov2</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/shp</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/xlsx</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:license MinCountConstraintComponent : 221 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/license&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/premies-per-gemeente/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_01-verbruiksgegevens-op-nace-sectorniveau000/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-aanlevering-dmk-e-kwartierwaarden/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_22-energieopslagsystemen-gekoppeld-op-distributienet/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_02-verbruiksgegevens-per-maand/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_17-aantal-actieve-toegangspunten/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_33-lp-open-data-fluvius/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_34-totaal-aantal-actieve-allocatiepunten/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_21-aangemelde-oplaadpunten-voor-ev/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/geojson</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/gpx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/kml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/ov2</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/shp</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_23-dnb-per-gemeente-en-per-sector/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_16-aantal-afsluitingen-na-lac-beslissing/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_08-aantal-actieve-budgetmeters/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_03-verbruiksgegevens-op-straatniveau/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_35-aantal-klachten-fluvius/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/exports/xlsx</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/csv</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/json</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/fgb</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/jsonl</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/rdfxml</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/jsonld</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/turtle</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/n3</td><td>n/a</td></tr>
+						<tr><td>https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/exports/xlsx</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/Open%20data%20license%20-%20FLUVIUS</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/3337388/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 2 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/catalog/fluvius</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 48 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/premies-per-gemeente/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_01-verbruiksgegevens-op-nace-sectorniveau000/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_50-aanlevering-dmk-e-kwartierwaarden/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_22-energieopslagsystemen-gekoppeld-op-distributienet/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_02-verbruiksgegevens-per-maand/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_17-aantal-actieve-toegangspunten/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_33-lp-open-data-fluvius/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_34-totaal-aantal-actieve-allocatiepunten/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_21-aangemelde-oplaadpunten-voor-ev/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_23-dnb-per-gemeente-en-per-sector/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_16-aantal-afsluitingen-na-lac-beslissing/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_08-aantal-actieve-budgetmeters/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_03-verbruiksgegevens-op-straatniveau/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_35-aantal-klachten-fluvius/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1-19-totaal-gealloceerd-volume/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/premies-per-gemeente/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_18-aantal-aanvragen-met-betrekking-tot-de-minimale-levering-aardgas-per-ja/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_06b-verbruiksgegevens-statistische-sector-met-nace-sector/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_01-verbruiksgegevens-op-nace-sectorniveau000/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_50-aanlevering-dmk-e-kwartierwaarden/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_06a-verbruiksgegevens-per-statistische-sector-met-nace-sector-en-nace-subsecto/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_22-energieopslagsystemen-gekoppeld-op-distributienet/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_02-verbruiksgegevens-per-maand/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_14-bedrag-uitbetaalde-forfaitaire-schadeloosstellingen/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_12-aantal-en-bedrag-inzake-afgeronde-fraudedossiers/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_17-aantal-actieve-toegangspunten/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_20-lijst-van-decentrale-productie-installaties-gekoppeld-aan-het-distributiene/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_33-lp-open-data-fluvius/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_34-totaal-aantal-actieve-allocatiepunten/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_21-aangemelde-oplaadpunten-voor-ev/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_23-dnb-per-gemeente-en-per-sector/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_16-aantal-afsluitingen-na-lac-beslissing/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_08-aantal-actieve-budgetmeters/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_03-verbruiksgegevens-op-straatniveau/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_35-aantal-klachten-fluvius/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_50-100-geanonimiseerde-60-verbruiksprofielen-aardgas/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_09-aantal-toegangspunten-bij-de-sociale-uitzondering-en-noodleverancier-vanaf-/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1_09-aantal-toegangspunten-bij-de-sociale-en-uitzonderingsleverancier/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+						<tr><td>https://opendata.fluvius.be/explore/dataset/1-19-totaal-gealloceerd-volume/</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>221</td></tr>
+						<tr><th>foaf:Document</th><td>27</td></tr>
+						<tr><th>dcat:Dataset</th><td>24</td></tr>
+						<tr><th>dctype:Dataset</th><td>24</td></tr>
+						<tr><th>dcat:Resource</th><td>22</td></tr>
+						<tr><th>skos:Concept</th><td>18</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>16</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>5</td></tr>
+						<tr><th>dcterms:MediaType</th><td>4</td></tr>
+						<tr><th>dcat:Catalog</th><td>2</td></tr>
+						<tr><th>foaf:Agent</th><td>2</td></tr>
+						<tr><th>vcard:Kind</th><td>2</td></tr>
+						<tr><th>vcard:Organization</th><td>2</td></tr>
+						<tr><th>dcat:DataService</th><td>1</td></tr>
+						<tr><th>dcterms:Frequency</th><td>1</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>rdf:type</th><td>375</td></tr>
+						<tr><th>dcterms:title</th><td>269</td></tr>
+						<tr><th>dcterms:description</th><td>246</td></tr>
+						<tr><th>dcterms:date</th><td>245</td></tr>
+						<tr><th>dcterms:issued</th><td>245</td></tr>
+						<tr><th>dcterms:modified</th><td>245</td></tr>
+						<tr><th>dcat:accessURL</th><td>221</td></tr>
+						<tr><th>dcat:distribution</th><td>221</td></tr>
+						<tr><th>dcat:downloadURL</th><td>221</td></tr>
+						<tr><th>dcterms:format</th><td>221</td></tr>
+						<tr><th>dcat:mediaType</th><td>121</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>121</td></tr>
+						<tr><th>skos:prefLabel</th><td>96</td></tr>
+						<tr><th>dcat:keyword</th><td>76</td></tr>
+						<tr><th>dcat:dataset</th><td>48</td></tr>
+						<tr><th>dcat:contactPoint</th><td>25</td></tr>
+						<tr><th>dcat:landingPage</th><td>25</td></tr>
+						<tr><th>dcterms:accessRights</th><td>25</td></tr>
+						<tr><th>dcterms:identifier</th><td>25</td></tr>
+						<tr><th>dcterms:spatial</th><td>25</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>25</td></tr>
+						<tr><th>dcat:servesDataset</th><td>24</td></tr>
+						<tr><th>dcat:theme</th><td>24</td></tr>
+						<tr><th>dcterms:publisher</th><td>24</td></tr>
+						<tr><th>dcterms:subject</th><td>24</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>24</td></tr>
+						<tr><th>dcterms:relation</th><td>22</td></tr>
+						<tr><th>skos:inScheme</th><td>6</td></tr>
+						<tr><th>foaf:name</th><td>4</td></tr>
+						<tr><th>rdfs:label</th><td>4</td></tr>
+						<tr><th>vcard:fn</th><td>4</td></tr>
+						<tr><th>foaf:homepage</th><td>2</td></tr>
+						<tr><th>vcard:hasEmail</th><td>2</td></tr>
+						<tr><th>dcat:bbox</th><td>1</td></tr>
+						<tr><th>dcat:endpointDescription</th><td>1</td></tr>
+						<tr><th>dcat:endpointURL</th><td>1</td></tr>
+						<tr><th>dcat:service</th><td>1</td></tr>
+						<tr><th>dcterms:accrualPeriodicity</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasUrl</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/json</th><td>49</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/rdf+xml</th><td>24</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</th><td>24</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/csv</th><td>24</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/3337388/</th><td>25</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/JSON</th><td>49</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/CSV</th><td>24</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/RDF_XML</th><td>24</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/XLSX</th><td>24</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/ld+json</th><td>24</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/octet-stream</th><td>24</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/n3</th><td>24</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/turtle</th><td>24</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/gpx+xml</th><td>1</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml</th><td>1</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/zip</th><td>1</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/plain</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0477445084</th><td>24</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/ENER</th><td>24</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-09-20 12:35:54</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_mdr-vocabularies.shape.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_range.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes.ttl</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/SEMICeu/DCAT-AP/2.1.1/releases/2.1.1/dcat-ap_2.1.1_shacl_shapes_recommended.ttl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/fpsdiplobel/fpsdiplobel.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 1 shapes</h2>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Violation;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<details open="true">
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/fpsdiplobel</td><td>n/a</td></tr>
+							</table>
+			</details>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 10 shapes</h2>
+				<details>
+			<summary>dcterms:issued MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/issued&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/fpsdiplobel</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/fpsdiplobel</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/fpsdiplobel</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent : 25 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ABAC</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/AFAC</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRAD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRDO</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LEDO</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PRCS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRBD</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/DBTR</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/COTA</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/MBEP</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/BMCV</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/OBBN</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LIOS</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ETOC</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ODAO</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PCDC</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/HMAM</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LAAB</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LBHB</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/AKMB</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ALCG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LHCG</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/APCO</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PCLH</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/OAID</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:description MinCountConstraintComponent : 63 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/description&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ABAC/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AFAC/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRAD/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRDO/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LEDO/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PRCS/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRBD/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/DBTR/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/COTA/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/MBEP/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/BMCV/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OBBN/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LIOS/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ETOC/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ODAO/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PCDC/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/HMAM/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LAAB/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LBHB/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AKMB/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ALCG/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LHCG/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/APCO/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PCLH/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OAID/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ABAC/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AFAC/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRAD/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRDO/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LEDO/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PRCS/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRBD/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/DBTR/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/COTA/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/MBEP/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/BMCV/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OBBN/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LIOS/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ETOC/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ODAO/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PCDC/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/HMAM/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LAAB/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LBHB/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AKMB/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ALCG/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LHCG/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/APCO/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PCLH/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OAID/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/COTA/de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/MBEP/de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/BMCV/de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ABAC/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AFAC/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LEDO/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PRCS/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/COTA/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/MBEP/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/BMCV/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LIOS/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ETOC/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OAID/en</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>http://data.europa.eu/r5r/availability MinCountConstraintComponent : 63 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://data.europa.eu/r5r/availability&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ABAC/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AFAC/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRAD/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRDO/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LEDO/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PRCS/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRBD/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/DBTR/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/COTA/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/MBEP/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/BMCV/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OBBN/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LIOS/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ETOC/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ODAO/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PCDC/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/HMAM/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LAAB/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LBHB/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AKMB/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ALCG/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LHCG/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/APCO/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PCLH/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OAID/nl</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ABAC/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AFAC/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRAD/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRDO/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LEDO/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PRCS/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/TRBD/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/DBTR/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/COTA/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/MBEP/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/BMCV/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OBBN/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LIOS/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ETOC/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ODAO/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PCDC/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/HMAM/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LAAB/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LBHB/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AKMB/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ALCG/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LHCG/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/APCO/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PCLH/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OAID/fr</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/COTA/de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/MBEP/de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/BMCV/de</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ABAC/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/AFAC/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LEDO/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/PRCS/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/COTA/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/MBEP/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/BMCV/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/LIOS/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/ETOC/en</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/fpsdiplobel/OAID/en</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:type MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/type&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://publications.europa.eu/resource/authority/licence/CC0</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:centroid MinCountConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#centroid&gt;;
+  sh:minCount 1 .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://sws.geonames.org/2802361/</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcat:themeTaxonomy HasValueConstraintComponent : 1 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://www.w3.org/ns/dcat#themeTaxonomy&gt;;
+  sh:hasValue &lt;http://publications.europa.eu/resource/authority/data-theme&gt; .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/fpsdiplobel</td><td>n/a</td></tr>
+					</table>
+		</details>
+				<details>
+			<summary>dcterms:publisher NodeConstraintComponent : 50 warnings</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:severity sh:Warning;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:node &lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt;, &lt;http://data.europa.eu/r5r#Publisher_ShapeCV&gt; .
+
+&lt;http://data.europa.eu/r5r#CorporateBodyRestriction&gt; a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt;;
+      sh:minCount 1;
+      sh:nodeKind sh:IRI;
+      sh:hasValue &lt;http://publications.europa.eu/resource/authority/corporate-body&gt;
+    ] .
+</pre>
+		</details>
+		<details open="true">
+		<table class="warning">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ABAC</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/AFAC</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRAD</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRDO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LEDO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PRCS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRBD</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/DBTR</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/COTA</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/MBEP</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/BMCV</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/OBBN</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LIOS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ETOC</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ODAO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PCDC</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/HMAM</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LAAB</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LBHB</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/AKMB</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ALCG</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LHCG</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/APCO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PCLH</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/OAID</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ABAC</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/AFAC</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRAD</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRDO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LEDO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PRCS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/TRBD</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/DBTR</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/COTA</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/MBEP</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/BMCV</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/OBBN</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LIOS</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ETOC</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ODAO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PCDC</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/HMAM</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LAAB</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LBHB</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/AKMB</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/ALCG</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/LHCG</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/APCO</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/PCLH</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+						<tr><td>http://data.gov.be/dataset/fpsdiplobel/OAID</td><td>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</td></tr>
+					</table>
+		</details>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 0 shapes</h2>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>63</td></tr>
+						<tr><th>dcat:Dataset</th><td>25</td></tr>
+						<tr><th>skos:Concept</th><td>15</td></tr>
+						<tr><th>dcterms:LinguisticSystem</th><td>4</td></tr>
+						<tr><th>dcterms:MediaType</th><td>3</td></tr>
+						<tr><th>dcterms:MediaTypeOrExtent</th><td>3</td></tr>
+						<tr><th>foaf:Document</th><td>2</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcterms:LicenseDocument</th><td>1</td></tr>
+						<tr><th>dcterms:Location</th><td>1</td></tr>
+						<tr><th>dcterms:RightsStatement</th><td>1</td></tr>
+						<tr><th>foaf:Agent</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Kind</th><td>1</td></tr>
+						<tr><th>vcard:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcterms:language</th><td>130</td></tr>
+						<tr><th>dcterms:title</th><td>127</td></tr>
+						<tr><th>rdf:type</th><td>123</td></tr>
+						<tr><th>skos:prefLabel</th><td>76</td></tr>
+						<tr><th>dcat:keyword</th><td>75</td></tr>
+						<tr><th>dcterms:description</th><td>64</td></tr>
+						<tr><th>dcterms:license</th><td>64</td></tr>
+						<tr><th>dcat:accessURL</th><td>63</td></tr>
+						<tr><th>dcat:distribution</th><td>63</td></tr>
+						<tr><th>dcat:downloadURL</th><td>63</td></tr>
+						<tr><th>dcat:mediaType</th><td>63</td></tr>
+						<tr><th>dcterms:format</th><td>63</td></tr>
+						<tr><th>http://data.gov.be#license</th><td>63</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>63</td></tr>
+						<tr><th>dcat:contactPoint</th><td>25</td></tr>
+						<tr><th>dcat:dataset</th><td>25</td></tr>
+						<tr><th>dcat:theme</th><td>25</td></tr>
+						<tr><th>dcterms:accessRights</th><td>25</td></tr>
+						<tr><th>dcterms:identifier</th><td>25</td></tr>
+						<tr><th>dcterms:publisher</th><td>25</td></tr>
+						<tr><th>dcterms:spatial</th><td>25</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>25</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>25</td></tr>
+						<tr><th>skos:inScheme</th><td>9</td></tr>
+						<tr><th>foaf:name</th><td>3</td></tr>
+						<tr><th>rdfs:label</th><td>3</td></tr>
+						<tr><th>vcard:fn</th><td>3</td></tr>
+						<tr><th>foaf:homepage</th><td>2</td></tr>
+						<tr><th>dcat:bbox</th><td>1</td></tr>
+						<tr><th>dcterms:modified</th><td>1</td></tr>
+						<tr><th>dcterms:type</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>skos:note</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+						<tr><th>vcard:hasUrl</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/application/pdf</th><td>31</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/html</th><td>29</td></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/csv</th><td>3</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/licence/CC0</th><td>64</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2802361/</th><td>25</td></tr>
+					</table>
+				<h4>dcterms:format</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/PDF</th><td>31</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/HTML</th><td>29</td></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/file-type/CSV</th><td>3</td></tr>
+					</table>
+				<h4>dcterms:creator</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0308358149</th><td>25</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/INTR</th><td>25</td></tr>
+					</table>
+				<h4>dcterms:rightsHolder</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+				<h4>dcterms:contributor</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+					</table>
+					</section>
+</body>
+</html>

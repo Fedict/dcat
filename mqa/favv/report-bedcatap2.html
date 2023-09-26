@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SHACL Validation Report </title>
+	<style>
+section {
+	padding-left: 0em;
+	padding-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+	padding: 0.33em;
+}
+h2 {
+	border-left: .333em solid;
+	border-color: grey;
+	padding: 0.25em;
+}
+table, th, td {
+	border: 0.1em solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0.25em;
+}
+table {
+	width: 100%;
+}
+table.side th {
+	text-align: left;
+}
+
+table.error th {
+	background-color: lightcoral;
+}
+table.warning th {
+	background-color: lightsalmon;
+}
+table.recommendation th {
+	background-color: lightgreen;
+}
+table.info th {
+	background-color: lightsteelblue;
+}
+
+details {
+	margin-top: 0.75em;
+}
+	</style>
+</head>
+<body>
+	<h1>SHACL Validation Report</h1>
+	<section class="info">
+		<h2>General info</h2>
+		<table class="side info">
+			<tr><th>Date</th><td>2023-04-26 17:39:31</td></tr>
+							<tr><th>SHACL file</th><td>https://raw.githubusercontent.com/belgif/inspire-dcat/main/bedcatap2.shacl</td></tr>
+						<tr><th>Data file</th><td>file:/C:/datagov/data/favv/favv.nt</td></tr>
+		</table>
+	</section>
+
+	<hr/>
+	<section class="error">
+		<h2>Errors: 11 shapes</h2>
+				<section>
+			<details>
+				<summary>dcat:mediaType ClassConstraintComponent : 3 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://www.w3.org/ns/dcat#mediaType&gt;;
+  sh:class &lt;http://purl.org/dc/terms/MediaType&gt; .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/nl/csv</td><td>https://www.iana.org/assignments/media-types/text/csv</td></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/fr/csv</td><td>https://www.iana.org/assignments/media-types/text/csv</td></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/de/csv</td><td>https://www.iana.org/assignments/media-types/text/csv</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>dcat:theme ClassConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://www.w3.org/ns/dcat#theme&gt;;
+  sh:class &lt;http://www.w3.org/2004/02/skos/core#Concept&gt; .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>http://publications.europa.eu/resource/authority/data-theme/HEAL</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:accessRights MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/accessRights&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>n/a</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:format ClassConstraintComponent : 3 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/format&gt;;
+  sh:class &lt;http://purl.org/dc/terms/MediaTypeOrExtent&gt; .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/nl/csv</td><td>http://publications.europa.eu/resource/authority/file-type/CSV</td></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/fr/csv</td><td>http://publications.europa.eu/resource/authority/file-type/CSV</td></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/de/csv</td><td>http://publications.europa.eu/resource/authority/file-type/CSV</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:identifier MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/identifier&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/favv</td><td>n/a</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:language ClassConstraintComponent : 3 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/language&gt;;
+  sh:class &lt;http://www.w3.org/2004/02/skos/core#Concept&gt; .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/favv</td><td>http://publications.europa.eu/resource/authority/language/NLD</td></tr>
+								<tr><td>http://data.gov.be/catalog/favv</td><td>http://publications.europa.eu/resource/authority/language/FRA</td></tr>
+								<tr><td>http://data.gov.be/catalog/favv</td><td>http://publications.europa.eu/resource/authority/language/DEU</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:language ClassConstraintComponent : 3 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/language&gt;;
+  sh:class &lt;http://www.w3.org/2004/02/skos/core#Concept&gt; .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/nl/csv</td><td>http://publications.europa.eu/resource/authority/language/NLD</td></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/fr/csv</td><td>http://publications.europa.eu/resource/authority/language/FRA</td></tr>
+								<tr><td>http://data.gov.be/dist/favv/SMILEY/de/csv</td><td>http://publications.europa.eu/resource/authority/language/DEU</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:license MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/license&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>n/a</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>dcterms:publisher MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/publisher&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/catalog/favv</td><td>n/a</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>foaf:mbox MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://xmlns.com/foaf/0.1/mbox&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>https://org.belgif.be/id/CbeRegisteredEntity/0267387230</td><td>n/a</td></tr>
+							</table>
+		</section>
+				<section>
+			<details>
+				<summary>vcard:organization-name MinCountConstraintComponent : 1 errors</summary>
+				<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://www.w3.org/2006/vcard/ns#organization-name&gt;;
+  sh:minCount 1 .
+</pre>
+			</details>
+			<table class="error">
+				<tr><th>Focus node</th><th>Value</th></tr>
+								<tr><td>http://data.gov.be/org/favv/contact</td><td>n/a</td></tr>
+							</table>
+		</section>
+			</section>
+
+	<section class="warning">
+		<h2>Warnings: 0 shapes</h2>
+			</section>
+
+	<section class="recommendation">
+		<h2>Recommendations: 14 shapes</h2>
+				<details>
+			<summary>foaf:homepage PatternConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://xmlns.com/foaf/0.1/homepage&gt;;
+  sh:pattern &quot;^https?://\\w+\\.\\w+&quot;;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/favv</td><td>file:/C:/datagov/data/favv/opendata.xlsx</td></tr>
+					</table>
+				<details>
+			<summary>dcterms:spatial MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/catalog/favv</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>dcterms:spatial ClassConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/spatial&gt;;
+  sh:class &lt;http://purl.org/dc/terms/Location&gt;;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>https://sws.geonames.org/2802361/</td></tr>
+					</table>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>dcterms:accrualPeriodicity MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/accrualPeriodicity&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>foaf:page MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://xmlns.com/foaf/0.1/page&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>dcat:landingPage MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://www.w3.org/ns/dcat#landingPage&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>dcterms:language ClassConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/language&gt;;
+  sh:class &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>http://publications.europa.eu/resource/authority/language/NLD</td></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>http://publications.europa.eu/resource/authority/language/FRA</td></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>http://publications.europa.eu/resource/authority/language/DEU</td></tr>
+					</table>
+				<details>
+			<summary>http://www.w3.org/ns/dqv#hasQualityMeasurement MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://www.w3.org/ns/dqv#hasQualityMeasurement&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>http://www.w3.org/ns/adms#representationTechnique MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://www.w3.org/ns/adms#representationTechnique&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dataset/favv/SMILEY</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>dcterms:language ClassConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/language&gt;;
+  sh:class &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/favv/SMILEY/nl/csv</td><td>http://publications.europa.eu/resource/authority/language/NLD</td></tr>
+						<tr><td>http://data.gov.be/dist/favv/SMILEY/fr/csv</td><td>http://publications.europa.eu/resource/authority/language/FRA</td></tr>
+						<tr><td>http://data.gov.be/dist/favv/SMILEY/de/csv</td><td>http://publications.europa.eu/resource/authority/language/DEU</td></tr>
+					</table>
+				<details>
+			<summary>dcterms:temporal MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://purl.org/dc/terms/temporal&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/dist/favv/SMILEY/nl/csv</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/favv/SMILEY/fr/csv</td><td>n/a</td></tr>
+						<tr><td>http://data.gov.be/dist/favv/SMILEY/de/csv</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>foaf:workplaceHomepage MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://xmlns.com/foaf/0.1/workplaceHomepage&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>https://org.belgif.be/id/CbeRegisteredEntity/0267387230</td><td>n/a</td></tr>
+					</table>
+				<details>
+			<summary>vcard:hasURL MinCountConstraintComponent</summary>
+			<pre>@prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
+
+[] a sh:PropertyShape;
+  sh:path &lt;http://www.w3.org/2006/vcard/ns#hasURL&gt;;
+  sh:minCount 1;
+  sh:severity sh:Info .
+</pre>
+		</details>
+		<table class="recommendation">
+			<tr><th>Focus node</th><th>Value</th></tr>
+						<tr><td>http://data.gov.be/org/favv/contact</td><td>n/a</td></tr>
+					</table>
+			</section>
+	<hr/>
+
+	<section class="info">
+		<h2>Statistics</h2>
+				<h3>Classes</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcat:Distribution</th><td>3</td></tr>
+						<tr><th>dcat:Catalog</th><td>1</td></tr>
+						<tr><th>dcat:Dataset</th><td>1</td></tr>
+						<tr><th>dcterms:mediaType</th><td>1</td></tr>
+						<tr><th>foaf:Organization</th><td>1</td></tr>
+						<tr><th>vcard:Organization</th><td>1</td></tr>
+					</table>
+						<h3>Properties</h3>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>dcterms:language</th><td>9</td></tr>
+						<tr><th>rdf:type</th><td>8</td></tr>
+						<tr><th>dcterms:description</th><td>4</td></tr>
+						<tr><th>dcterms:title</th><td>4</td></tr>
+						<tr><th>foaf:name</th><td>4</td></tr>
+						<tr><th>vcard:fn</th><td>4</td></tr>
+						<tr><th>dcat:accessURL</th><td>3</td></tr>
+						<tr><th>dcat:distribution</th><td>3</td></tr>
+						<tr><th>dcat:downloadURL</th><td>3</td></tr>
+						<tr><th>dcat:mediaType</th><td>3</td></tr>
+						<tr><th>dcterms:format</th><td>3</td></tr>
+						<tr><th>http://data.gov.be#mediaType</th><td>3</td></tr>
+						<tr><th>foaf:homepage</th><td>2</td></tr>
+						<tr><th>dcat:contactPoint</th><td>1</td></tr>
+						<tr><th>dcat:dataset</th><td>1</td></tr>
+						<tr><th>dcat:theme</th><td>1</td></tr>
+						<tr><th>dcterms:identifier</th><td>1</td></tr>
+						<tr><th>dcterms:issued</th><td>1</td></tr>
+						<tr><th>dcterms:license</th><td>1</td></tr>
+						<tr><th>dcterms:modified</th><td>1</td></tr>
+						<tr><th>dcterms:publisher</th><td>1</td></tr>
+						<tr><th>dcterms:spatial</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#org</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#spatial</th><td>1</td></tr>
+						<tr><th>http://data.gov.be#theme</th><td>1</td></tr>
+						<tr><th>rdfs:label</th><td>1</td></tr>
+						<tr><th>vcard:hasEmail</th><td>1</td></tr>
+						<tr><th>vcard:hasUrl</th><td>1</td></tr>
+					</table>
+						<h3>Values</h3>
+				<h4>dcat:mediaType</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://www.iana.org/assignments/media-types/text/csv</th><td>3</td></tr>
+					</table>
+				<h4>dcterms:license</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://creativecommons.org/publicdomain/zero/1.0/</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:spatial</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://sws.geonames.org/2802361/</th><td>1</td></tr>
+					</table>
+				<h4>dcterms:publisher</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>https://org.belgif.be/id/CbeRegisteredEntity/0267387230</th><td>1</td></tr>
+					</table>
+				<h4>dcat:theme</h4>
+		<table class="info side">
+			<tr><th>Name</th><th>Count</th></tr>
+						<tr><th>http://publications.europa.eu/resource/authority/data-theme/HEAL</th><td>1</td></tr>
+					</table>
+					</section>
+</body>
+</html>
