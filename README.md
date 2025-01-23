@@ -1,6 +1,6 @@
 # Data.gov.be DCAT files 
 
-Metadata being used to update the Belgian data.gov.be portal, in [DCAT-AP 2.0](https://joinup.ec.europa.eu/asset/dcat_application_profile/description).
+Metadata being used to update the Belgian data.gov.be portal, in [DCAT-AP](https://joinup.ec.europa.eu/asset/dcat_application_profile/description) + HVD.
 Available as N-Triples and RDF/XML file.
 
 ## DCAT XML export for European Data Portal
