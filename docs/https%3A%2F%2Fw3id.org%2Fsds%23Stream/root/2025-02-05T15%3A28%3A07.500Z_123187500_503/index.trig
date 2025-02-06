@@ -1,0 +1,1559 @@
+<../../../index.trig> a <https://w3id.org/ldes#EventStream>.
+<index.trig> a <https://w3id.org/tree#Node>;
+    <http://purl.org/dc/terms/isPartOf> <../../../index.trig>.
+<../../../index.trig> <https://w3id.org/tree#member> <#dbfa8502a6f8fdd172ccb90bd0237c15>.
+<#dbfa8502a6f8fdd172ccb90bd0237c15> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://data.stad.gent/api/v2/catalog/datasets/geboorteakten-json>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.714Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dbfa8502a6f8fdd172ccb90bd0237c15> {
+<https://data.stad.gent/api/v2/catalog/datasets/geboorteakten-json> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/description> "json export of https://data.stad.gent/api/v2/catalog/datasets/geboorteakten"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7e884f2d-0f11-307c-ba46-3af8d6ad5e5e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.stad.gent/api/v2/catalog/datasets/geboorteakten/exports/json>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d26a9b0b2ac3ea40249bb348f3d9fff8>.
+<#d26a9b0b2ac3ea40249bb348f3d9fff8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c905-534a27d9a134c2a2>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.715Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d26a9b0b2ac3ea40249bb348f3d9fff8> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c905-534a27d9a134c2a2> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7ea1f182-32f3-492f-866a-c66934a658ab>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/dov-pub/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=T17Ko_FormatievanKortrijk_VK_20040116&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1ac228dc92e0f7365ec1e2d73dd053d7>.
+<#1ac228dc92e0f7365ec1e2d73dd053d7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/cec8a8f2-7eb3-34c5-b8ba-459669cc7f98>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.716Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1ac228dc92e0f7365ec1e2d73dd053d7> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/cec8a8f2-7eb3-34c5-b8ba-459669cc7f98> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "cec8a8f2-7eb3-34c5-b8ba-459669cc7f98";
+    <http://purl.org/dc/terms/title> "T17Ko_FormatievanKortrijk_VK_20040116"@nl;
+    <http://purl.org/dc/terms/description> "KML T17Ko_FormatievanKortrijk_VK_20040116 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150928_b150927_b150926_df_71_30095;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7ea1f182-32f3-492f-866a-c66934a658ab>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/dov-pub/wms/kml?layers=T17Ko_FormatievanKortrijk_VK_20040116>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150928_b150927_b150926_df_71_30095 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "T17Ko_FormatievanKortrijk_VK_20040116"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9143f03b9137819fd016c3509fac0937>.
+<#9143f03b9137819fd016c3509fac0937> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/631490c3-f4e5-3143-9dc2-23ea19fd41f9>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.717Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9143f03b9137819fd016c3509fac0937> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/631490c3-f4e5-3143-9dc2-23ea19fd41f9> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "631490c3-f4e5-3143-9dc2-23ea19fd41f9";
+    <http://purl.org/dc/terms/title> "T17Ko_FormatievanKortrijk_VK_20040116"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map T17Ko_FormatievanKortrijk_VK_20040116 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150931_b150930_b150929_df_71_30096;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7ea1f182-32f3-492f-866a-c66934a658ab>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/dov-pub/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150931_b150930_b150929_df_71_30096 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "T17Ko_FormatievanKortrijk_VK_20040116"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4b9b78c687778def915079ad43564e2a>.
+<#4b9b78c687778def915079ad43564e2a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/eece7dec-c6ea-36ea-9c0a-41fe8d620700>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.718Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4b9b78c687778def915079ad43564e2a> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/eece7dec-c6ea-36ea-9c0a-41fe8d620700> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "eece7dec-c6ea-36ea-9c0a-41fe8d620700";
+    <http://purl.org/dc/terms/title> "T17Ko_FormatievanKortrijk_VK_20040116"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature T17Ko_FormatievanKortrijk_VK_20040116 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150934_b150933_b150932_df_71_30097;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7ea1f182-32f3-492f-866a-c66934a658ab>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/dov-pub/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=T17Ko_FormatievanKortrijk_VK_20040116>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150934_b150933_b150932_df_71_30097 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "T17Ko_FormatievanKortrijk_VK_20040116"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#61dae71f2cb949bd49d261bd7110d1fb>.
+<#61dae71f2cb949bd49d261bd7110d1fb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/70ec80be-3185-33cf-abaf-0f1aad875d74>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.725Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#61dae71f2cb949bd49d261bd7110d1fb> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/70ec80be-3185-33cf-abaf-0f1aad875d74> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "70ec80be-3185-33cf-abaf-0f1aad875d74";
+    <http://purl.org/dc/terms/title> "Download T17Ko_FormatievanKortrijk_VK_20040116"@nl;
+    <http://purl.org/dc/terms/description> "Link naar download T17Ko_FormatievanKortrijk_VK_20040116"@nl;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/WWW:DOWNLOAD-1.0-http--download>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7ea1f182-32f3-492f-866a-c66934a658ab>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://datasets.omgeving.vlaanderen.be/be.vlaanderen.omgeving.distribution.geo.e58c3358-e149-42b6-9229-c3a9ac88c3d4.DOV_T_50000_Geologie_Tertiair_Voorkomensgrenzen_zip>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e311d114776e4e1f1ac0a5439193ec08>.
+<#e311d114776e4e1f1ac0a5439193ec08> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://ipt.inbo.be/archive.do?r=watervogels-occurrences>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.726Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e311d114776e4e1f1ac0a5439193ec08> {
+<https://ipt.inbo.be/archive.do?r=watervogels-occurrences> a <http://xmlns.com/foaf/0.1/Document>, <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Darwin Core Archive of Watervogels - Wintering waterbirds in Flanders, Belgium"@nl;
+    <http://purl.org/dc/terms/description> "Darwin Core Archive"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/DWCA>;
+    <http://www.w3.org/ns/dcat#compressFormat> <https://www.iana.org/assignments/media-types/application/zip>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7e9afa9c-2517-38c1-8802-45be8dc13149>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://ipt.inbo.be/resource?r=watervogels-occurrences>, <https://ipt.inbo.be/archive.do?r=watervogels-occurrences#>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b65c840e95fb539ad707e20cbb482c77>.
+<#b65c840e95fb539ad707e20cbb482c77> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c905-534a27d9a134c2c5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.727Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b65c840e95fb539ad707e20cbb482c77> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c905-534a27d9a134c2c5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7e98d913-67c4-45d7-8583-9e4761e68b65>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_010202Q_VlDh_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ee69337db99c43844287a9015325fdee>.
+<#ee69337db99c43844287a9015325fdee> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/9926578d-cb65-3fd5-bb50-429dd203f9f5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.728Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ee69337db99c43844287a9015325fdee> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/9926578d-cb65-3fd5-bb50-429dd203f9f5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "9926578d-cb65-3fd5-bb50-429dd203f9f5";
+    <http://purl.org/dc/terms/title> "g3dv3_010202Q_VlDh_v"@nl;
+    <http://purl.org/dc/terms/description> "KML G3Dv3 010202, voorkomen van Ld van De Haan van de Fm van Vlaanderen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150946_b150945_b150944_df_71_30101;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7e98d913-67c4-45d7-8583-9e4761e68b65>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms/kml?layers=g3dv3_010202Q_VlDh_v>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150946_b150945_b150944_df_71_30101 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_010202Q_VlDh_v"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b6e0d315fcd1c9e0c8e3f1344c393807>.
+<#b6e0d315fcd1c9e0c8e3f1344c393807> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/e293acbc-2e5e-3060-9125-be413b7072e9>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.729Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b6e0d315fcd1c9e0c8e3f1344c393807> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/e293acbc-2e5e-3060-9125-be413b7072e9> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "e293acbc-2e5e-3060-9125-be413b7072e9";
+    <http://purl.org/dc/terms/title> "g3dv3_010202Q_VlDh_v"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map G3Dv3 010202, voorkomen van Ld van De Haan van de Fm van Vlaanderen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150949_b150948_b150947_df_71_30102;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7e98d913-67c4-45d7-8583-9e4761e68b65>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150949_b150948_b150947_df_71_30102 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_010202Q_VlDh_v"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b7888f95a8fb9806a2389cda4ffe5c13>.
+<#b7888f95a8fb9806a2389cda4ffe5c13> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/6ce597ca-10f7-3f0c-9eba-879bc66610ad>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.730Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b7888f95a8fb9806a2389cda4ffe5c13> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/6ce597ca-10f7-3f0c-9eba-879bc66610ad> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "6ce597ca-10f7-3f0c-9eba-879bc66610ad";
+    <http://purl.org/dc/terms/title> "g3dv3_010202Q_VlDh_v"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature G3Dv3 010202, voorkomen van Ld van De Haan van de Fm van Vlaanderen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150952_b150951_b150950_df_71_30103;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7e98d913-67c4-45d7-8583-9e4761e68b65>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=g3dv3_010202Q_VlDh_v>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150952_b150951_b150950_df_71_30103 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_010202Q_VlDh_v"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a3886f3e7cf5c2668dd9fe73a4ff4194>.
+<#a3886f3e7cf5c2668dd9fe73a4ff4194> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c326>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.731Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a3886f3e7cf5c2668dd9fe73a4ff4194> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c326> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "WMS industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/OGC:WMS-1.3.0-HTTP-GET-MAP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d482ca989dc17c76281a3d660eabd367>.
+<#d482ca989dc17c76281a3d660eabd367> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c327>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.732Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d482ca989dc17c76281a3d660eabd367> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c327> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV"@nl;
+    <http://purl.org/dc/terms/description> "CSV"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/77a6ee64b4af42a884b5d2f0c2f1944e/csv?layers=753>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d18bfae13a080654b1c1903deb84fa6b>.
+<#d18bfae13a080654b1c1903deb84fa6b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c328>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.733Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d18bfae13a080654b1c1903deb84fa6b> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c328> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ZIP"@nl;
+    <http://purl.org/dc/terms/description> "Shapefile"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ZIP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/77a6ee64b4af42a884b5d2f0c2f1944e/shapefile?layers=753>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#19af1ad7b02e71e3269917dd4766ef4e>.
+<#19af1ad7b02e71e3269917dd4766ef4e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c329>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.734Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#19af1ad7b02e71e3269917dd4766ef4e> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c329> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS GeoService"@nl;
+    <http://purl.org/dc/terms/description> "Esri REST"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek6/MapServer/753>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e31cd50dd96592f66bf6a926e615cf01>.
+<#e31cd50dd96592f66bf6a926e615cf01> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.735Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e31cd50dd96592f66bf6a926e615cf01> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "WMS industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/OGC:WMS>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/hh/hh:hh_indus_Lday_2011/wms?>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a9b492d6ed8c8a33ac1e3c13a5116da4>.
+<#a9b492d6ed8c8a33ac1e3c13a5116da4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32b>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.736Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a9b492d6ed8c8a33ac1e3c13a5116da4> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32b> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS Hub Dataset"@nl;
+    <http://purl.org/dc/terms/description> "Web Page"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/HTML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/maps/stadAntwerpen::geluid-industrie-den-2016>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d95e36d75ccef74dba200ec93f65025d>.
+<#d95e36d75ccef74dba200ec93f65025d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.737Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d95e36d75ccef74dba200ec93f65025d> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/description> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GEOJSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/77a6ee64b4af42a884b5d2f0c2f1944e/geojson?layers=753>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#eb36a98e0cdf36015f82aa12aaa8694a>.
+<#eb36a98e0cdf36015f82aa12aaa8694a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32d>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.738Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#eb36a98e0cdf36015f82aa12aaa8694a> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32d> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "WMS-capabilities industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/OGC:WMS-1.3.0-HTTP-GET-CAPABILITIES>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/hh/hh_indus_Lday_2011/wms?request=GetCapabilities&service=wms&version=1.3.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#927484cabdb7f0e9b3bb42d3e135f882>.
+<#927484cabdb7f0e9b3bb42d3e135f882> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.739Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#927484cabdb7f0e9b3bb42d3e135f882> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "WFS-capabilities industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/OGC:WFS-1.0.0-HTTP-GET-CAPABILITIES>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/hh/hh_indus_Lday_2011/wfs?request=GetCapabilities&service=wfs&version=1.0.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c427b25671a75e76d787fbd020934c53>.
+<#c427b25671a75e76d787fbd020934c53> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.740Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c427b25671a75e76d787fbd020934c53> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c32f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "KML industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GLG:KML-2.0-HTTP-GET-MAP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/hh/wms/kml?layers=hh:hh_indus_Lday_2011>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a490bc8ee3fc21a9a38b1bfefdc610d1>.
+<#a490bc8ee3fc21a9a38b1bfefdc610d1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c330>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.740Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a490bc8ee3fc21a9a38b1bfefdc610d1> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c330> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "KML"@nl;
+    <http://purl.org/dc/terms/description> "KML"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49787b4e-937c-352d-8d4c-83593bd5fc14>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/77a6ee64b4af42a884b5d2f0c2f1944e/kml?layers=753>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a197fc135e4dec4317f76391f65fabce>.
+<#a197fc135e4dec4317f76391f65fabce> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c380>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.741Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a197fc135e4dec4317f76391f65fabce> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c380> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49928b76-143d-4075-94ad-7f6938dfc336>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0255_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9575cf985d458ba32237851d2eaaf211>.
+<#9575cf985d458ba32237851d2eaaf211> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/5713b339-e810-372a-aad8-a26b21eba978>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.742Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9575cf985d458ba32237851d2eaaf211> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/5713b339-e810-372a-aad8-a26b21eba978> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "5713b339-e810-372a-aad8-a26b21eba978";
+    <http://purl.org/dc/terms/title> "h3dv2_1_A0255_v"@nl;
+    <http://purl.org/dc/terms/description> "KML H3Dv2.1 A0255, voorkomen Voort zand 1 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150991_b150990_b150989_df_71_30111;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49928b76-143d-4075-94ad-7f6938dfc336>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms/kml?layers=h3dv2_1_A0255_v>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150991_b150990_b150989_df_71_30111 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "h3dv2_1_A0255_v"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cacb4733635c6d385697f7fe0bb26da5>.
+<#cacb4733635c6d385697f7fe0bb26da5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/fc10b540-15a5-348e-8013-f8422ed89430>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.743Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cacb4733635c6d385697f7fe0bb26da5> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/fc10b540-15a5-348e-8013-f8422ed89430> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "fc10b540-15a5-348e-8013-f8422ed89430";
+    <http://purl.org/dc/terms/title> "h3dv2_1_A0255_v"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map H3Dv2.1 A0255, voorkomen Voort zand 1 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150994_b150993_b150992_df_71_30112;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49928b76-143d-4075-94ad-7f6938dfc336>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150994_b150993_b150992_df_71_30112 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "h3dv2_1_A0255_v"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2f546903d15173b829ad900e71b7225b>.
+<#2f546903d15173b829ad900e71b7225b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/8cb66644-fdc3-3368-9234-36b0eda64253>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.745Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2f546903d15173b829ad900e71b7225b> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/8cb66644-fdc3-3368-9234-36b0eda64253> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "8cb66644-fdc3-3368-9234-36b0eda64253";
+    <http://purl.org/dc/terms/title> "h3dv2_1_A0255_v"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature H3Dv2.1 A0255, voorkomen Voort zand 1 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b150997_b150996_b150995_df_71_30113;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/49928b76-143d-4075-94ad-7f6938dfc336>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=h3dv2_1_A0255_v>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b150997_b150996_b150995_df_71_30113 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "h3dv2_1_A0255_v"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#29495d7a640d1f053432fe4aed9da0c3>.
+<#29495d7a640d1f053432fe4aed9da0c3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c407>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.746Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#29495d7a640d1f053432fe4aed9da0c3> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c908-534a27d9a134c407> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/4986e679-820c-4650-8020-df697057529c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/048351da-3f05-4785-8029-1f1977a59189/attachments/voorbeeld2_1416577007309.JPG>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4b2411f516c31ea6f66bcfc7ac4f46dc>.
+<#4b2411f516c31ea6f66bcfc7ac4f46dc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c458>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.747Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4b2411f516c31ea6f66bcfc7ac4f46dc> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c458> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5bb8f7d-b60a-426a-9d88-c6c827253c64>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_0304PA_Bi_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c39e25c6be5176f042f8f2aeab5b0f1f>.
+<#c39e25c6be5176f042f8f2aeab5b0f1f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/93458f80-210b-30fe-9043-c480eda96a05>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.748Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c39e25c6be5176f042f8f2aeab5b0f1f> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/93458f80-210b-30fe-9043-c480eda96a05> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "93458f80-210b-30fe-9043-c480eda96a05";
+    <http://purl.org/dc/terms/title> "g3dv3_0304PA_Bi_b_ih"@nl;
+    <http://purl.org/dc/terms/description> "KML G3Dv3 0304, isohypsen van basis Fm van Bilzen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151006_b151005_b151004_df_71_30119;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5bb8f7d-b60a-426a-9d88-c6c827253c64>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms/kml?layers=g3dv3_0304PA_Bi_b_ih>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151006_b151005_b151004_df_71_30119 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_0304PA_Bi_b_ih"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2e758d24c405dbbc889a40a2bf9468b0>.
+<#2e758d24c405dbbc889a40a2bf9468b0> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/ac666264-e036-3886-a02f-3668656ea23a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.749Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2e758d24c405dbbc889a40a2bf9468b0> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/ac666264-e036-3886-a02f-3668656ea23a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "ac666264-e036-3886-a02f-3668656ea23a";
+    <http://purl.org/dc/terms/title> "g3dv3_0304PA_Bi_b_ih"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map G3Dv3 0304, isohypsen van basis Fm van Bilzen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151009_b151008_b151007_df_71_30120;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5bb8f7d-b60a-426a-9d88-c6c827253c64>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151009_b151008_b151007_df_71_30120 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_0304PA_Bi_b_ih"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cf95b348bfa7b2b2119c7c182b2825a7>.
+<#cf95b348bfa7b2b2119c7c182b2825a7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/22d3bf2b-f92f-30a2-ae2d-26d36113c999>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.750Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cf95b348bfa7b2b2119c7c182b2825a7> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/22d3bf2b-f92f-30a2-ae2d-26d36113c999> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "22d3bf2b-f92f-30a2-ae2d-26d36113c999";
+    <http://purl.org/dc/terms/title> "g3dv3_0304PA_Bi_b_ih"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature G3Dv3 0304, isohypsen van basis Fm van Bilzen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151012_b151011_b151010_df_71_30121;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5bb8f7d-b60a-426a-9d88-c6c827253c64>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=g3dv3_0304PA_Bi_b_ih>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151012_b151011_b151010_df_71_30121 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_0304PA_Bi_b_ih"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a6ad83101c595bd21f51b7d8833ead94>.
+<#a6ad83101c595bd21f51b7d8833ead94> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c478>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.751Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a6ad83101c595bd21f51b7d8833ead94> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c478> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5a01cf3-10f3-46a4-88f3-0eeb28f3817b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_030701PA_ShNe_t_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e8faab62abb0d0864d1b0166aef250e6>.
+<#e8faab62abb0d0864d1b0166aef250e6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/262536f0-be6e-3794-8b6a-ba3c34bc0dd1>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.752Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e8faab62abb0d0864d1b0166aef250e6> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/262536f0-be6e-3794-8b6a-ba3c34bc0dd1> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "262536f0-be6e-3794-8b6a-ba3c34bc0dd1";
+    <http://purl.org/dc/terms/title> "g3dv3_1_030701PA_ShNe_t_br"@nl;
+    <http://purl.org/dc/terms/description> "KML G3Dv3.1 030701, breuken in top Ld van Neerrepen van de Fm van Sint-Huibrechts-Hern (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151018_b151017_b151016_df_71_30124;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5a01cf3-10f3-46a4-88f3-0eeb28f3817b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms/kml?layers=g3dv3_1_030701PA_ShNe_t_br>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151018_b151017_b151016_df_71_30124 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_030701PA_ShNe_t_br"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3785caff42ee907499683e7b31a291a4>.
+<#3785caff42ee907499683e7b31a291a4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/bfbd2c88-a353-3e78-b1f6-0af4d9bfee70>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.759Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3785caff42ee907499683e7b31a291a4> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/bfbd2c88-a353-3e78-b1f6-0af4d9bfee70> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "bfbd2c88-a353-3e78-b1f6-0af4d9bfee70";
+    <http://purl.org/dc/terms/title> "g3dv3_1_030701PA_ShNe_t_br"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map G3Dv3.1 030701, breuken in top Ld van Neerrepen van de Fm van Sint-Huibrechts-Hern (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151021_b151020_b151019_df_71_30125;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5a01cf3-10f3-46a4-88f3-0eeb28f3817b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151021_b151020_b151019_df_71_30125 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_030701PA_ShNe_t_br"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7dbad94d53d9190ec75f244befcffd7e>.
+<#7dbad94d53d9190ec75f244befcffd7e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/8841c626-6609-3e80-bb51-e5ca709db4ba>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.760Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7dbad94d53d9190ec75f244befcffd7e> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/8841c626-6609-3e80-bb51-e5ca709db4ba> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "8841c626-6609-3e80-bb51-e5ca709db4ba";
+    <http://purl.org/dc/terms/title> "g3dv3_1_030701PA_ShNe_t_br"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature G3Dv3.1 030701, breuken in top Ld van Neerrepen van de Fm van Sint-Huibrechts-Hern (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151024_b151023_b151022_df_71_30126;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5a01cf3-10f3-46a4-88f3-0eeb28f3817b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=g3dv3_1_030701PA_ShNe_t_br>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151024_b151023_b151022_df_71_30126 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_030701PA_ShNe_t_br"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a760de1ca793e3f39cf76341b6fcb763>.
+<#a760de1ca793e3f39cf76341b6fcb763> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://metadata.omgeving.vlaanderen.be/srv/resources/distributions/adb0ce1b-8023-36bb-aa18-cf6b90cddbb4>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.761Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a760de1ca793e3f39cf76341b6fcb763> {
+<https://metadata.omgeving.vlaanderen.be/srv/resources/distributions/adb0ce1b-8023-36bb-aa18-cf6b90cddbb4> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "adb0ce1b-8023-36bb-aa18-cf6b90cddbb4";
+    <http://purl.org/dc/terms/title> "Publieke Dataset DSI, Turtle versie"@nl;
+    <http://purl.org/dc/terms/description> "Publieke Dataset DSI geserialiseerd in Turtle bestand"@nl;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/WWW:DOWNLOAD-1.0-http--download>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/turtle>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b51c0f35-7f52-530a-8498-d668339192b6>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://datasets.omgeving.vlaanderen.be/be.vl.omg.dsi.distribution.dataset.dsi.publiek.ttl>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#945ef816e3a90157235dcff22ae598ca>.
+<#945ef816e3a90157235dcff22ae598ca> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c50c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.762Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#945ef816e3a90157235dcff22ae598ca> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c50c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b510e38b-9798-4b0a-96b0-83ebaaf4bb23>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_031804PA_HnBe_t_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#907f6c188f4281727eebb7073f86030c>.
+<#907f6c188f4281727eebb7073f86030c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/745aa141-c037-358b-8905-017fbb5c4c84>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.763Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#907f6c188f4281727eebb7073f86030c> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/745aa141-c037-358b-8905-017fbb5c4c84> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "745aa141-c037-358b-8905-017fbb5c4c84";
+    <http://purl.org/dc/terms/title> "g3dv3_031804PA_HnBe_t_ih"@nl;
+    <http://purl.org/dc/terms/description> "KML G3Dv3 031804, isohypsen van top Ld van Beselare van de Fm van Hannut (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151033_b151032_b151031_df_71_30131;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b510e38b-9798-4b0a-96b0-83ebaaf4bb23>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms/kml?layers=g3dv3_031804PA_HnBe_t_ih>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151033_b151032_b151031_df_71_30131 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_031804PA_HnBe_t_ih"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4f57524868642ae1fc43efc388d565d5>.
+<#4f57524868642ae1fc43efc388d565d5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/5793b828-da30-32f8-bae4-2b60f938175f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.764Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4f57524868642ae1fc43efc388d565d5> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/5793b828-da30-32f8-bae4-2b60f938175f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "5793b828-da30-32f8-bae4-2b60f938175f";
+    <http://purl.org/dc/terms/title> "g3dv3_031804PA_HnBe_t_ih"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map G3Dv3 031804, isohypsen van top Ld van Beselare van de Fm van Hannut (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151036_b151035_b151034_df_71_30132;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b510e38b-9798-4b0a-96b0-83ebaaf4bb23>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151036_b151035_b151034_df_71_30132 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_031804PA_HnBe_t_ih"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#377cfa49071687273beccb9a62d6fa4b>.
+<#377cfa49071687273beccb9a62d6fa4b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/87e5feda-3915-32ee-b770-9ac004df2273>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.765Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#377cfa49071687273beccb9a62d6fa4b> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/87e5feda-3915-32ee-b770-9ac004df2273> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "87e5feda-3915-32ee-b770-9ac004df2273";
+    <http://purl.org/dc/terms/title> "g3dv3_031804PA_HnBe_t_ih"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature G3Dv3 031804, isohypsen van top Ld van Beselare van de Fm van Hannut (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151039_b151038_b151037_df_71_30133;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b510e38b-9798-4b0a-96b0-83ebaaf4bb23>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=g3dv3_031804PA_HnBe_t_ih>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151039_b151038_b151037_df_71_30133 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_031804PA_HnBe_t_ih"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#340206c67ff018d96a68241144d49cf1>.
+<#340206c67ff018d96a68241144d49cf1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c52c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.766Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#340206c67ff018d96a68241144d49cf1> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c52c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b510e38b-9798-4b0a-96b0-83ebaaf4bb24>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_031804PA_HnBe_t_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4f7d700ff8adfe1e05ef22323fafa9d8>.
+<#4f7d700ff8adfe1e05ef22323fafa9d8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/3c34627b-1b4a-375e-915d-ec8f3a0f1005>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.767Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4f7d700ff8adfe1e05ef22323fafa9d8> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/3c34627b-1b4a-375e-915d-ec8f3a0f1005> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "3c34627b-1b4a-375e-915d-ec8f3a0f1005";
+    <http://purl.org/dc/terms/title> "g3dv3_1_031804PA_HnBe_t_ih"@nl;
+    <http://purl.org/dc/terms/description> "KML G3Dv3.1 031804, isohypsen van top Ld van Beselare van de Fm van Hannut (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151045_b151044_b151043_df_71_30136;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b510e38b-9798-4b0a-96b0-83ebaaf4bb24>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms/kml?layers=g3dv3_1_031804PA_HnBe_t_ih>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151045_b151044_b151043_df_71_30136 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_031804PA_HnBe_t_ih"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b47dd0701fe58ec4fa5686d92a435726>.
+<#b47dd0701fe58ec4fa5686d92a435726> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/2c6573a9-b5b1-395e-bbf2-64dcbc784870>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.768Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b47dd0701fe58ec4fa5686d92a435726> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/2c6573a9-b5b1-395e-bbf2-64dcbc784870> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "2c6573a9-b5b1-395e-bbf2-64dcbc784870";
+    <http://purl.org/dc/terms/title> "g3dv3_1_031804PA_HnBe_t_ih"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map G3Dv3.1 031804, isohypsen van top Ld van Beselare van de Fm van Hannut (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151048_b151047_b151046_df_71_30137;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b510e38b-9798-4b0a-96b0-83ebaaf4bb24>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151048_b151047_b151046_df_71_30137 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_031804PA_HnBe_t_ih"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#39120300c1c1d2cfe0c568dd44bbadc3>.
+<#39120300c1c1d2cfe0c568dd44bbadc3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/e591c090-b252-31cd-bf1c-8cc68aa93c0e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.770Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#39120300c1c1d2cfe0c568dd44bbadc3> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/e591c090-b252-31cd-bf1c-8cc68aa93c0e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "e591c090-b252-31cd-bf1c-8cc68aa93c0e";
+    <http://purl.org/dc/terms/title> "g3dv3_1_031804PA_HnBe_t_ih"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature G3Dv3.1 031804, isohypsen van top Ld van Beselare van de Fm van Hannut (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151051_b151050_b151049_df_71_30138;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b510e38b-9798-4b0a-96b0-83ebaaf4bb24>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=g3dv3_1_031804PA_HnBe_t_ih>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151051_b151050_b151049_df_71_30138 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_031804PA_HnBe_t_ih"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#086c8a68cf6001d02e0d419355cf303a>.
+<#086c8a68cf6001d02e0d419355cf303a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c5be>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.771Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#086c8a68cf6001d02e0d419355cf303a> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c5be> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5705ad6-05d0-47ca-900d-d2f68bf565b2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_031902PA_HsGe_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7731316b615f86bf60742c41a9e9ac6c>.
+<#7731316b615f86bf60742c41a9e9ac6c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/9a914ab5-2298-32d9-9a05-30556edfcc52>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.772Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7731316b615f86bf60742c41a9e9ac6c> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/9a914ab5-2298-32d9-9a05-30556edfcc52> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "9a914ab5-2298-32d9-9a05-30556edfcc52";
+    <http://purl.org/dc/terms/title> "g3dv3_031902PA_HsGe_b_br"@nl;
+    <http://purl.org/dc/terms/description> "KML G3Dv3 031902, breuken in basis Ld van Gelinden van de Fm van Heers (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151057_b151056_b151055_df_71_30141;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5705ad6-05d0-47ca-900d-d2f68bf565b2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms/kml?layers=g3dv3_031902PA_HsGe_b_br>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151057_b151056_b151055_df_71_30141 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_031902PA_HsGe_b_br"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6af7cee6d2042e42db43db8803cca269>.
+<#6af7cee6d2042e42db43db8803cca269> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/fc28d036-796d-3bdf-af22-0dc81a543f52>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.773Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6af7cee6d2042e42db43db8803cca269> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/fc28d036-796d-3bdf-af22-0dc81a543f52> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "fc28d036-796d-3bdf-af22-0dc81a543f52";
+    <http://purl.org/dc/terms/title> "g3dv3_031902PA_HsGe_b_br"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map G3Dv3 031902, breuken in basis Ld van Gelinden van de Fm van Heers (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151060_b151059_b151058_df_71_30142;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5705ad6-05d0-47ca-900d-d2f68bf565b2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151060_b151059_b151058_df_71_30142 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_031902PA_HsGe_b_br"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f4bf53f1687655bf948fb61de368135f>.
+<#f4bf53f1687655bf948fb61de368135f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/92b67ae4-423c-3653-95ae-7fdf29aed21b>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.774Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f4bf53f1687655bf948fb61de368135f> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/92b67ae4-423c-3653-95ae-7fdf29aed21b> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "92b67ae4-423c-3653-95ae-7fdf29aed21b";
+    <http://purl.org/dc/terms/title> "g3dv3_031902PA_HsGe_b_br"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature G3Dv3 031902, breuken in basis Ld van Gelinden van de Fm van Heers (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151063_b151062_b151061_df_71_30143;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5705ad6-05d0-47ca-900d-d2f68bf565b2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=g3dv3_031902PA_HsGe_b_br>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151063_b151062_b151061_df_71_30143 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_031902PA_HsGe_b_br"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#06c4d4150b037f313396791215ff3fac>.
+<#06c4d4150b037f313396791215ff3fac> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c5de>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.775Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#06c4d4150b037f313396791215ff3fac> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c5de> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5705ad6-05d0-47ca-900d-d2f68bf565b3>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_031902PA_HsGe_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#41c46f7dc3eaa867571ec2a37d47eabd>.
+<#41c46f7dc3eaa867571ec2a37d47eabd> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/06914388-7fd8-315e-a592-15f2c023c100>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.776Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#41c46f7dc3eaa867571ec2a37d47eabd> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/06914388-7fd8-315e-a592-15f2c023c100> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "06914388-7fd8-315e-a592-15f2c023c100";
+    <http://purl.org/dc/terms/title> "g3dv3_1_031902PA_HsGe_b_br"@nl;
+    <http://purl.org/dc/terms/description> "KML G3Dv3.1 031902, breuken in basis Ld van Gelinden van de Fm van Heers (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151069_b151068_b151067_df_71_30146;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5705ad6-05d0-47ca-900d-d2f68bf565b3>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms/kml?layers=g3dv3_1_031902PA_HsGe_b_br>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151069_b151068_b151067_df_71_30146 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_031902PA_HsGe_b_br"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8eeadb338fc5ca988eaf4f6075a66c16>.
+<#8eeadb338fc5ca988eaf4f6075a66c16> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/0786c3b9-ea8d-3b6e-ae7c-c9a4dd7fe5a3>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.777Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8eeadb338fc5ca988eaf4f6075a66c16> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/0786c3b9-ea8d-3b6e-ae7c-c9a4dd7fe5a3> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "0786c3b9-ea8d-3b6e-ae7c-c9a4dd7fe5a3";
+    <http://purl.org/dc/terms/title> "g3dv3_1_031902PA_HsGe_b_br"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map G3Dv3.1 031902, breuken in basis Ld van Gelinden van de Fm van Heers (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151072_b151071_b151070_df_71_30147;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5705ad6-05d0-47ca-900d-d2f68bf565b3>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151072_b151071_b151070_df_71_30147 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_031902PA_HsGe_b_br"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e6b5f615e50b8e969ba94524b73bd604>.
+<#e6b5f615e50b8e969ba94524b73bd604> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/7c096b15-b751-35d4-b937-cf6d1d758f91>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.778Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e6b5f615e50b8e969ba94524b73bd604> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/7c096b15-b751-35d4-b937-cf6d1d758f91> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "7c096b15-b751-35d4-b937-cf6d1d758f91";
+    <http://purl.org/dc/terms/title> "g3dv3_1_031902PA_HsGe_b_br"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature G3Dv3.1 031902, breuken in basis Ld van Gelinden van de Fm van Heers (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151075_b151074_b151073_df_71_30148;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5705ad6-05d0-47ca-900d-d2f68bf565b3>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=g3dv3_1_031902PA_HsGe_b_br>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151075_b151074_b151073_df_71_30148 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_1_031902PA_HsGe_b_br"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b23aebd01ec79f6d0410eac8891bdd81>.
+<#b23aebd01ec79f6d0410eac8891bdd81> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c5fe>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.779Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b23aebd01ec79f6d0410eac8891bdd81> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c5fe> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5a01cf3-10f3-46a4-88f3-0eeb28f3817a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_030701PA_ShNe_t_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e92f5b507d73147906d3583d66abb50f>.
+<#e92f5b507d73147906d3583d66abb50f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/ab55912f-eb83-38da-87d8-c30f285afaac>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.780Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e92f5b507d73147906d3583d66abb50f> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/ab55912f-eb83-38da-87d8-c30f285afaac> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "ab55912f-eb83-38da-87d8-c30f285afaac";
+    <http://purl.org/dc/terms/title> "g3dv3_030701PA_ShNe_t_br"@nl;
+    <http://purl.org/dc/terms/description> "KML G3Dv3 030701, breuken in top Ld van Neerrepen van de Fm van Sint-Huibrechts-Hern (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151081_b151080_b151079_df_71_30151;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5a01cf3-10f3-46a4-88f3-0eeb28f3817a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms/kml?layers=g3dv3_030701PA_ShNe_t_br>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151081_b151080_b151079_df_71_30151 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_030701PA_ShNe_t_br"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b525ab8d9cd7d4ddfcbb85da3e8637aa>.
+<#b525ab8d9cd7d4ddfcbb85da3e8637aa> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/88088699-1de6-3567-8c3c-c004a24734d6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.781Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b525ab8d9cd7d4ddfcbb85da3e8637aa> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/88088699-1de6-3567-8c3c-c004a24734d6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "88088699-1de6-3567-8c3c-c004a24734d6";
+    <http://purl.org/dc/terms/title> "g3dv3_030701PA_ShNe_t_br"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map G3Dv3 030701, breuken in top Ld van Neerrepen van de Fm van Sint-Huibrechts-Hern (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151084_b151083_b151082_df_71_30152;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5a01cf3-10f3-46a4-88f3-0eeb28f3817a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151084_b151083_b151082_df_71_30152 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_030701PA_ShNe_t_br"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#eb07779681d685884448686860c100cc>.
+<#eb07779681d685884448686860c100cc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/5272624b-2f67-3acf-ab13-8ed0b0a1a62d>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.782Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#eb07779681d685884448686860c100cc> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/5272624b-2f67-3acf-ab13-8ed0b0a1a62d> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "5272624b-2f67-3acf-ab13-8ed0b0a1a62d";
+    <http://purl.org/dc/terms/title> "g3dv3_030701PA_ShNe_t_br"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature G3Dv3 030701, breuken in top Ld van Neerrepen van de Fm van Sint-Huibrechts-Hern (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151087_b151086_b151085_df_71_30153;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5a01cf3-10f3-46a4-88f3-0eeb28f3817a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=g3dv3_030701PA_ShNe_t_br>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151087_b151086_b151085_df_71_30153 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "g3dv3_030701PA_ShNe_t_br"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ff084b8d14b73d532bcb0fd8d5f20cf8>.
+<#ff084b8d14b73d532bcb0fd8d5f20cf8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://ipt.inbo.be/archive.do?r=mica-itaw-occurrences>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.784Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ff084b8d14b73d532bcb0fd8d5f20cf8> {
+<https://ipt.inbo.be/archive.do?r=mica-itaw-occurrences> a <http://xmlns.com/foaf/0.1/Document>, <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Darwin Core Archive of Mica - Muskrat, Raccoon and Coypu occurrences collected by ITAW in Germany"@nl;
+    <http://purl.org/dc/terms/description> "Darwin Core Archive"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/DWCA>;
+    <http://www.w3.org/ns/dcat#compressFormat> <https://www.iana.org/assignments/media-types/application/zip>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b540a51a-1037-3728-9bd3-9eddff2721e1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://ipt.inbo.be/resource?r=mica-itaw-occurrences>, <https://ipt.inbo.be/archive.do?r=mica-itaw-occurrences#>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a0fd7622d50438f5746357dc4b37da7f>.
+<#a0fd7622d50438f5746357dc4b37da7f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c607>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.785Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a0fd7622d50438f5746357dc4b37da7f> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c607> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ZIP"@nl;
+    <http://purl.org/dc/terms/description> "Shapefile"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ZIP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b55d8d9d-eacd-3311-9444-52260129d3be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/81a087e8542e4a979b25795b698618fe/shapefile?layers=58>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#643fe5ec23d110614345b9c6e13c729a>.
+<#643fe5ec23d110614345b9c6e13c729a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c608>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.786Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#643fe5ec23d110614345b9c6e13c729a> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c608> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS GeoService"@nl;
+    <http://purl.org/dc/terms/description> "Esri REST"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b55d8d9d-eacd-3311-9444-52260129d3be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek1/MapServer/58>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1d3918cbec24296cdd36da445d9e8b1f>.
+<#1d3918cbec24296cdd36da445d9e8b1f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c609>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.792Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1d3918cbec24296cdd36da445d9e8b1f> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c609> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS Hub Dataset"@nl;
+    <http://purl.org/dc/terms/description> "Web Page"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/HTML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b55d8d9d-eacd-3311-9444-52260129d3be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/maps/stadAntwerpen::verkeersbord-punt>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4daf6c3f4ba598da6ac823d905605818>.
+<#4daf6c3f4ba598da6ac823d905605818> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c60a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.793Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4daf6c3f4ba598da6ac823d905605818> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c60a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "KML"@nl;
+    <http://purl.org/dc/terms/description> "KML"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b55d8d9d-eacd-3311-9444-52260129d3be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/81a087e8542e4a979b25795b698618fe/kml?layers=58>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#319ee80ed5ff60d9b5a939063ff52a4d>.
+<#319ee80ed5ff60d9b5a939063ff52a4d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c60b>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.794Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#319ee80ed5ff60d9b5a939063ff52a4d> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c60b> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV"@nl;
+    <http://purl.org/dc/terms/description> "CSV"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b55d8d9d-eacd-3311-9444-52260129d3be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/81a087e8542e4a979b25795b698618fe/csv?layers=58>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ad706b572f17ab72574174337a710c7d>.
+<#ad706b572f17ab72574174337a710c7d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c60c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.795Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ad706b572f17ab72574174337a710c7d> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c60c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/description> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GEOJSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b55d8d9d-eacd-3311-9444-52260129d3be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/81a087e8542e4a979b25795b698618fe/geojson?layers=58>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9a31f884085e3893ac6c1d97c5dd47bb>.
+<#9a31f884085e3893ac6c1d97c5dd47bb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c632>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.796Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9a31f884085e3893ac6c1d97c5dd47bb> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c911-534a27d9a134c632> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b520b3d8-1581-4245-b939-12c012a59a05>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/erosie/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&SRS=EPSG%3A31370&WIDTH=558&HEIGHT=330&BBOX=130000,175000,140000,183000&layers=Bodemerosie_perceel_2013>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2d97d93b76ef4ad9b33ab5d6432ff7f6>.
+<#2d97d93b76ef4ad9b33ab5d6432ff7f6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/59426560-31d8-3cd5-bed5-d61538ed79c0>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.797Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2d97d93b76ef4ad9b33ab5d6432ff7f6> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/59426560-31d8-3cd5-bed5-d61538ed79c0> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "59426560-31d8-3cd5-bed5-d61538ed79c0";
+    <http://purl.org/dc/terms/title> "Bodemerosie_perceel_2013"@nl;
+    <http://purl.org/dc/terms/description> "KML Potentiële bodemerosiekaart per perceel (2013) (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151114_b151113_b151112_df_71_30162;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b520b3d8-1581-4245-b939-12c012a59a05>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/erosie/wms/kml?layers=Bodemerosie_perceel_2013>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151114_b151113_b151112_df_71_30162 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "Bodemerosie_perceel_2013"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#580c95c64e8eda4662f750afab068532>.
+<#580c95c64e8eda4662f750afab068532> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/d4468704-e9fa-3cc2-975e-d08f5ab8f6bb>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.798Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#580c95c64e8eda4662f750afab068532> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/d4468704-e9fa-3cc2-975e-d08f5ab8f6bb> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "d4468704-e9fa-3cc2-975e-d08f5ab8f6bb";
+    <http://purl.org/dc/terms/title> "Bodemerosie_perceel_2013"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map Potentiële bodemerosiekaart per perceel (2013) (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151117_b151116_b151115_df_71_30163;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b520b3d8-1581-4245-b939-12c012a59a05>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/erosie/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151117_b151116_b151115_df_71_30163 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "Bodemerosie_perceel_2013"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#abf54b27c68daa2712e3f8ac38d9b5ba>.
+<#abf54b27c68daa2712e3f8ac38d9b5ba> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/f8a45f3e-038c-39ae-9155-508efdb8e4f4>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.799Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#abf54b27c68daa2712e3f8ac38d9b5ba> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/f8a45f3e-038c-39ae-9155-508efdb8e4f4> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "f8a45f3e-038c-39ae-9155-508efdb8e4f4";
+    <http://purl.org/dc/terms/title> "Bodemerosie_perceel_2013"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature Potentiële bodemerosiekaart per perceel (2013) (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151120_b151119_b151118_df_71_30164;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b520b3d8-1581-4245-b939-12c012a59a05>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/erosie/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=Bodemerosie_perceel_2013>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151120_b151119_b151118_df_71_30164 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "Bodemerosie_perceel_2013"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e1049213576bf7dfc9e55742c79e8b1a>.
+<#e1049213576bf7dfc9e55742c79e8b1a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c698>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.800Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e1049213576bf7dfc9e55742c79e8b1a> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c698> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/description> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GEOJSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/251602ae-54c0-3844-8dd2-0d89b0e2d463>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/2984cad494b940e4af0b764228368117/geojson?layers=568>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#25ec63b62f52a0d35ada36ec017dea0f>.
+<#25ec63b62f52a0d35ada36ec017dea0f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c699>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.801Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#25ec63b62f52a0d35ada36ec017dea0f> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c699> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "KML"@nl;
+    <http://purl.org/dc/terms/description> "KML"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/251602ae-54c0-3844-8dd2-0d89b0e2d463>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/2984cad494b940e4af0b764228368117/kml?layers=568>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8d4b8618599ac705f7aba8faf4da6427>.
+<#8d4b8618599ac705f7aba8faf4da6427> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c69a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.802Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8d4b8618599ac705f7aba8faf4da6427> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c69a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV"@nl;
+    <http://purl.org/dc/terms/description> "CSV"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/251602ae-54c0-3844-8dd2-0d89b0e2d463>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/2984cad494b940e4af0b764228368117/csv?layers=568>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#77bca69510826109dedf9116ad1518a8>.
+<#77bca69510826109dedf9116ad1518a8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c69b>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.803Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#77bca69510826109dedf9116ad1518a8> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c69b> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS Hub Dataset"@nl;
+    <http://purl.org/dc/terms/description> "Web Page"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/HTML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/251602ae-54c0-3844-8dd2-0d89b0e2d463>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/maps/stadAntwerpen::taxistandplaatsen>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#46a493e8a6b8b1b38f53c9696ab679a5>.
+<#46a493e8a6b8b1b38f53c9696ab679a5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c69c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.804Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#46a493e8a6b8b1b38f53c9696ab679a5> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c69c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS GeoService"@nl;
+    <http://purl.org/dc/terms/description> "Esri REST"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/251602ae-54c0-3844-8dd2-0d89b0e2d463>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek5/MapServer/568>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b20b4a69d410750e9badac6f82b815e7>.
+<#b20b4a69d410750e9badac6f82b815e7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c69d>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.804Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b20b4a69d410750e9badac6f82b815e7> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c69d> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ZIP"@nl;
+    <http://purl.org/dc/terms/description> "Shapefile"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ZIP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/251602ae-54c0-3844-8dd2-0d89b0e2d463>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/2984cad494b940e4af0b764228368117/shapefile?layers=568>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e978ffc96819e3a5abea3bc75ef355cc>.
+<#e978ffc96819e3a5abea3bc75ef355cc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c75d>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.805Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e978ffc96819e3a5abea3bc75ef355cc> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c75d> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24fe48f1-dfb7-4c33-9f59-07ccfd8fd915>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/gmk/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kb_15_3_8_p8_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#782bfc301d301dd3c5e03079dfae0bbc>.
+<#782bfc301d301dd3c5e03079dfae0bbc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/1abe59e8-30b4-3d10-a202-a0fb04281c03>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.806Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#782bfc301d301dd3c5e03079dfae0bbc> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/1abe59e8-30b4-3d10-a202-a0fb04281c03> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "1abe59e8-30b4-3d10-a202-a0fb04281c03";
+    <http://purl.org/dc/terms/title> "kb_15_3_8_p8_v"@nl;
+    <http://purl.org/dc/terms/description> "KML Grondmechanische kaart 15.3.8 Hoboken, Plaat VIII: Zonering (vector) (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151144_b151143_b151142_df_71_30171;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24fe48f1-dfb7-4c33-9f59-07ccfd8fd915>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/gmk/wms/kml?layers=kb_15_3_8_p8_v>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151144_b151143_b151142_df_71_30171 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "kb_15_3_8_p8_v"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#81989669e6a8e525c7f0878382cb0e92>.
+<#81989669e6a8e525c7f0878382cb0e92> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/f1330b96-2228-3f62-95c5-972a396647d9>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.807Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#81989669e6a8e525c7f0878382cb0e92> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/f1330b96-2228-3f62-95c5-972a396647d9> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "f1330b96-2228-3f62-95c5-972a396647d9";
+    <http://purl.org/dc/terms/title> "kb_15_3_8_p8_v"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map Grondmechanische kaart 15.3.8 Hoboken, Plaat VIII: Zonering (vector) (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151147_b151146_b151145_df_71_30172;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24fe48f1-dfb7-4c33-9f59-07ccfd8fd915>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/gmk/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151147_b151146_b151145_df_71_30172 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "kb_15_3_8_p8_v"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#aec98d4c6df9cd30d13b54d74ff5eb5e>.
+<#aec98d4c6df9cd30d13b54d74ff5eb5e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/40f37223-36b1-3194-8dda-cbcc7961998c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.808Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#aec98d4c6df9cd30d13b54d74ff5eb5e> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/40f37223-36b1-3194-8dda-cbcc7961998c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "40f37223-36b1-3194-8dda-cbcc7961998c";
+    <http://purl.org/dc/terms/title> "kb_15_3_8_p8_v"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature Grondmechanische kaart 15.3.8 Hoboken, Plaat VIII: Zonering (vector) (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151150_b151149_b151148_df_71_30173;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24fe48f1-dfb7-4c33-9f59-07ccfd8fd915>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/gmk/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=kb_15_3_8_p8_v>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151150_b151149_b151148_df_71_30173 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "kb_15_3_8_p8_v"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#59158347b4a967b4be59b888e2b13311>.
+<#59158347b4a967b4be59b888e2b13311> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/288f57dd-82ef-39e0-9f90-0a7b0383ffaf>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.810Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#59158347b4a967b4be59b888e2b13311> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/288f57dd-82ef-39e0-9f90-0a7b0383ffaf> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "288f57dd-82ef-39e0-9f90-0a7b0383ffaf";
+    <http://purl.org/dc/terms/title> "GeoTIFF van de Grondmechanische kaart 15.3.8 Hoboken, inclusief GeoTIFF Plaat VIII: Zonering"@nl;
+    <http://purl.org/dc/terms/description> "GeoTIFF van de Grondmechanische kaart 15.3.8 Hoboken, inclusief GeoTIFF Plaat VIII: Zonering"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24fe48f1-dfb7-4c33-9f59-07ccfd8fd915>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://datasets.omgeving.vlaanderen.be/be.vlaanderen.omgeving.distribution.geo.d8b63799-453d-48f1-bd76-f0e06d1fb94c.15_3_8_Hoboken_zip>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#dd8736e45d6bdf61c52e4971441a9f52>.
+<#dd8736e45d6bdf61c52e4971441a9f52> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/1ed68f80-f561-39c6-94da-9ff7c6bfd67e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.810Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dd8736e45d6bdf61c52e4971441a9f52> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/1ed68f80-f561-39c6-94da-9ff7c6bfd67e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "1ed68f80-f561-39c6-94da-9ff7c6bfd67e";
+    <http://purl.org/dc/terms/title> "Verklarende tekst Grondmechanische kaart 15.3.8 Hoboken (Ph. Van Burm en J. Maertens onder leiding van E. De Beer en W. De Breuck)."@nl;
+    <http://purl.org/dc/terms/description> "Verklarende tekst Grondmechanische kaart 15.3.8 Hoboken (Ph. Van Burm en J. Maertens onder leiding van E. De Beer en W. De Breuck)."@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24fe48f1-dfb7-4c33-9f59-07ccfd8fd915>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://datasets.omgeving.vlaanderen.be/be.vlaanderen.omgeving.distribution.geo.d8b63799-453d-48f1-bd76-f0e06d1fb94c.15_3_8_VerklarendeTekst_Hoboken_pdf>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ff63579a4da62aa5f7ba550ac8a11cdb>.
+<#ff63579a4da62aa5f7ba550ac8a11cdb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/8b62b82e-532d-3ef2-913d-0abcdcc0827d>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.811Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ff63579a4da62aa5f7ba550ac8a11cdb> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/8b62b82e-532d-3ef2-913d-0abcdcc0827d> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "8b62b82e-532d-3ef2-913d-0abcdcc0827d";
+    <http://purl.org/dc/terms/title> "Shapefile van de gekarteerde zones van de grondmechanische kaarten"@nl;
+    <http://purl.org/dc/terms/description> "Shapefile van de gekarteerde zones van de grondmechanische kaarten"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24fe48f1-dfb7-4c33-9f59-07ccfd8fd915>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://datasets.omgeving.vlaanderen.be/be.vlaanderen.omgeving.distribution.geo.3a5d9049-9903-488f-aa80-e9f5bb045df9.Gekarteerde_Zones_Grondmechanischekaart_zip>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1d5281958f0a28927535720a144fc772>.
+<#1d5281958f0a28927535720a144fc772> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c808>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.812Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1d5281958f0a28927535720a144fc772> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c808> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24f1aea8-6312-4ab5-b1a8-9158cab16575>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/ontginningen/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=vergunningen&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c5ce04110ef5b74ee1c6422d65527c3e>.
+<#c5ce04110ef5b74ee1c6422d65527c3e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/fbcee023-8e41-3dbc-b5ce-6dc994276af8>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.813Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c5ce04110ef5b74ee1c6422d65527c3e> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/fbcee023-8e41-3dbc-b5ce-6dc994276af8> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "fbcee023-8e41-3dbc-b5ce-6dc994276af8";
+    <http://purl.org/dc/terms/title> "vergunningen"@nl;
+    <http://purl.org/dc/terms/description> "KML Ontginningen: vergunningen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151165_b151164_b151163_df_71_30178;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24f1aea8-6312-4ab5-b1a8-9158cab16575>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/ontginningen/wms/kml?layers=vergunningen>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151165_b151164_b151163_df_71_30178 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "vergunningen"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d0eecdc77297edba7ad38ad5d02ae61a>.
+<#d0eecdc77297edba7ad38ad5d02ae61a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/b9a79876-723b-3b60-9919-a18ded82fd27>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.814Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d0eecdc77297edba7ad38ad5d02ae61a> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/b9a79876-723b-3b60-9919-a18ded82fd27> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "b9a79876-723b-3b60-9919-a18ded82fd27";
+    <http://purl.org/dc/terms/title> "vergunningen"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map Ontginningen: vergunningen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151168_b151167_b151166_df_71_30179;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24f1aea8-6312-4ab5-b1a8-9158cab16575>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/ontginningen/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151168_b151167_b151166_df_71_30179 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "vergunningen"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1b782b095fccf37a4494eb7535fbeb29>.
+<#1b782b095fccf37a4494eb7535fbeb29> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/74535d7f-7e8a-30ea-8abd-781f5ea61a60>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.815Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1b782b095fccf37a4494eb7535fbeb29> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/74535d7f-7e8a-30ea-8abd-781f5ea61a60> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "74535d7f-7e8a-30ea-8abd-781f5ea61a60";
+    <http://purl.org/dc/terms/title> "vergunningen"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature Ontginningen: vergunningen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151171_b151170_b151169_df_71_30180;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24f1aea8-6312-4ab5-b1a8-9158cab16575>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/ontginningen/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=vergunningen>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151171_b151170_b151169_df_71_30180 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "vergunningen"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#94a15425e4c721018cbda993e99adc6f>.
+<#94a15425e4c721018cbda993e99adc6f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c83e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.816Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#94a15425e4c721018cbda993e99adc6f> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c83e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24ef9f8d-4c27-4911-84de-bd8d716279d0>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kem_hyd_br_ook1&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f11051b09697bbee2feb51c21e85bc78>.
+<#f11051b09697bbee2feb51c21e85bc78> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/785d02d3-9c9e-3590-bfa8-3801b8e82b20>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.817Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f11051b09697bbee2feb51c21e85bc78> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/785d02d3-9c9e-3590-bfa8-3801b8e82b20> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "785d02d3-9c9e-3590-bfa8-3801b8e82b20";
+    <http://purl.org/dc/terms/title> "kem_hyd_br_ook1"@nl;
+    <http://purl.org/dc/terms/description> "KML H3O-De Kempen - Hydrogeologie- Breuken Oosterhout klei 1 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151177_b151176_b151175_df_71_30182;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24ef9f8d-4c27-4911-84de-bd8d716279d0>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o/wms/kml?layers=kem_hyd_br_ook1>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151177_b151176_b151175_df_71_30182 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "kem_hyd_br_ook1"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3b58bdf76c767cf5b2ba1f8c1d4dd02e>.
+<#3b58bdf76c767cf5b2ba1f8c1d4dd02e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/3f4c1478-9792-3f1b-b65f-ae78feb59bd8>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.818Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3b58bdf76c767cf5b2ba1f8c1d4dd02e> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/3f4c1478-9792-3f1b-b65f-ae78feb59bd8> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "3f4c1478-9792-3f1b-b65f-ae78feb59bd8";
+    <http://purl.org/dc/terms/title> "kem_hyd_br_ook1"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map H3O-De Kempen - Hydrogeologie- Breuken Oosterhout klei 1 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151180_b151179_b151178_df_71_30183;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24ef9f8d-4c27-4911-84de-bd8d716279d0>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151180_b151179_b151178_df_71_30183 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "kem_hyd_br_ook1"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c44c3cacbd0d1c6533ce9b8b1081a477>.
+<#c44c3cacbd0d1c6533ce9b8b1081a477> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/8c80adc8-475d-3019-b87d-4659b68e0dd0>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.824Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c44c3cacbd0d1c6533ce9b8b1081a477> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/8c80adc8-475d-3019-b87d-4659b68e0dd0> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "8c80adc8-475d-3019-b87d-4659b68e0dd0";
+    <http://purl.org/dc/terms/title> "kem_hyd_br_ook1"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature H3O-De Kempen - Hydrogeologie- Breuken Oosterhout klei 1 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151183_b151182_b151181_df_71_30184;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/24ef9f8d-4c27-4911-84de-bd8d716279d0>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=kem_hyd_br_ook1>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151183_b151182_b151181_df_71_30184 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "kem_hyd_br_ook1"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#37d4037c90c07594088e5b3e3b78d9a4>.
+<#37d4037c90c07594088e5b3e3b78d9a4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c856>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.825Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#37d4037c90c07594088e5b3e3b78d9a4> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c914-534a27d9a134c856> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/2569e1b5-5ff1-4924-a21e-228ae6dab17c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/bemaling/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=actieve_bemalingen&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#402014adfeadce28e3f67f238e7673b1>.
+<#402014adfeadce28e3f67f238e7673b1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/f8b1d9f5-3bcd-3d04-ab0e-c21b0a748876>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.826Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#402014adfeadce28e3f67f238e7673b1> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/f8b1d9f5-3bcd-3d04-ab0e-c21b0a748876> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "f8b1d9f5-3bcd-3d04-ab0e-c21b0a748876";
+    <http://purl.org/dc/terms/title> "actieve_bemalingen"@nl;
+    <http://purl.org/dc/terms/description> "KML Actieve bemalingen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151189_b151188_b151187_df_71_30188;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/2569e1b5-5ff1-4924-a21e-228ae6dab17c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/bemaling/wms/kml?layers=actieve_bemalingen>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151189_b151188_b151187_df_71_30188 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "actieve_bemalingen"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8cf4ddc8184e7b99093a4304663ccd25>.
+<#8cf4ddc8184e7b99093a4304663ccd25> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/3e7bc4ec-5f97-39bd-90a2-f5e05930ca6f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.827Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8cf4ddc8184e7b99093a4304663ccd25> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/3e7bc4ec-5f97-39bd-90a2-f5e05930ca6f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "3e7bc4ec-5f97-39bd-90a2-f5e05930ca6f";
+    <http://purl.org/dc/terms/title> "actieve_bemalingen"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map Actieve bemalingen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151192_b151191_b151190_df_71_30189;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/2569e1b5-5ff1-4924-a21e-228ae6dab17c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/bemaling/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151192_b151191_b151190_df_71_30189 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "actieve_bemalingen"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5ad94766491e056c02e2eff5a1f27bbf>.
+<#5ad94766491e056c02e2eff5a1f27bbf> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/ca323591-d235-3761-b675-4b42812df42d>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.828Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5ad94766491e056c02e2eff5a1f27bbf> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/ca323591-d235-3761-b675-4b42812df42d> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "ca323591-d235-3761-b675-4b42812df42d";
+    <http://purl.org/dc/terms/title> "actieve_bemalingen"@nl;
+    <http://purl.org/dc/terms/description> "WFS-feature Actieve bemalingen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151195_b151194_b151193_df_71_30190;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/2569e1b5-5ff1-4924-a21e-228ae6dab17c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/bemaling/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=actieve_bemalingen>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151195_b151194_b151193_df_71_30190 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "actieve_bemalingen"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2dfc5aad6a664e6ae33e7534ff2e5ae8>.
+<#2dfc5aad6a664e6ae33e7534ff2e5ae8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c1340-534a27d9a135e0cf>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.829Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2dfc5aad6a664e6ae33e7534ff2e5ae8> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c1340-534a27d9a135e0cf> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jp2>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG2000>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/0da2e5e4-6886-426b-bb82-c0ffe6faeff6>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/0da2e5e4-6886-426b-bb82-c0ffe6faeff6/attachments/DHMVII_DSM_sintpieters_1414149877516.jpg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6c9e59fbdc5d9b2f2dfdaf396f4c655f>.
+<#6c9e59fbdc5d9b2f2dfdaf396f4c655f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c1340-534a27d9a135e0d0>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.830Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6c9e59fbdc5d9b2f2dfdaf396f4c655f> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c1340-534a27d9a135e0d0> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jp2>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG2000>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/0da2e5e4-6886-426b-bb82-c0ffe6faeff6>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/0da2e5e4-6886-426b-bb82-c0ffe6faeff6/attachments/DHMVII_DSM_1m_1461230028348.jpg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e78e2c4c455cdffc46652de8894cfa9c>.
+<#e78e2c4c455cdffc46652de8894cfa9c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://metadata.vlaanderen.be/srv/resources/distributions/017bbf9e-dd65-32aa-b586-fbb346639cf1>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.831Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e78e2c4c455cdffc46652de8894cfa9c> {
+<https://metadata.vlaanderen.be/srv/resources/distributions/017bbf9e-dd65-32aa-b586-fbb346639cf1> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "017bbf9e-dd65-32aa-b586-fbb346639cf1";
+    <http://purl.org/dc/terms/title> "Digitaal Hoogtemodel Vlaanderen II, DSM, raster, 1 m"@nl;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/WWW:DOWNLOAD-1.0-http--download>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GEOTIFF>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/0da2e5e4-6886-426b-bb82-c0ffe6faeff6>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://download.vlaanderen.be/Producten/Detail?id=937&title=Digitaal_Hoogtemodel_Vlaanderen_II_DSM_raster_1_m>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5edf309437facad393b694e575a6f419>.
+<#5edf309437facad393b694e575a6f419> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://metadata.vlaanderen.be/srv/resources/distributions/bbce9881-71d3-3344-8a2d-09ea72cdb1e1>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.832Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5edf309437facad393b694e575a6f419> {
+<https://metadata.vlaanderen.be/srv/resources/distributions/bbce9881-71d3-3344-8a2d-09ea72cdb1e1> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "bbce9881-71d3-3344-8a2d-09ea72cdb1e1";
+    <http://purl.org/dc/terms/title> "DHMVII_DSM_1m"@nl;
+    <http://purl.org/dc/terms/description> "Digitaal Hoogtemodel Vlaanderen II, digitaal oppervlaktemodel 1m (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151207_b151206_b151205_df_71_30193;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/0da2e5e4-6886-426b-bb82-c0ffe6faeff6>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geo.api.vlaanderen.be/dhmv/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151207_b151206_b151205_df_71_30193 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "DHMVII_DSM_1m"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b67fc6dec69545f9cc7daab7740fb7ee>.
+<#b67fc6dec69545f9cc7daab7740fb7ee> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://metadata.vlaanderen.be/srv/resources/distributions/f916808c-9da4-32d2-afbe-a64528418d4a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.833Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b67fc6dec69545f9cc7daab7740fb7ee> {
+<https://metadata.vlaanderen.be/srv/resources/distributions/f916808c-9da4-32d2-afbe-a64528418d4a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "f916808c-9da4-32d2-afbe-a64528418d4a";
+    <http://purl.org/dc/terms/title> "DHMVII_DSM_1m"@nl;
+    <http://purl.org/dc/terms/description> "Digitaal oppervlaktemodel (DSM, 'digital surface model') van het maaiveld inclusief objecten in rasterformaat met een grondresolutie van 1m. Dit DSM werd afgeleid van LiDAR-hoogtegegevens die in het kader van het Digitaal Hoogtemodel Vlaanderen II (DHMV-II) werden ingewonnen (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151210_b151209_b151208_df_71_30194;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-2.0.1-http-get-coverage>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WCS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/0da2e5e4-6886-426b-bb82-c0ffe6faeff6>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geo.api.vlaanderen.be/DHMV/wcs?SERVICE=WCS&VERSION=2.0.1&request=GetCoverage&CRS=EPSG:31370&subset=x,http://www.opengis.net/def/crs/EPSG/0/31370(102200,102700)&subset=y,http://www.opengis.net/def/crs/EPSG/0/31370(192500,193000)&scalefactor=2&COVERAGEID=DHMVII_DSM_1m&FORMAT=image/tiff&RESPONSE_CRS=EPSG:31370>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151210_b151209_b151208_df_71_30194 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "DHMVII_DSM_1m"^^<http://www.opengis.net/wcs#CoverageDescription>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d69461a3527eed6d5e71ae2f99595485>.
+<#d69461a3527eed6d5e71ae2f99595485> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c917-534a27d9a134c8b8>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.834Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d69461a3527eed6d5e71ae2f99595485> {
+<http://data.gov.be/.well-known/genid/5b6b092572784ed3952148ceb27cd64c917-534a27d9a134c8b8> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/8d290b5a-886a-476a-9465-696b765bd113>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0257_ip&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0cd1dc77a5cf1abd17cfce5610d2fcd2>.
+<#0cd1dc77a5cf1abd17cfce5610d2fcd2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/6aff2c12-0b11-39e1-9fb9-d91853d8a319>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.835Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0cd1dc77a5cf1abd17cfce5610d2fcd2> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/6aff2c12-0b11-39e1-9fb9-d91853d8a319> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "6aff2c12-0b11-39e1-9fb9-d91853d8a319";
+    <http://purl.org/dc/terms/title> "h3d_A0257_ip"@nl;
+    <http://purl.org/dc/terms/description> "KML H3Dv2 A0257, isopachen Voort zand 2 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151216_b151215_b151214_df_71_30197;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/8d290b5a-886a-476a-9465-696b765bd113>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms/kml?layers=h3d_A0257_ip>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151216_b151215_b151214_df_71_30197 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "h3d_A0257_ip"
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d6fbefe0ba888766e794e8ef1461da2a>.
+<#d6fbefe0ba888766e794e8ef1461da2a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/bd006fd4-3eca-30e5-b242-d64c0cc9156c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-06T18:50:43.837Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d6fbefe0ba888766e794e8ef1461da2a> {
+<https://www.dov.vlaanderen.be/geonetwork/srv/resources/distributions/bd006fd4-3eca-30e5-b242-d64c0cc9156c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "bd006fd4-3eca-30e5-b242-d64c0cc9156c";
+    <http://purl.org/dc/terms/title> "h3d_A0257_ip"@nl;
+    <http://purl.org/dc/terms/description> "WMS-map H3Dv2 A0257, isopachen Voort zand 2 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b151219_b151218_b151217_df_71_30198;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/8d290b5a-886a-476a-9465-696b765bd113>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&version=1.3.0&request=GetMap>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b151219_b151218_b151217_df_71_30198 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "h3d_A0257_ip"^^<http://www.opengis.net/wms#Layer>
+}
+<index.trig> <https://w3id.org/tree#relation> _:df_61_538.
+_:df_61_538 a <https://w3id.org/tree#GreaterThanOrEqualToRelation>;
+    <https://w3id.org/tree#node> <../2025-02-05T15%3A28%3A07.500Z_123187500_504/index.trig>;
+    <https://w3id.org/tree#path> <https://www.w3.org/ns/activitystreams#published>;
+    <https://w3id.org/tree#value> "2025-02-06T18:50:43.838Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
