@@ -1,0 +1,1178 @@
+<../../../index.trig> a <https://w3id.org/ldes#EventStream>.
+<index.trig> a <https://w3id.org/tree#Node>;
+    <http://purl.org/dc/terms/isPartOf> <../../../index.trig>.
+<../../../index.trig> <https://w3id.org/tree#member> <#f4f28a765f8dcb448de9e941ce2a54ea>.
+<#f4f28a765f8dcb448de9e941ce2a54ea> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://metadata.omgeving.vlaanderen.be/srv/resources/distributions/10b9911f-bf0d-3593-8d6c-023597b1fcdb>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.961Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f4f28a765f8dcb448de9e941ce2a54ea> {
+<https://metadata.omgeving.vlaanderen.be/srv/resources/distributions/10b9911f-bf0d-3593-8d6c-023597b1fcdb> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "10b9911f-bf0d-3593-8d6c-023597b1fcdb";
+    <http://purl.org/dc/terms/title> "lu:lu_gbo_vbu_lgd2"@nl;
+    <http://purl.org/dc/terms/description> "WMS-getmap Vlaanderen Breekt Uit - Subsidieoproepen lokale gebiedsdeals droogte 2 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b49517_b49516_b49515_df_71_28150;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WMS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/390e21fe-5373-5e57-8715-aa77baa24d95>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?SERVICE=WMS&service=WMS&version=1.3.0&request=GetMap&FORMAT=image/png&LAYERS=lu:lu_gbo_vbu_lgd2&SRS=EPSG%3A31370&WIDTH=770&HEIGHT=335&BBOX=22500,148200,257700,249001>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b49517_b49516_b49515_df_71_28150 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "lu:lu_gbo_vbu_lgd2"^^<http://www.opengis.net/wms#Layer>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c93e3325e7dde283015b9b0fe9f0a7c6>.
+<#c93e3325e7dde283015b9b0fe9f0a7c6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://metadata.omgeving.vlaanderen.be/srv/resources/distributions/234bd676-6563-3333-af00-f076df4bdd39>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.963Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c93e3325e7dde283015b9b0fe9f0a7c6> {
+<https://metadata.omgeving.vlaanderen.be/srv/resources/distributions/234bd676-6563-3333-af00-f076df4bdd39> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "234bd676-6563-3333-af00-f076df4bdd39";
+    <http://purl.org/dc/terms/title> "lu:lu_gbo_vbu_lgd2"@nl;
+    <http://purl.org/dc/terms/description> "WFS-getfeature Vlaanderen Breekt Uit - Subsidieoproepen lokale gebiedsdeals droogte 2 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b49520_b49519_b49518_df_71_28151;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/WFS_SRVC>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/390e21fe-5373-5e57-8715-aa77baa24d95>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?service=WFS&version=2.0.0&request=getFeature&typeName=lu:lu_gbo_vbu_lgd2&count=1>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b49520_b49519_b49518_df_71_28151 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "lu:lu_gbo_vbu_lgd2"^^<http://www.opengis.net/wfs#FeatureType>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d0cb10225adef15ecca5c8470a7b8418>.
+<#d0cb10225adef15ecca5c8470a7b8418> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <https://metadata.omgeving.vlaanderen.be/srv/resources/distributions/82fb2620-76a0-3c03-a2b7-7ffa02d17beb>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.964Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d0cb10225adef15ecca5c8470a7b8418> {
+<https://metadata.omgeving.vlaanderen.be/srv/resources/distributions/82fb2620-76a0-3c03-a2b7-7ffa02d17beb> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/identifier> "82fb2620-76a0-3c03-a2b7-7ffa02d17beb";
+    <http://purl.org/dc/terms/title> "lu:lu_gbo_vbu_lgd2"@nl;
+    <http://purl.org/dc/terms/description> "OGC Features API: Vlaanderen Breekt Uit - Subsidieoproepen lokale gebiedsdeals droogte 2 (De accessURL verwijst naar een gelimiteerde set van data, volgens de INSPIRE afspraken)"@nl;
+    <http://www.w3.org/ns/adms#identifier> _:b49523_b49522_b49521_df_71_28152;
+    <http://purl.org/dc/terms/conformsTo> <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:OGC-API-Features>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/390e21fe-5373-5e57-8715-aa77baa24d95>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ogc/features/v1/collections/lu:lu_gbo_vbu_lgd2>;
+    <http://purl.org/dc/terms/license> <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:b49523_b49522_b49521_df_71_28152 a <http://www.w3.org/ns/adms#Identifier>;
+    <http://www.w3.org/2004/02/skos/core#notation> "lu:lu_gbo_vbu_lgd2"^^<http://www.opengis.net/ogcapi-features-1/1.0#Collection>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#15edb3861f133c07f70c85c623e97b07>.
+<#15edb3861f133c07f70c85c623e97b07> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6d15>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.967Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#15edb3861f133c07f70c85c623e97b07> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6d15> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3919ce51-d8fe-44bc-ace4-4074e35953b5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0161_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4a300c0e2d13f0ecf351f4b93ec75f43>.
+<#4a300c0e2d13f0ecf351f4b93ec75f43> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6cf5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.969Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4a300c0e2d13f0ecf351f4b93ec75f43> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6cf5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3931a63b-8be7-4d1d-bf32-a1ffcb896476>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/ondiepvoxelmodel/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=oav1_0102Q_Vl_b&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#09f4fb726cff6dca53947d0169866597>.
+<#09f4fb726cff6dca53947d0169866597> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6c7a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.970Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#09f4fb726cff6dca53947d0169866597> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6c7a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/394814f1-e742-493c-8e63-b90bf90a2ccd>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_0803CA_Di_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#bfe2862b72114cde296e148a15832d09>.
+<#bfe2862b72114cde296e148a15832d09> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6bfd>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.972Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#bfe2862b72114cde296e148a15832d09> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6bfd> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3921ee94-cb72-4564-bb04-8ef5760100a9>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_0307PA_Sh_b_se&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#dc0b2c44bbf4812e62bc377d98c23efe>.
+<#dc0b2c44bbf4812e62bc377d98c23efe> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6bdd>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.973Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dc0b2c44bbf4812e62bc377d98c23efe> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583848-560032beb2ac6bdd> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/396aa64c-7aa0-4f82-a18a-03a050892fa9>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0442_t_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#236c696bc9b3458f2fac6ddedd5e6858>.
+<#236c696bc9b3458f2fac6ddedd5e6858> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6b53>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.974Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#236c696bc9b3458f2fac6ddedd5e6858> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6b53> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/9705e684-e6a5-41af-b3b0-ceaa0011e46b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0200_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d512973ccfff114cc736f98fb695503f>.
+<#d512973ccfff114cc736f98fb695503f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6b33>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.975Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d512973ccfff114cc736f98fb695503f> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6b33> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/973ae170-0605-4e73-99ce-3facebea0128>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0611_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5f41ab671957f7005b49e752da9b0a17>.
+<#5f41ab671957f7005b49e752da9b0a17> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6b13>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.977Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5f41ab671957f7005b49e752da9b0a17> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6b13> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/973ae170-0605-4e73-99ce-3facebea0127>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0611_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ceff87401ceb4eb4f8fff41d0670cc6e>.
+<#ceff87401ceb4eb4f8fff41d0670cc6e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6ae2>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.978Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ceff87401ceb4eb4f8fff41d0670cc6e> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6ae2> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/9705e684-e6a5-41af-b3b0-ceaa0011e46a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0200_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a4a12cf45b053905784825a087208590>.
+<#a4a12cf45b053905784825a087208590> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6a86>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.980Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a4a12cf45b053905784825a087208590> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6a86> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/9735da41-eedd-4d32-a4e9-090dc89fc668>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0453_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e7354bd6d187d057a2d037df09ea01bc>.
+<#e7354bd6d187d057a2d037df09ea01bc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6a26>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.981Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e7354bd6d187d057a2d037df09ea01bc> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac6a26> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/9735da41-eedd-4d32-a4e9-090dc89fc669>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0453_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4d6eac9f1f374b4097f4fabe0a413cb8>.
+<#4d6eac9f1f374b4097f4fabe0a413cb8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69d0>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.982Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4d6eac9f1f374b4097f4fabe0a413cb8> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69d0> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS GeoService"@nl;
+    <http://purl.org/dc/terms/description> "Esri REST"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/96ebd74d-1565-3715-b089-015dfaa5e0ac>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek4/MapServer/265>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5c797d4ade19b8e8768de48bb338911e>.
+<#5c797d4ade19b8e8768de48bb338911e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69cf>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.983Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5c797d4ade19b8e8768de48bb338911e> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69cf> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "KML"@nl;
+    <http://purl.org/dc/terms/description> "KML"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/96ebd74d-1565-3715-b089-015dfaa5e0ac>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/a38c0b19b927497d977af80481a78665/kml?layers=265>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d670a9ef06c892231dfa65321c7d6bdf>.
+<#d670a9ef06c892231dfa65321c7d6bdf> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69ce>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.984Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d670a9ef06c892231dfa65321c7d6bdf> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69ce> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/description> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GEOJSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/96ebd74d-1565-3715-b089-015dfaa5e0ac>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/a38c0b19b927497d977af80481a78665/geojson?layers=265>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#21cc7b04afd6e99b3a6357126e8ba60c>.
+<#21cc7b04afd6e99b3a6357126e8ba60c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69cd>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.990Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#21cc7b04afd6e99b3a6357126e8ba60c> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69cd> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS Hub Dataset"@nl;
+    <http://purl.org/dc/terms/description> "Web Page"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/HTML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/96ebd74d-1565-3715-b089-015dfaa5e0ac>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/maps/stadAntwerpen::drinkfontein>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9acb71c40e79e5135bf29d5ba5dca990>.
+<#9acb71c40e79e5135bf29d5ba5dca990> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69cc>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.991Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9acb71c40e79e5135bf29d5ba5dca990> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69cc> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV"@nl;
+    <http://purl.org/dc/terms/description> "CSV"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/96ebd74d-1565-3715-b089-015dfaa5e0ac>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/a38c0b19b927497d977af80481a78665/csv?layers=265>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#bc748f6e85e82cbeb37b365792f50604>.
+<#bc748f6e85e82cbeb37b365792f50604> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69cb>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.992Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#bc748f6e85e82cbeb37b365792f50604> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583851-560032beb2ac69cb> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ZIP"@nl;
+    <http://purl.org/dc/terms/description> "Shapefile"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ZIP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/96ebd74d-1565-3715-b089-015dfaa5e0ac>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/a38c0b19b927497d977af80481a78665/shapefile?layers=265>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f0e4961a6b068fffe84ec66a245bf22a>.
+<#f0e4961a6b068fffe84ec66a245bf22a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583854-560032beb2ac6984>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.993Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f0e4961a6b068fffe84ec66a245bf22a> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583854-560032beb2ac6984> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/EB663873-A808-49A1-BC22-688A30A2E330>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/EB663873-A808-49A1-BC22-688A30A2E330/attachments/mdv-static-349.jpeg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#97035de29fbdfe59720167a2b3b91d0d>.
+<#97035de29fbdfe59720167a2b3b91d0d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583854-560032beb2ac6976>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.994Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#97035de29fbdfe59720167a2b3b91d0d> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583854-560032beb2ac6976> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/EDCFB583-A58A-4BDD-BB30-6A4BBAE529F9>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/EDCFB583-A58A-4BDD-BB30-6A4BBAE529F9/attachments/mdv-static-67.jpeg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e36b4c19ff59e26b42406ee0062f5f5d>.
+<#e36b4c19ff59e26b42406ee0062f5f5d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583854-560032beb2ac6953>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.995Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e36b4c19ff59e26b42406ee0062f5f5d> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583854-560032beb2ac6953> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/EC6158B4-7B8C-4B64-B770-533E2F12EF39>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/EC6158B4-7B8C-4B64-B770-533E2F12EF39/attachments/mdv-static-427.jpeg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4e41100d3a8f2e5097dc6eeca18b7609>.
+<#4e41100d3a8f2e5097dc6eeca18b7609> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68d0>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.996Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4e41100d3a8f2e5097dc6eeca18b7609> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68d0> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d117f0d-ca4f-445a-8f7c-da4c7a4deea1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/33ced40c-973f-4395-941b-39e89f0ecf0b/attachments/Brownfieldconvenanten_1486135916908.JPG>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#205384276267fc412311fa49080e0016>.
+<#205384276267fc412311fa49080e0016> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68ca>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.997Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#205384276267fc412311fa49080e0016> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68ca> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ZIP"@nl;
+    <http://purl.org/dc/terms/description> "Shapefile"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ZIP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d0464cd-e05d-30b8-a801-525c010d1f58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/d620d395b32c461396be99202c51de51/shapefile?layers=802>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#bb1d172ce24f6c4be276dfb95b1ef6f8>.
+<#bb1d172ce24f6c4be276dfb95b1ef6f8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c9>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.998Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#bb1d172ce24f6c4be276dfb95b1ef6f8> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c9> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS Hub Dataset"@nl;
+    <http://purl.org/dc/terms/description> "Web Page"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/HTML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d0464cd-e05d-30b8-a801-525c010d1f58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/maps/stadAntwerpen::toegangsbeperking>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e5ccc9b6b075592642e409c00294cc16>.
+<#e5ccc9b6b075592642e409c00294cc16> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c8>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:06.999Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e5ccc9b6b075592642e409c00294cc16> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c8> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS GeoService"@nl;
+    <http://purl.org/dc/terms/description> "Esri REST"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d0464cd-e05d-30b8-a801-525c010d1f58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek7/MapServer/802>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d1c0047c59d39bf61894198968768baf>.
+<#d1c0047c59d39bf61894198968768baf> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c7>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d1c0047c59d39bf61894198968768baf> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c7> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "KML"@nl;
+    <http://purl.org/dc/terms/description> "KML"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d0464cd-e05d-30b8-a801-525c010d1f58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/d620d395b32c461396be99202c51de51/kml?layers=802>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#28a77953add8a3ec8ee9fe218c4f555e>.
+<#28a77953add8a3ec8ee9fe218c4f555e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.001Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#28a77953add8a3ec8ee9fe218c4f555e> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/description> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GEOJSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d0464cd-e05d-30b8-a801-525c010d1f58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/d620d395b32c461396be99202c51de51/geojson?layers=802>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#370d531de1f360f5a9aa5449a55e069f>.
+<#370d531de1f360f5a9aa5449a55e069f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.002Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#370d531de1f360f5a9aa5449a55e069f> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68c5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV"@nl;
+    <http://purl.org/dc/terms/description> "CSV"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d0464cd-e05d-30b8-a801-525c010d1f58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/d620d395b32c461396be99202c51de51/csv?layers=802>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6524cfd814ec58d36b5429ab1cedfd69>.
+<#6524cfd814ec58d36b5429ab1cedfd69> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68a1>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.003Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6524cfd814ec58d36b5429ab1cedfd69> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac68a1> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d045399-a55f-4c95-966e-113a914baf0a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0183_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5fcb2c4f92b62de541388212262a98d1>.
+<#5fcb2c4f92b62de541388212262a98d1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac6881>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.004Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5fcb2c4f92b62de541388212262a98d1> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac6881> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d045399-a55f-4c95-966e-113a914baf0b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0183_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#692339f0e5db3eb4bff549a25440153d>.
+<#692339f0e5db3eb4bff549a25440153d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac6831>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.005Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#692339f0e5db3eb4bff549a25440153d> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac6831> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d0f6364-0263-4d7a-b138-e4339dc8ce9e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/gmk/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kb_15_3_7_p8_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2cd28fd1900dcfc64c95f9ffadba6c79>.
+<#2cd28fd1900dcfc64c95f9ffadba6c79> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac67da>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.007Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2cd28fd1900dcfc64c95f9ffadba6c79> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac67da> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d3d6c2e-4f60-4698-9e8d-ad22df6afea4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/dov-pub/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&bbox=26769.0%2C156316.0%2C247833.0%2C237303.6&width=768&height=330&srs=EPSG%3A31370&layers=Krijt_Isohypsen_Top>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#afc1d45a4a63ca0eb3115303e613886b>.
+<#afc1d45a4a63ca0eb3115303e613886b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac67ba>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.008Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#afc1d45a4a63ca0eb3115303e613886b> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac67ba> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d41d014-1d6b-49df-ab9b-479cd32932f0>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0800_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#faf168b71e909c3d3598e1714b636a77>.
+<#faf168b71e909c3d3598e1714b636a77> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac675d>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.009Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#faf168b71e909c3d3598e1714b636a77> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac675d> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3cff0143-980c-4e3a-8a6c-5b27c5ccaf99>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kem_hyd_br_stk1&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8cd010a645e205d7a2bf66af13dc8212>.
+<#8cd010a645e205d7a2bf66af13dc8212> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac6701>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.011Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8cd010a645e205d7a2bf66af13dc8212> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583857-560032beb2ac6701> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/3d04eae4-6cad-4318-be33-391044494e21>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0452_t_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d311539c17424180809e51de8b61c083>.
+<#d311539c17424180809e51de8b61c083> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac66b0>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.012Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d311539c17424180809e51de8b61c083> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac66b0> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/8139b856-f0a4-4c85-84f9-5316d5d7718b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0210_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#985ad1149e50122006aae9f27c0ab859>.
+<#985ad1149e50122006aae9f27c0ab859> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac6675>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.014Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#985ad1149e50122006aae9f27c0ab859> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac6675> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/80fec06e-31e3-42c0-820b-a4630eabb53d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_032001PA_OpEi_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f9a761f51c1ea49140ce57ecdf74d91c>.
+<#f9a761f51c1ea49140ce57ecdf74d91c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac65e3>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.015Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f9a761f51c1ea49140ce57ecdf74d91c> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac65e3> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/81276da9-02c4-41ae-94f5-c38090d1c824>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/gmk/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kb_15_3_3_p10_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#866524701023019277ecf308efebdcd0>.
+<#866524701023019277ecf308efebdcd0> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac65c5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#866524701023019277ecf308efebdcd0> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac65c5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/81311c49-2d6b-4df1-9386-9401d52d00c7>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/erosie/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=126000,175000,155000,187000&layers=so_a_grndn_2017>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#acabb8c13fc8a329cdc0bce099e1d086>.
+<#acabb8c13fc8a329cdc0bce099e1d086> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac65a5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.018Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#acabb8c13fc8a329cdc0bce099e1d086> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac65a5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/814b8211-efc3-4d86-b264-fd1c0e26c5cg>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_0403KR_Ak_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f403023c609dc0f00b8181fc0ad314fe>.
+<#f403023c609dc0f00b8181fc0ad314fe> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac657f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.024Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f403023c609dc0f00b8181fc0ad314fe> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac657f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/815104a1-8592-4a0d-a6f2-cecd15cae73c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/dov-pub/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=T06Eg_FormatievanEigenbilzen_VK_20040116&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#34834d48de1d6b30a1a9b4d9f82b1dae>.
+<#34834d48de1d6b30a1a9b4d9f82b1dae> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac656e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.025Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#34834d48de1d6b30a1a9b4d9f82b1dae> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac656e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/81289d21-4da1-4cbd-9023-ec8ec20da513>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/33ced40c-973f-4395-941b-39e89f0ecf0b/attachments/Brownfieldconvenanten_1486135916908.JPG>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9805ebf451a8b0e4c5ebb1438f2f5634>.
+<#9805ebf451a8b0e4c5ebb1438f2f5634> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac6542>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.026Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9805ebf451a8b0e4c5ebb1438f2f5634> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac6542> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/81449b41-4d17-4c01-857f-5a93bc2c1042>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o_vk/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3ovk_a0225b_vk_nl_bo&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2768f259facaa761ad9daa00f3e6d9c6>.
+<#2768f259facaa761ad9daa00f3e6d9c6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac650c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.028Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2768f259facaa761ad9daa00f3e6d9c6> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac650c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/80fec06e-31e3-42c0-820b-a4630eabb53e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_032001PA_OpEi_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#001f69ed1e1dbfbb171474be84f7f9f1>.
+<#001f69ed1e1dbfbb171474be84f7f9f1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac64ec>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.029Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#001f69ed1e1dbfbb171474be84f7f9f1> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac64ec> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/814b8211-efc3-4d86-b264-fd1c0e26c5cf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_0403KR_Ak_b_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#32cd7e670854b90785b34bf01a789c94>.
+<#32cd7e670854b90785b34bf01a789c94> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac64cc>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.031Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#32cd7e670854b90785b34bf01a789c94> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac64cc> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/8139b856-f0a4-4c85-84f9-5316d5d7718c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0210_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#130554dc1df85602370bd8441381b46a>.
+<#130554dc1df85602370bd8441381b46a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac64bf>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.032Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#130554dc1df85602370bd8441381b46a> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583860-560032beb2ac64bf> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/813CEC7F-BC49-48D7-AA16-8971C11D30A8>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/813CEC7F-BC49-48D7-AA16-8971C11D30A8/attachments/mdv-static-79.jpeg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0fb3277574475f44d4e049378605cf16>.
+<#0fb3277574475f44d4e049378605cf16> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac646e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.033Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0fb3277574475f44d4e049378605cf16> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac646e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/73a42758-7ff8-459c-9e73-c0117f9c31d3>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_031203PA_GeMe_t_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8ff81331f09e5b8fadf6ca0110eb75eb>.
+<#8ff81331f09e5b8fadf6ca0110eb75eb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6468>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.034Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8ff81331f09e5b8fadf6ca0110eb75eb> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6468> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS GeoService"@nl;
+    <http://purl.org/dc/terms/description> "Esri REST"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7412b226-d5a7-3476-913a-2b85e3eb45be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek5/MapServer/372>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4d406b9a1e8bdf3e4e567ec494edd832>.
+<#4d406b9a1e8bdf3e4e567ec494edd832> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6467>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.035Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4d406b9a1e8bdf3e4e567ec494edd832> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6467> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV"@nl;
+    <http://purl.org/dc/terms/description> "CSV"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7412b226-d5a7-3476-913a-2b85e3eb45be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/388c7541d1d14fca96e4e2f88f8c2ac1/csv?layers=372>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e8277fecd9728b43ed0205b6ddfb6b7b>.
+<#e8277fecd9728b43ed0205b6ddfb6b7b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6466>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.036Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e8277fecd9728b43ed0205b6ddfb6b7b> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6466> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/description> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GEOJSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7412b226-d5a7-3476-913a-2b85e3eb45be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/388c7541d1d14fca96e4e2f88f8c2ac1/geojson?layers=372>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#51b7f71838991ef9804f5c27055a103b>.
+<#51b7f71838991ef9804f5c27055a103b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6465>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.037Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#51b7f71838991ef9804f5c27055a103b> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6465> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "KML"@nl;
+    <http://purl.org/dc/terms/description> "KML"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7412b226-d5a7-3476-913a-2b85e3eb45be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/388c7541d1d14fca96e4e2f88f8c2ac1/kml?layers=372>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#02282f3549f8c49911185060e847a320>.
+<#02282f3549f8c49911185060e847a320> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6464>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.038Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#02282f3549f8c49911185060e847a320> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6464> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS Hub Dataset"@nl;
+    <http://purl.org/dc/terms/description> "Web Page"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/HTML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7412b226-d5a7-3476-913a-2b85e3eb45be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/maps/stadAntwerpen::speelbos-detail>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#68793f4790049b8ba079b17ff82c2dab>.
+<#68793f4790049b8ba079b17ff82c2dab> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6463>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.039Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#68793f4790049b8ba079b17ff82c2dab> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6463> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ZIP"@nl;
+    <http://purl.org/dc/terms/description> "Shapefile"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ZIP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/7412b226-d5a7-3476-913a-2b85e3eb45be>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/388c7541d1d14fca96e4e2f88f8c2ac1/shapefile?layers=372>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2b791607648ab2aaa3bde49d20283c6c>.
+<#2b791607648ab2aaa3bde49d20283c6c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6370>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.043Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2b791607648ab2aaa3bde49d20283c6c> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6370> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/73b625d0-eaac-422f-86a5-0bf70b6317af>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/gmk/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kb_15_3_5_p4_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f7f82fd3fb160ce135eb218fab1653a4>.
+<#f7f82fd3fb160ce135eb218fab1653a4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6350>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.044Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f7f82fd3fb160ce135eb218fab1653a4> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac6350> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/73a42758-7ff8-459c-9e73-c0117f9c31d4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_031203PA_GeMe_t_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#bbde6d447564dfb05e4e38773f7bf4bc>.
+<#bbde6d447564dfb05e4e38773f7bf4bc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62fe>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.046Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#bbde6d447564dfb05e4e38773f7bf4bc> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62fe> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/741352ba-0e23-41c3-825c-fda20afb4316>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o_vk/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3ovk_a0240_vk_bo&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#68b96e681835d355fbbfb1dc3786a7d6>.
+<#68b96e681835d355fbbfb1dc3786a7d6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62de>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.047Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#68b96e681835d355fbbfb1dc3786a7d6> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62de> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/73fa19d8-2ef6-48a9-82db-d7bed8459b32>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A1320_t_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#69e68668cbf1c1f43d47318b8645672f>.
+<#69e68668cbf1c1f43d47318b8645672f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62b8>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.048Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#69e68668cbf1c1f43d47318b8645672f> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62b8> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/73ae1c3d-2dfe-497c-9c2c-7b8a3ed0e53f>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/dov-pub/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=T11Ma_FormatievanMaldegem_IH_Basis_20040116&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7af790c6152797526587bb3ad9ddc782>.
+<#7af790c6152797526587bb3ad9ddc782> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62a2>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.050Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7af790c6152797526587bb3ad9ddc782> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62a2> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/73d9f8b6-c5b2-44ac-ba52-7ac847fba103>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/73d9f8b6-c5b2-44ac-ba52-7ac847fba103/attachments/5BBK2015full_1558597045157.JPG>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d46bbf76b5d53bbffed01cc56e03b73d>.
+<#d46bbf76b5d53bbffed01cc56e03b73d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62a1>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.051Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d46bbf76b5d53bbffed01cc56e03b73d> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583863-560032beb2ac62a1> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/73d9f8b6-c5b2-44ac-ba52-7ac847fba103>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/73d9f8b6-c5b2-44ac-ba52-7ac847fba103/attachments/5BBK2015part_1558597062453.JPG>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#06b0894187e4e0d3fef90da70097c67f>.
+<#06b0894187e4e0d3fef90da70097c67f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac6217>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.052Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#06b0894187e4e0d3fef90da70097c67f> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac6217> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd62bef6-6d8d-4d9b-899b-b2f941f4b917>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/ondiepvoxelmodel/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=oav1_0206NE_Di_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b85d38dc169aa385042ae501c76d6471>.
+<#b85d38dc169aa385042ae501c76d6471> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac61d9>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.058Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b85d38dc169aa385042ae501c76d6471> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac61d9> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd9dc225-1334-4cb5-b6e9-a2e5fc8409f2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/33ced40c-973f-4395-941b-39e89f0ecf0b/attachments/Brownfieldconvenanten_1486135916908.JPG>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f4ce40529d90f07668c32244e8136559>.
+<#f4ce40529d90f07668c32244e8136559> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac61b9>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.059Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f4ce40529d90f07668c32244e8136559> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac61b9> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd8c6eb4-0fe5-481d-9889-80a1a46bd291>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0620_ip&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6505aa30cdc2fa35659fe5470f8bf0c2>.
+<#6505aa30cdc2fa35659fe5470f8bf0c2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac6183>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.060Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6505aa30cdc2fa35659fe5470f8bf0c2> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac6183> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd7ed456-ba25-49fe-a520-91a6a721d3ff>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kem_hyd_dikte_wak2&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#47d6dc57780578e1303ba9743db40aae>.
+<#47d6dc57780578e1303ba9743db40aae> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac613c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.062Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#47d6dc57780578e1303ba9743db40aae> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac613c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd2bd593-f2b8-46a6-af09-da7bbe0e3cff>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3o/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kem_hyd_basis_msk1&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1f5bfbb32f84a26cc45b1ffa41124c84>.
+<#1f5bfbb32f84a26cc45b1ffa41124c84> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac60f2>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.063Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1f5bfbb32f84a26cc45b1ffa41124c84> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac60f2> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd455e5d-9af8-42ae-bf4c-b761329bea6e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/hcov/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=hcov_0300_vk&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e8f32c75c7ad2fe29b00f59ee95a7ddf>.
+<#e8f32c75c7ad2fe29b00f59ee95a7ddf> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac60d2>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.064Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e8f32c75c7ad2fe29b00f59ee95a7ddf> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac60d2> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd5cb9cd-509a-41a4-8049-f73d29bc4340>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0237_t_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7f2338b3d26c02c6eafcf2c857cb7fd4>.
+<#7f2338b3d26c02c6eafcf2c857cb7fd4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac60b2>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.066Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7f2338b3d26c02c6eafcf2c857cb7fd4> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac60b2> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd8ba7af-b7e8-467e-9b26-2fd2c9f1e271>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_032002PA_OpOp_ip&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#497205a7ac10db6f0e6ca0e3fd05a088>.
+<#497205a7ac10db6f0e6ca0e3fd05a088> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac6092>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.067Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#497205a7ac10db6f0e6ca0e3fd05a088> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac6092> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd8ba7af-b7e8-467e-9b26-2fd2c9f1e272>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_032002PA_OpOp_ip&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#de315c366e575cc3b3b0a35a7339ecc6>.
+<#de315c366e575cc3b3b0a35a7339ecc6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac6072>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.068Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#de315c366e575cc3b3b0a35a7339ecc6> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac6072> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd8c6eb4-0fe5-481d-9889-80a1a46bd292>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0620_ip&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a5a7759c8a361778f550c746316f9e9c>.
+<#a5a7759c8a361778f550c746316f9e9c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac603f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.070Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a5a7759c8a361778f550c746316f9e9c> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583866-560032beb2ac603f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/bd5cb9cd-509a-41a4-8049-f73d29bc4349>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0237_t_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0faea91facfc67c2eba3daef4b60dcf8>.
+<#0faea91facfc67c2eba3daef4b60dcf8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5ff6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.074Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0faea91facfc67c2eba3daef4b60dcf8> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5ff6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6c275ae8-af31-4be2-abed-bc31610ab904>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/dov-pub/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&bbox=162404%2C156864%2C255065%2C235413&width=607&height=768&srs=EPSG%3A31370&layers=Krijt_Breuken_Basis>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3be470c29d3859b3c1c162386704dc9d>.
+<#3be470c29d3859b3c1c162386704dc9d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5f8f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.076Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3be470c29d3859b3c1c162386704dc9d> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5f8f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jpeg>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6be7af19-c8a1-4b44-bdaa-656768111712>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/33ced40c-973f-4395-941b-39e89f0ecf0b/attachments/Brownfieldconvenanten_1486135916908.JPG>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0e741943871de9f5f8186b82e9f470cb>.
+<#0e741943871de9f5f8186b82e9f470cb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5f6f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.077Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0e741943871de9f5f8186b82e9f470cb> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5f6f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6c1aaa6f-b7c1-4051-9db3-f284e500c53b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3d/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3d_A0160_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6e65d5bc00ae8e1752fff9ca880f4b7d>.
+<#6e65d5bc00ae8e1752fff9ca880f4b7d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5f4f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.078Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6e65d5bc00ae8e1752fff9ca880f4b7d> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5f4f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6c099a82-c6db-4a16-8b60-3939ede79d07>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_030302PA_BmPu_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1a5c12640cf46d9f9905517236b11f5e>.
+<#1a5c12640cf46d9f9905517236b11f5e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5f0f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.080Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1a5c12640cf46d9f9905517236b11f5e> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5f0f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6c1a1674-14d6-43bf-91c3-2f71492794d5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_010601Q_StLo_b_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4def06fde8d03178fe26f7f00758aa0f>.
+<#4def06fde8d03178fe26f7f00758aa0f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5ecf>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.081Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4def06fde8d03178fe26f7f00758aa0f> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5ecf> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6c1aaa6f-b7c1-4051-9db3-f284e500c53c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/h3dv2_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=h3dv2_1_A0160_v&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#63c2b70abc4f49fa0660a8d57adca795>.
+<#63c2b70abc4f49fa0660a8d57adca795> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5eaf>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.082Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#63c2b70abc4f49fa0660a8d57adca795> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5eaf> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bdfcf5a-6f8a-4913-aa8a-de64e4386f87>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_030804PA_MaOn_t_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#afae85f41e4fcba4689ed6c176b11ea2>.
+<#afae85f41e4fcba4689ed6c176b11ea2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e8f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.084Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#afae85f41e4fcba4689ed6c176b11ea2> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e8f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bdfcf5a-6f8a-4913-aa8a-de64e4386f86>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_030804PA_MaOn_t_ih&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9dfc8aed6efd3be2a9cd5497efe03fd6>.
+<#9dfc8aed6efd3be2a9cd5497efe03fd6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e89>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.085Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9dfc8aed6efd3be2a9cd5497efe03fd6> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e89> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS GeoService"@nl;
+    <http://purl.org/dc/terms/description> "Esri REST"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek6/MapServer/751>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#dd0c3c7b6815b3e5fd14994a3bfaf1da>.
+<#dd0c3c7b6815b3e5fd14994a3bfaf1da> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e88>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.086Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dd0c3c7b6815b3e5fd14994a3bfaf1da> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e88> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV"@nl;
+    <http://purl.org/dc/terms/description> "CSV"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/36b5d8190bb24168a97fcd39c26f7def/csv?layers=751>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e01ea3a633023cdb578c645ffd8deb28>.
+<#e01ea3a633023cdb578c645ffd8deb28> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e87>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.087Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e01ea3a633023cdb578c645ffd8deb28> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e87> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS Hub Dataset"@nl;
+    <http://purl.org/dc/terms/description> "Web Page"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/HTML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/maps/stadAntwerpen::geluid-industrie-night-2016>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#745781660a69154b425b31f062b02bf8>.
+<#745781660a69154b425b31f062b02bf8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e86>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.088Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#745781660a69154b425b31f062b02bf8> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e86> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ZIP"@nl;
+    <http://purl.org/dc/terms/description> "Shapefile"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ZIP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/36b5d8190bb24168a97fcd39c26f7def/shapefile?layers=751>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e32d7ee9c49791522528ff25e0802020>.
+<#e32d7ee9c49791522528ff25e0802020> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e85>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.094Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e32d7ee9c49791522528ff25e0802020> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e85> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "WMS industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/OGC:WMS>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/hh/hh:hh_indus_Lday_2011/wms?>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#12abbaedfa29b2a851c64d4b76613856>.
+<#12abbaedfa29b2a851c64d4b76613856> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e84>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.095Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#12abbaedfa29b2a851c64d4b76613856> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e84> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "WMS-capabilities industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/OGC:WMS-1.3.0-HTTP-GET-CAPABILITIES>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/hh/hh_indus_Lday_2011/wms?request=GetCapabilities&service=wms&version=1.3.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#97169e52ed297df8c0020a2c08eb5e1c>.
+<#97169e52ed297df8c0020a2c08eb5e1c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e83>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.096Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#97169e52ed297df8c0020a2c08eb5e1c> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e83> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "WMS industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/OGC:WMS-1.3.0-HTTP-GET-MAP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2b6a644112ab0f1833a5e51d895abd4f>.
+<#2b6a644112ab0f1833a5e51d895abd4f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e82>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.097Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2b6a644112ab0f1833a5e51d895abd4f> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e82> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/description> "GeoJSON"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GEOJSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/36b5d8190bb24168a97fcd39c26f7def/geojson?layers=751>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#dee7ace6a8e5afea9bcec4a174c2b6e8>.
+<#dee7ace6a8e5afea9bcec4a174c2b6e8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e81>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.098Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dee7ace6a8e5afea9bcec4a174c2b6e8> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e81> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "WFS-capabilities industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/OGC:WFS-1.0.0-HTTP-GET-CAPABILITIES>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/hh/hh_indus_Lday_2011/wfs?request=GetCapabilities&service=wfs&version=1.0.0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6b4df59464b450bc1250040e2fe7fa40>.
+<#6b4df59464b450bc1250040e2fe7fa40> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e80>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.098Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6b4df59464b450bc1250040e2fe7fa40> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e80> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "KML"@nl;
+    <http://purl.org/dc/terms/description> "KML"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/KML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/api/download/v1/items/36b5d8190bb24168a97fcd39c26f7def/kml?layers=751>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4f477bd6db7997f37744077b38bf82ae>.
+<#4f477bd6db7997f37744077b38bf82ae> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e7f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.099Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4f477bd6db7997f37744077b38bf82ae> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e7f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "hh:hh_indus_Lday_2011"@nl;
+    <http://purl.org/dc/terms/description> "KML industrie Lday 2011"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/GLG:KML-2.0-HTTP-GET-MAP>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6bfd7604-e885-303a-b6e4-c9e17f2be887>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/hh/wms/kml?layers=hh:hh_indus_Lday_2011>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9ce3e1df3a47853f57f6a15c28bbb0f1>.
+<#9ce3e1df3a47853f57f6a15c28bbb0f1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e79>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.101Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9ce3e1df3a47853f57f6a15c28bbb0f1> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e79> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS Hub Dataset"@nl;
+    <http://purl.org/dc/terms/description> "Web Page"@nl;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/HTML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6c159944-0dca-344e-85a4-ae73602e5184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://portaal-stadantwerpen.opendata.arcgis.com/documents/stadAntwerpen::hittekaarten>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9ba31542ad8c9cb8326bf31e998815f0>.
+<#9ba31542ad8c9cb8326bf31e998815f0> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e78>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.102Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9ba31542ad8c9cb8326bf31e998815f0> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e78> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ArcGIS GeoService"@nl;
+    <http://purl.org/dc/terms/description> "Esri REST"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6c159944-0dca-344e-85a4-ae73602e5184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://s3-ant1.antwerpen.be/prd-open-data-datatank/raster/Hittekaart_dag.zip>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ea312983b11623478494f2c434fdabaa>.
+<#ea312983b11623478494f2c434fdabaa> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e4d>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.102Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ea312983b11623478494f2c434fdabaa> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e4d> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6c1c35e7-2589-4862-8104-b189c4c3088f>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/gmk/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=kb_14_6_5_p4_r&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#23a1f9e94e584624aafd646f1f3f8a6d>.
+<#23a1f9e94e584624aafd646f1f3f8a6d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e31>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.104Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#23a1f9e94e584624aafd646f1f3f8a6d> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e31> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jp2>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG2000>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6be4cc4d-d083-42f0-9b9d-a8d9cc96d3fb>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/6a527ee2-360d-46a6-adc0-f41d02f5f0ce/attachments/VHA_waterlichaamcode_1417513067714.jpg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a1cea8352bc4a4e3ecdc25aaab786bf6>.
+<#a1cea8352bc4a4e3ecdc25aaab786bf6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e30>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.105Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a1cea8352bc4a4e3ecdc25aaab786bf6> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e30> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jp2>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG2000>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6be4cc4d-d083-42f0-9b9d-a8d9cc96d3fb>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/6a527ee2-360d-46a6-adc0-f41d02f5f0ce/attachments/VHA_Beheerder_1417513105854.jpg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b8d595f1bc9398d5c90aaad9e51ea28b>.
+<#b8d595f1bc9398d5c90aaad9e51ea28b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e2f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.106Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b8d595f1bc9398d5c90aaad9e51ea28b> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583869-560032beb2ac5e2f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Voorbeeldweergave"@nl;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/jp2>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JPEG2000>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/6be4cc4d-d083-42f0-9b9d-a8d9cc96d3fb>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://metadata.vlaanderen.be/srv/api/records/288be5c6-d70d-45d3-a31d-265c86cc9202/attachments/VHA_zones_metadata_1406814837398.jpg>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#65126607240089da7ab44b7c38794384>.
+<#65126607240089da7ab44b7c38794384> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583872-560032beb2ac5e0e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:07.107Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#65126607240089da7ab44b7c38794384> {
+<http://data.gov.be/.well-known/genid/ee9d1cccd74240bb9fc6d191c9153583872-560032beb2ac5e0e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/image/png>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PNG>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/b5e785a8-a3f4-467e-9cbf-a1814ecd179f>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://www.dov.vlaanderen.be/geoserver/g3dv3_1/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=false&STYLES&LAYERS=g3dv3_1_030802PA_MaBu_t_br&SRS=EPSG%3A31370&WIDTH=858&HEIGHT=330&BBOX=9518.482229747839%2C148172.73525929108%2C271454.8939534676%2C248854.86152133934>
+}
+<index.trig> <https://w3id.org/tree#relation> _:df_61_165.
+_:df_61_165 a <https://w3id.org/tree#GreaterThanOrEqualToRelation>;
+    <https://w3id.org/tree#node> <../2025-02-14T04_3A46_3A52.500Z_123187500_166/index.trig>;
+    <https://w3id.org/tree#path> <https://www.w3.org/ns/activitystreams#published>;
+    <https://w3id.org/tree#value> "2025-02-14T09:31:07.108Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
