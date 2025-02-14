@@ -79,7 +79,7 @@
     js:binary "true"^^xsd:boolean;
     js:closeOnEnd "true"^^xsd:boolean.
 
-# Processor to unzip the gzipped DCAT-AP dump and stream out the N-Triples dump.
+# Processor to unzip the gzipped DCAT-AP dump and stream out the RDF/XML dump.
 [ ] a js:GunzipFile;
     js:input <zip/reader>;
     js:output <dump/writer>.
