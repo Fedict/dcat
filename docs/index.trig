@@ -2,10 +2,10 @@
     <http://www.w3.org/2000/01/rdf-schema#comment> "A plan to publish an LDES feed from Belgium's DCAT-AP dumps".
 <https://w3id.org/sds#Stream> a <https://w3id.org/sds#Stream>;
     <http://purl.org/net/p-plan#wasGeneratedBy> _:b14_n3-280;
-    <https://w3id.org/sds#carries> _:b14_n3-281, _:b14_df_58_0;
+    <https://w3id.org/sds#carries> _:b14_n3-281, _:b14_df_19_0;
     <https://w3id.org/sds#shape> <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape>;
     <https://w3id.org/sds#dataset> _:b14_n3-282;
-    <http://www.w3.org/ns/prov#wasGeneratedBy> _:b14_df_60_0.
+    <http://www.w3.org/ns/prov#wasGeneratedBy> _:b14_df_21_0.
 _:b14_n3-280 a <http://purl.org/net/p-plan#Activity>;
     <http://www.w3.org/2000/01/rdf-schema#comment> "Load in Belgium's DCAT-AP data".
 _:b14_n3-281 a <https://w3id.org/sds#Member>.
@@ -14,8 +14,8 @@ _:b14_n3-282 a <https://www.w3.org/ns/dcat#Dataset>;
     <https://www.w3.org/ns/dcat#publisher> <http://solid.smessie.com/profile/card#me>;
     <https://w3id.org/ldes#timestampPath> <https://www.w3.org/ns/activitystreams#published>;
     <https://www.w3.org/ns/dcat#identifier> <https://github.com/Fedict/dcat/raw/refs/heads/master/all/datagovbe.nt.gz>.
-_:b14_df_60_0 a <http://purl.org/net/p-plan#Activity>, <https://w3id.org/ldes#Bucketization>;
-    <http://www.w3.org/ns/prov#startedAtTime> "2025-02-14T13:34:08.932Z";
+_:b14_df_21_0 a <http://purl.org/net/p-plan#Activity>, <https://w3id.org/ldes#Bucketization>;
+    <http://www.w3.org/ns/prov#startedAtTime> "2025-02-19T07:12:58.707Z";
     <http://www.w3.org/ns/prov#used> _:b14_n3-14, <https://w3id.org/sds#Stream>.
 _:b14_n3-14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b14_n3-15;
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
