@@ -1,0 +1,1508 @@
+<../../../index.trig> a <https://w3id.org/ldes#EventStream>.
+<index.trig> a <https://w3id.org/tree#Node>;
+    <http://purl.org/dc/terms/isPartOf> <../../../index.trig>.
+<../../../index.trig> <https://w3id.org/tree#member> <#56a684afe3110cb8e26847a75c07df6d>.
+<#56a684afe3110cb8e26847a75c07df6d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b164>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.906Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#56a684afe3110cb8e26847a75c07df6d> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b164> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_cd_infection_gloves.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Beschikbaarheid medisch materiaal: Handschoenen geschikt te gebruiken bij infecties. / (FR) Disponibilité du matériel médical: Gants adaptés aux infections.\n\nname\ndescription\ntype\nrequired\nvalues\ncd_infection_gloves\n\ninteger\nyes\n1:Groot tekort / Grande pénurie2:Klein tekort / Petite pénurie3:Klein overschot / Petit surplus4:Groot overshot / Grand surplus\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_cd_infection_gloves.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cd9cc7bbd7fc64eaac0d8c8073bd5e5d>.
+<#cd9cc7bbd7fc64eaac0d8c8073bd5e5d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b165>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.908Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cd9cc7bbd7fc64eaac0d8c8073bd5e5d> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b165> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_cd_infection_masks.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Beschikbaarheid medisch materiaal: Maskers geschikt te gebruiken bij infecties (FFP2 en co). / (FR) Disponibilité du matériel médical: Masques adaptés aux infections (FFP2 et co).\n\nname\ndescription\ntype\nrequired\nvalues\ncd_infection_masks\n\ninteger\nyes\n1:Groot tekort (max 2 per medewerker) / Grande pénurie (max 2 par collaborateur)2:Klein tekort (3 - 7 per medewerker) / Petite pénurie (3 - 7 par collaborateur)3:Klein overschot (8 - 14 per medewerker) / Petit surplus (8 - 14 par collaborateur)4:Groot overshot (&gt; 14 per medewerker) / Grand surplus (&gt; 14 par collaborateur)\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_cd_infection_masks.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cb2755c594ae547d938f5f2c52933abe>.
+<#cb2755c594ae547d938f5f2c52933abe> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b166>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.909Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cb2755c594ae547d938f5f2c52933abe> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b166> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_cd_infection_screen.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Beschikbaarheid medisch materiaal: Bril/scherm geschikt te gebruiken bij infecties. / (FR) Disponibilité du matériel médical: Lunettes / écrans adéquats contre les infections.\n\nname\ndescription\ntype\nrequired\nvalues\ncd_infection_screen\n\ninteger\nyes\n1:Groot tekort / Grande pénurie2:Klein tekort / Petite pénurie3:Klein overschot / Petit surplus4:Groot overshot / Grand surplus\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_cd_infection_screen.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e68187536b7c1920cf272bccae9dfdcf>.
+<#e68187536b7c1920cf272bccae9dfdcf> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b167>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.911Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e68187536b7c1920cf272bccae9dfdcf> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b167> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_cd_province.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Provincie. / (FR) Province.\n\nname\ndescription\ntype\nrequired\nvalues\ncd_province\n\nstring\nyes\nVAN:Antwerpen / AnversBBR:Brussels Hoofdstedelijk Gewest / Région de Bruxelles-CapitaleWHT:Henegouwen / HainautVLI:Limburg / LimbourgWLG:Luik / LiègeWLX:Luxemburg / LuxembourgWNA:Namen / NamurVOV:Oost-Vlaanderen / Flandre orientaleVBR:Vlaams-Brabant / Brabant flamandWBR:Waals-Brabant / Brabant wallonVWV:West-Vlaanderen / Flandre occidentale\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_cd_province.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0bdd728c2c9200b4832a480ce6273a95>.
+<#0bdd728c2c9200b4832a480ce6273a95> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b168>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.912Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0bdd728c2c9200b4832a480ce6273a95> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b168> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_cd_surgical_masks.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Beschikbaarheid medisch materiaal: Gewone chirurgische maskers. / (FR) Disponibilité du matériel médical: Masques chirurgicaux ordinaires.\n\nname\ndescription\ntype\nrequired\nvalues\ncd_surgical_masks\n\ninteger\nyes\n1:Groot tekort (max 2 per medewerker) / Grande pénurie (max 2 par collaborateur)2:Klein tekort (3 - 7 per medewerker) / Petite pénurie (3 - 7 par collaborateur)3:Klein overschot (8 - 14 per medewerker) / Petit surplus (8 - 14 par collaborateur)4:Groot overshot (&gt; 14 per medewerker) / Grand surplus (&gt; 14 par collaborateur)\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_cd_surgical_masks.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c87e8af7ff2af93e68a33e59f15e318e>.
+<#c87e8af7ff2af93e68a33e59f15e318e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b169>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.913Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c87e8af7ff2af93e68a33e59f15e318e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b169> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_alc_hand_disinfectant.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Geef aan hoeveel eenheden (flacon(s) alcoholische handontsmetting (500ml)) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (flacon(s) désinfectant alcoolisé pour les mains (500 ml)) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_alc_hand_disinfectant\n\ninteger\nno\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_alc_hand_disinfectant.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9f6f86d6cbd62d65966a9b1a4ad7e888>.
+<#9f6f86d6cbd62d65966a9b1a4ad7e888> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b170>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.914Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9f6f86d6cbd62d65966a9b1a4ad7e888> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b170> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_cp_cohort_inside.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Hoeveel zorgmedewerkers zijn er ingeschakeld in cohortzorg binnen de organisatie? / (FR) Combien de professionnels de la santé participent aux soins de cohorte au sein de l'organisation?\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_cp_cohort_inside\n\ninteger\nyes\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_cp_cohort_inside.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#93b7590873a597f80ef76f11baaf28be>.
+<#93b7590873a597f80ef76f11baaf28be> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b171>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.915Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#93b7590873a597f80ef76f11baaf28be> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b171> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_cp_cohort_outside.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Hoeveel zorgmedewerkers zijn er ingeschakeld in cohortzorg buiten de organisatie? / (FR) Combien de professionnels de la santé participent aux soins de cohorte en dehors de l'organisation?\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_cp_cohort_outside\n\ninteger\nyes\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_cp_cohort_outside.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5bfb6cb2c7ca6c979a8a31510d390781>.
+<#5bfb6cb2c7ca6c979a8a31510d390781> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b172>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.917Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5bfb6cb2c7ca6c979a8a31510d390781> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b172> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_infection_aprons.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Geef aan hoeveel eenheden (schort(en) geschikt te gebruiken bij infecties) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (tablier(s) adaptés aux infections) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_infection_aprons\n\ninteger\nno\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_infection_aprons.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#be5032aa3640a42f0da768c368a847a7>.
+<#be5032aa3640a42f0da768c368a847a7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b173>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.918Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#be5032aa3640a42f0da768c368a847a7> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b173> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_infection_gloves.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Geef aan hoeveel eenheden (verpakking(en) van 100 handschoenen geschikt te gebruiken bij infecties) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (emballage(s) de 100 gants adaptés aux infections) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_infection_gloves\n\ninteger\nno\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_infection_gloves.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f6168cd02ae08664769f574b4df437fb>.
+<#f6168cd02ae08664769f574b4df437fb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b174>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.919Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f6168cd02ae08664769f574b4df437fb> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b174> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_infection_masks.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Geef aan hoeveel eenheden (masker(s) geschikt te gebruiken bij infecties (FFP2 en co)) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (masque(s) adapté(s) aux infections (FFP2 et co)) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_infection_masks\n\ninteger\nno\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_infection_masks.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1ca50a9cb6538652f552fd83dccba372>.
+<#1ca50a9cb6538652f552fd83dccba372> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b175>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.921Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1ca50a9cb6538652f552fd83dccba372> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b175> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_infection_screen.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Geef aan hoeveel eenheden (bril(len)/scherm(en) geschikt te gebruiken bij infecties) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (lunettes(s) / écran(s) adéquats contre les infections) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_infection_screen\n\ninteger\nno\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_infection_screen.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8467e9bac1f0a489165bcbfecae62bc1>.
+<#8467e9bac1f0a489165bcbfecae62bc1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b176>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.922Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8467e9bac1f0a489165bcbfecae62bc1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b176> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_patients.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Hoeveel patiënten heeft u vandaag in zorg? / (FR) De combien de patients vous occupez-vous aujourd'hui?\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_patients\n\ninteger\nyes\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_patients.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4cc2f56e54f48c46db4c45518e0cc128>.
+<#4cc2f56e54f48c46db4c45518e0cc128> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b177>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.923Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4cc2f56e54f48c46db4c45518e0cc128> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b177> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_nr_num_surgical_masks.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Geef aan hoeveel eenheden (gewone chirurgische maskers) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (masques chirurgicaux ordinaires) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\nname\ndescription\ntype\nrequired\nvalues\nnr_num_surgical_masks\n\ninteger\nno\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_nr_num_surgical_masks.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#733be6213baad397536ff8035d55d866>.
+<#733be6213baad397536ff8035d55d866> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b178>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.924Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#733be6213baad397536ff8035d55d866> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b178> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_hn_ind_tx_hn_ind_postal_code.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked:(NL) Postcode van de gemeente waarin de praktijk zich bevindt / (FR) Code postal du pratique\n\nname\ndescription\ntype\nrequired\nvalues\ntx_hn_ind_postal_code\n\nstring\nyes\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/covid19_hn_ind_tx_hn_ind_postal_code.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5230a04ed53b4fae44c0426de326866a>.
+<#5230a04ed53b4fae44c0426de326866a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b179>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.926Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5230a04ed53b4fae44c0426de326866a> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b179> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "316ccf57-9575-4b05-8116-c77b839a50c1 Data Dictionary JSON"@en;
+    <http://purl.org/dc/terms/description> "316ccf57-9575-4b05-8116-c77b839a50c1 Data Dictionary JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/datadictionary_316ccf57-9575-4b05-8116-c77b839a50c1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#863afc46940e8aeafe38ecc5b7e9b5ab>.
+<#863afc46940e8aeafe38ecc5b7e9b5ab> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b180>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.927Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#863afc46940e8aeafe38ecc5b7e9b5ab> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b180> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "316ccf57-9575-4b05-8116-c77b839a50c1 Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "316ccf57-9575-4b05-8116-c77b839a50c1 Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/datauser_316ccf57-9575-4b05-8116-c77b839a50c1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ca37adf55e07ec82333085eab47f4991>.
+<#ca37adf55e07ec82333085eab47f4991> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b181>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.928Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ca37adf55e07ec82333085eab47f4991> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b181> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "316ccf57-9575-4b05-8116-c77b839a50c1 Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "316ccf57-9575-4b05-8116-c77b839a50c1 Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/legal_316ccf57-9575-4b05-8116-c77b839a50c1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f0f97461906e01de081714b468eea2aa>.
+<#f0f97461906e01de081714b468eea2aa> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b182>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.929Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f0f97461906e01de081714b468eea2aa> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b182> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "316ccf57-9575-4b05-8116-c77b839a50c1 SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "316ccf57-9575-4b05-8116-c77b839a50c1 SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/scra_316ccf57-9575-4b05-8116-c77b839a50c1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b501304f160c2b8dba32792f5aa6517b>.
+<#b501304f160c2b8dba32792f5aa6517b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b183>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.930Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b501304f160c2b8dba32792f5aa6517b> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b183> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "316ccf57-9575-4b05-8116-c77b839a50c1 Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "316ccf57-9575-4b05-8116-c77b839a50c1 Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/Stakeholders_316ccf57-9575-4b05-8116-c77b839a50c1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1e213451d1386c892f414d3a1bbefda3>.
+<#1e213451d1386c892f414d3a1bbefda3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b184>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.937Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1e213451d1386c892f414d3a1bbefda3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b184> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "DD_CVD19Barometer_SelfEmployedHomeNurse data dictionary JSON format"@en;
+    <http://purl.org/dc/terms/description> "DD_CVD19Barometer_SelfEmployedHomeNurse data dictionary JSON format"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/316ccf57-9575-4b05-8116-c77b839a50c1>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/316ccf57-9575-4b05-8116-c77b839a50c1/DD_CVD19Barometer_SelfEmployedHomeNurse.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0321686d10b56545a4f83d6be32fca46>.
+<#0321686d10b56545a4f83d6be32fca46> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1534>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.938Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0321686d10b56545a4f83d6be32fca46> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1534> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "c7434618-2e82-4fe1-8f91-a9651719e458 Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "c7434618-2e82-4fe1-8f91-a9651719e458 Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/c7434618-2e82-4fe1-8f91-a9651719e458>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/c7434618-2e82-4fe1-8f91-a9651719e458/datauser_c7434618-2e82-4fe1-8f91-a9651719e458.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6f43e514d7efae6534c5ed8a0876316c>.
+<#6f43e514d7efae6534c5ed8a0876316c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1535>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.939Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6f43e514d7efae6534c5ed8a0876316c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1535> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "c7434618-2e82-4fe1-8f91-a9651719e458 Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "c7434618-2e82-4fe1-8f91-a9651719e458 Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/c7434618-2e82-4fe1-8f91-a9651719e458>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/c7434618-2e82-4fe1-8f91-a9651719e458/legal_c7434618-2e82-4fe1-8f91-a9651719e458.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#417c0b795b942346a4bfe12be477e7e3>.
+<#417c0b795b942346a4bfe12be477e7e3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1536>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.940Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#417c0b795b942346a4bfe12be477e7e3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1536> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "c7434618-2e82-4fe1-8f91-a9651719e458 SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "c7434618-2e82-4fe1-8f91-a9651719e458 SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/c7434618-2e82-4fe1-8f91-a9651719e458>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/c7434618-2e82-4fe1-8f91-a9651719e458/scra_c7434618-2e82-4fe1-8f91-a9651719e458.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#300e67347a521d0a4e449e54cc726ce4>.
+<#300e67347a521d0a4e449e54cc726ce4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1537>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.941Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#300e67347a521d0a4e449e54cc726ce4> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1537> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "c7434618-2e82-4fe1-8f91-a9651719e458 Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "c7434618-2e82-4fe1-8f91-a9651719e458 Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/c7434618-2e82-4fe1-8f91-a9651719e458>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/c7434618-2e82-4fe1-8f91-a9651719e458/Stakeholders_c7434618-2e82-4fe1-8f91-a9651719e458.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9594f7ee6f3b2bf964ced15f95afbfbf>.
+<#9594f7ee6f3b2bf964ced15f95afbfbf> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1538>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.943Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9594f7ee6f3b2bf964ced15f95afbfbf> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1538> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "c7434618-2e82-4fe1-8f91-a9651719e458 Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "c7434618-2e82-4fe1-8f91-a9651719e458 Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/c7434618-2e82-4fe1-8f91-a9651719e458>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/c7434618-2e82-4fe1-8f91-a9651719e458/datauser_c7434618-2e82-4fe1-8f91-a9651719e458.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9e1e6cc78a8fbc2e984c43403a8eb93e>.
+<#9e1e6cc78a8fbc2e984c43403a8eb93e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1539>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.944Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9e1e6cc78a8fbc2e984c43403a8eb93e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1539> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "c7434618-2e82-4fe1-8f91-a9651719e458 Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "c7434618-2e82-4fe1-8f91-a9651719e458 Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/c7434618-2e82-4fe1-8f91-a9651719e458>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/c7434618-2e82-4fe1-8f91-a9651719e458/legal_c7434618-2e82-4fe1-8f91-a9651719e458.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8dc9005db8c474de7d4cbd2ac83e0d31>.
+<#8dc9005db8c474de7d4cbd2ac83e0d31> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1540>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.945Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8dc9005db8c474de7d4cbd2ac83e0d31> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1540> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "c7434618-2e82-4fe1-8f91-a9651719e458 SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "c7434618-2e82-4fe1-8f91-a9651719e458 SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/c7434618-2e82-4fe1-8f91-a9651719e458>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/c7434618-2e82-4fe1-8f91-a9651719e458/scra_c7434618-2e82-4fe1-8f91-a9651719e458.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#07b7ff6e751d865825cfacfd0c483529>.
+<#07b7ff6e751d865825cfacfd0c483529> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1541>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.946Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#07b7ff6e751d865825cfacfd0c483529> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1541> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "c7434618-2e82-4fe1-8f91-a9651719e458 Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "c7434618-2e82-4fe1-8f91-a9651719e458 Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/c7434618-2e82-4fe1-8f91-a9651719e458>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/c7434618-2e82-4fe1-8f91-a9651719e458/Stakeholders_c7434618-2e82-4fe1-8f91-a9651719e458.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#983241faaed1502a3d83dd3ef323e643>.
+<#983241faaed1502a3d83dd3ef323e643> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1545>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.948Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#983241faaed1502a3d83dd3ef323e643> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1545> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "82d29de5-da29-4c00-8764-2281aa1af83d Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "82d29de5-da29-4c00-8764-2281aa1af83d Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/82d29de5-da29-4c00-8764-2281aa1af83d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/82d29de5-da29-4c00-8764-2281aa1af83d/datauser_82d29de5-da29-4c00-8764-2281aa1af83d.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#bc3a652a491da53ccc01e0db342036be>.
+<#bc3a652a491da53ccc01e0db342036be> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1546>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.949Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#bc3a652a491da53ccc01e0db342036be> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1546> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "82d29de5-da29-4c00-8764-2281aa1af83d Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "82d29de5-da29-4c00-8764-2281aa1af83d Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/82d29de5-da29-4c00-8764-2281aa1af83d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/82d29de5-da29-4c00-8764-2281aa1af83d/legal_82d29de5-da29-4c00-8764-2281aa1af83d.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f2f059acc7f1da8a8d08e6acf2726ae7>.
+<#f2f059acc7f1da8a8d08e6acf2726ae7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1547>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.950Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f2f059acc7f1da8a8d08e6acf2726ae7> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1547> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "82d29de5-da29-4c00-8764-2281aa1af83d SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "82d29de5-da29-4c00-8764-2281aa1af83d SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/82d29de5-da29-4c00-8764-2281aa1af83d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/82d29de5-da29-4c00-8764-2281aa1af83d/scra_82d29de5-da29-4c00-8764-2281aa1af83d.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#025dbda966c82cdaebad668c5c6e80fc>.
+<#025dbda966c82cdaebad668c5c6e80fc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1548>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.951Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#025dbda966c82cdaebad668c5c6e80fc> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1548> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "82d29de5-da29-4c00-8764-2281aa1af83d Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "82d29de5-da29-4c00-8764-2281aa1af83d Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/82d29de5-da29-4c00-8764-2281aa1af83d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/82d29de5-da29-4c00-8764-2281aa1af83d/Stakeholders_82d29de5-da29-4c00-8764-2281aa1af83d.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0783263af1ad5afd48085ff0f8206ca0>.
+<#0783263af1ad5afd48085ff0f8206ca0> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1549>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.952Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0783263af1ad5afd48085ff0f8206ca0> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1549> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "82d29de5-da29-4c00-8764-2281aa1af83d Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "82d29de5-da29-4c00-8764-2281aa1af83d Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/82d29de5-da29-4c00-8764-2281aa1af83d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/82d29de5-da29-4c00-8764-2281aa1af83d/datauser_82d29de5-da29-4c00-8764-2281aa1af83d.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#827400b736308880542f7bff8e3c8649>.
+<#827400b736308880542f7bff8e3c8649> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1550>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.954Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#827400b736308880542f7bff8e3c8649> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1550> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "82d29de5-da29-4c00-8764-2281aa1af83d Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "82d29de5-da29-4c00-8764-2281aa1af83d Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/82d29de5-da29-4c00-8764-2281aa1af83d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/82d29de5-da29-4c00-8764-2281aa1af83d/legal_82d29de5-da29-4c00-8764-2281aa1af83d.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0d5778087327ad134406c1e616df58b4>.
+<#0d5778087327ad134406c1e616df58b4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1551>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.955Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0d5778087327ad134406c1e616df58b4> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1551> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "82d29de5-da29-4c00-8764-2281aa1af83d SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "82d29de5-da29-4c00-8764-2281aa1af83d SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/82d29de5-da29-4c00-8764-2281aa1af83d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/82d29de5-da29-4c00-8764-2281aa1af83d/scra_82d29de5-da29-4c00-8764-2281aa1af83d.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8c1aa3aa555f79e469df6b3d79cfbfd4>.
+<#8c1aa3aa555f79e469df6b3d79cfbfd4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1552>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.956Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8c1aa3aa555f79e469df6b3d79cfbfd4> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1552> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "82d29de5-da29-4c00-8764-2281aa1af83d Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "82d29de5-da29-4c00-8764-2281aa1af83d Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/82d29de5-da29-4c00-8764-2281aa1af83d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/82d29de5-da29-4c00-8764-2281aa1af83d/Stakeholders_82d29de5-da29-4c00-8764-2281aa1af83d.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f5f527b92b0a49a6c13016bc6f6a5f6e>.
+<#f5f527b92b0a49a6c13016bc6f6a5f6e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1556>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.957Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f5f527b92b0a49a6c13016bc6f6a5f6e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1556> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "911e5f73-c102-4655-baeb-49c289bc41a4 Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "911e5f73-c102-4655-baeb-49c289bc41a4 Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/911e5f73-c102-4655-baeb-49c289bc41a4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/911e5f73-c102-4655-baeb-49c289bc41a4/datauser_911e5f73-c102-4655-baeb-49c289bc41a4.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#22fa11a2f01c0516ed9cff21cb6593cf>.
+<#22fa11a2f01c0516ed9cff21cb6593cf> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1557>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.958Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#22fa11a2f01c0516ed9cff21cb6593cf> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1557> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "911e5f73-c102-4655-baeb-49c289bc41a4 Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "911e5f73-c102-4655-baeb-49c289bc41a4 Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/911e5f73-c102-4655-baeb-49c289bc41a4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/911e5f73-c102-4655-baeb-49c289bc41a4/legal_911e5f73-c102-4655-baeb-49c289bc41a4.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#48e35287059ae277a1c8b2ed442b12af>.
+<#48e35287059ae277a1c8b2ed442b12af> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1558>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.959Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#48e35287059ae277a1c8b2ed442b12af> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1558> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "911e5f73-c102-4655-baeb-49c289bc41a4 SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "911e5f73-c102-4655-baeb-49c289bc41a4 SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/911e5f73-c102-4655-baeb-49c289bc41a4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/911e5f73-c102-4655-baeb-49c289bc41a4/scra_911e5f73-c102-4655-baeb-49c289bc41a4.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7e6fd066f39fc765f6c22be78f05fe0f>.
+<#7e6fd066f39fc765f6c22be78f05fe0f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1559>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.961Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7e6fd066f39fc765f6c22be78f05fe0f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1559> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "911e5f73-c102-4655-baeb-49c289bc41a4 Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "911e5f73-c102-4655-baeb-49c289bc41a4 Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/911e5f73-c102-4655-baeb-49c289bc41a4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/911e5f73-c102-4655-baeb-49c289bc41a4/Stakeholders_911e5f73-c102-4655-baeb-49c289bc41a4.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#11ca0ee8437051a57fdfadf361bef1c2>.
+<#11ca0ee8437051a57fdfadf361bef1c2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1560>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.962Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#11ca0ee8437051a57fdfadf361bef1c2> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1560> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "911e5f73-c102-4655-baeb-49c289bc41a4 Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "911e5f73-c102-4655-baeb-49c289bc41a4 Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/911e5f73-c102-4655-baeb-49c289bc41a4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/911e5f73-c102-4655-baeb-49c289bc41a4/datauser_911e5f73-c102-4655-baeb-49c289bc41a4.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#fd4952052a5105ac8bd8e6733e28e1d4>.
+<#fd4952052a5105ac8bd8e6733e28e1d4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1561>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.963Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#fd4952052a5105ac8bd8e6733e28e1d4> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1561> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "911e5f73-c102-4655-baeb-49c289bc41a4 Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "911e5f73-c102-4655-baeb-49c289bc41a4 Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/911e5f73-c102-4655-baeb-49c289bc41a4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/911e5f73-c102-4655-baeb-49c289bc41a4/legal_911e5f73-c102-4655-baeb-49c289bc41a4.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#606da8f43aed718ee2778889900e4f1d>.
+<#606da8f43aed718ee2778889900e4f1d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1562>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.964Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#606da8f43aed718ee2778889900e4f1d> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1562> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "911e5f73-c102-4655-baeb-49c289bc41a4 SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "911e5f73-c102-4655-baeb-49c289bc41a4 SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/911e5f73-c102-4655-baeb-49c289bc41a4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/911e5f73-c102-4655-baeb-49c289bc41a4/scra_911e5f73-c102-4655-baeb-49c289bc41a4.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9f06c95bda6fcc3f599f9d2381cdae88>.
+<#9f06c95bda6fcc3f599f9d2381cdae88> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1563>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.965Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9f06c95bda6fcc3f599f9d2381cdae88> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1563> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "911e5f73-c102-4655-baeb-49c289bc41a4 Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "911e5f73-c102-4655-baeb-49c289bc41a4 Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/911e5f73-c102-4655-baeb-49c289bc41a4>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/911e5f73-c102-4655-baeb-49c289bc41a4/Stakeholders_911e5f73-c102-4655-baeb-49c289bc41a4.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#31546d58aa2254f6ca758019a798db71>.
+<#31546d58aa2254f6ca758019a798db71> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1567>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.966Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#31546d58aa2254f6ca758019a798db71> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1567> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "059e1eaf-271a-4db8-a1f0-9479866d078a Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "059e1eaf-271a-4db8-a1f0-9479866d078a Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a/datauser_059e1eaf-271a-4db8-a1f0-9479866d078a.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#01ba094b7d66153e4b33c27251e569f9>.
+<#01ba094b7d66153e4b33c27251e569f9> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1568>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.968Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#01ba094b7d66153e4b33c27251e569f9> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1568> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "059e1eaf-271a-4db8-a1f0-9479866d078a Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "059e1eaf-271a-4db8-a1f0-9479866d078a Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a/legal_059e1eaf-271a-4db8-a1f0-9479866d078a.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a733437ce4ecb0ff7ec5ea72e2b3ed4c>.
+<#a733437ce4ecb0ff7ec5ea72e2b3ed4c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1569>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.969Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a733437ce4ecb0ff7ec5ea72e2b3ed4c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1569> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "059e1eaf-271a-4db8-a1f0-9479866d078a SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "059e1eaf-271a-4db8-a1f0-9479866d078a SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a/scra_059e1eaf-271a-4db8-a1f0-9479866d078a.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4a156ce31f84113d144a294a07989962>.
+<#4a156ce31f84113d144a294a07989962> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1570>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.975Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4a156ce31f84113d144a294a07989962> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1570> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "059e1eaf-271a-4db8-a1f0-9479866d078a Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "059e1eaf-271a-4db8-a1f0-9479866d078a Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a/Stakeholders_059e1eaf-271a-4db8-a1f0-9479866d078a.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e91bdd1e20d7c9cd70201841af3d5be0>.
+<#e91bdd1e20d7c9cd70201841af3d5be0> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1571>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.977Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e91bdd1e20d7c9cd70201841af3d5be0> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1571> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "059e1eaf-271a-4db8-a1f0-9479866d078a Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "059e1eaf-271a-4db8-a1f0-9479866d078a Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a/datauser_059e1eaf-271a-4db8-a1f0-9479866d078a.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#138d1e3195a962af93ff2515b0535c91>.
+<#138d1e3195a962af93ff2515b0535c91> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1572>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.978Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#138d1e3195a962af93ff2515b0535c91> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1572> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "059e1eaf-271a-4db8-a1f0-9479866d078a Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "059e1eaf-271a-4db8-a1f0-9479866d078a Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a/legal_059e1eaf-271a-4db8-a1f0-9479866d078a.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ddd8d1796cdc386a9442001a05f4e97e>.
+<#ddd8d1796cdc386a9442001a05f4e97e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1573>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.979Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ddd8d1796cdc386a9442001a05f4e97e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1573> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "059e1eaf-271a-4db8-a1f0-9479866d078a SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "059e1eaf-271a-4db8-a1f0-9479866d078a SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a/scra_059e1eaf-271a-4db8-a1f0-9479866d078a.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6ffc77a93fa4761253070bef429ef0e8>.
+<#6ffc77a93fa4761253070bef429ef0e8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1574>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.980Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6ffc77a93fa4761253070bef429ef0e8> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1574> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "059e1eaf-271a-4db8-a1f0-9479866d078a Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "059e1eaf-271a-4db8-a1f0-9479866d078a Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/059e1eaf-271a-4db8-a1f0-9479866d078a/Stakeholders_059e1eaf-271a-4db8-a1f0-9479866d078a.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a96d8c8b817efdcd2f3427762861173c>.
+<#a96d8c8b817efdcd2f3427762861173c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1578>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.981Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a96d8c8b817efdcd2f3427762861173c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1578> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c/datauser_e666ce3a-65cb-4b95-8a1e-0eeba577f87c.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#412705f3e2c914b636e45f6b3a20aeed>.
+<#412705f3e2c914b636e45f6b3a20aeed> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1579>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.982Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#412705f3e2c914b636e45f6b3a20aeed> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1579> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c/legal_e666ce3a-65cb-4b95-8a1e-0eeba577f87c.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b504764cb977d8486cb6b0f04b6da2f9>.
+<#b504764cb977d8486cb6b0f04b6da2f9> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1580>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.984Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b504764cb977d8486cb6b0f04b6da2f9> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1580> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c/scra_e666ce3a-65cb-4b95-8a1e-0eeba577f87c.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#00b5e401910a616e2a5db463208498c8>.
+<#00b5e401910a616e2a5db463208498c8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1581>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.985Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#00b5e401910a616e2a5db463208498c8> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1581> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c/Stakeholders_e666ce3a-65cb-4b95-8a1e-0eeba577f87c.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8df2cfa67c23561c8ea198b1f9744ae3>.
+<#8df2cfa67c23561c8ea198b1f9744ae3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1582>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.986Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8df2cfa67c23561c8ea198b1f9744ae3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1582> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c/datauser_e666ce3a-65cb-4b95-8a1e-0eeba577f87c.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#262605b3ecf5969d3499f1906c0363b8>.
+<#262605b3ecf5969d3499f1906c0363b8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1583>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.987Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#262605b3ecf5969d3499f1906c0363b8> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1583> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c/legal_e666ce3a-65cb-4b95-8a1e-0eeba577f87c.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f53c1a794851e065c21a5a0a1f49e91a>.
+<#f53c1a794851e065c21a5a0a1f49e91a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1584>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.988Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f53c1a794851e065c21a5a0a1f49e91a> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1584> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c/scra_e666ce3a-65cb-4b95-8a1e-0eeba577f87c.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f8365e35cc1f43451615a2d67259b00c>.
+<#f8365e35cc1f43451615a2d67259b00c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1585>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.989Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f8365e35cc1f43451615a2d67259b00c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1585> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "e666ce3a-65cb-4b95-8a1e-0eeba577f87c Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/e666ce3a-65cb-4b95-8a1e-0eeba577f87c/Stakeholders_e666ce3a-65cb-4b95-8a1e-0eeba577f87c.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#946ecc24630e62178873ab8aabb772b3>.
+<#946ecc24630e62178873ab8aabb772b3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1589>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.991Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#946ecc24630e62178873ab8aabb772b3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1589> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369/datauser_32e3bf3f-8a51-4af2-bb48-a1c304b84369.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8d9734723bc49289e962693d5ab572e5>.
+<#8d9734723bc49289e962693d5ab572e5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1590>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.992Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8d9734723bc49289e962693d5ab572e5> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1590> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369/legal_32e3bf3f-8a51-4af2-bb48-a1c304b84369.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a623ab96b5e2930ad8f9562017f67c20>.
+<#a623ab96b5e2930ad8f9562017f67c20> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1591>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.993Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a623ab96b5e2930ad8f9562017f67c20> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1591> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369/scra_32e3bf3f-8a51-4af2-bb48-a1c304b84369.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#40f802dce98c6ba2096950a8c6f5fd3b>.
+<#40f802dce98c6ba2096950a8c6f5fd3b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1592>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.994Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#40f802dce98c6ba2096950a8c6f5fd3b> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1592> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369/Stakeholders_32e3bf3f-8a51-4af2-bb48-a1c304b84369.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7bd52f5dbc8c61e15be1cb45bd0db829>.
+<#7bd52f5dbc8c61e15be1cb45bd0db829> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1593>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.995Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7bd52f5dbc8c61e15be1cb45bd0db829> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1593> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369/datauser_32e3bf3f-8a51-4af2-bb48-a1c304b84369.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f366d5d53836ef48abc62214ac605355>.
+<#f366d5d53836ef48abc62214ac605355> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1594>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.996Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f366d5d53836ef48abc62214ac605355> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1594> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369/legal_32e3bf3f-8a51-4af2-bb48-a1c304b84369.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0c0fa43b6b62c35618bb77b8ed483cfa>.
+<#0c0fa43b6b62c35618bb77b8ed483cfa> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1595>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.997Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0c0fa43b6b62c35618bb77b8ed483cfa> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1595> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369/scra_32e3bf3f-8a51-4af2-bb48-a1c304b84369.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#57928586a939047a3051085217c70aa1>.
+<#57928586a939047a3051085217c70aa1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1596>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:13.999Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#57928586a939047a3051085217c70aa1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1596> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "32e3bf3f-8a51-4af2-bb48-a1c304b84369 Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/32e3bf3f-8a51-4af2-bb48-a1c304b84369/Stakeholders_32e3bf3f-8a51-4af2-bb48-a1c304b84369.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ed58df9c6b66fc47e523e8ac26ef4008>.
+<#ed58df9c6b66fc47e523e8ac26ef4008> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1600>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ed58df9c6b66fc47e523e8ac26ef4008> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1600> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_NOM_v1.0.7.xlsx"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_NOM_v1.0.7.xlsx"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XLSX>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_NOM_v1.0.7.xlsx>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b26706f739ec88415b79cd8d14a83834>.
+<#b26706f739ec88415b79cd8d14a83834> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1601>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.001Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b26706f739ec88415b79cd8d14a83834> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1601> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_PSEUD_v1.0.7.xlsx"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_PSEUD_v1.0.7.xlsx"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XLSX>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_PSEUD_v1.0.7.xlsx>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d5a09de7553815f0d00a0b342d4e2de3>.
+<#d5a09de7553815f0d00a0b342d4e2de3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1602>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.002Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d5a09de7553815f0d00a0b342d4e2de3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1602> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_v1.0.1.xlsx"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_v1.0.1.xlsx"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XLSX>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_SPEC_HDBP0037_EPILABO_CB_MO_v1.0.1.xlsx>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d0b530860f1ebd16d1f48e90b12060be>.
+<#d0b530860f1ebd16d1f48e90b12060be> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1603>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.003Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d0b530860f1ebd16d1f48e90b12060be> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1603> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "4f4f0d95-921d-4247-917e-b9b91871d94d Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "4f4f0d95-921d-4247-917e-b9b91871d94d Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/datauser_4f4f0d95-921d-4247-917e-b9b91871d94d.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#25c62fdb8cdc65886959022c151ebe83>.
+<#25c62fdb8cdc65886959022c151ebe83> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1604>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.004Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#25c62fdb8cdc65886959022c151ebe83> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1604> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "4f4f0d95-921d-4247-917e-b9b91871d94d Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "4f4f0d95-921d-4247-917e-b9b91871d94d Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/legal_4f4f0d95-921d-4247-917e-b9b91871d94d.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a980d3b507c08f9c45a20f006cae4d9f>.
+<#a980d3b507c08f9c45a20f006cae4d9f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1605>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.005Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a980d3b507c08f9c45a20f006cae4d9f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1605> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "4f4f0d95-921d-4247-917e-b9b91871d94d SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "4f4f0d95-921d-4247-917e-b9b91871d94d SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/scra_4f4f0d95-921d-4247-917e-b9b91871d94d.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#18942998e0110ab91af0e7dc789db4af>.
+<#18942998e0110ab91af0e7dc789db4af> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1606>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.006Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#18942998e0110ab91af0e7dc789db4af> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1606> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "4f4f0d95-921d-4247-917e-b9b91871d94d Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "4f4f0d95-921d-4247-917e-b9b91871d94d Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/Stakeholders_4f4f0d95-921d-4247-917e-b9b91871d94d.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ae097e97edfc7a8e749569202e6c9e71>.
+<#ae097e97edfc7a8e749569202e6c9e71> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1607>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.013Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ae097e97edfc7a8e749569202e6c9e71> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1607> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_submcsv_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#300c68133148c01a05fc119727be1df3>.
+<#300c68133148c01a05fc119727be1df3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1608>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.014Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#300c68133148c01a05fc119727be1df3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1608> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927_HEADER.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927_HEADER.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_submcsv_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927_HEADER.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#177121f2b031eaf8fbd60a65b9d448f1>.
+<#177121f2b031eaf8fbd60a65b9d448f1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1609>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.015Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#177121f2b031eaf8fbd60a65b9d448f1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1609> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0037_EPILABO_Clinical_Biology_-_Laboratory_Test_Results_v1.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0037_EPILABO_Clinical_Biology_-_Laboratory_Test_Results_v1.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_submcsv_HDBP0037_EPILABO_Clinical_Biology_-_Laboratory_Test_Results_v1.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f5f9a5ffc3eabba80be6182ed19e47a1>.
+<#f5f9a5ffc3eabba80be6182ed19e47a1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1610>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.016Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f5f9a5ffc3eabba80be6182ed19e47a1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1610> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "4f4f0d95-921d-4247-917e-b9b91871d94d Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "4f4f0d95-921d-4247-917e-b9b91871d94d Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/datauser_4f4f0d95-921d-4247-917e-b9b91871d94d.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cc5a09668368ca5dfdc0e1623ee1e389>.
+<#cc5a09668368ca5dfdc0e1623ee1e389> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1611>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cc5a09668368ca5dfdc0e1623ee1e389> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1611> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "4f4f0d95-921d-4247-917e-b9b91871d94d Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "4f4f0d95-921d-4247-917e-b9b91871d94d Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/legal_4f4f0d95-921d-4247-917e-b9b91871d94d.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f516ff600838c87369db56f3ef76df27>.
+<#f516ff600838c87369db56f3ef76df27> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1612>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.018Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f516ff600838c87369db56f3ef76df27> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1612> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "4f4f0d95-921d-4247-917e-b9b91871d94d SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "4f4f0d95-921d-4247-917e-b9b91871d94d SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/scra_4f4f0d95-921d-4247-917e-b9b91871d94d.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#fd2c9540a017aecd969e72953989c259>.
+<#fd2c9540a017aecd969e72953989c259> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1613>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.019Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#fd2c9540a017aecd969e72953989c259> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1613> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "4f4f0d95-921d-4247-917e-b9b91871d94d Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "4f4f0d95-921d-4247-917e-b9b91871d94d Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/Stakeholders_4f4f0d95-921d-4247-917e-b9b91871d94d.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#beeeba337cab8eed988ed0d7dc0d2c87>.
+<#beeeba337cab8eed988ed0d7dc0d2c87> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1614>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.020Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#beeeba337cab8eed988ed0d7dc0d2c87> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1614> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0037_EPILABO_All_Repeatables_Full_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0037_EPILABO_All_Repeatables_Full_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_submjson_HDBP0037_EPILABO_All_Repeatables_Full_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#22c316989ddee728f0bf1dfe3821268c>.
+<#22c316989ddee728f0bf1dfe3821268c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1615>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.021Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#22c316989ddee728f0bf1dfe3821268c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1615> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_submjson_HDBP0037_EPILABO_All_Repeatables_Full_v1_20230927.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#22984457b006f02f48f33f7c167a7a7b>.
+<#22984457b006f02f48f33f7c167a7a7b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1616>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.022Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#22984457b006f02f48f33f7c167a7a7b> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1616> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0037_EPILABO_Clinical_Biology_-_Laboratory_Test_Results_v1.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0037_EPILABO_Clinical_Biology_-_Laboratory_Test_Results_v1.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/4f4f0d95-921d-4247-917e-b9b91871d94d/HD_DCD_submjson_HDBP0037_EPILABO_Clinical_Biology_-_Laboratory_Test_Results_v1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#21a88cda6855584715df77aa0203cd9e>.
+<#21a88cda6855584715df77aa0203cd9e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1620>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.023Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#21a88cda6855584715df77aa0203cd9e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1620> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2/datauser_5dfb9a1e-b36f-46d2-8267-e71427e2eed2.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#47c05ff281dae3222502099c3fbfd33f>.
+<#47c05ff281dae3222502099c3fbfd33f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1621>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.024Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#47c05ff281dae3222502099c3fbfd33f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1621> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2/legal_5dfb9a1e-b36f-46d2-8267-e71427e2eed2.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1e2ff4e20c488570e0bff8fd754c8200>.
+<#1e2ff4e20c488570e0bff8fd754c8200> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1622>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.025Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1e2ff4e20c488570e0bff8fd754c8200> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1622> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2/scra_5dfb9a1e-b36f-46d2-8267-e71427e2eed2.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cead714f2c6ddead8a5eb4b52adc063e>.
+<#cead714f2c6ddead8a5eb4b52adc063e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1623>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.026Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cead714f2c6ddead8a5eb4b52adc063e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1623> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2/Stakeholders_5dfb9a1e-b36f-46d2-8267-e71427e2eed2.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0e7d0462534c8cd258c07bd605c3e63a>.
+<#0e7d0462534c8cd258c07bd605c3e63a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1624>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.027Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0e7d0462534c8cd258c07bd605c3e63a> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1624> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2/datauser_5dfb9a1e-b36f-46d2-8267-e71427e2eed2.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#180edc00348bece2c6695b931d888056>.
+<#180edc00348bece2c6695b931d888056> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1625>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.028Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#180edc00348bece2c6695b931d888056> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1625> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2/legal_5dfb9a1e-b36f-46d2-8267-e71427e2eed2.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#792055e96c4ccef725e2d9a7aaa8f50d>.
+<#792055e96c4ccef725e2d9a7aaa8f50d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1626>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.029Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#792055e96c4ccef725e2d9a7aaa8f50d> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1626> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2/scra_5dfb9a1e-b36f-46d2-8267-e71427e2eed2.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d29aee1c166d0bc9839c5dafb190154f>.
+<#d29aee1c166d0bc9839c5dafb190154f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1627>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.030Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d29aee1c166d0bc9839c5dafb190154f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1627> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "5dfb9a1e-b36f-46d2-8267-e71427e2eed2 Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/5dfb9a1e-b36f-46d2-8267-e71427e2eed2/Stakeholders_5dfb9a1e-b36f-46d2-8267-e71427e2eed2.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#27f1fc9867ecf94155f95744ae1f32b5>.
+<#27f1fc9867ecf94155f95744ae1f32b5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1631>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.031Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#27f1fc9867ecf94155f95744ae1f32b5> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1631> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "REPORT_SCRA_Pedisurv_signed.pdf"@en;
+    <http://purl.org/dc/terms/description> "REPORT_SCRA_Pedisurv_signed.pdf"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/pdf>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PDF>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58/REPORT_SCRA_Pedisurv_signed.pdf>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2b30c273d7f4be5511c3b6dd61c627e3>.
+<#2b30c273d7f4be5511c3b6dd61c627e3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1632>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.032Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2b30c273d7f4be5511c3b6dd61c627e3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1632> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 Data User CSV"@en;
+    <http://purl.org/dc/terms/description> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 Data User CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58/datauser_6b663c64-7bc2-4482-bd4b-1d24e86e0a58.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8a3e70084c8c38ef7b3cbca20c3e19ff>.
+<#8a3e70084c8c38ef7b3cbca20c3e19ff> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1633>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.033Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8a3e70084c8c38ef7b3cbca20c3e19ff> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1633> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 Legal CSV"@en;
+    <http://purl.org/dc/terms/description> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 Legal CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58/legal_6b663c64-7bc2-4482-bd4b-1d24e86e0a58.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#18ed9fe5380932a420e5d6a92530d581>.
+<#18ed9fe5380932a420e5d6a92530d581> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1634>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.034Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#18ed9fe5380932a420e5d6a92530d581> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1634> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 SCRA CSV"@en;
+    <http://purl.org/dc/terms/description> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 SCRA CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58/scra_6b663c64-7bc2-4482-bd4b-1d24e86e0a58.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cae394b2f21bc914bdaa2d6d4bec6258>.
+<#cae394b2f21bc914bdaa2d6d4bec6258> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1635>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.035Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cae394b2f21bc914bdaa2d6d4bec6258> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1635> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 Stakeholders CSV"@en;
+    <http://purl.org/dc/terms/description> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 Stakeholders CSV"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58/Stakeholders_6b663c64-7bc2-4482-bd4b-1d24e86e0a58.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b7a017587369f5809dcc26c48648c49c>.
+<#b7a017587369f5809dcc26c48648c49c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1636>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-02-14T09:31:14.036Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b7a017587369f5809dcc26c48648c49c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b1636> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "6b663c64-7bc2-4482-bd4b-1d24e86e0a58 Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/6b663c64-7bc2-4482-bd4b-1d24e86e0a58/datauser_6b663c64-7bc2-4482-bd4b-1d24e86e0a58.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<index.trig> <https://w3id.org/tree#relation> _:df_61_212.
+_:df_61_212 a <https://w3id.org/tree#GreaterThanOrEqualToRelation>;
+    <https://w3id.org/tree#node> <../2025-02-14T04_3A46_3A52.500Z_123187500_213/index.trig>;
+    <https://w3id.org/tree#path> <https://www.w3.org/ns/activitystreams#published>;
+    <https://w3id.org/tree#value> "2025-02-14T09:31:14.037Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
