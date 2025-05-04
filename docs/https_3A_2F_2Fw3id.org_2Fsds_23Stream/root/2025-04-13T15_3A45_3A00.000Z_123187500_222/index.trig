@@ -1,0 +1,1112 @@
+<../../../index.trig> a <https://w3id.org/ldes#EventStream>.
+<index.trig> a <https://w3id.org/tree#Node>;
+    <http://purl.org/dc/terms/isPartOf> <../../../index.trig>.
+<../../../index.trig> <https://w3id.org/tree#member> <#f5ce6ebbe06526ca04167ad2775c6640>.
+<#f5ce6ebbe06526ca04167ad2775c6640> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/ed4a6e24627d88eed081e134acf4e3d9a6504d30/2a5a4948ff3c17516d3cd20b3db203dc2f678f31>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.191Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f5ce6ebbe06526ca04167ad2775c6640> {
+<http://data.gov.be/dist/brussels/ed4a6e24627d88eed081e134acf4e3d9a6504d30/2a5a4948ff3c17516d3cd20b3db203dc2f678f31> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/description> "WFS GetFeature request naar de INSPIRE voorgedefinieerde dataset van Natura 2000 gebieden"@nl, "WFS GetFeature request vers le jeu de données prédéfini des sites Natura 2000"@fr, "WFS GetFeature request to the INSPIRE pre-defined dataset of Natura 2000 sites"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/905d53f2-082d-41ea-a80e-9c61c7f172e7>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://wfs.environnement.brussels/belb_inspire_n2k_stations?VERSION=2.0.0&SERVICE=wfs&REQUEST=GetFeature&STOREDQUERY_ID=http%3A%2F%2Finspire.ec.europa.eu%2Foperation%2Fdownload%2FGetSpatialDataSet&DataSetIdCode=BRU_ENVI_905d53f2-082d-41ea-a80e-9c61c7f172e7&DataSetIdNamespace=BE.BELB&CRS=EPSG%3A3035&Language=eng&OUTPUTFORMAT=text/xml;%20subtype=gml/3.2.1>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>;
+    <http://www.w3.org/ns/dcat#byteSize> "500000"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1598f4b327981842a39e9b594205b42b>.
+<#1598f4b327981842a39e9b594205b42b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/ed4a6e24627d88eed081e134acf4e3d9a6504d30/0d51cee98e3bfd1071df21d3b3d6c7381a5cdb67>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.193Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1598f4b327981842a39e9b594205b42b> {
+<http://data.gov.be/dist/brussels/ed4a6e24627d88eed081e134acf4e3d9a6504d30/0d51cee98e3bfd1071df21d3b3d6c7381a5cdb67> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "ProtectedSite"@nl, "ProtectedSite"@fr, "ProtectedSite"@en;
+    <http://purl.org/dc/terms/description> "Raadpleegdienst (WMS) van de INSPIRE-conforme gegevens van de Natura 2000 gebieden"@nl, "Service de visualisation (WMS) des données conformes INSPIRE des sites Natura 2000"@fr, "View service (WMS) of the INSPIRE compliant dataset of Natura 2000 sites"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/905d53f2-082d-41ea-a80e-9c61c7f172e7>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://wms.environnement.brussels/belb_inspire_n2k_stations?SERVICE=wms&REQUEST=GetCapabilities&VERSION=1.3.0>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#da8367c640d9cad4c525029b945b3960>.
+<#da8367c640d9cad4c525029b945b3960> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/0cb1e2446e66ea12eb1045d34bf91e30d0927fa7/f5c97a27c30e42b38de0f040e050e4c132129785>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.194Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#da8367c640d9cad4c525029b945b3960> {
+<http://data.gov.be/dist/brussels/0cb1e2446e66ea12eb1045d34bf91e30d0927fa7/f5c97a27c30e42b38de0f040e050e4c132129785> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/description> "http://www.opengis.net/def/crs/EPSG/0/3035"@fr;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/21f60bd6-fdcb-4946-856d-383dacf7dc45>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://urbisdownload.datastore.brussels/INSPIRE/URBIS_ADM_RoadTransportNetworks.zip>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>;
+    <http://www.w3.org/ns/dcat#byteSize> "103020170"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a01471ddae68f95b634bba29b6238ef9>.
+<#a01471ddae68f95b634bba29b6238ef9> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/0cb1e2446e66ea12eb1045d34bf91e30d0927fa7/67d5548d97f38d8770b386d272f34bac7a0961c6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.195Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a01471ddae68f95b634bba29b6238ef9> {
+<http://data.gov.be/dist/brussels/0cb1e2446e66ea12eb1045d34bf91e30d0927fa7/67d5548d97f38d8770b386d272f34bac7a0961c6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "TN.RoadTransportNetwork.RoadArea"@fr;
+    <http://purl.org/dc/terms/description> "WMS GetCapabilities - cirb_cibg"@fr;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/21f60bd6-fdcb-4946-856d-383dacf7dc45>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://geoservices-urbis.irisnet.be/geoserver/inspire/wms?service=WMS&version=1.3.0&request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#bff75720a0bf89309b370dd2480a0ad2>.
+<#bff75720a0bf89309b370dd2480a0ad2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/d137b7af2b465d936cf7b2d06c0a447ce787606e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.196Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#bff75720a0bf89309b370dd2480a0ad2> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/d137b7af2b465d936cf7b2d06c0a447ce787606e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/csv>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f33c64b5dad665cba0d39012c16b299d>.
+<#f33c64b5dad665cba0d39012c16b299d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/1a827fcaebc28402ad9cd485adf3ba0cce587333>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.197Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f33c64b5dad665cba0d39012c16b299d> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/1a827fcaebc28402ad9cd485adf3ba0cce587333> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/json>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0d9f1d92c4ffe9713b1a2a2056c928f7>.
+<#0d9f1d92c4ffe9713b1a2a2056c928f7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/e73b54739b1c65bd08d737fe36881db883e6ce84>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.198Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0d9f1d92c4ffe9713b1a2a2056c928f7> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/e73b54739b1c65bd08d737fe36881db883e6ce84> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/fgb>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c7714ce93406b0571f4cf2b60d51e6d4>.
+<#c7714ce93406b0571f4cf2b60d51e6d4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/f98ec388d426c92d17d4e3128b78875c67957696>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.198Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c7714ce93406b0571f4cf2b60d51e6d4> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/f98ec388d426c92d17d4e3128b78875c67957696> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/geojson>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#081a18c56df6591ae09aab8dee1da38e>.
+<#081a18c56df6591ae09aab8dee1da38e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/d717a30d59a35c901195089b390fc32455fbe330>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.199Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#081a18c56df6591ae09aab8dee1da38e> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/d717a30d59a35c901195089b390fc32455fbe330> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/gpx>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#41caf005dba850bf499a6fbb62e9b33d>.
+<#41caf005dba850bf499a6fbb62e9b33d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/c64cb47d14d4629ef6f66db29d22049309d3207f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.200Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#41caf005dba850bf499a6fbb62e9b33d> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/c64cb47d14d4629ef6f66db29d22049309d3207f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/jsonl>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cfc2a89956f2b100a1d831e822eac587>.
+<#cfc2a89956f2b100a1d831e822eac587> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/16cc7c4ebdeaf3b2dfe3af6374355e2062520a80>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.201Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cfc2a89956f2b100a1d831e822eac587> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/16cc7c4ebdeaf3b2dfe3af6374355e2062520a80> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/kml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4c13a4522a6b661894f386a2b927686d>.
+<#4c13a4522a6b661894f386a2b927686d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/c51b22eae435afb82f9d53c1870d99e3c70191b6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.202Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4c13a4522a6b661894f386a2b927686d> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/c51b22eae435afb82f9d53c1870d99e3c70191b6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/ov2>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9c04bb3924071ca0274d6672e5dd3020>.
+<#9c04bb3924071ca0274d6672e5dd3020> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/76dd9726c0a55446db8a6f5b9d4e62dbf3fafd45>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.203Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9c04bb3924071ca0274d6672e5dd3020> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/76dd9726c0a55446db8a6f5b9d4e62dbf3fafd45> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/parquet>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cc250f5e03d0497a7da0b3bca923a82d>.
+<#cc250f5e03d0497a7da0b3bca923a82d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/9f4337c1b7bd75012acf059aa957d24db8b7ba6c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.204Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cc250f5e03d0497a7da0b3bca923a82d> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/9f4337c1b7bd75012acf059aa957d24db8b7ba6c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/rdfxml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#263670065851eda74ed4f12983f4afff>.
+<#263670065851eda74ed4f12983f4afff> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/cb13b97f22a3a720ff78ac93ba7f06cf1b879188>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.209Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#263670065851eda74ed4f12983f4afff> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/cb13b97f22a3a720ff78ac93ba7f06cf1b879188> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/jsonld>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cb27ef18cdd692ea6e3108ea1b87fa0a>.
+<#cb27ef18cdd692ea6e3108ea1b87fa0a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/1619238e43c8abd7b9f40d3c7501acdc4a6976d2>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.210Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cb27ef18cdd692ea6e3108ea1b87fa0a> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/1619238e43c8abd7b9f40d3c7501acdc4a6976d2> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/turtle>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3c5959d6dd82f4c6a6a31bb6fc320772>.
+<#3c5959d6dd82f4c6a6a31bb6fc320772> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/4c55f221d1e9685aa3ec5ef01dd8777e50647862>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.211Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3c5959d6dd82f4c6a6a31bb6fc320772> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/4c55f221d1e9685aa3ec5ef01dd8777e50647862> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/n3>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9a8e93fd7ba83e361ec4b09124565baa>.
+<#9a8e93fd7ba83e361ec4b09124565baa> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/0049d32f578feb5a449ec2caa13d17db5d8fb2b7>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.212Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9a8e93fd7ba83e361ec4b09124565baa> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/0049d32f578feb5a449ec2caa13d17db5d8fb2b7> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/shp>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#fa6b1da90b6c6fdcee31275abc996e33>.
+<#fa6b1da90b6c6fdcee31275abc996e33> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/5067e5602da7a175a2cdcc422a96e061104d384a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.213Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#fa6b1da90b6c6fdcee31275abc996e33> {
+<http://data.gov.be/dist/brussels/375fc6c0b3e473afe9bf37e5ef2f8bec4446eae4/5067e5602da7a175a2cdcc422a96e061104d384a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/pompes-a-velo>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/pompes-a-velo/exports/xls>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#79a6484fcf13e04d231b0740b865402a>.
+<#79a6484fcf13e04d231b0740b865402a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/2bf2d2a47d5b7a80fff1e1abf89a31d3c29acd52>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.214Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#79a6484fcf13e04d231b0740b865402a> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/2bf2d2a47d5b7a80fff1e1abf89a31d3c29acd52> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/csv>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#03d5535fb3242cf44ca072f07c7abef7>.
+<#03d5535fb3242cf44ca072f07c7abef7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/b4941e0c047e6a5c687a9eb35a2f28fa4597dbf4>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.215Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#03d5535fb3242cf44ca072f07c7abef7> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/b4941e0c047e6a5c687a9eb35a2f28fa4597dbf4> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/json>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6c08f61b194cd1ad8018d4a60b718e32>.
+<#6c08f61b194cd1ad8018d4a60b718e32> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/32e0ac5ab8c04d53fd3704375d94139c63f44082>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.215Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6c08f61b194cd1ad8018d4a60b718e32> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/32e0ac5ab8c04d53fd3704375d94139c63f44082> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/fgb>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c2d64036ed4142f68fee55df9dee8d75>.
+<#c2d64036ed4142f68fee55df9dee8d75> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/5fae539e47ac62a3c3a8475d317f832cf42fb7f6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.216Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c2d64036ed4142f68fee55df9dee8d75> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/5fae539e47ac62a3c3a8475d317f832cf42fb7f6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/geojson>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9be26197518d1b27a6e9063d8afaf858>.
+<#9be26197518d1b27a6e9063d8afaf858> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/ee3528fbec4bd10c36af2f26aaa20a3569e5dca5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.217Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9be26197518d1b27a6e9063d8afaf858> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/ee3528fbec4bd10c36af2f26aaa20a3569e5dca5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/gpx>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a8f7b52037f7d0707d06d01169d42b35>.
+<#a8f7b52037f7d0707d06d01169d42b35> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/43343d5ecd8b147c64b5a570cd01deb50bcbc43a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.218Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a8f7b52037f7d0707d06d01169d42b35> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/43343d5ecd8b147c64b5a570cd01deb50bcbc43a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/jsonl>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#98abd5e8ae5dedbaedad6df32a951375>.
+<#98abd5e8ae5dedbaedad6df32a951375> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/b8375d2187358ce31f3e7c146b29bcc58de28d50>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.219Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#98abd5e8ae5dedbaedad6df32a951375> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/b8375d2187358ce31f3e7c146b29bcc58de28d50> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/kml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#eaba5a7706001c1d7d7dd64f1510cc14>.
+<#eaba5a7706001c1d7d7dd64f1510cc14> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/2382d2cff5aebbf9edfa50f5f7f298d817729f27>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.220Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#eaba5a7706001c1d7d7dd64f1510cc14> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/2382d2cff5aebbf9edfa50f5f7f298d817729f27> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/ov2>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#efb2eec65c0caa3b3413b849fbc90c69>.
+<#efb2eec65c0caa3b3413b849fbc90c69> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/67bf948e1193f0f671cb03a0e924220d1a780e73>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.221Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#efb2eec65c0caa3b3413b849fbc90c69> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/67bf948e1193f0f671cb03a0e924220d1a780e73> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/parquet>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0f5d971d87d0ea2c97a9b99ec697545f>.
+<#0f5d971d87d0ea2c97a9b99ec697545f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/3407e58ac30a61f4d4defc4c7ce114652f8dd1cd>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.222Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0f5d971d87d0ea2c97a9b99ec697545f> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/3407e58ac30a61f4d4defc4c7ce114652f8dd1cd> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/rdfxml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5109c9cfdd9fee422a64f17cc6d37996>.
+<#5109c9cfdd9fee422a64f17cc6d37996> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/311bb0833fe08c0bb0dae02f6e2641d307af8129>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.223Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5109c9cfdd9fee422a64f17cc6d37996> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/311bb0833fe08c0bb0dae02f6e2641d307af8129> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/jsonld>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e8f4fe7bf99edeecda7234f2556a96d6>.
+<#e8f4fe7bf99edeecda7234f2556a96d6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/3401d2c53b1bc6576d9775cfad96a36ce2186c15>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.224Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e8f4fe7bf99edeecda7234f2556a96d6> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/3401d2c53b1bc6576d9775cfad96a36ce2186c15> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/turtle>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e2ba8966bbe9b0aa9a878c05abb1b351>.
+<#e2ba8966bbe9b0aa9a878c05abb1b351> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/214c9973df96bd645f6e8e63213c9920b52e1602>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.224Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e2ba8966bbe9b0aa9a878c05abb1b351> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/214c9973df96bd645f6e8e63213c9920b52e1602> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/n3>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3a3635ae56e06102aa3db2f0bfd9aaa4>.
+<#3a3635ae56e06102aa3db2f0bfd9aaa4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/4431d8dedbef84425b58ddc1851a852d339f3f92>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.225Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3a3635ae56e06102aa3db2f0bfd9aaa4> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/4431d8dedbef84425b58ddc1851a852d339f3f92> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/shp>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d206e9441626b7f5427809626d11d85b>.
+<#d206e9441626b7f5427809626d11d85b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/7e5b8a89e92af5913a63234e4e206664752b1a92>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.226Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d206e9441626b7f5427809626d11d85b> {
+<http://data.gov.be/dist/brussels/063ccb978afb7bed81df1452a9271de1341f83c1/7e5b8a89e92af5913a63234e4e206664752b1a92> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/places-de-parking-velos-rencensees-par-parking-brussels-vbx>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/places-de-parking-velos-rencensees-par-parking-brussels-vbx/exports/xls>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2e1e8ef0663e5c21630ec3a1ba134980>.
+<#2e1e8ef0663e5c21630ec3a1ba134980> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/0bc6d63812522166b31df21043b778d93aece7cc>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.227Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2e1e8ef0663e5c21630ec3a1ba134980> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/0bc6d63812522166b31df21043b778d93aece7cc> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/csv>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2d1002c67a597c0631654ab78c0eb3c9>.
+<#2d1002c67a597c0631654ab78c0eb3c9> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/203a9e2f90523cab63a32c7eb79540076696e6d6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.228Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2d1002c67a597c0631654ab78c0eb3c9> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/203a9e2f90523cab63a32c7eb79540076696e6d6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/json>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8fb7e26fffd90bb8e10a480c4bf9bec6>.
+<#8fb7e26fffd90bb8e10a480c4bf9bec6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/ed3a3e63d5b207c13df995d1dc5b65a31e462070>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.229Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8fb7e26fffd90bb8e10a480c4bf9bec6> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/ed3a3e63d5b207c13df995d1dc5b65a31e462070> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/fgb>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b6dac1d346475a0edc29cb8c95dd6491>.
+<#b6dac1d346475a0edc29cb8c95dd6491> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/d1804d261f4e5e2f03aeaa2f0d9b853f1b11a768>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.230Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b6dac1d346475a0edc29cb8c95dd6491> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/d1804d261f4e5e2f03aeaa2f0d9b853f1b11a768> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/geojson>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1ef04905d29e0d642239b69bc508cb63>.
+<#1ef04905d29e0d642239b69bc508cb63> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/99315a62a2e8c2ea963ffaf7d68d8f31393ebcf5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.231Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1ef04905d29e0d642239b69bc508cb63> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/99315a62a2e8c2ea963ffaf7d68d8f31393ebcf5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/gpx>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3e63865905d2f81c717b0b7d17811632>.
+<#3e63865905d2f81c717b0b7d17811632> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/539ebd6f27b96c3ac3e4b88a00871db57c6fabe7>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.232Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3e63865905d2f81c717b0b7d17811632> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/539ebd6f27b96c3ac3e4b88a00871db57c6fabe7> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/jsonl>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f8ac1706ef04a264d6a5cee0b6cf488e>.
+<#f8ac1706ef04a264d6a5cee0b6cf488e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/a5ed5f14e5e7da7177f863ae6888937219c2e23e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.233Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f8ac1706ef04a264d6a5cee0b6cf488e> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/a5ed5f14e5e7da7177f863ae6888937219c2e23e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/kml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0dc4aadf1e4061d9d4454da0b7b06268>.
+<#0dc4aadf1e4061d9d4454da0b7b06268> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/6fe1d54b105ff4a756442df0181f01bf5d051916>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.234Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0dc4aadf1e4061d9d4454da0b7b06268> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/6fe1d54b105ff4a756442df0181f01bf5d051916> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/ov2>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#dfdbbef45e406bc2c01f760c7217f8b4>.
+<#dfdbbef45e406bc2c01f760c7217f8b4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/85a4eac6dbe1e0540c48774327f80aeb6771117e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.234Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dfdbbef45e406bc2c01f760c7217f8b4> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/85a4eac6dbe1e0540c48774327f80aeb6771117e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/parquet>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a380a8f09989a38f36ef8fac06f67d37>.
+<#a380a8f09989a38f36ef8fac06f67d37> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/ab82d7c6d9f3e4e8f7c314e1d9fb04269c1533a7>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.235Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a380a8f09989a38f36ef8fac06f67d37> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/ab82d7c6d9f3e4e8f7c314e1d9fb04269c1533a7> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/rdfxml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a8242f04dac98b11c1e2aba2705eda48>.
+<#a8242f04dac98b11c1e2aba2705eda48> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/318e87caad7db781ae9f02c50d9600ef10af4dd9>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.236Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a8242f04dac98b11c1e2aba2705eda48> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/318e87caad7db781ae9f02c50d9600ef10af4dd9> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/jsonld>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0950d97d7827879e41cbb5e907391007>.
+<#0950d97d7827879e41cbb5e907391007> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/a8ee6624059269e4334dda903f085992591e3403>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.237Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0950d97d7827879e41cbb5e907391007> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/a8ee6624059269e4334dda903f085992591e3403> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/turtle>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4b42ed2d1e4a7bb348e58425d9652e72>.
+<#4b42ed2d1e4a7bb348e58425d9652e72> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/b4c0ec2a0e1f253c1caada66d70a1ce54c708681>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.238Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4b42ed2d1e4a7bb348e58425d9652e72> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/b4c0ec2a0e1f253c1caada66d70a1ce54c708681> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/n3>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f73f8dd62ecab2fc82a25816805bdf1b>.
+<#f73f8dd62ecab2fc82a25816805bdf1b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/e920c57d547e0bb5e3c8434e23f043328d30717f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.243Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f73f8dd62ecab2fc82a25816805bdf1b> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/e920c57d547e0bb5e3c8434e23f043328d30717f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/shp>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5c5e4913e19d8a705af5cd5cc3f626fb>.
+<#5c5e4913e19d8a705af5cd5cc3f626fb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/9545e14117c9ec0a274618bc46b3d4a2870c3287>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.244Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5c5e4913e19d8a705af5cd5cc3f626fb> {
+<http://data.gov.be/dist/brussels/193bebf1143676236d1880763a91abc7e93d2a04/9545e14117c9ec0a274618bc46b3d4a2870c3287> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/itineraires-cyclables-regionaux-rbc>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/itineraires-cyclables-regionaux-rbc/exports/xls>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#31d618eaf255e293a5762043a1ddff7d>.
+<#31d618eaf255e293a5762043a1ddff7d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/5a25cf6f132f0e8dbccea223f240e465b1a78497>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.245Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#31d618eaf255e293a5762043a1ddff7d> {
+<http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/5a25cf6f132f0e8dbccea223f240e465b1a78497> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/e0396d91-4f11-11ef-b5dd-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ows?Service=WMS&Request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7e98765677ef1dda63d681e3c05a8a42>.
+<#7e98765677ef1dda63d681e3c05a8a42> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/4d1556855b11a513200ded48d1265c85252e7e0e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.246Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7e98765677ef1dda63d681e3c05a8a42> {
+<http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/4d1556855b11a513200ded48d1265c85252e7e0e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/e0396d91-4f11-11ef-b5dd-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d438e264dd08645de8cae0e3713661b3>.
+<#d438e264dd08645de8cae0e3713661b3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/424dd8dc469e21c145c48b2859ac844a94e57b5c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.247Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d438e264dd08645de8cae0e3713661b3> {
+<http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/424dd8dc469e21c145c48b2859ac844a94e57b5c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Esri Shapefile"@nl, "Esri Shapefile"@fr, "Esri Shapefile"@en;
+    <http://purl.org/dc/terms/description> "parkeeraanbod op de openbare weg"@nl, "offre parking en voirie"@fr, "on-street parking supply"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/e0396d91-4f11-11ef-b5dd-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:on_street&outputFormat=shape-zip>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#dff3b0395042b26046d3dfdb3defb3c8>.
+<#dff3b0395042b26046d3dfdb3defb3c8> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/ba93e150101fff111adfab7486fd434d9ea4b7e6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.248Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dff3b0395042b26046d3dfdb3defb3c8> {
+<http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/ba93e150101fff111adfab7486fd434d9ea4b7e6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV formaat"@nl, "format CSV"@fr, "CSV format"@en;
+    <http://purl.org/dc/terms/description> "parkeeraanbod op de openbare weg"@nl, "offre parking en voirie"@fr, "on-street parking supply"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/e0396d91-4f11-11ef-b5dd-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:on_street&outputFormat=csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2f658bfec12ec8e0f705978153582a2f>.
+<#2f658bfec12ec8e0f705978153582a2f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/59a204817d53c6a45473f476145216d51bf203f8>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.249Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2f658bfec12ec8e0f705978153582a2f> {
+<http://data.gov.be/dist/brussels/86226480e8aa92a55326e86f6133cbfcf63bae78/59a204817d53c6a45473f476145216d51bf203f8> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl, "GeoJSON"@fr, "GeoJSON"@en;
+    <http://purl.org/dc/terms/description> "parkeeraanbod op de openbare weg"@nl, "offre parking en voirie"@fr, "on-street parking supply"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/e0396d91-4f11-11ef-b5dd-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:on_street&outputFormat=application/json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1082dceb82e642a800de6b23702c3129>.
+<#1082dceb82e642a800de6b23702c3129> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/dd1a49be2956d904ab8b11565cf51f1ebe1b32d9/5a25cf6f132f0e8dbccea223f240e465b1a78497>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.250Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1082dceb82e642a800de6b23702c3129> {
+<http://data.gov.be/dist/brussels/dd1a49be2956d904ab8b11565cf51f1ebe1b32d9/5a25cf6f132f0e8dbccea223f240e465b1a78497> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/3a549366-4a95-11ef-9cb4-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ows?Service=WMS&Request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c4667a9dd0a76eea9c6d5140bda93b74>.
+<#c4667a9dd0a76eea9c6d5140bda93b74> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/dd1a49be2956d904ab8b11565cf51f1ebe1b32d9/99a83c1b2ff76f3e8d1ebcc4bfcdb77349218574>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.251Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c4667a9dd0a76eea9c6d5140bda93b74> {
+<http://data.gov.be/dist/brussels/dd1a49be2956d904ab8b11565cf51f1ebe1b32d9/99a83c1b2ff76f3e8d1ebcc4bfcdb77349218574> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Gereglementeerde zones - Parkeeren op de openbare weg (ESRI Shapefie)"@nl, "Zones réglementées de stationnement en voirie (ESRI Shapefile)"@fr, "Regulated zones - on-street parking (Esri Shapefile)"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/3a549366-4a95-11ef-9cb4-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:regulation_zones&outputFormat=shape-zip>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b5b21494877ac8bbdbd16548006783cc>.
+<#b5b21494877ac8bbdbd16548006783cc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/dd1a49be2956d904ab8b11565cf51f1ebe1b32d9/4b5bffac226adfa90d71ff177a03fc7c238f2c17>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.252Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b5b21494877ac8bbdbd16548006783cc> {
+<http://data.gov.be/dist/brussels/dd1a49be2956d904ab8b11565cf51f1ebe1b32d9/4b5bffac226adfa90d71ff177a03fc7c238f2c17> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Reglementering van de parkeerzones op de openbare weg (csv)"@nl, "Réglementation des zones de stationnement en voirie (csv)"@fr, "On-street parking regulation (csv)"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/3a549366-4a95-11ef-9cb4-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:regulation_rules&outputFormat=csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d92c30489f5997bb1c921004753517fd>.
+<#d92c30489f5997bb1c921004753517fd> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/dd1a49be2956d904ab8b11565cf51f1ebe1b32d9/4d1556855b11a513200ded48d1265c85252e7e0e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.253Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d92c30489f5997bb1c921004753517fd> {
+<http://data.gov.be/dist/brussels/dd1a49be2956d904ab8b11565cf51f1ebe1b32d9/4d1556855b11a513200ded48d1265c85252e7e0e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/3a549366-4a95-11ef-9cb4-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5efa922fb465c6395739b198df3edab9>.
+<#5efa922fb465c6395739b198df3edab9> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/5a25cf6f132f0e8dbccea223f240e465b1a78497>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.254Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5efa922fb465c6395739b198df3edab9> {
+<http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/5a25cf6f132f0e8dbccea223f240e465b1a78497> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/35014a5f-8633-11ef-83e7-28c5d22ddb7e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ows?Service=WMS&Request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#bc974a24552dbfb7f0fa66965222ab89>.
+<#bc974a24552dbfb7f0fa66965222ab89> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/4d1556855b11a513200ded48d1265c85252e7e0e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.255Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#bc974a24552dbfb7f0fa66965222ab89> {
+<http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/4d1556855b11a513200ded48d1265c85252e7e0e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/35014a5f-8633-11ef-83e7-28c5d22ddb7e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0176d77c3e0e174130699c5e3d052ec7>.
+<#0176d77c3e0e174130699c5e3d052ec7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/fd572bec33f65e79c80608dba527170eb184c861>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.256Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0176d77c3e0e174130699c5e3d052ec7> {
+<http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/fd572bec33f65e79c80608dba527170eb184c861> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Esri Shapefile"@nl, "Esri Shapefile"@fr, "Esri Shapefile"@en;
+    <http://purl.org/dc/terms/description> "off-street parkeeraanbod"@nl, "offre parking hors voirie"@fr, "off-street parking supply"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/35014a5f-8633-11ef-83e7-28c5d22ddb7e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:offstreet_blocks&outputFormat=shape-zip>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6cad46b280b6e24d9ce4975bee10111e>.
+<#6cad46b280b6e24d9ce4975bee10111e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/c47fd61d01dd76cb280a67fa5ef4980b8c096e59>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.257Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6cad46b280b6e24d9ce4975bee10111e> {
+<http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/c47fd61d01dd76cb280a67fa5ef4980b8c096e59> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV formaat"@nl, "format CSV"@fr, "CSV format"@en;
+    <http://purl.org/dc/terms/description> "off-street parkeeraanbod"@nl, "offre parking hors voirie"@fr, "off-street parking supply"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/35014a5f-8633-11ef-83e7-28c5d22ddb7e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:offstreet_blocks&outputFormat=csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3d1da877867026d0a31b63fdb3cd2380>.
+<#3d1da877867026d0a31b63fdb3cd2380> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/9bfa2e68d4ceaa39fb978abd249d04836918e00f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.258Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3d1da877867026d0a31b63fdb3cd2380> {
+<http://data.gov.be/dist/brussels/d93c1ec933e0c3426dc862422a66c822988b433a/9bfa2e68d4ceaa39fb978abd249d04836918e00f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl, "GeoJSON"@fr, "GeoJSON"@en;
+    <http://purl.org/dc/terms/description> "off-street parkeeraanbod"@nl, "offre parking hors voirie"@fr, "off-street parking supply"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/35014a5f-8633-11ef-83e7-28c5d22ddb7e>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:offstreet_blocks&outputFormat=application/json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1ac969421943968eec708ed9e6e995d1>.
+<#1ac969421943968eec708ed9e6e995d1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/5a25cf6f132f0e8dbccea223f240e465b1a78497>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.259Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1ac969421943968eec708ed9e6e995d1> {
+<http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/5a25cf6f132f0e8dbccea223f240e465b1a78497> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/a81fc0f3-4f3b-11ef-9504-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ows?Service=WMS&Request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#46fc3227f699170cf816c0f02ebbac81>.
+<#46fc3227f699170cf816c0f02ebbac81> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/4d1556855b11a513200ded48d1265c85252e7e0e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.260Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#46fc3227f699170cf816c0f02ebbac81> {
+<http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/4d1556855b11a513200ded48d1265c85252e7e0e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/a81fc0f3-4f3b-11ef-9504-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8c58e0963b04c7b95694360ca2570a19>.
+<#8c58e0963b04c7b95694360ca2570a19> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/2b30201e8c6f48053d708156dee91f7c4ea47858>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.261Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8c58e0963b04c7b95694360ca2570a19> {
+<http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/2b30201e8c6f48053d708156dee91f7c4ea47858> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Esri Shapefile"@nl, "Esri Shapefile"@fr, "Esri Shapefile"@en;
+    <http://purl.org/dc/terms/description> "Parkeervoorzieningen voor alternatieve modus 2024"@nl, "Dispositifs de stationnement modes alternatifs 2024"@fr, "Alternative mode parking devices 2024"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/a81fc0f3-4f3b-11ef-9504-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:altermodes_2024&outputFormat=shape-zip>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8db8cf9846c265290b57dd22fdb15523>.
+<#8db8cf9846c265290b57dd22fdb15523> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/174fa39b3e0ddb44a2d5ed71df0f1f02322bd82a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.262Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8db8cf9846c265290b57dd22fdb15523> {
+<http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/174fa39b3e0ddb44a2d5ed71df0f1f02322bd82a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "CSV formaat"@nl, "format CSV"@fr, "CSV format"@en;
+    <http://purl.org/dc/terms/description> "Parkeervoorzieningen voor alternatieve modus 2024"@nl, "Dispositifs de stationnement modes alternatifs 2024"@fr, "Alternative mode parking devices 2024"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/a81fc0f3-4f3b-11ef-9504-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:altermodes_2024&outputFormat=csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f848c8b4e89853b347e3d89dacebe92f>.
+<#f848c8b4e89853b347e3d89dacebe92f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/a34b3c3eda3d424140c1cf63411a14f5e5c460b1>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.263Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f848c8b4e89853b347e3d89dacebe92f> {
+<http://data.gov.be/dist/brussels/a5abe727ed69e5784831d42cca1a900f8ef04faa/a34b3c3eda3d424140c1cf63411a14f5e5c460b1> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "GeoJSON"@nl, "GeoJSON"@fr, "GeoJSON"@en;
+    <http://purl.org/dc/terms/description> "Parkeervoorzieningen voor alternatieve modus 2024"@nl, "Dispositifs de stationnement modes alternatifs 2024"@fr, "Alternative mode parking devices 2024"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/a81fc0f3-4f3b-11ef-9504-f020ff9afd75>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:altermodes_2024&outputFormat=application/json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0e5c8e34be003501b74646f08d0220f6>.
+<#0e5c8e34be003501b74646f08d0220f6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/eac841947ecaadea590266a39bab65b50d5d1df9/75dbcd0f4824cbf966c1538dfd0d5833069d0479>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.264Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0e5c8e34be003501b74646f08d0220f6> {
+<http://data.gov.be/dist/brussels/eac841947ecaadea590266a39bab65b50d5d1df9/75dbcd0f4824cbf966c1538dfd0d5833069d0479> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/f677df82-798a-11ef-8668-010101010000>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://gis.urban.brussels/geoserver/URBAN_DUR/ows?service=wms&request=GetCapabilities&version=1.3.0>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7d75241c877eff8ea6526e063aa14bc0>.
+<#7d75241c877eff8ea6526e063aa14bc0> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/eac841947ecaadea590266a39bab65b50d5d1df9/5119e69463938f7713593781fe447c73a9242345>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.265Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7d75241c877eff8ea6526e063aa14bc0> {
+<http://data.gov.be/dist/brussels/eac841947ecaadea590266a39bab65b50d5d1df9/5119e69463938f7713593781fe447c73a9242345> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/f677df82-798a-11ef-8668-010101010000>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://gis.urban.brussels/geoserver/URBAN_DUR/ows?service=wfs&request=GetCapabilities&version=2.0.0>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a99bf9f967a2106d0a298cf964098539>.
+<#a99bf9f967a2106d0a298cf964098539> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/eac841947ecaadea590266a39bab65b50d5d1df9/a9b9f166c036e90ab13e16a25b063b0a5e35894e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.266Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a99bf9f967a2106d0a298cf964098539> {
+<http://data.gov.be/dist/brussels/eac841947ecaadea590266a39bab65b50d5d1df9/a9b9f166c036e90ab13e16a25b063b0a5e35894e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "https://gis.urban.brussels/brugis/#/infos?panel=context&lang=nl-NL"@nl, "https://gis.urban.brussels/brugis/#/infos?panel=context&lang=fr-FR"@fr, "https://gis.urban.brussels/brugis/#/infos?panel=context&lang=en-US"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/f677df82-798a-11ef-8668-010101010000>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://gis.urban.brussels/brugis/#/infos?panel=context&lang=en-US>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1adc07490cea276973fdf93e3598dc08>.
+<#1adc07490cea276973fdf93e3598dc08> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/8c84a476e0f7b0d1422f23ff8eda408dffb10f1e/9aba63c7f987ca3370611b83a575cf0ea453d392>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.267Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1adc07490cea276973fdf93e3598dc08> {
+<http://data.gov.be/dist/brussels/8c84a476e0f7b0d1422f23ff8eda408dffb10f1e/9aba63c7f987ca3370611b83a575cf0ea453d392> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "EF.NitratesMonitoringNetwork"@nl, "EF.NitratesMonitoringNetwork"@fr, "EF.NitratesMonitoringNetwork"@en;
+    <http://purl.org/dc/terms/description> "INSPIRE - Service de visualisation - Installations de suivi environnemental"@fr;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/35fcadf0-382f-43b9-b366-f52482f29874>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://ows.environnement.brussels/belb_inspire_environmental_monitoring_facilities?service=wms&version=1.3.0&request=getcapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#bffb93d9de373d1a5852be4c40001596>.
+<#bffb93d9de373d1a5852be4c40001596> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/3eaa2f520422be15f319589954496fc835355c8b>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.268Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#bffb93d9de373d1a5852be4c40001596> {
+<http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/3eaa2f520422be15f319589954496fc835355c8b> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Metadata file"@nl, "Fichier des métadonnées"@fr, "Metadata file"@en;
+    <http://purl.org/dc/terms/description> "Collecto haltes"@nl, "Arrêts Collecto"@fr, "Arrêts Collecto"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/8b622400-9f31-4ee4-aa48-3ff11307bbea>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.mobility.brussels/info/5b3dfe86-bb97-4218-b482-a9e02541c47e>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e7ab76cf76d3bcbe788b2329bcd5429d>.
+<#e7ab76cf76d3bcbe788b2329bcd5429d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/70b9a693624432115d0113169861687cdb51f06b>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.269Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e7ab76cf76d3bcbe788b2329bcd5429d> {
+<http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/70b9a693624432115d0113169861687cdb51f06b> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "bm_public_transport:Collecto_stops"@nl, "bm_public_transport:Collecto_stops"@fr, "bm_public_transport:Collecto_stops"@en;
+    <http://purl.org/dc/terms/description> "Link WMS-service"@nl, "Lien WMS-service"@fr, "Link WMS-service"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/8b622400-9f31-4ee4-aa48-3ff11307bbea>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.mobility.brussels/geoserver/bm_public_transport/wms?service=wms&request=getCapabilities>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#11de5ca105454ea396aee726b17153fe>.
+<#11de5ca105454ea396aee726b17153fe> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/47f597b6366f0bfbb4c42a97510d5f79851e3d1c>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.270Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#11de5ca105454ea396aee726b17153fe> {
+<http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/47f597b6366f0bfbb4c42a97510d5f79851e3d1c> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "bm_public_transport:Collecto_stops"@nl, "bm_public_transport:Collecto_stops"@fr, "bm_public_transport:Collecto_stops"@en;
+    <http://purl.org/dc/terms/description> "Link WFS-service"@nl, "Lien WFS-service"@fr, "Link WFS-service"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/8b622400-9f31-4ee4-aa48-3ff11307bbea>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.mobility.brussels/geoserver/bm_public_transport/wfs?service=wfs&request=getCapabilities>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ab2d85de207f4cc2ddfa2ffafa20f02f>.
+<#ab2d85de207f4cc2ddfa2ffafa20f02f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/0fe9a8e4fc0d47efdabeaece5cbf48eea4aa89f6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.271Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ab2d85de207f4cc2ddfa2ffafa20f02f> {
+<http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/0fe9a8e4fc0d47efdabeaece5cbf48eea4aa89f6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "https://data.mobility.brussels/atomfeed/3d4874db-571d-4407-96c9-776102f7e797-nl.xml"@nl, "https://data.mobility.brussels/atomfeed/3d4874db-571d-4407-96c9-776102f7e797-fr.xml"@fr, "https://data.mobility.brussels/atomfeed/3d4874db-571d-4407-96c9-776102f7e797-en.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/atom+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ATOM>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/8b622400-9f31-4ee4-aa48-3ff11307bbea>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.mobility.brussels/atomfeed/3d4874db-571d-4407-96c9-776102f7e797-en.xml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5e4d4f99bb6e158f364b7bfc58c7c9f3>.
+<#5e4d4f99bb6e158f364b7bfc58c7c9f3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/334d627a324a2adfad8d9b3d0c3cb2e5d8e15c07>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.272Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5e4d4f99bb6e158f364b7bfc58c7c9f3> {
+<http://data.gov.be/dist/brussels/6def683adeb776671c94547f25d00ae67063b785/334d627a324a2adfad8d9b3d0c3cb2e5d8e15c07> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/8b622400-9f31-4ee4-aa48-3ff11307bbea>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://datastore.brussels/web/urbis-download>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e21d60993413d3dee62b246c4a38d032>.
+<#e21d60993413d3dee62b246c4a38d032> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/564cb8322e701735d562e825acf62f15d7efe78a/54f45a93b8c0311a52d892759474db7e488e5404>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.277Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e21d60993413d3dee62b246c4a38d032> {
+<http://data.gov.be/dist/brussels/564cb8322e701735d562e825acf62f15d7efe78a/54f45a93b8c0311a52d892759474db7e488e5404> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Gemeentelijke bomen (NL)"@nl, "Arbres communaux (NL)"@fr, "Municipal trees (NL)"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/9e76ca81-5d06-4ce3-9c8e-adfcce2c2ba5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://datastore.brussels/web/map/717>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e9e04b42250e6f29bd6802c938aa4708>.
+<#e9e04b42250e6f29bd6802c938aa4708> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/e624e3fb551a1350f16d7e7c8f3a85ca11ba1f7f/4e8560cec5102ff94b5875f43970a6dfbad816f1>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.278Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e9e04b42250e6f29bd6802c938aa4708> {
+<http://data.gov.be/dist/brussels/e624e3fb551a1350f16d7e7c8f3a85ca11ba1f7f/4e8560cec5102ff94b5875f43970a6dfbad816f1> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Gemeentelijke bomen (FR)"@nl, "Arbres communaux (FR)"@fr, "Municipal trees (FR)"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/f55ce080-49a6-407e-879b-6dd8fcfaf28f>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://datastore.brussels/web/map/354>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1fc16332dda43cf965eaf18e703908fc>.
+<#1fc16332dda43cf965eaf18e703908fc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/5364590888a5c8c06e618ffbe0d6cb118796e4e3/5a25cf6f132f0e8dbccea223f240e465b1a78497>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.279Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1fc16332dda43cf965eaf18e703908fc> {
+<http://data.gov.be/dist/brussels/5364590888a5c8c06e618ffbe0d6cb118796e4e3/5a25cf6f132f0e8dbccea223f240e465b1a78497> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/21b8aeee-0236-11ef-b9ed-00090ffe0001>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ows?Service=WMS&Request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#202868d61667996668737dbf6fe293c3>.
+<#202868d61667996668737dbf6fe293c3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/5364590888a5c8c06e618ffbe0d6cb118796e4e3/4d1556855b11a513200ded48d1265c85252e7e0e>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.280Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#202868d61667996668737dbf6fe293c3> {
+<http://data.gov.be/dist/brussels/5364590888a5c8c06e618ffbe0d6cb118796e4e3/4d1556855b11a513200ded48d1265c85252e7e0e> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/21b8aeee-0236-11ef-b9ed-00090ffe0001>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&request=GetCapabilities>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9df858a5f1330294bdfce22189ba2be7>.
+<#9df858a5f1330294bdfce22189ba2be7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/5364590888a5c8c06e618ffbe0d6cb118796e4e3/cefcdfb7b97c41fe7ac50b98bf19c71d77db65b9>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.281Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9df858a5f1330294bdfce22189ba2be7> {
+<http://data.gov.be/dist/brussels/5364590888a5c8c06e618ffbe0d6cb118796e4e3/cefcdfb7b97c41fe7ac50b98bf19c71d77db65b9> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "De totale bezettingsgraad (Esri Shapefile)"@nl, "Le taux d'occupation total (Esri Shapefile)"@fr, "The total occupancy rate (Esri Shapefile)"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/21b8aeee-0236-11ef-b9ed-00090ffe0001>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:2023_demand_by_street_side&outputFormat=shape-zip>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2f7923ba393883d4106c7c5d09aa05ec>.
+<#2f7923ba393883d4106c7c5d09aa05ec> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/5364590888a5c8c06e618ffbe0d6cb118796e4e3/5e4b2f87fb0392135b8b9428e6cc32809f6be603>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.282Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2f7923ba393883d4106c7c5d09aa05ec> {
+<http://data.gov.be/dist/brussels/5364590888a5c8c06e618ffbe0d6cb118796e4e3/5e4b2f87fb0392135b8b9428e6cc32809f6be603> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "Details van de parkeervraag per vervoermodus per tijdsblok (Esri Shapefile)"@nl, "Détails de la demande catégorisée selon le mode de transport par tranche horaire (Esri Shapefile)"@fr, "Details of the parking demand categorised by mode of transport by time slot (Esri Shapefile)"@en;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/21b8aeee-0236-11ef-b9ed-00090ffe0001>;
+    <http://www.w3.org/ns/dcat#downloadURL> <http://data.parking.brussels/geoserver/ParkingBrussels/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ParkingBrussels:onstreet_demd2023_0507,ParkingBrussels:onstreet_demd2023_1012,ParkingBrussels:onstreet_demd2023_2022,ParkingBrussels:onstreet_demd2023_sam1018&outputFormat=shape-zip>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c2373abe84f939f7a89ff6538d41a7e2>.
+<#c2373abe84f939f7a89ff6538d41a7e2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/7185e7871921d0bc1b9d568f38ca98b0a219c2fb>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.283Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c2373abe84f939f7a89ff6538d41a7e2> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/7185e7871921d0bc1b9d568f38ca98b0a219c2fb> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/csv>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d7dd7f0d216a6216bddb55dbf1be3022>.
+<#d7dd7f0d216a6216bddb55dbf1be3022> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/901a5017920dc594a8863d83d3ff48e07f12cced>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.284Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d7dd7f0d216a6216bddb55dbf1be3022> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/901a5017920dc594a8863d83d3ff48e07f12cced> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/json>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0e59b459dbd2d72de6e6f6c55542a053>.
+<#0e59b459dbd2d72de6e6f6c55542a053> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/dc1ccdcb1d12fa0e5a4db84b91ba267603280df7>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.285Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0e59b459dbd2d72de6e6f6c55542a053> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/dc1ccdcb1d12fa0e5a4db84b91ba267603280df7> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/fgb>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#37fd228d2960f027f2b81a203631a1d4>.
+<#37fd228d2960f027f2b81a203631a1d4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/010dd51ed5566dfff56722ee1b4b1d736175fc39>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.286Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#37fd228d2960f027f2b81a203631a1d4> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/010dd51ed5566dfff56722ee1b4b1d736175fc39> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/geojson>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0bbedf8c4e36a45a41532ca728e04b4e>.
+<#0bbedf8c4e36a45a41532ca728e04b4e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/60a8f0f7b77b7c3da76e41026a7f0b80c6a624ec>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.287Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0bbedf8c4e36a45a41532ca728e04b4e> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/60a8f0f7b77b7c3da76e41026a7f0b80c6a624ec> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/gpx>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#814837d4049eef759e0a9e52e5237cc9>.
+<#814837d4049eef759e0a9e52e5237cc9> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/4e8d5bf3c668d6618d961dd9ddfcb3602258f9d8>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.288Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#814837d4049eef759e0a9e52e5237cc9> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/4e8d5bf3c668d6618d961dd9ddfcb3602258f9d8> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/jsonl>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b8f637410fd47a71e2ec7e5ca0f7699a>.
+<#b8f637410fd47a71e2ec7e5ca0f7699a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/de07b53381e14a92472bb3e88141566003f0d227>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.289Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b8f637410fd47a71e2ec7e5ca0f7699a> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/de07b53381e14a92472bb3e88141566003f0d227> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/kml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#551018279092ed74e9f267dcaf81187f>.
+<#551018279092ed74e9f267dcaf81187f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/c21e41f64ab8886e1b2a8456d9d396d14931d232>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.290Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#551018279092ed74e9f267dcaf81187f> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/c21e41f64ab8886e1b2a8456d9d396d14931d232> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/ov2>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#352421d72b9db90017d0dec6a9627931>.
+<#352421d72b9db90017d0dec6a9627931> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/29f00d38cebf5bcead0d6df682a20b33dda29f5f>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.291Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#352421d72b9db90017d0dec6a9627931> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/29f00d38cebf5bcead0d6df682a20b33dda29f5f> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/parquet>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3a0489fc015b11894fa693b3d935ab82>.
+<#3a0489fc015b11894fa693b3d935ab82> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/e2df19341200864a68477abab4554ced755791c5>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.292Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3a0489fc015b11894fa693b3d935ab82> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/e2df19341200864a68477abab4554ced755791c5> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/rdfxml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ac102f0c772d7b0830424fe3c98afe44>.
+<#ac102f0c772d7b0830424fe3c98afe44> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/5bf3d75b3d0ac866cb7c43d6cdc228416e7c8eef>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.293Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ac102f0c772d7b0830424fe3c98afe44> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/5bf3d75b3d0ac866cb7c43d6cdc228416e7c8eef> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/jsonld>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4d89033e6240641a6f84e75164456c85>.
+<#4d89033e6240641a6f84e75164456c85> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/55ec2ca80d1aadd4b59eee67e84adfe576cabbd6>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.294Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4d89033e6240641a6f84e75164456c85> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/55ec2ca80d1aadd4b59eee67e84adfe576cabbd6> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/turtle>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#980d96f50f47ab56c12272cdebfeb1bb>.
+<#980d96f50f47ab56c12272cdebfeb1bb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/50cda40767bbfe3875d7707f7719a665c3948e35>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.295Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#980d96f50f47ab56c12272cdebfeb1bb> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/50cda40767bbfe3875d7707f7719a665c3948e35> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/n3>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#afbcd38117dbc39c2095c202f06ec37c>.
+<#afbcd38117dbc39c2095c202f06ec37c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/4ac37cbfd43ff16a78d51257af30552d5f12a287>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.296Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#afbcd38117dbc39c2095c202f06ec37c> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/4ac37cbfd43ff16a78d51257af30552d5f12a287> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/shp>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2559fddbcf3d844bedac7ec371330dfd>.
+<#2559fddbcf3d844bedac7ec371330dfd> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/d8adcee56147f51c665eae46fc2798fb06292bc1>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.297Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2559fddbcf3d844bedac7ec371330dfd> {
+<http://data.gov.be/dist/brussels/1d5d58f9f926f64a35ee3a869371eb51507b884a/d8adcee56147f51c665eae46fc2798fb06292bc1> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://bruxellesdata.opendatasoft.com/api/v2/catalog/datasets/amenagements-cyclables-par-type-rencenses-par-bruxelles-mobilite/exports/xls>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#39e9cc0e149fd59423a59303a7b7c77c>.
+<#39e9cc0e149fd59423a59303a7b7c77c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/0f1943fde9b5ea66ec5cfbaf26717dd32b3edc91/a70ad55b621fb61a3c0235549d35294f80a2c3be>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.298Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#39e9cc0e149fd59423a59303a7b7c77c> {
+<http://data.gov.be/dist/brussels/0f1943fde9b5ea66ec5cfbaf26717dd32b3edc91/a70ad55b621fb61a3c0235549d35294f80a2c3be> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/title> "https://urbisdownload.datastore.brussels/atomfeed/713171e6-65e3-11ef-b378-010101010000-nl.xml"@nl, "https://urbisdownload.datastore.brussels/atomfeed/713171e6-65e3-11ef-b378-010101010000-fr.xml"@fr, "https://urbisdownload.datastore.brussels/atomfeed/713171e6-65e3-11ef-b378-010101010000-en.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/atom+xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/ATOM>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/713171e6-65e3-11ef-b378-010101010000>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://urbisdownload.datastore.brussels/atomfeed/713171e6-65e3-11ef-b378-010101010000-en.xml>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#44ca7860c67d8f0beb623e6bd74c93fc>.
+<#44ca7860c67d8f0beb623e6bd74c93fc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/dist/brussels/ea826b825233b901b02eb100a4a29756647832cb/d3472ecdfe420ca65e013073b9696819cd5d474a>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:25:44.299Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#44ca7860c67d8f0beb623e6bd74c93fc> {
+<http://data.gov.be/dist/brussels/ea826b825233b901b02eb100a4a29756647832cb/d3472ecdfe420ca65e013073b9696819cd5d474a> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://datastore.brussels/web/data/dataset/aae0e7f4-2317-4560-9adb-5b7fbbb7934b>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://ows.environnement.brussels/green?service=wms&version=1.3.0&request=getcapabilities>
+}
+<index.trig> <https://w3id.org/tree#relation> _:df_10_257.
+_:df_10_257 a <https://w3id.org/tree#GreaterThanOrEqualToRelation>;
+    <https://w3id.org/tree#node> <../2025-04-13T15_3A45_3A00.000Z_123187500_223/index.trig>;
+    <https://w3id.org/tree#path> <https://www.w3.org/ns/activitystreams#published>;
+    <https://w3id.org/tree#value> "2025-04-14T08:25:44.300Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
