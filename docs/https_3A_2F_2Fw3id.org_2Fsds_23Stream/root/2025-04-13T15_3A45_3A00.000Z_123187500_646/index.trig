@@ -1,0 +1,1507 @@
+<../../../index.trig> a <https://w3id.org/ldes#EventStream>.
+<index.trig> a <https://w3id.org/tree#Node>;
+    <http://purl.org/dc/terms/isPartOf> <../../../index.trig>.
+<../../../index.trig> <https://w3id.org/tree#member> <#7871b612ef73f21c53490b1948dd7a15>.
+<#7871b612ef73f21c53490b1948dd7a15> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b253>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.850Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7871b612ef73f21c53490b1948dd7a15> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b253> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_cd_extra_load.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Hoe groot is de extra belasting voor u en uw praktijk op dit moment? / (FR) Quelle est la charge supplémentaire pour vous et votre organisation en ce moment?\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\ncd_extra_load\n\ninteger\nyes\n1:Verlaagd / Diminuée2:Normaal / Normale3:Verhoogd / Augmentée4:Sterk verhoogd / Fortement augmentée5:Onhoudbaar hoog / Intensément élevée\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_cd_extra_load.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9376d90a1362f88714cd7a1f68cf796e>.
+<#9376d90a1362f88714cd7a1f68cf796e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b254>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.852Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9376d90a1362f88714cd7a1f68cf796e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b254> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_cd_infection_aprons.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Beschikbaarheid medisch materiaal: Schorten geschikt te gebruiken bij infecties. / (FR) Disponibilité du matériel médical: Tabliers adaptés aux infections.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\ncd_infection_aprons\n\ninteger\nyes\n1:Groot tekort (max 2 per medewerker) / Grande pénurie (max 2 par collaborateur)2:Klein tekort (3 - 7 per medewerker) / Petite pénurie (3 - 7 par collaborateur)3:Klein overschot (8 - 14 per medewerker) / Petit surplus (8 - 14 par collaborateur)4:Groot overshot (&gt; 14 per medewerker) / Grand surplus (&gt; 14 par collaborateur)\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_cd_infection_aprons.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#49a978b2b7d7f603f9f04f99a5c6f901>.
+<#49a978b2b7d7f603f9f04f99a5c6f901> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b255>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.853Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#49a978b2b7d7f603f9f04f99a5c6f901> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b255> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_cd_infection_gloves.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Beschikbaarheid medisch materiaal: Handschoenen geschikt te gebruiken bij infecties. / (FR) Disponibilité du matériel médical: Gants adaptés aux infections.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\ncd_infection_gloves\n\ninteger\nyes\n1:Groot tekort / Grande pénurie2:Klein tekort / Petite pénurie3:Klein overschot / Petit surplus4:Groot overshot / Grand surplus\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_cd_infection_gloves.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1e57523d2a3edf1fd5b64e25d6fb6694>.
+<#1e57523d2a3edf1fd5b64e25d6fb6694> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b256>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.854Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1e57523d2a3edf1fd5b64e25d6fb6694> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b256> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_cd_infection_masks.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Beschikbaarheid medisch materiaal: Maskers geschikt te gebruiken bij infecties (FFP2 en co). / (FR) Disponibilité du matériel médical: Masques adaptés aux infections (FFP2 et co).\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\ncd_infection_masks\n\ninteger\nyes\n1:Groot tekort (max 2 per medewerker) / Grande pénurie (max 2 par collaborateur)2:Klein tekort (3 - 7 per medewerker) / Petite pénurie (3 - 7 par collaborateur)3:Klein overschot (8 - 14 per medewerker) / Petit surplus (8 - 14 par collaborateur)4:Groot overshot (&gt; 14 per medewerker) / Grand surplus (&gt; 14 par collaborateur)\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_cd_infection_masks.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5fd19adb5cab95976ee0be415e4bb92b>.
+<#5fd19adb5cab95976ee0be415e4bb92b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b257>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.856Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5fd19adb5cab95976ee0be415e4bb92b> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b257> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_cd_infection_screen.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Beschikbaarheid medisch materiaal: Bril/scherm geschikt te gebruiken bij infecties. / (FR) Disponibilité du matériel médical: Lunettes / écrans adéquats contre les infections.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\ncd_infection_screen\n\ninteger\nyes\n1:Groot tekort / Grande pénurie2:Klein tekort / Petite pénurie3:Klein overschot / Petit surplus4:Groot overshot / Grand surplus\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_cd_infection_screen.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#9f2a54c8c4b5030ff55b7682059b8a44>.
+<#9f2a54c8c4b5030ff55b7682059b8a44> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b258>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.857Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#9f2a54c8c4b5030ff55b7682059b8a44> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b258> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_cd_surgical_masks.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Beschikbaarheid medisch materiaal: Gewone chirurgische maskers. / (FR) Disponibilité du matériel médical: Masques chirurgicaux ordinaires.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\ncd_surgical_masks\n\ninteger\nyes\n1:Groot tekort (max 2 per medewerker) / Grande pénurie (max 2 par collaborateur)2:Klein tekort (3 - 7 per medewerker) / Petite pénurie (3 - 7 par collaborateur)3:Klein overschot (8 - 14 per medewerker) / Petit surplus (8 - 14 par collaborateur)4:Groot overshot (&gt; 14 per medewerker) / Grand surplus (&gt; 14 par collaborateur)\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_cd_surgical_masks.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#059f271c2c2de47238f626a4a063d56f>.
+<#059f271c2c2de47238f626a4a063d56f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b259>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.858Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#059f271c2c2de47238f626a4a063d56f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b259> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_cd_tp_cp.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Type zorgverstrekker / (FR) Type fournisseurs de soins\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\ncd_tp_cp\n\nstring\nyes\n\ncp_01:Tandarts / Dentiste\ncp_02:Orthodontist / Orthodontiste\ncp_03:Parodontoloog / Parontologue\ncp_04:Kinesist / Kinésithérapeute\ncp_05:Diëtist / Diététicien\ncp_06Ergotherapeut / Ergothérapeute\ncp_07:Logopedist / Logopède\ncp_08:Audiologen en audiciens / Audiologue et Audicien\ncp_09:Arts-specialist / Médecins spécialistes\n\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_cd_tp_cp.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#33527ab24274f93338e7bf91450e1947>.
+<#33527ab24274f93338e7bf91450e1947> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b260>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.859Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#33527ab24274f93338e7bf91450e1947> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b260> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_nr_num_alc_hand_disinfectant.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Geef aan hoeveel eenheden (flacon(s) alcoholische handontsmetting (500ml)) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (flacon(s) désinfectant alcoolisé pour les mains (500 ml)) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\nnr_num_alc_hand_disinfectant\n\ninteger\nno\n\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_nr_num_alc_hand_disinfectant.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#381c0e05dded5d456ca2d27438d0b88c>.
+<#381c0e05dded5d456ca2d27438d0b88c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b261>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.860Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#381c0e05dded5d456ca2d27438d0b88c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b261> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_nr_num_infection_aprons.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Geef aan hoeveel eenheden (schort(en) geschikt te gebruiken bij infecties) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (tablier(s) adaptés aux infections) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\nnr_num_infection_aprons\n\ninteger\nno\n\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_nr_num_infection_aprons.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#764ebd9c504830872d78695814895362>.
+<#764ebd9c504830872d78695814895362> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b262>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.861Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#764ebd9c504830872d78695814895362> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b262> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_nr_num_infection_gloves.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Geef aan hoeveel eenheden (verpakking(en) van 100 handschoenen geschikt te gebruiken bij infecties) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (emballage(s) de 100 gants adaptés aux infections) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\nnr_num_infection_gloves\n\ninteger\nno\n\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_nr_num_infection_gloves.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#caa17290b8d93bc257e9e86984e968a9>.
+<#caa17290b8d93bc257e9e86984e968a9> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b263>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.862Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#caa17290b8d93bc257e9e86984e968a9> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b263> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_nr_num_infection_masks.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Geef aan hoeveel eenheden (masker(s) geschikt te gebruiken bij infecties (FFP2 en co)) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (masque(s) adapté(s) aux infections (FFP2 et co)) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\nnr_num_infection_masks\n\ninteger\nno\n\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_nr_num_infection_masks.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#73576357102adab7f901fab48e54d850>.
+<#73576357102adab7f901fab48e54d850> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b264>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.863Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#73576357102adab7f901fab48e54d850> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b264> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_nr_num_infection_screen.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Geef aan hoeveel eenheden (bril(len)/scherm(en) geschikt te gebruiken bij infecties) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (lunettes(s) / écran(s) adéquats contre les infections) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\nnr_num_infection_screen\n\ninteger\nno\n\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_nr_num_infection_screen.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#065853a5148da98f58cebdb9a81b419d>.
+<#065853a5148da98f58cebdb9a81b419d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b265>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.864Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#065853a5148da98f58cebdb9a81b419d> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b265> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_nr_num_surgical_masks.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Geef aan hoeveel eenheden (gewone chirurgische maskers) u voor uw praktijk extra nodig denkt te hebben om de komende 30 dagen te overbruggen. / (FR) Indiquez le nombre d'unités (masques chirurgicaux ordinaires) nécessaires à votre cabinet pour combler les 30 prochains jours.\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\nnr_num_surgical_masks\n\ninteger\nno\n\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_nr_num_surgical_masks.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8de9ed4940160245c0e861f768159ce4>.
+<#8de9ed4940160245c0e861f768159ce4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b266>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.866Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8de9ed4940160245c0e861f768159ce4> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b266> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "covid19_oth_tx_postal_code.csv"@en;
+    <http://purl.org/dc/terms/description> "Question asked: (NL) Postcode van de gemeente waarin de praktijk zich bevindt / (FR) Code postal de l'organisation\n\n\n\n\nname\ndescription\ntype\nrequired\nvalues\n\n\n\n\ntx_postal_code\n\nstring\nyes\n\n\n\nd_completed\nDate completed\ndate\nyes\nYYYY-MM-DD (ISO8601 format)\n\n\ncd_regio\nRegion\nstring\nyes\nVLA:Flemish RegionWAL:Walloon RegionBRU:Brussels Capital Region\n\n"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/covid19_oth_tx_postal_code.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7d7643091d1d5de8af3cee02fca86b3e>.
+<#7d7643091d1d5de8af3cee02fca86b3e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b267>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.867Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7d7643091d1d5de8af3cee02fca86b3e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b267> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "DD_CVD19Barometer_1LineHealthCareProvider data dictionary JSON format"@en;
+    <http://purl.org/dc/terms/description> "DD_CVD19Barometer_1LineHealthCareProvider data dictionary JSON format"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/DD_CVD19Barometer_1LineHealthCareProvider.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d2324bf6081529f22869b03690140963>.
+<#d2324bf6081529f22869b03690140963> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b268>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.868Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d2324bf6081529f22869b03690140963> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b268> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 Data Dictionary JSON"@en;
+    <http://purl.org/dc/terms/description> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 Data Dictionary JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/datadictionary_a6cd7b63-004a-4bff-9a6b-21f14d8326a5.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0feccc87971028ab488cf1cd0d94f167>.
+<#0feccc87971028ab488cf1cd0d94f167> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b269>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.873Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0feccc87971028ab488cf1cd0d94f167> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b269> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 Data User JSON"@en;
+    <http://purl.org/dc/terms/description> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 Data User JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/datauser_a6cd7b63-004a-4bff-9a6b-21f14d8326a5.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#327de01a2ed0ad0eb356ba2f013410dd>.
+<#327de01a2ed0ad0eb356ba2f013410dd> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b270>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.874Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#327de01a2ed0ad0eb356ba2f013410dd> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b270> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 Legal JSON"@en;
+    <http://purl.org/dc/terms/description> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 Legal JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/legal_a6cd7b63-004a-4bff-9a6b-21f14d8326a5.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#22e3af9f6747f1ae70930f3d95f4e262>.
+<#22e3af9f6747f1ae70930f3d95f4e262> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b271>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.875Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#22e3af9f6747f1ae70930f3d95f4e262> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b271> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 SCRA JSON"@en;
+    <http://purl.org/dc/terms/description> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 SCRA JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/scra_a6cd7b63-004a-4bff-9a6b-21f14d8326a5.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4abbab560e7e00b5957f958f594e3af6>.
+<#4abbab560e7e00b5957f958f594e3af6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b272>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.876Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4abbab560e7e00b5957f958f594e3af6> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b272> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 Stakeholders JSON"@en;
+    <http://purl.org/dc/terms/description> "a6cd7b63-004a-4bff-9a6b-21f14d8326a5 Stakeholders JSON"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/a6cd7b63-004a-4bff-9a6b-21f14d8326a5/Stakeholders_a6cd7b63-004a-4bff-9a6b-21f14d8326a5.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1cbcd6354c062235f89850af004e5292>.
+<#1cbcd6354c062235f89850af004e5292> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2546>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.877Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1cbcd6354c062235f89850af004e5292> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2546> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_HDBP0240_SPINE_SURGERY_v1.1.0_20240219.xlsx"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_HDBP0240_SPINE_SURGERY_v1.1.0_20240219.xlsx"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XLSX>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_HDBP0240_SPINE_SURGERY_v1.1.0_20240219.xlsx>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a93b91f05974fb064756aa45cc530328>.
+<#a93b91f05974fb064756aa45cc530328> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2547>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.878Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a93b91f05974fb064756aa45cc530328> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2547> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_HDBP0240_SPINE_SURGERY_v1_20230421.xlsx"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XLSX>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_HDBP0240_SPINE_SURGERY_v1_20230421.xlsx>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#40ec3294ec2ff2fc6c3a788da422f0b0>.
+<#40ec3294ec2ff2fc6c3a788da422f0b0> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2548>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.879Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#40ec3294ec2ff2fc6c3a788da422f0b0> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2548> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_SPEC_HDBP0240_SPINE_SURGERY_v1.2.0.xlsx"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_SPEC_HDBP0240_SPINE_SURGERY_v1.2.0.xlsx"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XLSX>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_SPEC_HDBP0240_SPINE_SURGERY_v1.2.0.xlsx>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7252f8adab6d12347cebaa306d38045c>.
+<#7252f8adab6d12347cebaa306d38045c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2549>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.881Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7252f8adab6d12347cebaa306d38045c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2549> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0240_Spine_Surgery_01_20230504_HEADERS.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0240_Spine_Surgery_01_20230504_HEADERS.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submcsv_HDBP0240_Spine_Surgery_01_20230504_HEADERS.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#79ad39ca8e8213b0b3d3cb9cb49b7592>.
+<#79ad39ca8e8213b0b3d3cb9cb49b7592> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2550>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.882Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#79ad39ca8e8213b0b3d3cb9cb49b7592> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2550> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0240_Spine_Surgery_01_20240115_Full.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0240_Spine_Surgery_01_20240115_Full.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submcsv_HDBP0240_Spine_Surgery_01_20240115_Full.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cabfab3c9d53199972298e33f1c6212c>.
+<#cabfab3c9d53199972298e33f1c6212c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2551>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.883Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cabfab3c9d53199972298e33f1c6212c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2551> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0240_Spine_Surgery_Surgery_v1.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0240_Spine_Surgery_Surgery_v1.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submcsv_HDBP0240_Spine_Surgery_Surgery_v1.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#97a7edf7b1ca96ba9406c52c7f48acb1>.
+<#97a7edf7b1ca96ba9406c52c7f48acb1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2552>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.884Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#97a7edf7b1ca96ba9406c52c7f48acb1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2552> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_formjson_HDBP0240_Spine_Surgery_v1_20230523.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_formjson_HDBP0240_Spine_Surgery_v1_20230523"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_formjson_HDBP0240_Spine_Surgery_v1_20230523.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d0355853a476ebc105cfdac50ef9b62d>.
+<#d0355853a476ebc105cfdac50ef9b62d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2553>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.885Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d0355853a476ebc105cfdac50ef9b62d> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2553> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0240_Spine_Surgery_01_20240115_Full.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0240_Spine_Surgery_01_20240115_Full.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submjson_HDBP0240_Spine_Surgery_01_20240115_Full.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#6fbd838f2bf51b4d1a94f1b4ef9e9e57>.
+<#6fbd838f2bf51b4d1a94f1b4ef9e9e57> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2554>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.886Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6fbd838f2bf51b4d1a94f1b4ef9e9e57> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2554> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0240_Spine_Surgery_Full_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0240_Spine_Surgery_Full_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submjson_HDBP0240_Spine_Surgery_Full_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4f1f78228e5b6eb8dd63384cc77fab77>.
+<#4f1f78228e5b6eb8dd63384cc77fab77> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2555>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.887Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4f1f78228e5b6eb8dd63384cc77fab77> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2555> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0240_Spine_Surgery_Surgery_v1.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0240_Spine_Surgery_Surgery_v1.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submjson_HDBP0240_Spine_Surgery_Surgery_v1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3e12ce3bc93e10384f079642087165aa>.
+<#3e12ce3bc93e10384f079642087165aa> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2556>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.889Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3e12ce3bc93e10384f079642087165aa> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2556> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0240_SPINE_SURGERY.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0240_SPINE_SURGERY.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submxml_HDBP0240_SPINE_SURGERY.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d4f93e2d463eda0dd64d9de107599296>.
+<#d4f93e2d463eda0dd64d9de107599296> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2557>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.890Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d4f93e2d463eda0dd64d9de107599296> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2557> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0240_SPINE_SURGERY_Spine_Surgery_01_06122022.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0240_SPINE_SURGERY_Spine_Surgery_01_06122022.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submxml_HDBP0240_SPINE_SURGERY_Spine_Surgery_01_06122022.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#cd8f4e7d14781ffe3ffe84f0e98f81ed>.
+<#cd8f4e7d14781ffe3ffe84f0e98f81ed> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2558>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.891Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#cd8f4e7d14781ffe3ffe84f0e98f81ed> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2558> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0240_Spine_Surgery_Spine_Surgery_01_20230906.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0240_Spine_Surgery_Spine_Surgery_01_20230906.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/393bf6ce-197d-4d09-916a-ae2311f99257>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/393bf6ce-197d-4d09-916a-ae2311f99257/HD_DCD_submxml_HDBP0240_Spine_Surgery_Spine_Surgery_01_20230906.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#dc5fc06d0425cf79fed3e7b4887066fd>.
+<#dc5fc06d0425cf79fed3e7b4887066fd> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2562>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.892Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dc5fc06d0425cf79fed3e7b4887066fd> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2562> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_SPEC_HDBP0048_ORTHOPRIDE_TOTAL_FEMUR_v1.0.1.xlsx"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_SPEC_HDBP0048_ORTHOPRIDE_TOTAL_FEMUR_v1.0.1.xlsx"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XLSX>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_SPEC_HDBP0048_ORTHOPRIDE_TOTAL_FEMUR_v1.0.1.xlsx>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c4c230e3d67b8e74c837472c29759cd5>.
+<#c4c230e3d67b8e74c837472c29759cd5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2563>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.893Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c4c230e3d67b8e74c837472c29759cd5> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2563> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "REPORT_SCRA_ORTHOPRIDE2-signed.pdf"@en;
+    <http://purl.org/dc/terms/description> "REPORT_SCRA_ORTHOPRIDE2-signed.pdf"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/pdf>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PDF>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/REPORT_SCRA_ORTHOPRIDE2-signed.pdf>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2b4b51004e6990f634c5f676047bc4ce>.
+<#2b4b51004e6990f634c5f676047bc4ce> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2564>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.894Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2b4b51004e6990f634c5f676047bc4ce> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2564> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Primo_v1_20230504_HEADER.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Primo_v1_20230504_HEADER"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Primo_v1_20230504_HEADER.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5e88e7e4a397b398b246ffe264fa9e48>.
+<#5e88e7e4a397b398b246ffe264fa9e48> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2565>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.895Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5e88e7e4a397b398b246ffe264fa9e48> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2565> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Resection_v1_20230504_HEADER.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Resection_v1_20230504_HEADER"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Resection_v1_20230504_HEADER.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#4bcae2d3acd6c9f6579ede9b96531cfe>.
+<#4bcae2d3acd6c9f6579ede9b96531cfe> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2566>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.896Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4bcae2d3acd6c9f6579ede9b96531cfe> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2566> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Revision_v1_20230504_HEADER.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Revision_v1_20230504_HEADER"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submcsv_HDBP0048_Orthopride_Femur_Revision_v1_20230504_HEADER.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8d46ee52e0ce30c73682a6d014dfceb2>.
+<#8d46ee52e0ce30c73682a6d014dfceb2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2567>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.898Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8d46ee52e0ce30c73682a6d014dfceb2> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2567> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1_01.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1_01.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1_01.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#07f428183e167dd259fc84f8de5c56a3>.
+<#07f428183e167dd259fc84f8de5c56a3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2568>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.899Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#07f428183e167dd259fc84f8de5c56a3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2568> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1_02.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1_02.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1_02.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b2989e5f80d2202698642136d7859c9c>.
+<#b2989e5f80d2202698642136d7859c9c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2569>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.900Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b2989e5f80d2202698642136d7859c9c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2569> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Resection_v1.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Resection_v1.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Resection_v1.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#96b45244c85eaa49d49e0c26e679845a>.
+<#96b45244c85eaa49d49e0c26e679845a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2570>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.901Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#96b45244c85eaa49d49e0c26e679845a> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2570> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Revision_v1.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Revision_v1.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submcsv_HDBP0048_Orthopride_Total_Femur_Revision_v1.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7b55756659e948d68dca4b33839e90eb>.
+<#7b55756659e948d68dca4b33839e90eb> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2571>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.902Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7b55756659e948d68dca4b33839e90eb> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2571> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Femur_Primo_Full_Haptic_totalHipProstetic_kneeRegion_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Femur_Primo_Full_Haptic_totalHipProstetic_kneeRegion_v1_20230504"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Femur_Primo_Full_Haptic_totalHipProstetic_kneeRegion_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#091e3b56d6ecec0c28360cad6e2de832>.
+<#091e3b56d6ecec0c28360cad6e2de832> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2572>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.908Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#091e3b56d6ecec0c28360cad6e2de832> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2572> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Femur_Primo_Full_Other_dubbelMobiliteit_heupRegion_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Femur_Primo_Full_Other_dubbelMobiliteit_heupRegion_v1_20230504"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Femur_Primo_Full_Other_dubbelMobiliteit_heupRegion_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#23a24d5d1e75a4f74e4bd2b9a2ecb34f>.
+<#23a24d5d1e75a4f74e4bd2b9a2ecb34f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2573>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.909Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#23a24d5d1e75a4f74e4bd2b9a2ecb34f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2573> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Femur_Revision_Full_Haptic_kneeRegion_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Femur_Revision_Full_Haptic_kneeRegion_v1_20230504"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Femur_Revision_Full_Haptic_kneeRegion_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#731b018472d6a16e56a2138d06ff53ed>.
+<#731b018472d6a16e56a2138d06ff53ed> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2574>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.910Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#731b018472d6a16e56a2138d06ff53ed> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2574> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Femur_Revision_Full_Other_hipRegion_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Femur_Revision_Full_Other_hipRegion_v1_20230504"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Femur_Revision_Full_Other_hipRegion_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#1fe57a42fc87b64869e49bd3ac8b10b3>.
+<#1fe57a42fc87b64869e49bd3ac8b10b3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2575>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.911Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1fe57a42fc87b64869e49bd3ac8b10b3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2575> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo-implantation_v1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0eeb8f74fa65edecd9cdd728ec3df4a6>.
+<#0eeb8f74fa65edecd9cdd728ec3df4a6> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2576>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.913Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0eeb8f74fa65edecd9cdd728ec3df4a6> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2576> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo_Full_Other-dubbleMobility_hipRegion_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo_Full_Other-dubbleMobility_hipRegion_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo_Full_Other-dubbleMobility_hipRegion_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#40a0e08a2c1a1bb1303b8b2b3b80ef72>.
+<#40a0e08a2c1a1bb1303b8b2b3b80ef72> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2577>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.914Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#40a0e08a2c1a1bb1303b8b2b3b80ef72> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2577> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo_Implantation_full_haptic_totalHipProstetic-kneeRegion_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo_Implantation_full_haptic_totalHipProstetic-kneeRegion_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Primo_Implantation_full_haptic_totalHipProstetic-kneeRegion_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e62f23f757dd7f2677017ecfe067def2>.
+<#e62f23f757dd7f2677017ecfe067def2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2578>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.915Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e62f23f757dd7f2677017ecfe067def2> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2578> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Resection_v1.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Resection_v1.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Resection_v1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c264a3f8d572aff19e744b3558e5c566>.
+<#c264a3f8d572aff19e744b3558e5c566> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2579>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.916Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c264a3f8d572aff19e744b3558e5c566> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2579> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_Full_Haptic_kneeRegion_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_Full_Haptic_kneeRegion_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_Full_Haptic_kneeRegion_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#319b93bac4f95e092e7e32adfc0c2b9f>.
+<#319b93bac4f95e092e7e32adfc0c2b9f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2580>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.917Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#319b93bac4f95e092e7e32adfc0c2b9f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2580> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_Full_Other_hipRegion_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_Full_Other_hipRegion_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_Full_Other_hipRegion_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0f85e5cbb8d70c9a18f61418ccbab496>.
+<#0f85e5cbb8d70c9a18f61418ccbab496> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2581>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.918Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0f85e5cbb8d70c9a18f61418ccbab496> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2581> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_v1.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_v1.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submjson_HDBP0048_Orthopride_Total_Femur_Revision_v1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#df4cf72d70f0c7bd92920413feae8276>.
+<#df4cf72d70f0c7bd92920413feae8276> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2582>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.919Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#df4cf72d70f0c7bd92920413feae8276> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2582> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Primo-implantation_01_30092022.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Primo-implantation_01_30092022"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Primo-implantation_01_30092022.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#aaeef29d2db83f0fc10df98f55281dbf>.
+<#aaeef29d2db83f0fc10df98f55281dbf> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2583>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.920Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#aaeef29d2db83f0fc10df98f55281dbf> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2583> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Resection_01_30092022.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Resection_01_30092022"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Resection_01_30092022.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b2f436479e05a535fd258fc1f12592f7>.
+<#b2f436479e05a535fd258fc1f12592f7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2584>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.921Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b2f436479e05a535fd258fc1f12592f7> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2584> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Revision_01_30092022.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Revision_01_30092022"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_MyCareNet_HDBP0048_ORTHOPRIDE_Mega_Orthopride-TotalFemur-Revision_01_30092022.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#32208bfbdeca5e77a1ef2fac33dfedd3>.
+<#32208bfbdeca5e77a1ef2fac33dfedd3> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2585>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.922Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#32208bfbdeca5e77a1ef2fac33dfedd3> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2585> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0048_Orthopride_MP_PRIM_IMPLT.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0048_Orthopride_MP_PRIM_IMPLT.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submxml_HDBP0048_Orthopride_MP_PRIM_IMPLT.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#c316d29df91c480f1a326cb8de95b2da>.
+<#c316d29df91c480f1a326cb8de95b2da> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2586>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.923Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c316d29df91c480f1a326cb8de95b2da> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2586> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0048_Orthopride_MP_RESEC_v1.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0048_Orthopride_MP_RESEC_v1.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submxml_HDBP0048_Orthopride_MP_RESEC_v1.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#68e474fb116d77d8b8138c6f00a0013b>.
+<#68e474fb116d77d8b8138c6f00a0013b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2587>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.924Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#68e474fb116d77d8b8138c6f00a0013b> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2587> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0048_Orthopride_MP_REVIS_v1.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0048_Orthopride_MP_REVIS_v1.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submxml_HDBP0048_Orthopride_MP_REVIS_v1.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a3e67e4020e72ed8043ed8653947d0c2>.
+<#a3e67e4020e72ed8043ed8653947d0c2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2588>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.925Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a3e67e4020e72ed8043ed8653947d0c2> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2588> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Primo_Implantation_01_20230906.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Primo_Implantation_01_20230906.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Primo_Implantation_01_20230906.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#a4b296b7e99689d83cfa107c443f201f>.
+<#a4b296b7e99689d83cfa107c443f201f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2589>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.926Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a4b296b7e99689d83cfa107c443f201f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2589> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Resection_01_20230906.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Resection_01_20230906.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Resection_01_20230906.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#07cb329de392514ea1f19b8ddb997686>.
+<#07cb329de392514ea1f19b8ddb997686> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2590>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.927Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#07cb329de392514ea1f19b8ddb997686> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2590> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Revision_01_20230906.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Revision_01_20230906.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/781c6e2f-6b25-472e-875d-4aa4d6407184/HD_DCD_submxml_HDBP0048_Orthopride_TotalFemur-Revision_01_20230906.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#95f757675ac10f7448ed7b5f618a65d9>.
+<#95f757675ac10f7448ed7b5f618a65d9> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2594>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.928Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#95f757675ac10f7448ed7b5f618a65d9> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2594> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_SPEC_HDBP0288_ORTHOPRIDE_KNEE_v1.0.1.xlsx"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_SPEC_HDBP0288_ORTHOPRIDE_KNEE_v1.0.1.xlsx"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XLSX>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_SPEC_HDBP0288_ORTHOPRIDE_KNEE_v1.0.1.xlsx>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3277c19aca2bf02f87453d80bf03db25>.
+<#3277c19aca2bf02f87453d80bf03db25> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2595>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.929Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3277c19aca2bf02f87453d80bf03db25> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2595> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "REPORT_SCRA_ORTHOPRIDE2-signed.pdf"@en;
+    <http://purl.org/dc/terms/description> "REPORT_SCRA_ORTHOPRIDE2-signed.pdf"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/pdf>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/PDF>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/REPORT_SCRA_ORTHOPRIDE2-signed.pdf>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7c50e8edc401b09c317c6c0edf183c1c>.
+<#7c50e8edc401b09c317c6c0edf183c1c> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2596>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.930Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7c50e8edc401b09c317c6c0edf183c1c> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2596> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo-implantation_v1_01.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo-implantation_v1_01.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo-implantation_v1_01.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2ae3ca888461527f52ae7eb99aca7fd1>.
+<#2ae3ca888461527f52ae7eb99aca7fd1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2597>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.931Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2ae3ca888461527f52ae7eb99aca7fd1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2597> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo-implantation_v1_02.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo-implantation_v1_02.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo-implantation_v1_02.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#db68002e4253f22a782161d14cd4c35e>.
+<#db68002e4253f22a782161d14cd4c35e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2598>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.932Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#db68002e4253f22a782161d14cd4c35e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2598> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo_01_20230504_HEADER.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo_01_20230504_HEADER.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo_01_20230504_HEADER.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ec20a40582c69d59a3cae631fd603c04>.
+<#ec20a40582c69d59a3cae631fd603c04> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2599>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.933Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ec20a40582c69d59a3cae631fd603c04> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2599> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo_Full_01_20230504.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo_Full_01_20230504.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Primo_Full_01_20230504.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5d3d4b83644117ed3922caacaf803eb7>.
+<#5d3d4b83644117ed3922caacaf803eb7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2600>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.934Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5d3d4b83644117ed3922caacaf803eb7> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2600> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_01_20230504_HEADER.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_01_20230504_HEADER.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_01_20230504_HEADER.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#05294e5ab7f9faafc4e713e03ce87db2>.
+<#05294e5ab7f9faafc4e713e03ce87db2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2601>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.935Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#05294e5ab7f9faafc4e713e03ce87db2> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2601> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_Full_01_20230504.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_Full_01_20230504.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_Full_01_20230504.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#d0ea3f1d4ac6cfaca196a624566a4a72>.
+<#d0ea3f1d4ac6cfaca196a624566a4a72> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2602>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.939Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#d0ea3f1d4ac6cfaca196a624566a4a72> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2602> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_v1.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_v1.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Resection_v1.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0411b5e27c424a6547fc4fe6db939ef7>.
+<#0411b5e27c424a6547fc4fe6db939ef7> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2603>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.941Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0411b5e27c424a6547fc4fe6db939ef7> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2603> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_01_20230504_HEADER.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_01_20230504_HEADER.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_01_20230504_HEADER.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#775b83d967181e56614cb491aa8b4ed4>.
+<#775b83d967181e56614cb491aa8b4ed4> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2604>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.942Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#775b83d967181e56614cb491aa8b4ed4> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2604> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_Full_01_20230504.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_Full_01_20230504.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_Full_01_20230504.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#b0db009dc92ae10a348d1c9cc69597fe>.
+<#b0db009dc92ae10a348d1c9cc69597fe> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2605>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.943Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b0db009dc92ae10a348d1c9cc69597fe> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2605> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_v1.csv"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_v1.csv"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/csv>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submcsv_HDBP0288_Orthopride_Knee_Revision_v1.csv>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#29b086e79bebd32b3312c53ccd237cd1>.
+<#29b086e79bebd32b3312c53ccd237cd1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2606>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.944Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#29b086e79bebd32b3312c53ccd237cd1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2606> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_formjson_HDBP0288_Orthopride_Knee_Primo_Implantation_v1_20230523.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_formjson_HDBP0288_Orthopride_Knee_Primo_Implantation_v1_20230523.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_formjson_HDBP0288_Orthopride_Knee_Primo_Implantation_v1_20230523.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#fb62d98fb7128cc6a54a288ed4f8a98b>.
+<#fb62d98fb7128cc6a54a288ed4f8a98b> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2607>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.945Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#fb62d98fb7128cc6a54a288ed4f8a98b> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2607> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_formjson_HDBP0288_Orthopride_Knee_Resection_v1_20230523.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_formjson_HDBP0288_Orthopride_Knee_Resection_v1_20230523"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_formjson_HDBP0288_Orthopride_Knee_Resection_v1_20230523.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#58ca62eb9435db60636934c9a83e6904>.
+<#58ca62eb9435db60636934c9a83e6904> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2608>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.946Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#58ca62eb9435db60636934c9a83e6904> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2608> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_formjson_HDBP0288_Orthopride_Knee_Revision_v1_20230523.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_formjson_HDBP0288_Orthopride_Knee_Revision_v1_20230523"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_formjson_HDBP0288_Orthopride_Knee_Revision_v1_20230523.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3fcfc99b68cae66674281191188599d5>.
+<#3fcfc99b68cae66674281191188599d5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2609>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.947Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3fcfc99b68cae66674281191188599d5> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2609> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo-implantation_v1.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo-implantation_v1.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo-implantation_v1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e977ed7067a93e1cbc25485779df16ee>.
+<#e977ed7067a93e1cbc25485779df16ee> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2610>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.948Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e977ed7067a93e1cbc25485779df16ee> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2610> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Haptic_Bicompartimentele_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Haptic_Bicompartimentele_v1_20230504.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Haptic_Bicompartimentele_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#73d3329abe2ee5d9bfc8d88c14331572>.
+<#73d3329abe2ee5d9bfc8d88c14331572> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2611>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.949Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#73d3329abe2ee5d9bfc8d88c14331572> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2611> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Haptic_Unicondylar_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Haptic_Unicondylar_v1_20230504.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Haptic_Unicondylar_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3160db2933b05ac03e3742132a4d17cc>.
+<#3160db2933b05ac03e3742132a4d17cc> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2612>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.950Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3160db2933b05ac03e3742132a4d17cc> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2612> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Other_Partial_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Other_Partial_v1_20230504.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Other_Partial_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#e3a456ee4ae17bed2d01621716e5b64f>.
+<#e3a456ee4ae17bed2d01621716e5b64f> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2613>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.950Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e3a456ee4ae17bed2d01621716e5b64f> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2613> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Other_TotalKnee_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Other_TotalKnee_v1_20230504.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Full_Other_TotalKnee_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#01d3e13d4a56506bd7ae853e7191e687>.
+<#01d3e13d4a56506bd7ae853e7191e687> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2614>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.951Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#01d3e13d4a56506bd7ae853e7191e687> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2614> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_haptic_biocompartimentele_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_haptic_biocompartimentele_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_haptic_biocompartimentele_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2695ffb80873f33a544ce0ef05f1685a>.
+<#2695ffb80873f33a544ce0ef05f1685a> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2615>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.952Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2695ffb80873f33a544ce0ef05f1685a> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2615> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_haptic_unicondylar_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_haptic_unicondylar_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_haptic_unicondylar_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f0c0f836ab287896091205b00a4cb179>.
+<#f0c0f836ab287896091205b00a4cb179> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2616>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.953Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f0c0f836ab287896091205b00a4cb179> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2616> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_other_partial_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_other_partial_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_other_partial_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#edda617283c0645fd963829ed035fb3e>.
+<#edda617283c0645fd963829ed035fb3e> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2617>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.954Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#edda617283c0645fd963829ed035fb3e> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2617> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_other_totalKnee_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_other_totalKnee_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Primo_Implantation_full_other_totalKnee_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2949b3de4c7793f56fc6507dde9235e1>.
+<#2949b3de4c7793f56fc6507dde9235e1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2618>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.955Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2949b3de4c7793f56fc6507dde9235e1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2618> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_Full_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_Full_v1_20230504.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_Full_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#0e5e7a49bd30bbfec3ebd683a4946bb5>.
+<#0e5e7a49bd30bbfec3ebd683a4946bb5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2619>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.956Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0e5e7a49bd30bbfec3ebd683a4946bb5> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2619> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_full_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_full_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_full_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#286006248e66953af5cd31abdb066d55>.
+<#286006248e66953af5cd31abdb066d55> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2620>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.957Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#286006248e66953af5cd31abdb066d55> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2620> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_v1.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_v1.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Resection_v1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#3caeb034ab5351edd6beac1602f60428>.
+<#3caeb034ab5351edd6beac1602f60428> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2621>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.958Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#3caeb034ab5351edd6beac1602f60428> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2621> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Haptic_Bicompartimentele_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Haptic_Bicompartimentele_v1_20230504.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Haptic_Bicompartimentele_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#7aadd0d546a436bbdec71bd18aa826ad>.
+<#7aadd0d546a436bbdec71bd18aa826ad> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2622>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.959Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7aadd0d546a436bbdec71bd18aa826ad> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2622> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Other_TotalKnee_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Other_TotalKnee_v1_20230504.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Other_TotalKnee_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#5c535832b3fdcb7cd66a23ead7aa2e55>.
+<#5c535832b3fdcb7cd66a23ead7aa2e55> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2623>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.960Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5c535832b3fdcb7cd66a23ead7aa2e55> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2623> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Other_Unicondylar_v1_20230504.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Other_Unicondylar_v1_20230504.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_Full_Other_Unicondylar_v1_20230504.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#628a10fa99e67fa3c53f87d780e860d5>.
+<#628a10fa99e67fa3c53f87d780e860d5> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2624>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.961Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#628a10fa99e67fa3c53f87d780e860d5> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2624> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_haptic_bicompartimentele_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_haptic_bicompartimentele_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_haptic_bicompartimentele_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#dd5ac808e7f1cd570ef21982faee0226>.
+<#dd5ac808e7f1cd570ef21982faee0226> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2625>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.962Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#dd5ac808e7f1cd570ef21982faee0226> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2625> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_other_totalKnee_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_other_totalKnee_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_other_totalKnee_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#ac0d04e8c73ae1fd4b542e5e615da507>.
+<#ac0d04e8c73ae1fd4b542e5e615da507> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2626>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.963Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#ac0d04e8c73ae1fd4b542e5e615da507> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2626> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_other_unicondylar_01_20230908.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_other_unicondylar_01_20230908.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_full_other_unicondylar_01_20230908.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#945fd158f958ee5bab7592531f49e558>.
+<#945fd158f958ee5bab7592531f49e558> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2627>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.964Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#945fd158f958ee5bab7592531f49e558> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2627> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_v1.json"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_v1.json"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/json>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submjson_HDBP0288_Orthopride_Knee_Revision_v1.json>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#aa832007d4aafb16f2c09d6f5ee4d8c1>.
+<#aa832007d4aafb16f2c09d6f5ee4d8c1> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2628>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.965Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#aa832007d4aafb16f2c09d6f5ee4d8c1> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2628> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Primo-implantation_01_30092022.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Primo-implantation_01_30092022"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Primo-implantation_01_30092022.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#8c6d860d75d2fe67a6f812990b850ce2>.
+<#8c6d860d75d2fe67a6f812990b850ce2> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2629>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.966Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#8c6d860d75d2fe67a6f812990b850ce2> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2629> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Resection_01_30092022.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Resection_01_30092022"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Resection_01_30092022.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#f4de05555295169a6d3767586c8b0c5d>.
+<#f4de05555295169a6d3767586c8b0c5d> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2630>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.971Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f4de05555295169a6d3767586c8b0c5d> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2630> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Revision_01_30092022.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Revision_01_30092022"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_MyCareNet_HDBP0288_ORTHOPRIDE_Knee_Orthopride-Knee-Revision_01_30092022.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<../../../index.trig> <https://w3id.org/tree#member> <#2925a5e5bb6408d53c2db2a5b3920052>.
+<#2925a5e5bb6408d53c2db2a5b3920052> a <https://www.w3.org/ns/activitystreams#Create>;
+    <https://www.w3.org/ns/activitystreams#object> <http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2631>;
+    <https://www.w3.org/ns/activitystreams#published> "2025-04-14T08:26:38.972Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2925a5e5bb6408d53c2db2a5b3920052> {
+<http://data.gov.be/.well-known/genid/5cbe2495548c49fe9667172dcd307ef92-b2631> a <http://www.w3.org/ns/dcat#Distribution>;
+    <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>;
+    <http://purl.org/dc/terms/title> "HD_DCD_submxml_HDBP0288_ORTHOPRIDE_KNEE_PRIM_IMPLT.xml"@en;
+    <http://purl.org/dc/terms/description> "HD_DCD_submxml_HDBP0288_ORTHOPRIDE_KNEE_PRIM_IMPLT.xml"@en;
+    <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/text/xml>;
+    <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/XML>;
+    <http://www.w3.org/ns/dcat#accessURL> <https://fair.healthdata.be/dataset/3a42113d-8045-4773-8b38-ea3a322747bf>;
+    <http://www.w3.org/ns/dcat#downloadURL> <https://hddc.blob.core.windows.net/hdfair/dataset/3a42113d-8045-4773-8b38-ea3a322747bf/HD_DCD_submxml_HDBP0288_ORTHOPRIDE_KNEE_PRIM_IMPLT.xml>;
+    <http://purl.org/dc/terms/license> <http://publications.europa.eu/resource/authority/licence/ODC_BY>
+}
+<index.trig> <https://w3id.org/tree#relation> _:df_10_681.
+_:df_10_681 a <https://w3id.org/tree#GreaterThanOrEqualToRelation>;
+    <https://w3id.org/tree#node> <../2025-04-13T15_3A45_3A00.000Z_123187500_647/index.trig>;
+    <https://w3id.org/tree#path> <https://www.w3.org/ns/activitystreams#published>;
+    <https://w3id.org/tree#value> "2025-04-14T08:26:38.973Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

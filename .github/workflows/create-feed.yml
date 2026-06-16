@@ -1,0 +1,36 @@
+name: Create LDES Feed
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  create-ldes-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up NPM
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Dependencies
+        run: |
+          cd pipeline
+          npm i
+
+      - name: Generate LDES Feed
+        run: |
+          cd pipeline
+          npx @rdfc/js-runner dumps-to-feed-pipeline.ttl
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add docs/ pipeline/feed-state/ pipeline/leveldb/
+          git commit -m "Update LDES feed" || echo "No changes to commit"
+          git push
