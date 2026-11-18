@@ -1,0 +1,27 @@
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix p-plan: <http://purl.org/net/p-plan#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix sds:    <https://w3id.org/sds#> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix ex:     <http://example.org/ns#>.
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#>.
+@prefix sh:     <http://www.w3.org/ns/shacl#>.
+@prefix void:   <http://rdfs.org/ns/void#> .
+@prefix ldes:   <https://w3id.org/ldes#>.
+
+ex:somePlan
+    a            p-plan:Plan ;
+    rdfs:comment "A plan to publish an LDES feed from Belgium's DCAT-AP dumps" .
+
+<https://w3id.org/sds#Stream>
+    a                     sds:Stream ;
+    p-plan:wasGeneratedBy [ a            p-plan:Activity ;
+                            rdfs:comment "Load in Belgium's DCAT-AP data" ] ;
+    sds:carries           [ a sds:Member ] ;
+    sds:shape             <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape> ;
+    sds:dataset           [ a                  dcat:Dataset ;
+                            dcat:title         "DCAT-AP Feed of Belgium" ;
+                            dcat:publisher     <http://solid.smessie.com/profile/card#me> ;
+                            ldes:timestampPath <https://www.w3.org/ns/activitystreams#published> ;
+                            dcat:identifier    <https://github.com/Fedict/dcat/raw/refs/heads/master/all/datagovbe.nt.gz> ] .
